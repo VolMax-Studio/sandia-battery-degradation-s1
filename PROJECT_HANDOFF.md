@@ -5,15 +5,15 @@
 Project: sandia-battery-degradation-s1
 Repository: VolMax-Studio/sandia-battery-degradation-s1
 Branch: main
-Phase: candidate_l0
-Preregistration commit: None (Pre-Preregistration Phase)
+Phase: preregistration_drafting
+Preregistration commit: None (Pre-Preregistration Drafting Phase)
 Deadline: TBD (Set by Operator)
 
 ## Phase
 
-Candidate Evaluation & L0 Source Hunt — Execution State: NOT AUTHORIZED (L0 Discovery Complete)
+Phase 1 Preregistration Drafting — Execution State: NOT AUTHORIZED (L0 Complete / Gate PASS)
 
-Portfolio status: ACTIVE / FLAGSHIP CANDIDATE
+Portfolio status: ACTIVE / FLAGSHIP INSTANCE
 
 Architecture:
 External physical laboratory telemetry audit of Sandia National Laboratories (SNL) commercial battery degradation dataset (Preger et al., J. Electrochem. Soc. 2020 167 120532, OSTI 1650174) hosted at BatteryArchive.org.
@@ -45,9 +45,9 @@ Public artifacts documented in ARTIFACTS.json, external_sources.sha256, and deri
 ## Gate Status
 
 Gate model/person: Claude
-Gate outcome: PENDING_L0_GATE_REVIEW
-Blocking findings: OPEN: Surgical clearance of B1, B2, B3 and governance failure
+Gate outcome: PASS (Candidate L0 Admissibility Complete)
+Blocking findings: None. G-L0-5 pending dataset redistribution confirmation (no raw data download permitted until resolved).
 
 ## Next Single Action
 
-Submit Candidate + L0 surgical clearance dossier with literal artifacts to Claude for formal L0 Gate Review.
+Formulate Phase 1 preregistration (EFC estimator pinning, Q0/N80 crossing rules, and Figure 2a visual ground truth reference partition).
