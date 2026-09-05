@@ -1,10 +1,10 @@
 === GIT REVISION (SUBJECT SHA) ===
-a1dd272e12770e08aa1df9957b386c45a5d30143
+df1724cc3de8561f02cb6a80f9e2568403854f0a
 
 === GIT SHOW --STAT --ONELINE ===
-a1dd272 fix(prereg): enumerate fixed chemistry baselines, specify tolerance index, and require full coverage for Verified
- PREREGISTRATION.md | 13 +++++++------
- 1 file changed, 7 insertions(+), 6 deletions(-)
+df1724c docs(prereg): document SI lookup finding pinning digitized Figure 2a raster as primary comparator
+ PREREGISTRATION.md | 4 ++++
+ 1 file changed, 4 insertions(+)
 
 === GIT STATUS --PORCELAIN ===
 
