@@ -34,15 +34,18 @@ The evaluation population is frozen by cryptographic hash from captured L0 evide
 
 ---
 
-## 3. Core Invariant: Frozen 2020 Observation Horizon
+## 3. Core Invariant: Frozen 2020 Observation Horizon & Dual Stream Architecture
 
 As captured in [`evidence/l0/source_pages/batteryarchive_study_summaries.html`](evidence/l0/source_pages/batteryarchive_study_summaries.html#L121):
 > *"The dataset from Sandia National Labs used in the publication ... consists of commercial 18650 NCA, NMC, and LFP cells cycled to 80% capacity (although cycling is still ongoing)."*
 
 Because laboratory cycling continued after the 2020 publication date:
 1. **2020 Data Horizon Cutoff:** All Figure 2a comparison targets (Target A1 and Target A2) are evaluated strictly against observations recorded up to the publication's 2020 observation horizon.
-2. **Post-Publication Observation Exclusion:** Telemetry points timestamped after the frozen 2020 study cutoff are excluded from verdict-bearing A1/A2 evaluations.
-3. If a definitive 2020 observation horizon cutoff cannot be established from captured literature/metadata artifacts:
+2. **Dual Telemetry Stream Requirement (172 Files Total):**
+   - Cycle summary records (`[filename_base]_cycle_data.csv`) contain cycle metrics and elapsed `Test_Time (s)` without calendar timestamps.
+   - Time-series stream records (`[filename_base]_timeseries.csv`) contain `Date_Time` and `Test_Time (s)`.
+   - Applying the 2020 observation horizon requires capturing both cycle summaries (86 files) and timeseries streams (86 files), deriving the per-cell calendar start timestamp, and censoring observations timestamped past the 2020 cutoff.
+3. If a definitive 2020 observation horizon cutoff date cannot be established from captured literature/metadata artifacts:
    `HALT_OBSERVATION_HORIZON_UNDETERMINED`
 
 ---
@@ -56,9 +59,9 @@ For each test condition in Figure 2a containing observed 80% capacity crossings 
    $$\mathcal{S}^{\text{P10}}_c = \left\{ \text{EFC}_{80,(1)}^{\text{P10}}, \dots, \text{EFC}_{80,(k)}^{\text{P10}} \right\}$$
 3. Compare $\mathcal{S}^{\text{P10}}_c$ to the published digitized `+` marker multiset from Figure 2a:
    $$\mathcal{S}^{\text{pub}}_c = \left\{ \text{EFC}_{(1)}^{\text{pub}}, \dots, \text{EFC}_{(m)}^{\text{pub}} \right\}$$
-4. **Overplotting / Cardinality Resolution:**
+4. **Overplotting & Cardinality Resolution ($m \neq k$):**
    - When visual marker cardinality matches reconstructed count ($m = k$), evaluate pair-wise sorted absolute differences under condition-specific tolerance $\tau_c$.
-   - When visible markers are fewer than measured cells ($m < k$) due to ink overplotting or reader ambiguity: assign `A1_REFERENCE_CARDINALITY_UNRESOLVED` for that condition.
+   - When visual marker cardinality does not match the reconstructed count ($m \neq k$) due to ink overplotting ($m < k$), visual ambiguity, or observation horizon truncation ($m > k$): assign `A1_REFERENCE_CARDINALITY_UNRESOLVED` for that condition.
 
 ### Target A2 — Condition-Level Measured vs. Extrapolated Partition Agreement
 For each published Figure 2a condition, classify the condition based on telemetry observations within the 2020 horizon:
@@ -89,17 +92,20 @@ Prior to telemetry acquisition, create and commit `artifacts/figure2a_reference.
 4. Inter-reader discrepancies are flagged as `UNRESOLVED` without post-hoc consensus negotiation.
 
 ### 5.2 Condition-Specific Tolerance ($\tau_c$)
-For each condition $c$, tolerance is established from graphical pixel resolution ($\delta_{\text{pixel}}$) and inter-reader spread ($\Delta_{\text{reader}}$):
-$$\tau_c = \max\left( \delta_{\text{pixel}}(c), \Delta_{\text{reader}}(c) \right) + \epsilon_{\text{axis}}$$
+For each condition $c$, tolerance is established from graphical pixel resolution ($\delta_{\text{pixel}}$), inter-reader spread ($\Delta_{\text{reader}}$), and axis tick resolution ($\delta_{\text{axis}}$):
+$$\tau_c = \max\left( \delta_{\text{pixel}}(c), \Delta_{\text{reader}}(c) \right) + \delta_{\text{axis}}$$
 
 ### 5.3 Trivial Baseline Pre-Declaration & Discrimination Gate
 Before evaluating telemetry, compute the classification performance of two pre-declared trivial baselines against `figure2a_reference.csv`:
 1. **Majority-Class Baseline:** Predicts the most frequent class for all conditions.
-2. **Chemistry-Only Baseline:** Predicts class based solely on cathode chemistry (e.g. all LFP = `EXTRAPOLATED_ONLY`, all NCA/NMC = `MEASURED_PRESENT`).
+2. **Optimal Chemistry-Only Baseline:** Evaluates the best-performing mapping from cathode chemistry $\{ \text{LFP}, \text{NMC}, \text{NCA} \} \to \{ \text{MEASURED\_PRESENT}, \text{EXTRAPOLATED\_ONLY} \}$ that minimizes mismatches against `figure2a_reference.csv`.
 
 **A2 Discrimination Gate:** If any pre-declared trivial baseline achieves $M_{\text{A2}} = 0$ (zero mismatches against the reference partition):
 * Verdict: `Not Demonstrated — zero discriminatory power`
 * A2 cannot be cited as evidence of telemetry reconstruction.
+
+### 5.4 Condition-Specific A1 Power Analysis (M4)
+Prior to telemetry acquisition, compute the within-condition marker spread $S_c = \max(\mathcal{S}^{\text{pub}}_c) - \min(\mathcal{S}^{\text{pub}}_c)$ for all multi-marker conditions in `figure2a_reference.csv`. If $S_c \le \tau_c$, the multiset structure provides zero distinguishing power between permutations; report the power classification in the reference table.
 
 ---
 
@@ -116,9 +122,10 @@ Before evaluating telemetry, compute the classification performance of two pre-d
 *(Exact formulation to be pinned from article body prior to freeze).*
 
 ### 6.3 80% EOL Crossing Rule ($N_{80}$)
-Primary Rule: Discrete first integer cycle where capacity retention reaches threshold:
-$$N_{80} = \min\left\{ k : \frac{Q_k}{Q_0} \le 0.80 \right\}$$
-$$\text{EFC}_{80} = \text{EFC}(N_{80})$$
+Candidate formulations:
+* Candidate A (Discrete Crossing): First integer cycle where $Q_k / Q_0 \le 0.80$.
+* Candidate B (Linear Interpolation): Continuous linearly interpolated crossing between bounding cycles.
+*(Exact formulation to be pinned from article body prior to freeze).*
 
 For cells where $\min_k (Q_k / Q_0) > 0.80$ within the 2020 horizon:
 Disposition: `A1_NOT_EVALUATED_NO_OBSERVED_CROSSING`
@@ -129,10 +136,10 @@ Disposition: `A1_NOT_EVALUATED_NO_OBSERVED_CROSSING`
 
 | Target | Controlled Verdict | Criterion |
 | :--- | :--- | :--- |
-| **Target A1** | **Verified** | For all resolved conditions, reconstructed $\text{EFC}_{80}$ multiset matches published `+` markers within tolerance $\tau_c$. |
-| | **Verified with Limitations** | Reconstructed values fall within bounded confidence intervals but graphical resolution limits exact multiset matching. |
-| | **Not Verified** | Reconstructed $\text{EFC}_{80}$ values diverge from published markers beyond tolerance $\tau_c$. |
-| | **Not Demonstrated** | Deposited telemetry or reference artifacts lack required resolution/fields to compute crossing. |
+| **Target A1** | **Verified** | A published numerical table comparator exists in the article/SI, and reconstructed cell $\text{EFC}_{80}$ values match within frozen numerical tolerance $\tau_{\text{num}}$. |
+| | **Verified with Limitations** | Published comparator is graphical (digitized raster from Figure 2a), and reconstructed multiset $\mathcal{S}^{\text{P10}}_c$ matches digitized markers $\mathcal{S}^{\text{pub}}_c$ within graphical tolerance $\tau_c$ for all resolved conditions. |
+| | **Not Verified** | Reconstructed $\text{EFC}_{80}$ values diverge from published comparator beyond tolerance $\tau$. |
+| | **Not Demonstrated** | Deposited telemetry or reference artifacts lack required resolution/fields to compute crossing, or cardinality cannot be resolved. |
 | **Target A2** | **Verified** | Telemetry condition classification achieves $M_{\text{A2}} = 0$ mismatches against resolved reference conditions, AND passes the Discrimination Gate. |
 | | **Not Verified** | Telemetry classification produces $M_{\text{A2}} \ge 1$ mismatches against resolved reference partition. |
 | | **Not Demonstrated** | Reference partition unresolved or trivial baseline achieves $M_{\text{A2}} = 0$ (zero discriminatory power). |
