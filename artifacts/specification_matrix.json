@@ -1,0 +1,127 @@
+{
+  "artifact": "specification_matrix",
+  "generated_at": "2026-09-05T20:40:00Z",
+  "description": "Exhaustive 12-model Specification-Robustness Envelope spanning candidate estimator formulations for Target A1-H",
+  "dimensions": {
+    "q0_formulations": {
+      "Q0A": {
+        "name": "First 0.5C RPT Check",
+        "description": "Discharge capacity of the first initial 0.5C Reference Performance Test capacity-check cycle (0-100% SOC)."
+      },
+      "Q0B": {
+        "name": "Mean 0.5C RPT Check",
+        "description": "Arithmetic mean of discharge capacity across the three initial 0.5C RPT capacity-check cycles (0-100% SOC)."
+      },
+      "Q0C": {
+        "name": "Final (3rd) 0.5C RPT Check",
+        "description": "Discharge capacity of the third (final) initial 0.5C RPT capacity-check cycle (0-100% SOC)."
+      }
+    },
+    "n80_crossing_rules": {
+      "N80A": {
+        "name": "Discrete First Crossing",
+        "description": "Earliest cycle index k such that Q_k <= 0.80 * Q_0, with EFC_80 = EFC_k."
+      },
+      "N80B": {
+        "name": "Linear Interpolation Crossing",
+        "description": "Continuous linear interpolation between bounding check cycles (k-1, k) where Q_k crosses 0.80 * Q_0."
+      }
+    },
+    "efc_throughput_formulations": {
+      "EFCA": {
+        "name": "Discharge Throughput Basis",
+        "description": "EFC_k = sum(Q_discharge_i) / Q_nominal"
+      },
+      "EFCB": {
+        "name": "Two-Way Throughput Basis",
+        "description": "EFC_k = sum(Q_discharge_i + Q_charge_i) / (2 * Q_nominal)"
+      }
+    }
+  },
+  "specifications": [
+    {
+      "spec_id": "M01",
+      "code": "Q0A_N80A_EFCA",
+      "q0": "Q0A",
+      "n80": "N80A",
+      "efc": "EFCA"
+    },
+    {
+      "spec_id": "M02",
+      "code": "Q0A_N80A_EFCB",
+      "q0": "Q0A",
+      "n80": "N80A",
+      "efc": "EFCB"
+    },
+    {
+      "spec_id": "M03",
+      "code": "Q0A_N80B_EFCA",
+      "q0": "Q0A",
+      "n80": "N80B",
+      "efc": "EFCA"
+    },
+    {
+      "spec_id": "M04",
+      "code": "Q0A_N80B_EFCB",
+      "q0": "Q0A",
+      "n80": "N80B",
+      "efc": "EFCB"
+    },
+    {
+      "spec_id": "M05",
+      "code": "Q0B_N80A_EFCA",
+      "q0": "Q0B",
+      "n80": "N80A",
+      "efc": "EFCA"
+    },
+    {
+      "spec_id": "M06",
+      "code": "Q0B_N80A_EFCB",
+      "q0": "Q0B",
+      "n80": "N80A",
+      "efc": "EFCB"
+    },
+    {
+      "spec_id": "M07",
+      "code": "Q0B_N80B_EFCA",
+      "q0": "Q0B",
+      "n80": "N80B",
+      "efc": "EFCA"
+    },
+    {
+      "spec_id": "M08",
+      "code": "Q0B_N80B_EFCB",
+      "q0": "Q0B",
+      "n80": "N80B",
+      "efc": "EFCB"
+    },
+    {
+      "spec_id": "M09",
+      "code": "Q0C_N80A_EFCA",
+      "q0": "Q0C",
+      "n80": "N80A",
+      "efc": "EFCA"
+    },
+    {
+      "spec_id": "M10",
+      "code": "Q0C_N80A_EFCB",
+      "q0": "Q0C",
+      "n80": "N80A",
+      "efc": "EFCB"
+    },
+    {
+      "spec_id": "M11",
+      "code": "Q0C_N80B_EFCA",
+      "q0": "Q0C",
+      "n80": "N80B",
+      "efc": "EFCA"
+    },
+    {
+      "spec_id": "M12",
+      "code": "Q0C_N80B_EFCB",
+      "q0": "Q0C",
+      "n80": "N80B",
+      "efc": "EFCB"
+    }
+  ]
+}
