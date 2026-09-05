@@ -145,6 +145,10 @@ Disposition: `A1_NOT_EVALUATED_NO_OBSERVED_CROSSING`
 | | **Not Verified** | Telemetry classification produces $M_{\text{A2}} \ge 1$ mismatches against resolved reference partition. |
 | | **Not Demonstrated** | Reference partition unresolved or trivial baseline achieves $M_{\text{A2}} = 0$ (zero discriminatory power). |
 
+> [!NOTE]
+> **Comparator Provenance & Ceiling (SI Lookup Finding):**  
+> Desk-level verification of the published Supplementary Information ([`stacks.iop.org/JES/167/120532/mmedia`](https://stacks.iop.org/JES/167/120532/mmedia)) confirms that SI artifacts contain exclusively Table SI (ICP-OES cathode composition) and Table SII (cell self-heating data). No machine-readable numerical table of Figure 2a cell-level $\text{EFC}_{80}$ values was published in the article or SI. Consequently, the public comparator for Target A1 is the digitized raster multiset from Figure 2a under tolerance $\tau_c$, establishing `Verified with Limitations` as the applicable ceiling for successful reconstruction against public artifacts.
+
 ---
 
 ## 8. Halting Invariants
