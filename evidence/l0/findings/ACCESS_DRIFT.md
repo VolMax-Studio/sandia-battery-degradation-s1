@@ -14,8 +14,8 @@ During telemetry acquisition execution for the independent computational reconst
 
 Independent investigation confirms that:
 1. The historical 2021 public data transfer protocol (`https://www.batteryarchive.org/data/[cell_id]_cycle_data.csv`) is no longer exposed as a static web endpoint on the contemporary host infrastructure.
-2. The current host governance policy mandates host-mediated dataset access for multi-cell bulk downloads (BatteryArchive FAQ: *"Please contact info@batteryarchive.org for information on how to download datasets"*).
-3. Third-party data science frameworks (e.g. Microsoft BatteryML) independently document that Sandia (SNL), UL-PUR, and HNEI public datasets on BatteryArchive no longer provide direct unauthenticated download links and require manual host authorization.
+2. The current BatteryArchive FAQ directs users seeking multi-cell dataset downloads to contact `info@batteryarchive.org`.
+3. Third-party data science frameworks (e.g. Microsoft BatteryML) independently corroborate that Sandia (SNL), UL-PUR, and HNEI datasets on BatteryArchive no longer have active direct static download URLs and require requested access from data hosts.
 4. Sandia National Laboratories maintains an authentic archived GitHub repository ([`sandialabs/battery-archive-sandbox`](https://github.com/sandialabs/battery-archive-sandbox/tree/main/data/snl)) containing historical raw NMC cycling archives (`SNL_18650_G5_NMC1.zip` ~90.8 MB, `SNL_18650_G5_NMC2.zip` ~86.9 MB), providing an independent physical provenance reference for a subset of the cohort.
 
 **Controlled P10 Audit Finding:**
@@ -62,13 +62,13 @@ Full acquisition logs capturing all 86 failed endpoints are preserved in:
 
 ## 4. Current Host Governance & Independent Confirmation
 
-### 4.1 Host FAQ Requirement
-BatteryArchive's official FAQ ([`evidence/l0/source_pages/batteryarchive_faq.html`](../source_pages/batteryarchive_faq.html#L98-L102)) explicitly confirms the transition to host-mediated bulk delivery:
+### 4.1 Host FAQ Directive
+BatteryArchive's official FAQ ([`evidence/l0/source_pages/batteryarchive_faq.html`](../source_pages/batteryarchive_faq.html#L98-L102)) explicitly directs researchers seeking bulk data to contact the maintainers:
 > **Q: How do I download data for many cells at once?**  
 > **A:** *Please contact info@batteryarchive.org for information on how to download datasets.*
 
-### 4.2 Third-Party Framework Confirmation (BatteryML)
-Microsoft's open-source BatteryML framework documents the same interface constraint: SNL, UL-PUR, and HNEI dataset download URLs are no longer statically resolvable on BatteryArchive, requiring external users to request direct file transfers from dataset maintainers.
+### 4.2 Third-Party Framework Corroboration (BatteryML)
+Microsoft's open-source BatteryML framework independently corroborates this access pattern, noting that SNL, UL-PUR, and HNEI datasets lack direct static download links on the host and require contacting dataset maintainers.
 
 ### 4.3 Dispatched Host Inquiry
 On 2026-09-05, a formal inquiry was dispatched to `info@batteryarchive.org` requesting:

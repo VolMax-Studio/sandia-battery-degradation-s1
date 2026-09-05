@@ -1,6 +1,6 @@
 {
   "artifact": "a1_h_eligibility_manifest",
-  "description": "Exhaustive condition eligibility determination for Target A1-H derived from frozen Figure 2a reference table.",
+  "description": "Exhaustive condition eligibility determination for Target A1-H derived directly from frozen Figure 2a reference table (commit 8c8f0d9).",
   "total_conditions": 33,
   "eligible_count": 5,
   "ineligible_count": 28,
@@ -8,7 +8,7 @@
     "EXACT_CARDINALITY_MATCH": 5,
     "EXTRAPOLATED_ONLY": 14,
     "ANOMALOUS_COUNT_EXCEEDS_METADATA": 3,
-    "OVERPLOTTED_OR_MIXED": 11
+    "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED": 11
   },
   "conditions": {
     "LFP_40-60_25C_0.5-0.5C": {
@@ -19,6 +19,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -30,6 +31,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -41,6 +43,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -52,6 +55,7 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "ANOMALOUS_COUNT_EXCEEDS_METADATA",
+      "eligibility_category": "ANOMALOUS_COUNT_EXCEEDS_METADATA",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_ANOMALY: Published visual marker count (2) exceeds known metadata replicate count (1). Excluded from A1 due to unresolved reference defect."
     },
@@ -63,6 +67,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -74,6 +79,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -85,6 +91,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -96,6 +103,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -107,6 +115,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -118,6 +127,7 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "EXACT_CARDINALITY_MATCH",
       "cardinality_status": "EXACT_CARDINALITY_MATCH",
+      "eligibility_category": "EXACT_CARDINALITY_MATCH",
       "a1_h_eligible": true,
       "exclusion_or_inclusion_reason": "ELIGIBLE: Exact cardinality match between metadata replicates and published Figure 2a markers (all replicates crossed 80% EOL historically prior to publication horizon)."
     },
@@ -129,6 +139,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -140,6 +151,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -151,6 +163,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -162,8 +175,9 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "OVERPLOTTED_OR_MIXED",
+      "eligibility_category": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED",
       "a1_h_eligible": false,
-      "exclusion_or_inclusion_reason": "INELIGIBLE_HORIZON_DEPENDENT: Published visual marker count (1) is less than total replicate count (2). Replicate subset reached 80% crossing after 2020 observation horizon; requires calendar cutoff to censor unobserved post-horizon crossings."
+      "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED: visible marker count (1) is lower than replicate count (2). The public raster does not establish whether the deficit reflects overplotting, publication-horizon censoring, or both; therefore a complete cell-level multiset comparator cannot be constructed without additional evidence."
     },
     "NMC_20-80_25C_0.5-0.5C": {
       "chemistry": "NMC",
@@ -173,8 +187,9 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "OVERPLOTTED_OR_MIXED",
+      "eligibility_category": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED",
       "a1_h_eligible": false,
-      "exclusion_or_inclusion_reason": "INELIGIBLE_HORIZON_DEPENDENT: Published visual marker count (1) is less than total replicate count (4). Replicate subset reached 80% crossing after 2020 observation horizon; requires calendar cutoff to censor unobserved post-horizon crossings."
+      "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED: visible marker count (1) is lower than replicate count (4). The public raster does not establish whether the deficit reflects overplotting, publication-horizon censoring, or both; therefore a complete cell-level multiset comparator cannot be constructed without additional evidence."
     },
     "NMC_20-80_25C_0.5-3C": {
       "chemistry": "NMC",
@@ -184,6 +199,7 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "ANOMALOUS_COUNT_EXCEEDS_METADATA",
+      "eligibility_category": "ANOMALOUS_COUNT_EXCEEDS_METADATA",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_ANOMALY: Published visual marker count (3) exceeds known metadata replicate count (2). Excluded from A1 due to unresolved reference defect."
     },
@@ -195,6 +211,7 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "EXACT_CARDINALITY_MATCH",
       "cardinality_status": "EXACT_CARDINALITY_MATCH",
+      "eligibility_category": "EXACT_CARDINALITY_MATCH",
       "a1_h_eligible": true,
       "exclusion_or_inclusion_reason": "ELIGIBLE: Exact cardinality match between metadata replicates and published Figure 2a markers (all replicates crossed 80% EOL historically prior to publication horizon)."
     },
@@ -206,8 +223,9 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "OVERPLOTTED_OR_MIXED",
+      "eligibility_category": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED",
       "a1_h_eligible": false,
-      "exclusion_or_inclusion_reason": "INELIGIBLE_HORIZON_DEPENDENT: Published visual marker count (1) is less than total replicate count (2). Replicate subset reached 80% crossing after 2020 observation horizon; requires calendar cutoff to censor unobserved post-horizon crossings."
+      "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED: visible marker count (1) is lower than replicate count (2). The public raster does not establish whether the deficit reflects overplotting, publication-horizon censoring, or both; therefore a complete cell-level multiset comparator cannot be constructed without additional evidence."
     },
     "NMC_0-100_25C_0.5-0.5C": {
       "chemistry": "NMC",
@@ -217,8 +235,9 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "OVERPLOTTED_OR_MIXED",
+      "eligibility_category": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED",
       "a1_h_eligible": false,
-      "exclusion_or_inclusion_reason": "INELIGIBLE_HORIZON_DEPENDENT: Published visual marker count (1) is less than total replicate count (2). Replicate subset reached 80% crossing after 2020 observation horizon; requires calendar cutoff to censor unobserved post-horizon crossings."
+      "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED: visible marker count (1) is lower than replicate count (2). The public raster does not establish whether the deficit reflects overplotting, publication-horizon censoring, or both; therefore a complete cell-level multiset comparator cannot be constructed without additional evidence."
     },
     "NMC_0-100_25C_0.5-1C": {
       "chemistry": "NMC",
@@ -228,8 +247,9 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "OVERPLOTTED_OR_MIXED",
+      "eligibility_category": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED",
       "a1_h_eligible": false,
-      "exclusion_or_inclusion_reason": "INELIGIBLE_HORIZON_DEPENDENT: Published visual marker count (1) is less than total replicate count (4). Replicate subset reached 80% crossing after 2020 observation horizon; requires calendar cutoff to censor unobserved post-horizon crossings."
+      "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED: visible marker count (1) is lower than replicate count (4). The public raster does not establish whether the deficit reflects overplotting, publication-horizon censoring, or both; therefore a complete cell-level multiset comparator cannot be constructed without additional evidence."
     },
     "NMC_0-100_25C_0.5-2C": {
       "chemistry": "NMC",
@@ -239,6 +259,7 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "EXACT_CARDINALITY_MATCH",
       "cardinality_status": "EXACT_CARDINALITY_MATCH",
+      "eligibility_category": "EXACT_CARDINALITY_MATCH",
       "a1_h_eligible": true,
       "exclusion_or_inclusion_reason": "ELIGIBLE: Exact cardinality match between metadata replicates and published Figure 2a markers (all replicates crossed 80% EOL historically prior to publication horizon)."
     },
@@ -250,8 +271,9 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "OVERPLOTTED_OR_MIXED",
+      "eligibility_category": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED",
       "a1_h_eligible": false,
-      "exclusion_or_inclusion_reason": "INELIGIBLE_HORIZON_DEPENDENT: Published visual marker count (2) is less than total replicate count (4). Replicate subset reached 80% crossing after 2020 observation horizon; requires calendar cutoff to censor unobserved post-horizon crossings."
+      "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED: visible marker count (2) is lower than replicate count (4). The public raster does not establish whether the deficit reflects overplotting, publication-horizon censoring, or both; therefore a complete cell-level multiset comparator cannot be constructed without additional evidence."
     },
     "NMC_0-100_35C_0.5-1C": {
       "chemistry": "NMC",
@@ -261,8 +283,9 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "OVERPLOTTED_OR_MIXED",
+      "eligibility_category": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED",
       "a1_h_eligible": false,
-      "exclusion_or_inclusion_reason": "INELIGIBLE_HORIZON_DEPENDENT: Published visual marker count (1) is less than total replicate count (4). Replicate subset reached 80% crossing after 2020 observation horizon; requires calendar cutoff to censor unobserved post-horizon crossings."
+      "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED: visible marker count (1) is lower than replicate count (4). The public raster does not establish whether the deficit reflects overplotting, publication-horizon censoring, or both; therefore a complete cell-level multiset comparator cannot be constructed without additional evidence."
     },
     "NMC_0-100_35C_0.5-2C": {
       "chemistry": "NMC",
@@ -272,8 +295,9 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "OVERPLOTTED_OR_MIXED",
+      "eligibility_category": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED",
       "a1_h_eligible": false,
-      "exclusion_or_inclusion_reason": "INELIGIBLE_HORIZON_DEPENDENT: Published visual marker count (1) is less than total replicate count (2). Replicate subset reached 80% crossing after 2020 observation horizon; requires calendar cutoff to censor unobserved post-horizon crossings."
+      "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED: visible marker count (1) is lower than replicate count (2). The public raster does not establish whether the deficit reflects overplotting, publication-horizon censoring, or both; therefore a complete cell-level multiset comparator cannot be constructed without additional evidence."
     },
     "NCA_40-60_25C_0.5-0.5C": {
       "chemistry": "NCA",
@@ -283,8 +307,9 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "OVERPLOTTED_OR_MIXED",
+      "eligibility_category": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED",
       "a1_h_eligible": false,
-      "exclusion_or_inclusion_reason": "INELIGIBLE_HORIZON_DEPENDENT: Published visual marker count (1) is less than total replicate count (2). Replicate subset reached 80% crossing after 2020 observation horizon; requires calendar cutoff to censor unobserved post-horizon crossings."
+      "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED: visible marker count (1) is lower than replicate count (2). The public raster does not establish whether the deficit reflects overplotting, publication-horizon censoring, or both; therefore a complete cell-level multiset comparator cannot be constructed without additional evidence."
     },
     "NCA_20-80_25C_0.5-0.5C": {
       "chemistry": "NCA",
@@ -294,8 +319,9 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "OVERPLOTTED_OR_MIXED",
+      "eligibility_category": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED",
       "a1_h_eligible": false,
-      "exclusion_or_inclusion_reason": "INELIGIBLE_HORIZON_DEPENDENT: Published visual marker count (2) is less than total replicate count (4). Replicate subset reached 80% crossing after 2020 observation horizon; requires calendar cutoff to censor unobserved post-horizon crossings."
+      "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED: visible marker count (2) is lower than replicate count (4). The public raster does not establish whether the deficit reflects overplotting, publication-horizon censoring, or both; therefore a complete cell-level multiset comparator cannot be constructed without additional evidence."
     },
     "NCA_0-100_15C_0.5-1C": {
       "chemistry": "NCA",
@@ -305,6 +331,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -316,6 +343,7 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "EXACT_CARDINALITY_MATCH",
       "cardinality_status": "EXACT_CARDINALITY_MATCH",
+      "eligibility_category": "EXACT_CARDINALITY_MATCH",
       "a1_h_eligible": true,
       "exclusion_or_inclusion_reason": "ELIGIBLE: Exact cardinality match between metadata replicates and published Figure 2a markers (all replicates crossed 80% EOL historically prior to publication horizon)."
     },
@@ -327,6 +355,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -338,6 +367,7 @@
       "a2_published_class": "EXTRAPOLATED_ONLY",
       "a1_reference_status": "N/A_EXTRAPOLATED",
       "cardinality_status": "EXTRAPOLATED_MATCH",
+      "eligibility_category": "EXTRAPOLATED_ONLY",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_EXTRAPOLATED: Condition contains 0 published measured crossing markers in Figure 2a (extrapolated-only cohort; evaluated under Target A2)."
     },
@@ -349,6 +379,7 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "EXACT_CARDINALITY_MATCH",
       "cardinality_status": "EXACT_CARDINALITY_MATCH",
+      "eligibility_category": "EXACT_CARDINALITY_MATCH",
       "a1_h_eligible": true,
       "exclusion_or_inclusion_reason": "ELIGIBLE: Exact cardinality match between metadata replicates and published Figure 2a markers (all replicates crossed 80% EOL historically prior to publication horizon)."
     },
@@ -360,8 +391,9 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "OVERPLOTTED_OR_MIXED",
+      "eligibility_category": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED",
       "a1_h_eligible": false,
-      "exclusion_or_inclusion_reason": "INELIGIBLE_HORIZON_DEPENDENT: Published visual marker count (1) is less than total replicate count (4). Replicate subset reached 80% crossing after 2020 observation horizon; requires calendar cutoff to censor unobserved post-horizon crossings."
+      "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED: visible marker count (1) is lower than replicate count (4). The public raster does not establish whether the deficit reflects overplotting, publication-horizon censoring, or both; therefore a complete cell-level multiset comparator cannot be constructed without additional evidence."
     },
     "NCA_0-100_35C_0.5-2C": {
       "chemistry": "NCA",
@@ -371,6 +403,7 @@
       "a2_published_class": "MEASURED_PRESENT",
       "a1_reference_status": "A1_REFERENCE_CARDINALITY_UNRESOLVED",
       "cardinality_status": "ANOMALOUS_COUNT_EXCEEDS_METADATA",
+      "eligibility_category": "ANOMALOUS_COUNT_EXCEEDS_METADATA",
       "a1_h_eligible": false,
       "exclusion_or_inclusion_reason": "INELIGIBLE_CARDINALITY_ANOMALY: Published visual marker count (3) exceeds known metadata replicate count (2). Excluded from A1 due to unresolved reference defect."
     }
