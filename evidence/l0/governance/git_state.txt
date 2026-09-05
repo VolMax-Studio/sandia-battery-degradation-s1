@@ -1,5 +1,5 @@
  M evidence/l0/governance/git_state.txt
+01d97ef chore(governance): align handoff and status on supported acquisition route and redistribution invariants
+7184ddb chore(governance): update git_state.txt after run initialization
 538b6e7 feat(run): initialize run-001-a1h and advance phase to execution_preparation
 e0f202f chore(governance): update git_state.txt after engine implementation
-4007a07 feat(engine): implement Target A1-H 12-model specification verification engine and unit test suite
-de01a7e feat(prereg): establish horizon-independent Target A1-H and 12-model specification robustness envelope
