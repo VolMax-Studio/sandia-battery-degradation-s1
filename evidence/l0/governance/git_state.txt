@@ -1,12 +1,26 @@
 === GIT REVISION (SUBJECT SHA) ===
-88b0ca47bcc57701708791c26927db4a4b0156ae
+38fc41af61f6a64b28622b35e9adee2c90607216
 
 === GIT SHOW --STAT --ONELINE ===
-88b0ca4 chore(governance): update git_state after optical digitization refactor
- evidence/l0/governance/git_state.txt | 33 +++++++++++++++++----------------
- 1 file changed, 17 insertions(+), 16 deletions(-)
+38fc41a fix(ref): log failure #003, purge synthetic reference artifacts, decouple A1/A2 statuses, and establish human-assisted raw pixel digitization architecture
+ ARTIFACTS.json                                    |   3 +-
+ FAILURES.md                                       |   8 +
+ PREREGISTRATION.md                                | 181 +++++++-------
+ artifacts/figure2a_digitized_measurements.json    | 285 ----------------------
+ artifacts/figure2a_reference.csv                  |  34 ---
+ artifacts/reference_partition_analysis.json       |  40 ---
+ evidence/l0/derived_artifacts.sha256              |   3 +-
+ evidence/l0/figure2a_source_manifest.json         |  15 ++
+ evidence/l0/governance/COMMUNICATIONS.md          |   5 +-
+ evidence/l0/scripts/extract_figure2a_reference.py | 264 --------------------
+ evidence/l0/scripts/interactive_digitizer.py      | 109 +++++++++
+ evidence/l0/scripts/pixel_to_efc.py               | 159 ++++++++++++
+ 12 files changed, 384 insertions(+), 722 deletions(-)
 
 === GIT STATUS --PORCELAIN ===
+ M PROJECT_HANDOFF.md
+ M STATUS.md
+?? update_git_state.py
 
 === GIT LS-TREE -R --NAME-ONLY ===
 .gitignore
@@ -19,17 +33,16 @@ PREREGISTRATION.md
 PROJECT_HANDOFF.md
 README.md
 STATUS.md
-artifacts/figure2a_digitized_measurements.json
-artifacts/figure2a_reference.csv
-artifacts/reference_partition_analysis.json
 evidence/l0/derived_artifacts.sha256
 evidence/l0/external_sources.sha256
+evidence/l0/figure2a_source_manifest.json
 evidence/l0/governance/COMMUNICATIONS.md
 evidence/l0/governance/GATE_DIFF_RESOLUTIONS.md
 evidence/l0/governance/git_state.txt
 evidence/l0/raw_listing.txt
-evidence/l0/scripts/extract_figure2a_reference.py
 evidence/l0/scripts/generate_listing.py
+evidence/l0/scripts/interactive_digitizer.py
+evidence/l0/scripts/pixel_to_efc.py
 evidence/l0/source_pages/batteryarchive_cycle_list.html
 evidence/l0/source_pages/batteryarchive_data_transfer.py
 evidence/l0/source_pages/batteryarchive_disruptive_list.html

@@ -50,4 +50,4 @@ Blocking findings: None. G-L0-5 pending dataset redistribution confirmation (no 
 
 ## Next Single Action
 
-Formulate Phase 1 preregistration (EFC estimator pinning, Q0/N80 crossing rules, and Figure 2a visual ground truth reference partition).
+Perform human-assisted Figure 2a raw pixel digitization session (Ivan) to generate `artifacts/figure2a_raw_pixel_clicks.json`, run `evidence/l0/scripts/pixel_to_efc.py`, and transmit 4-point host inquiry to `info@batteryarchive.org`.

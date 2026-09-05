@@ -4,7 +4,7 @@ owner: Ivan
 gate: Claude
 ops: Ananke
 branch: main
-gate_subject_draft_sha: b86fccbc914c81e0fb6f03c6ef5410d72ace2f8f
+gate_subject_draft_sha: 38fc41a293cb8f3c7b27be51a44e59db4b86bb3e
 gate_outcome: PASS
 accepted_by: Ivan
 prereg_commit: null
@@ -13,5 +13,5 @@ independence_class: external_public_artifact_audit
 deadline: TBD
 verdict: null
 execution_state: PREREGISTRATION_DRAFTING
-blocking_issue: none
-next_action: Formulate Phase 1 preregistration (EFC estimator pinning, Q0/N80 crossing rules, and Figure 2a visual ground truth reference partition).
+blocking_issue: none (human digitization session + host inquiry pending)
+next_action: Perform human-assisted Figure 2a raw pixel digitization session (Ivan) and send 4-point host inquiry to info@batteryarchive.org.
