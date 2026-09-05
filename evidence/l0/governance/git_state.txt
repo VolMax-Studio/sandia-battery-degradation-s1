@@ -1,14 +1,15 @@
 === GIT REVISION (SUBJECT SHA) ===
-b86fccbc914c81e0fb6f03c6ef5410d72ace2f8f
+c16ea63d5e47c75ae8d0fcc15cd054ac34849a23
 
 === GIT SHOW --STAT --ONELINE ===
-b86fccb fix(l0): resolve B1 verbatim quote, L0 breakdown note, and log governance failure in FAILURES.md
- CLAIM_PIN.md | 2 +-
- FAILURES.md  | 9 +++++++++
- L0.md        | 5 +++++
- 3 files changed, 15 insertions(+), 1 deletion(-)
+c16ea63 chore(governance): record L0 gate pass, log #002 evidentiary failure, and update phase to preregistration drafting
+ FAILURES.md        |  8 ++++++++
+ L0.md              |  2 +-
+ PROJECT_HANDOFF.md | 14 +++++++-------
+ STATUS.md          | 12 ++++++------
+ 4 files changed, 22 insertions(+), 14 deletions(-)
 
-=== GIT STATUS --SHORT ===
+=== GIT STATUS --PORCELAIN ===
 
 === GIT LS-TREE -R --NAME-ONLY ===
 .gitignore
