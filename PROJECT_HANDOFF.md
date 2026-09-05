@@ -11,7 +11,7 @@ Deadline: TBD (Set by Operator)
 
 ## Phase
 
-Phase 2 Execution Preparation — State: READY_FOR_ACQUISITION (Engine Frozen: 4007a07 / Run: run-001-a1h)
+Phase 2 Execution Preparation — State: WAITING_FOR_SUPPORTED_ACQUISITION_ROUTE (Engine Frozen: 4007a07 / Run: run-002-a1h)
 
 Portfolio status: ACTIVE / FLAGSHIP INSTANCE
 
@@ -45,11 +45,11 @@ Public artifacts documented in ARTIFACTS.json, external_sources.sha256, and deri
 ## Gate Status & Governance Clearance
 
 * **Gate model/person:** NONE — Claude retired from this instance.
-* **G-L0-5A (Analytical Use):** PASS — Public analytical-use basis established; acquisition authorized via official BatteryArchive data transfer route.
+* **G-L0-5A (Analytical Use):** PASS — Public analytical-use basis established; host bulk access requested from info@batteryarchive.org.
 * **G-L0-5B (Redistribution):** PROHIBITED_PENDING_CONFIRMATION — Raw BatteryArchive files MUST NOT be redistributed in public repository. Repository contains only acquisition manifests, hashes, code, and derived audit outputs.
-* **Acquisition State:** READY_FOR_ACQUISITION via documented supported route (`batteryarchive_data_transfer.py` protocol).
-* **Target A1-H Execution:** UNBLOCKED (Horizon-independent 12-model specification envelope).
+* **Acquisition State:** WAITING_FOR_SUPPORTED_ACQUISITION_ROUTE (FINDING-L0-ACCESS-DRIFT-001 in `evidence/l0/findings/ACCESS_DRIFT.md`).
+* **Target A1-H Execution:** UNBLOCKED (Horizon-independent 12-model specification envelope over 5 exact-cardinality conditions documented in `artifacts/a1_h_eligibility_manifest.json`).
 
 ## Next Single Action
 
-Acquire SNL cycle summary telemetry files for run-001-a1h via documented BatteryArchive protocol, generate raw acquisition manifest, and execute the frozen A1-H 12-model verification engine.
+Await host response/bulk transfer from info@batteryarchive.org, ingest raw cycler telemetry files into run-002-a1h, generate raw acquisition manifest, and execute the frozen A1-H 12-model verification engine.

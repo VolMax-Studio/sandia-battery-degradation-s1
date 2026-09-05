@@ -15,10 +15,14 @@ cache/
 *.mat
 *.pkl
 
-# Ignore all CSVs except pinned L0 metadata and reference artifacts
+# Ignore all CSVs except pinned L0 metadata, reference artifacts, and result tables
 *.csv
 !evidence/l0/source_pages/batteryarchive_metadata.csv
 !artifacts/*.csv
+!runs/*/*.csv
+
+# Raw telemetry downloads in runs
+runs/*/raw_data/
 
 # Python
 __pycache__/

@@ -1,0 +1,527 @@
+{
+  "run_id": "run-002-a1h",
+  "timestamp": "2026-09-05T21:44:48.450840+00:00",
+  "total_expected_cells": 86,
+  "total_observed_cells": 0,
+  "total_missing_cells": 86,
+  "missing_cell_details": [
+    {
+      "cell_id": "SNL_18650_LFP_15C_0-100_0.5/1C_a",
+      "filename": "SNL_18650_LFP_15C_0-100_0.5-1C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_15C_0-100_0.5/1C_b",
+      "filename": "SNL_18650_LFP_15C_0-100_0.5-1C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_15C_0-100_0.5/2C_a",
+      "filename": "SNL_18650_LFP_15C_0-100_0.5-2C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_15C_0-100_0.5/2C_b",
+      "filename": "SNL_18650_LFP_15C_0-100_0.5-2C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/0.5C_a",
+      "filename": "SNL_18650_LFP_25C_0-100_0.5-0.5C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/1C_a",
+      "filename": "SNL_18650_LFP_25C_0-100_0.5-1C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/1C_b",
+      "filename": "SNL_18650_LFP_25C_0-100_0.5-1C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/1C_c",
+      "filename": "SNL_18650_LFP_25C_0-100_0.5-1C_c_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/1C_d",
+      "filename": "SNL_18650_LFP_25C_0-100_0.5-1C_d_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/2C_a",
+      "filename": "SNL_18650_LFP_25C_0-100_0.5-2C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/2C_b",
+      "filename": "SNL_18650_LFP_25C_0-100_0.5-2C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/3C_a",
+      "filename": "SNL_18650_LFP_25C_0-100_0.5-3C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/3C_b",
+      "filename": "SNL_18650_LFP_25C_0-100_0.5-3C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/3C_c",
+      "filename": "SNL_18650_LFP_25C_0-100_0.5-3C_c_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/3C_d",
+      "filename": "SNL_18650_LFP_25C_0-100_0.5-3C_d_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_20-80_0.5/0.5C_a",
+      "filename": "SNL_18650_LFP_25C_20-80_0.5-0.5C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_20-80_0.5/0.5C_b",
+      "filename": "SNL_18650_LFP_25C_20-80_0.5-0.5C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_20-80_0.5/0.5C_c",
+      "filename": "SNL_18650_LFP_25C_20-80_0.5-0.5C_c_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_20-80_0.5/0.5C_d",
+      "filename": "SNL_18650_LFP_25C_20-80_0.5-0.5C_d_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_20-80_0.5/3C_a",
+      "filename": "SNL_18650_LFP_25C_20-80_0.5-3C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_40-60_0.5/0.5C_a",
+      "filename": "SNL_18650_LFP_25C_40-60_0.5-0.5C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_40-60_0.5/0.5C_b",
+      "filename": "SNL_18650_LFP_25C_40-60_0.5-0.5C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_40-60_0.5/3C_a",
+      "filename": "SNL_18650_LFP_25C_40-60_0.5-3C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_40-60_0.5/3C_b",
+      "filename": "SNL_18650_LFP_25C_40-60_0.5-3C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_35C_0-100_0.5/1C_a",
+      "filename": "SNL_18650_LFP_35C_0-100_0.5-1C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_35C_0-100_0.5/1C_b",
+      "filename": "SNL_18650_LFP_35C_0-100_0.5-1C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_35C_0-100_0.5/1C_c",
+      "filename": "SNL_18650_LFP_35C_0-100_0.5-1C_c_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_35C_0-100_0.5/1C_d",
+      "filename": "SNL_18650_LFP_35C_0-100_0.5-1C_d_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_35C_0-100_0.5/2C_a",
+      "filename": "SNL_18650_LFP_35C_0-100_0.5-2C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_35C_0-100_0.5/2C_b",
+      "filename": "SNL_18650_LFP_35C_0-100_0.5-2C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_15C_0-100_0.5/1C_a",
+      "filename": "SNL_18650_NCA_15C_0-100_0.5-1C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_15C_0-100_0.5/1C_b",
+      "filename": "SNL_18650_NCA_15C_0-100_0.5-1C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_15C_0-100_0.5/2C_a",
+      "filename": "SNL_18650_NCA_15C_0-100_0.5-2C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_15C_0-100_0.5/2C_b",
+      "filename": "SNL_18650_NCA_15C_0-100_0.5-2C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/0.5C_a",
+      "filename": "SNL_18650_NCA_25C_0-100_0.5-0.5C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/0.5C_b",
+      "filename": "SNL_18650_NCA_25C_0-100_0.5-0.5C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/1C_a",
+      "filename": "SNL_18650_NCA_25C_0-100_0.5-1C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/1C_b",
+      "filename": "SNL_18650_NCA_25C_0-100_0.5-1C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/1C_c",
+      "filename": "SNL_18650_NCA_25C_0-100_0.5-1C_c_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/1C_d",
+      "filename": "SNL_18650_NCA_25C_0-100_0.5-1C_d_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/2C_a",
+      "filename": "SNL_18650_NCA_25C_0-100_0.5-2C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/2C_b",
+      "filename": "SNL_18650_NCA_25C_0-100_0.5-2C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_20-80_0.5/0.5C_a",
+      "filename": "SNL_18650_NCA_25C_20-80_0.5-0.5C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_20-80_0.5/0.5C_b",
+      "filename": "SNL_18650_NCA_25C_20-80_0.5-0.5C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_20-80_0.5/0.5C_c",
+      "filename": "SNL_18650_NCA_25C_20-80_0.5-0.5C_c_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_20-80_0.5/0.5C_d",
+      "filename": "SNL_18650_NCA_25C_20-80_0.5-0.5C_d_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_40-60_0.5/0.5C_a",
+      "filename": "SNL_18650_NCA_25C_40-60_0.5-0.5C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_40-60_0.5/0.5C_b",
+      "filename": "SNL_18650_NCA_25C_40-60_0.5-0.5C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_35C_0-100_0.5/1C_a",
+      "filename": "SNL_18650_NCA_35C_0-100_0.5-1C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_35C_0-100_0.5/1C_b",
+      "filename": "SNL_18650_NCA_35C_0-100_0.5-1C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_35C_0-100_0.5/1C_c",
+      "filename": "SNL_18650_NCA_35C_0-100_0.5-1C_c_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_35C_0-100_0.5/1C_d",
+      "filename": "SNL_18650_NCA_35C_0-100_0.5-1C_d_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_35C_0-100_0.5/2C_a",
+      "filename": "SNL_18650_NCA_35C_0-100_0.5-2C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_35C_0-100_0.5/2C_b",
+      "filename": "SNL_18650_NCA_35C_0-100_0.5-2C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_a",
+      "filename": "SNL_18650_NMC_15C_0-100_0.5-1C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_b",
+      "filename": "SNL_18650_NMC_15C_0-100_0.5-1C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_15C_0-100_0.5/2C_a",
+      "filename": "SNL_18650_NMC_15C_0-100_0.5-2C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_15C_0-100_0.5/2C_b",
+      "filename": "SNL_18650_NMC_15C_0-100_0.5-2C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/0.5C_a",
+      "filename": "SNL_18650_NMC_25C_0-100_0.5-0.5C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/0.5C_b",
+      "filename": "SNL_18650_NMC_25C_0-100_0.5-0.5C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/1C_a",
+      "filename": "SNL_18650_NMC_25C_0-100_0.5-1C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/1C_b",
+      "filename": "SNL_18650_NMC_25C_0-100_0.5-1C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/1C_c",
+      "filename": "SNL_18650_NMC_25C_0-100_0.5-1C_c_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/1C_d",
+      "filename": "SNL_18650_NMC_25C_0-100_0.5-1C_d_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/2C_a",
+      "filename": "SNL_18650_NMC_25C_0-100_0.5-2C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/2C_b",
+      "filename": "SNL_18650_NMC_25C_0-100_0.5-2C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/3C_a",
+      "filename": "SNL_18650_NMC_25C_0-100_0.5-3C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/3C_b",
+      "filename": "SNL_18650_NMC_25C_0-100_0.5-3C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/3C_c",
+      "filename": "SNL_18650_NMC_25C_0-100_0.5-3C_c_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/3C_d",
+      "filename": "SNL_18650_NMC_25C_0-100_0.5-3C_d_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_20-80_0.5/0.5C_a",
+      "filename": "SNL_18650_NMC_25C_20-80_0.5-0.5C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_20-80_0.5/0.5C_b",
+      "filename": "SNL_18650_NMC_25C_20-80_0.5-0.5C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_20-80_0.5/0.5C_c",
+      "filename": "SNL_18650_NMC_25C_20-80_0.5-0.5C_c_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_20-80_0.5/0.5C_d",
+      "filename": "SNL_18650_NMC_25C_20-80_0.5-0.5C_d_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_20-80_0.5/3C_a",
+      "filename": "SNL_18650_NMC_25C_20-80_0.5-3C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_20-80_0.5/3C_b",
+      "filename": "SNL_18650_NMC_25C_20-80_0.5-3C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_40-60_0.5/0.5C_a",
+      "filename": "SNL_18650_NMC_25C_40-60_0.5-0.5C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_40-60_0.5/0.5C_b",
+      "filename": "SNL_18650_NMC_25C_40-60_0.5-0.5C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_40-60_0.5/3C_a",
+      "filename": "SNL_18650_NMC_25C_40-60_0.5-3C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_40-60_0.5/3C_b",
+      "filename": "SNL_18650_NMC_25C_40-60_0.5-3C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_35C_0-100_0.5/1C_a",
+      "filename": "SNL_18650_NMC_35C_0-100_0.5-1C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_35C_0-100_0.5/1C_b",
+      "filename": "SNL_18650_NMC_35C_0-100_0.5-1C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_35C_0-100_0.5/1C_c",
+      "filename": "SNL_18650_NMC_35C_0-100_0.5-1C_c_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_35C_0-100_0.5/1C_d",
+      "filename": "SNL_18650_NMC_35C_0-100_0.5-1C_d_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_35C_0-100_0.5/2C_a",
+      "filename": "SNL_18650_NMC_35C_0-100_0.5-2C_a_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_35C_0-100_0.5/2C_b",
+      "filename": "SNL_18650_NMC_35C_0-100_0.5-2C_b_cycle_data.csv",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    }
+  ],
+  "unexpected_cells": [],
+  "acquisition_complete": false
+}

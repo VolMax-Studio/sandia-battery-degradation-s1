@@ -1,13 +1,18 @@
 {
-  "run_id": "run-001-a1h",
+  "run_id": "run-002-a1h",
   "target": "Target A1-H (Horizon-Independent Replicate Multiset Reconstruction)",
-  "initialized_at": "2026-09-05T20:41:30Z",
+  "initialized_at": "2026-09-05T20:43:30Z",
+  "prior_run": {
+    "run_id": "run-001-a1h",
+    "disposition": "ABORTED_ON_ACQUISITION_DEFECT",
+    "defect_details": "Listing parser defect: unparsed pipe characters in raw_listing.txt triggered InvalidURL during HTTP request. Documented in run-001-a1h."
+  },
   "frozen_lineage": {
     "reference_commit": "8c8f0d9",
     "frozen_reference_invariant_commit": "41fded9",
     "prereg_a1h_commit": "de01a7e",
     "engine_commit": "4007a07",
-    "governance_commit": "e0f202f",
+    "governance_commit": "2a9e48c",
     "specification_matrix_sha256": "a8fa7e4d7fddb76ff5ffd761b21901bab3f69a6077df4f254298a22c00de3812",
     "figure2a_reference_sha256": "4f939332492716d87a51a315cf9b8d40d72dff28a305ae5c30d9bcba9c21b18b",
     "figure2a_source_manifest_sha256": "866ac17b08345ce4c6cf7b304244e2a84cd08157624fc3c2abce866a8756bcbf",
@@ -15,10 +20,11 @@
   },
   "execution_rules": {
     "frozen_reference_rule": "Under no circumstances may Figure 2a reference coordinates, tau_c, or specification_matrix.json be modified during or after execution.",
-    "defect_handling_rule": "If an execution error occurs (e.g. unexpected schema formatting), the issue must be documented as an execution finding; any code patch requires a new commit and a new run ID (e.g. run-002-a1h). run-001-a1h remains immutable.",
+    "defect_handling_rule": "If an execution error occurs, the issue must be documented as an execution finding; any code patch requires a new commit and a new run ID. run-002-a1h remains immutable once executed.",
     "outcome_reporting": "Full 12-model specification matrix (M01-M12), element-wise residuals, condition pass rates, and global consistency flag must be reported verbatim."
   },
-  "acquisition_status": "EXECUTION_DEFECT_RECORDED",
-  "defect_summary": "Unparsed pipe-delimited raw_listing.txt lines caused InvalidURL in HTTP fetch. Documented per execution invariant. Replaced by run-002-a1h.",
-  "telemetry_execution_status": "ABORTED_ON_ACQUISITION_DEFECT"
+  "acquisition_status": "WAITING_FOR_SUPPORTED_ACQUISITION_ROUTE",
+  "acquisition_finding": "FINDING-L0-ACCESS-DRIFT-001: Historical direct HTTP downloader pattern returned 404. Host-mediated bulk access requested from info@batteryarchive.org on 2026-09-05. See evidence/l0/findings/ACCESS_DRIFT.md.",
+  "telemetry_execution_status": "NOT_YET_RUN",
+  "bytes_acquired": 0
 }

@@ -1,0 +1,451 @@
+{
+  "run_id": "run-001-a1h",
+  "timestamp": "2026-09-05T21:42:37.228217+00:00",
+  "total_expected_cells": 88,
+  "total_observed_cells": 0,
+  "total_missing_cells": 88,
+  "missing_cell_details": [
+    {
+      "cell_id": "cell_id | filename_base | study | cathode | anode | temp_C | soc_range | crate_c | crate_d | cap_ah | form_factor",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/cell_id | filename_base | study | cathode | anode | temp_C | soc_range | crate_c | crate_d | cap_ah | form_factor_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "--------|---------------|-------|---------|-------|--------|-----------|---------|---------|--------|------------",
+      "error": "HTTP 404",
+      "reason": "Not Found"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_15C_0-100_0.5/1C_a | SNL_18650_LFP_15C_0-100_0.5-1C_a | snl | LFP | graphite | 15C | 0-100% | 0.5C | 1C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_15C_0-100_0.5/1C_a | SNL_18650_LFP_15C_0-100_0.5-1C_a | snl | LFP | graphite | 15C | 0-100% | 0.5C | 1C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_15C_0-100_0.5/1C_b | SNL_18650_LFP_15C_0-100_0.5-1C_b | snl | LFP | graphite | 15C | 0-100% | 0.5C | 1C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_15C_0-100_0.5/1C_b | SNL_18650_LFP_15C_0-100_0.5-1C_b | snl | LFP | graphite | 15C | 0-100% | 0.5C | 1C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_15C_0-100_0.5/2C_a | SNL_18650_LFP_15C_0-100_0.5-2C_a | snl | LFP | graphite | 15C | 0-100% | 0.5C | 2C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_15C_0-100_0.5/2C_a | SNL_18650_LFP_15C_0-100_0.5-2C_a | snl | LFP | graphite | 15C | 0-100% | 0.5C | 2C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_15C_0-100_0.5/2C_b | SNL_18650_LFP_15C_0-100_0.5-2C_b | snl | LFP | graphite | 15C | 0-100% | 0.5C | 2C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_15C_0-100_0.5/2C_b | SNL_18650_LFP_15C_0-100_0.5-2C_b | snl | LFP | graphite | 15C | 0-100% | 0.5C | 2C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/0.5C_a | SNL_18650_LFP_25C_0-100_0.5-0.5C_a | snl | LFP | graphite | 25C | 0-100% | 0.5C | 0.5C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_0-100_0.5/0.5C_a | SNL_18650_LFP_25C_0-100_0.5-0.5C_a | snl | LFP | graphite | 25C | 0-100% | 0.5C | 0.5C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/1C_a | SNL_18650_LFP_25C_0-100_0.5-1C_a | snl | LFP | graphite | 25C | 0-100% | 0.5C | 1C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_0-100_0.5/1C_a | SNL_18650_LFP_25C_0-100_0.5-1C_a | snl | LFP | graphite | 25C | 0-100% | 0.5C | 1C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/1C_b | SNL_18650_LFP_25C_0-100_0.5-1C_b | snl | LFP | graphite | 25C | 0-100% | 0.5C | 1C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_0-100_0.5/1C_b | SNL_18650_LFP_25C_0-100_0.5-1C_b | snl | LFP | graphite | 25C | 0-100% | 0.5C | 1C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/1C_c | SNL_18650_LFP_25C_0-100_0.5-1C_c | snl | LFP | graphite | 25C | 0-100% | 0.5C | 1C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_0-100_0.5/1C_c | SNL_18650_LFP_25C_0-100_0.5-1C_c | snl | LFP | graphite | 25C | 0-100% | 0.5C | 1C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/1C_d | SNL_18650_LFP_25C_0-100_0.5-1C_d | snl | LFP | graphite | 25C | 0-100% | 0.5C | 1C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_0-100_0.5/1C_d | SNL_18650_LFP_25C_0-100_0.5-1C_d | snl | LFP | graphite | 25C | 0-100% | 0.5C | 1C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/2C_a | SNL_18650_LFP_25C_0-100_0.5-2C_a | snl | LFP | graphite | 25C | 0-100% | 0.5C | 2C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_0-100_0.5/2C_a | SNL_18650_LFP_25C_0-100_0.5-2C_a | snl | LFP | graphite | 25C | 0-100% | 0.5C | 2C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/2C_b | SNL_18650_LFP_25C_0-100_0.5-2C_b | snl | LFP | graphite | 25C | 0-100% | 0.5C | 2C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_0-100_0.5/2C_b | SNL_18650_LFP_25C_0-100_0.5-2C_b | snl | LFP | graphite | 25C | 0-100% | 0.5C | 2C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/3C_a | SNL_18650_LFP_25C_0-100_0.5-3C_a | snl | LFP | graphite | 25C | 0-100% | 0.5C | 3C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_0-100_0.5/3C_a | SNL_18650_LFP_25C_0-100_0.5-3C_a | snl | LFP | graphite | 25C | 0-100% | 0.5C | 3C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/3C_b | SNL_18650_LFP_25C_0-100_0.5-3C_b | snl | LFP | graphite | 25C | 0-100% | 0.5C | 3C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_0-100_0.5/3C_b | SNL_18650_LFP_25C_0-100_0.5-3C_b | snl | LFP | graphite | 25C | 0-100% | 0.5C | 3C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/3C_c | SNL_18650_LFP_25C_0-100_0.5-3C_c | snl | LFP | graphite | 25C | 0-100% | 0.5C | 3C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_0-100_0.5/3C_c | SNL_18650_LFP_25C_0-100_0.5-3C_c | snl | LFP | graphite | 25C | 0-100% | 0.5C | 3C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/3C_d | SNL_18650_LFP_25C_0-100_0.5-3C_d | snl | LFP | graphite | 25C | 0-100% | 0.5C | 3C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_0-100_0.5/3C_d | SNL_18650_LFP_25C_0-100_0.5-3C_d | snl | LFP | graphite | 25C | 0-100% | 0.5C | 3C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_20-80_0.5/0.5C_a | SNL_18650_LFP_25C_20-80_0.5-0.5C_a | snl | LFP | graphite | 25C | 20-80% | 0.5C | 0.5C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_20-80_0.5/0.5C_a | SNL_18650_LFP_25C_20-80_0.5-0.5C_a | snl | LFP | graphite | 25C | 20-80% | 0.5C | 0.5C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_20-80_0.5/0.5C_b | SNL_18650_LFP_25C_20-80_0.5-0.5C_b | snl | LFP | graphite | 25C | 20-80% | 0.5C | 0.5C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_20-80_0.5/0.5C_b | SNL_18650_LFP_25C_20-80_0.5-0.5C_b | snl | LFP | graphite | 25C | 20-80% | 0.5C | 0.5C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_20-80_0.5/0.5C_c | SNL_18650_LFP_25C_20-80_0.5-0.5C_c | snl | LFP | graphite | 25C | 20-80% | 0.5C | 0.5C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_20-80_0.5/0.5C_c | SNL_18650_LFP_25C_20-80_0.5-0.5C_c | snl | LFP | graphite | 25C | 20-80% | 0.5C | 0.5C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_20-80_0.5/0.5C_d | SNL_18650_LFP_25C_20-80_0.5-0.5C_d | snl | LFP | graphite | 25C | 20-80% | 0.5C | 0.5C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_20-80_0.5/0.5C_d | SNL_18650_LFP_25C_20-80_0.5-0.5C_d | snl | LFP | graphite | 25C | 20-80% | 0.5C | 0.5C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_20-80_0.5/3C_a | SNL_18650_LFP_25C_20-80_0.5-3C_a | snl | LFP | graphite | 25C | 20-80% | 0.5C | 3C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_20-80_0.5/3C_a | SNL_18650_LFP_25C_20-80_0.5-3C_a | snl | LFP | graphite | 25C | 20-80% | 0.5C | 3C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_40-60_0.5/0.5C_a | SNL_18650_LFP_25C_40-60_0.5-0.5C_a | snl | LFP | graphite | 25C | 40-60% | 0.5C | 0.5C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_40-60_0.5/0.5C_a | SNL_18650_LFP_25C_40-60_0.5-0.5C_a | snl | LFP | graphite | 25C | 40-60% | 0.5C | 0.5C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_40-60_0.5/0.5C_b | SNL_18650_LFP_25C_40-60_0.5-0.5C_b | snl | LFP | graphite | 25C | 40-60% | 0.5C | 0.5C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_40-60_0.5/0.5C_b | SNL_18650_LFP_25C_40-60_0.5-0.5C_b | snl | LFP | graphite | 25C | 40-60% | 0.5C | 0.5C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_40-60_0.5/3C_a | SNL_18650_LFP_25C_40-60_0.5-3C_a | snl | LFP | graphite | 25C | 40-60% | 0.5C | 3C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_40-60_0.5/3C_a | SNL_18650_LFP_25C_40-60_0.5-3C_a | snl | LFP | graphite | 25C | 40-60% | 0.5C | 3C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_40-60_0.5/3C_b | SNL_18650_LFP_25C_40-60_0.5-3C_b | snl | LFP | graphite | 25C | 40-60% | 0.5C | 3C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_25C_40-60_0.5/3C_b | SNL_18650_LFP_25C_40-60_0.5-3C_b | snl | LFP | graphite | 25C | 40-60% | 0.5C | 3C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_35C_0-100_0.5/1C_a | SNL_18650_LFP_35C_0-100_0.5-1C_a | snl | LFP | graphite | 35C | 0-100% | 0.5C | 1C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_35C_0-100_0.5/1C_a | SNL_18650_LFP_35C_0-100_0.5-1C_a | snl | LFP | graphite | 35C | 0-100% | 0.5C | 1C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_35C_0-100_0.5/1C_b | SNL_18650_LFP_35C_0-100_0.5-1C_b | snl | LFP | graphite | 35C | 0-100% | 0.5C | 1C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_35C_0-100_0.5/1C_b | SNL_18650_LFP_35C_0-100_0.5-1C_b | snl | LFP | graphite | 35C | 0-100% | 0.5C | 1C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_35C_0-100_0.5/1C_c | SNL_18650_LFP_35C_0-100_0.5-1C_c | snl | LFP | graphite | 35C | 0-100% | 0.5C | 1C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_35C_0-100_0.5/1C_c | SNL_18650_LFP_35C_0-100_0.5-1C_c | snl | LFP | graphite | 35C | 0-100% | 0.5C | 1C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_35C_0-100_0.5/1C_d | SNL_18650_LFP_35C_0-100_0.5-1C_d | snl | LFP | graphite | 35C | 0-100% | 0.5C | 1C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_35C_0-100_0.5/1C_d | SNL_18650_LFP_35C_0-100_0.5-1C_d | snl | LFP | graphite | 35C | 0-100% | 0.5C | 1C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_35C_0-100_0.5/2C_a | SNL_18650_LFP_35C_0-100_0.5-2C_a | snl | LFP | graphite | 35C | 0-100% | 0.5C | 2C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_35C_0-100_0.5/2C_a | SNL_18650_LFP_35C_0-100_0.5-2C_a | snl | LFP | graphite | 35C | 0-100% | 0.5C | 2C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_35C_0-100_0.5/2C_b | SNL_18650_LFP_35C_0-100_0.5-2C_b | snl | LFP | graphite | 35C | 0-100% | 0.5C | 2C | 1.1Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_LFP_35C_0-100_0.5/2C_b | SNL_18650_LFP_35C_0-100_0.5-2C_b | snl | LFP | graphite | 35C | 0-100% | 0.5C | 2C | 1.1Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_15C_0-100_0.5/1C_a | SNL_18650_NCA_15C_0-100_0.5-1C_a | snl | NCA | graphite | 15C | 0-100% | 0.5C | 1C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_15C_0-100_0.5/1C_a | SNL_18650_NCA_15C_0-100_0.5-1C_a | snl | NCA | graphite | 15C | 0-100% | 0.5C | 1C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_15C_0-100_0.5/1C_b | SNL_18650_NCA_15C_0-100_0.5-1C_b | snl | NCA | graphite | 15C | 0-100% | 0.5C | 1C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_15C_0-100_0.5/1C_b | SNL_18650_NCA_15C_0-100_0.5-1C_b | snl | NCA | graphite | 15C | 0-100% | 0.5C | 1C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_15C_0-100_0.5/2C_a | SNL_18650_NCA_15C_0-100_0.5-2C_a | snl | NCA | graphite | 15C | 0-100% | 0.5C | 2C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_15C_0-100_0.5/2C_a | SNL_18650_NCA_15C_0-100_0.5-2C_a | snl | NCA | graphite | 15C | 0-100% | 0.5C | 2C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_15C_0-100_0.5/2C_b | SNL_18650_NCA_15C_0-100_0.5-2C_b | snl | NCA | graphite | 15C | 0-100% | 0.5C | 2C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_15C_0-100_0.5/2C_b | SNL_18650_NCA_15C_0-100_0.5-2C_b | snl | NCA | graphite | 15C | 0-100% | 0.5C | 2C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/0.5C_a | SNL_18650_NCA_25C_0-100_0.5-0.5C_a | snl | NCA | graphite | 25C | 0-100% | 0.5C | 0.5C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_0-100_0.5/0.5C_a | SNL_18650_NCA_25C_0-100_0.5-0.5C_a | snl | NCA | graphite | 25C | 0-100% | 0.5C | 0.5C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/0.5C_b | SNL_18650_NCA_25C_0-100_0.5-0.5C_b | snl | NCA | graphite | 25C | 0-100% | 0.5C | 0.5C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_0-100_0.5/0.5C_b | SNL_18650_NCA_25C_0-100_0.5-0.5C_b | snl | NCA | graphite | 25C | 0-100% | 0.5C | 0.5C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/1C_a | SNL_18650_NCA_25C_0-100_0.5-1C_a | snl | NCA | graphite | 25C | 0-100% | 0.5C | 1C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_0-100_0.5/1C_a | SNL_18650_NCA_25C_0-100_0.5-1C_a | snl | NCA | graphite | 25C | 0-100% | 0.5C | 1C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/1C_b | SNL_18650_NCA_25C_0-100_0.5-1C_b | snl | NCA | graphite | 25C | 0-100% | 0.5C | 1C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_0-100_0.5/1C_b | SNL_18650_NCA_25C_0-100_0.5-1C_b | snl | NCA | graphite | 25C | 0-100% | 0.5C | 1C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/1C_c | SNL_18650_NCA_25C_0-100_0.5-1C_c | snl | NCA | graphite | 25C | 0-100% | 0.5C | 1C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_0-100_0.5/1C_c | SNL_18650_NCA_25C_0-100_0.5-1C_c | snl | NCA | graphite | 25C | 0-100% | 0.5C | 1C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/1C_d | SNL_18650_NCA_25C_0-100_0.5-1C_d | snl | NCA | graphite | 25C | 0-100% | 0.5C | 1C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_0-100_0.5/1C_d | SNL_18650_NCA_25C_0-100_0.5-1C_d | snl | NCA | graphite | 25C | 0-100% | 0.5C | 1C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/2C_a | SNL_18650_NCA_25C_0-100_0.5-2C_a | snl | NCA | graphite | 25C | 0-100% | 0.5C | 2C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_0-100_0.5/2C_a | SNL_18650_NCA_25C_0-100_0.5-2C_a | snl | NCA | graphite | 25C | 0-100% | 0.5C | 2C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/2C_b | SNL_18650_NCA_25C_0-100_0.5-2C_b | snl | NCA | graphite | 25C | 0-100% | 0.5C | 2C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_0-100_0.5/2C_b | SNL_18650_NCA_25C_0-100_0.5-2C_b | snl | NCA | graphite | 25C | 0-100% | 0.5C | 2C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_20-80_0.5/0.5C_a | SNL_18650_NCA_25C_20-80_0.5-0.5C_a | snl | NCA | graphite | 25C | 20-80% | 0.5C | 0.5C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_20-80_0.5/0.5C_a | SNL_18650_NCA_25C_20-80_0.5-0.5C_a | snl | NCA | graphite | 25C | 20-80% | 0.5C | 0.5C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_20-80_0.5/0.5C_b | SNL_18650_NCA_25C_20-80_0.5-0.5C_b | snl | NCA | graphite | 25C | 20-80% | 0.5C | 0.5C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_20-80_0.5/0.5C_b | SNL_18650_NCA_25C_20-80_0.5-0.5C_b | snl | NCA | graphite | 25C | 20-80% | 0.5C | 0.5C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_20-80_0.5/0.5C_c | SNL_18650_NCA_25C_20-80_0.5-0.5C_c | snl | NCA | graphite | 25C | 20-80% | 0.5C | 0.5C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_20-80_0.5/0.5C_c | SNL_18650_NCA_25C_20-80_0.5-0.5C_c | snl | NCA | graphite | 25C | 20-80% | 0.5C | 0.5C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_20-80_0.5/0.5C_d | SNL_18650_NCA_25C_20-80_0.5-0.5C_d | snl | NCA | graphite | 25C | 20-80% | 0.5C | 0.5C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_20-80_0.5/0.5C_d | SNL_18650_NCA_25C_20-80_0.5-0.5C_d | snl | NCA | graphite | 25C | 20-80% | 0.5C | 0.5C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_40-60_0.5/0.5C_a | SNL_18650_NCA_25C_40-60_0.5-0.5C_a | snl | NCA | graphite | 25C | 40-60% | 0.5C | 0.5C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_40-60_0.5/0.5C_a | SNL_18650_NCA_25C_40-60_0.5-0.5C_a | snl | NCA | graphite | 25C | 40-60% | 0.5C | 0.5C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_40-60_0.5/0.5C_b | SNL_18650_NCA_25C_40-60_0.5-0.5C_b | snl | NCA | graphite | 25C | 40-60% | 0.5C | 0.5C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_25C_40-60_0.5/0.5C_b | SNL_18650_NCA_25C_40-60_0.5-0.5C_b | snl | NCA | graphite | 25C | 40-60% | 0.5C | 0.5C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_35C_0-100_0.5/1C_a | SNL_18650_NCA_35C_0-100_0.5-1C_a | snl | NCA | graphite | 35C | 0-100% | 0.5C | 1C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_35C_0-100_0.5/1C_a | SNL_18650_NCA_35C_0-100_0.5-1C_a | snl | NCA | graphite | 35C | 0-100% | 0.5C | 1C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_35C_0-100_0.5/1C_b | SNL_18650_NCA_35C_0-100_0.5-1C_b | snl | NCA | graphite | 35C | 0-100% | 0.5C | 1C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_35C_0-100_0.5/1C_b | SNL_18650_NCA_35C_0-100_0.5-1C_b | snl | NCA | graphite | 35C | 0-100% | 0.5C | 1C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_35C_0-100_0.5/1C_c | SNL_18650_NCA_35C_0-100_0.5-1C_c | snl | NCA | graphite | 35C | 0-100% | 0.5C | 1C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_35C_0-100_0.5/1C_c | SNL_18650_NCA_35C_0-100_0.5-1C_c | snl | NCA | graphite | 35C | 0-100% | 0.5C | 1C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_35C_0-100_0.5/1C_d | SNL_18650_NCA_35C_0-100_0.5-1C_d | snl | NCA | graphite | 35C | 0-100% | 0.5C | 1C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_35C_0-100_0.5/1C_d | SNL_18650_NCA_35C_0-100_0.5-1C_d | snl | NCA | graphite | 35C | 0-100% | 0.5C | 1C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_35C_0-100_0.5/2C_a | SNL_18650_NCA_35C_0-100_0.5-2C_a | snl | NCA | graphite | 35C | 0-100% | 0.5C | 2C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_35C_0-100_0.5/2C_a | SNL_18650_NCA_35C_0-100_0.5-2C_a | snl | NCA | graphite | 35C | 0-100% | 0.5C | 2C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_35C_0-100_0.5/2C_b | SNL_18650_NCA_35C_0-100_0.5-2C_b | snl | NCA | graphite | 35C | 0-100% | 0.5C | 2C | 3.2Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NCA_35C_0-100_0.5/2C_b | SNL_18650_NCA_35C_0-100_0.5-2C_b | snl | NCA | graphite | 35C | 0-100% | 0.5C | 2C | 3.2Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_a | SNL_18650_NMC_15C_0-100_0.5-1C_a | snl | NMC | graphite | 15C | 0-100% | 0.5C | 1C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_15C_0-100_0.5/1C_a | SNL_18650_NMC_15C_0-100_0.5-1C_a | snl | NMC | graphite | 15C | 0-100% | 0.5C | 1C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_b | SNL_18650_NMC_15C_0-100_0.5-1C_b | snl | NMC | graphite | 15C | 0-100% | 0.5C | 1C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_15C_0-100_0.5/1C_b | SNL_18650_NMC_15C_0-100_0.5-1C_b | snl | NMC | graphite | 15C | 0-100% | 0.5C | 1C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_15C_0-100_0.5/2C_a | SNL_18650_NMC_15C_0-100_0.5-2C_a | snl | NMC | graphite | 15C | 0-100% | 0.5C | 2C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_15C_0-100_0.5/2C_a | SNL_18650_NMC_15C_0-100_0.5-2C_a | snl | NMC | graphite | 15C | 0-100% | 0.5C | 2C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_15C_0-100_0.5/2C_b | SNL_18650_NMC_15C_0-100_0.5-2C_b | snl | NMC | graphite | 15C | 0-100% | 0.5C | 2C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_15C_0-100_0.5/2C_b | SNL_18650_NMC_15C_0-100_0.5-2C_b | snl | NMC | graphite | 15C | 0-100% | 0.5C | 2C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/0.5C_a | SNL_18650_NMC_25C_0-100_0.5-0.5C_a | snl | NMC | graphite | 25C | 0-100% | 0.5C | 0.5C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_0-100_0.5/0.5C_a | SNL_18650_NMC_25C_0-100_0.5-0.5C_a | snl | NMC | graphite | 25C | 0-100% | 0.5C | 0.5C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/0.5C_b | SNL_18650_NMC_25C_0-100_0.5-0.5C_b | snl | NMC | graphite | 25C | 0-100% | 0.5C | 0.5C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_0-100_0.5/0.5C_b | SNL_18650_NMC_25C_0-100_0.5-0.5C_b | snl | NMC | graphite | 25C | 0-100% | 0.5C | 0.5C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/1C_a | SNL_18650_NMC_25C_0-100_0.5-1C_a | snl | NMC | graphite | 25C | 0-100% | 0.5C | 1C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_0-100_0.5/1C_a | SNL_18650_NMC_25C_0-100_0.5-1C_a | snl | NMC | graphite | 25C | 0-100% | 0.5C | 1C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/1C_b | SNL_18650_NMC_25C_0-100_0.5-1C_b | snl | NMC | graphite | 25C | 0-100% | 0.5C | 1C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_0-100_0.5/1C_b | SNL_18650_NMC_25C_0-100_0.5-1C_b | snl | NMC | graphite | 25C | 0-100% | 0.5C | 1C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/1C_c | SNL_18650_NMC_25C_0-100_0.5-1C_c | snl | NMC | graphite | 25C | 0-100% | 0.5C | 1C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_0-100_0.5/1C_c | SNL_18650_NMC_25C_0-100_0.5-1C_c | snl | NMC | graphite | 25C | 0-100% | 0.5C | 1C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/1C_d | SNL_18650_NMC_25C_0-100_0.5-1C_d | snl | NMC | graphite | 25C | 0-100% | 0.5C | 1C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_0-100_0.5/1C_d | SNL_18650_NMC_25C_0-100_0.5-1C_d | snl | NMC | graphite | 25C | 0-100% | 0.5C | 1C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/2C_a | SNL_18650_NMC_25C_0-100_0.5-2C_a | snl | NMC | graphite | 25C | 0-100% | 0.5C | 2C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_0-100_0.5/2C_a | SNL_18650_NMC_25C_0-100_0.5-2C_a | snl | NMC | graphite | 25C | 0-100% | 0.5C | 2C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/2C_b | SNL_18650_NMC_25C_0-100_0.5-2C_b | snl | NMC | graphite | 25C | 0-100% | 0.5C | 2C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_0-100_0.5/2C_b | SNL_18650_NMC_25C_0-100_0.5-2C_b | snl | NMC | graphite | 25C | 0-100% | 0.5C | 2C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/3C_a | SNL_18650_NMC_25C_0-100_0.5-3C_a | snl | NMC | graphite | 25C | 0-100% | 0.5C | 3C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_0-100_0.5/3C_a | SNL_18650_NMC_25C_0-100_0.5-3C_a | snl | NMC | graphite | 25C | 0-100% | 0.5C | 3C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/3C_b | SNL_18650_NMC_25C_0-100_0.5-3C_b | snl | NMC | graphite | 25C | 0-100% | 0.5C | 3C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_0-100_0.5/3C_b | SNL_18650_NMC_25C_0-100_0.5-3C_b | snl | NMC | graphite | 25C | 0-100% | 0.5C | 3C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/3C_c | SNL_18650_NMC_25C_0-100_0.5-3C_c | snl | NMC | graphite | 25C | 0-100% | 0.5C | 3C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_0-100_0.5/3C_c | SNL_18650_NMC_25C_0-100_0.5-3C_c | snl | NMC | graphite | 25C | 0-100% | 0.5C | 3C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/3C_d | SNL_18650_NMC_25C_0-100_0.5-3C_d | snl | NMC | graphite | 25C | 0-100% | 0.5C | 3C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_0-100_0.5/3C_d | SNL_18650_NMC_25C_0-100_0.5-3C_d | snl | NMC | graphite | 25C | 0-100% | 0.5C | 3C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_20-80_0.5/0.5C_a | SNL_18650_NMC_25C_20-80_0.5-0.5C_a | snl | NMC | graphite | 25C | 20-80% | 0.5C | 0.5C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_20-80_0.5/0.5C_a | SNL_18650_NMC_25C_20-80_0.5-0.5C_a | snl | NMC | graphite | 25C | 20-80% | 0.5C | 0.5C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_20-80_0.5/0.5C_b | SNL_18650_NMC_25C_20-80_0.5-0.5C_b | snl | NMC | graphite | 25C | 20-80% | 0.5C | 0.5C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_20-80_0.5/0.5C_b | SNL_18650_NMC_25C_20-80_0.5-0.5C_b | snl | NMC | graphite | 25C | 20-80% | 0.5C | 0.5C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_20-80_0.5/0.5C_c | SNL_18650_NMC_25C_20-80_0.5-0.5C_c | snl | NMC | graphite | 25C | 20-80% | 0.5C | 0.5C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_20-80_0.5/0.5C_c | SNL_18650_NMC_25C_20-80_0.5-0.5C_c | snl | NMC | graphite | 25C | 20-80% | 0.5C | 0.5C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_20-80_0.5/0.5C_d | SNL_18650_NMC_25C_20-80_0.5-0.5C_d | snl | NMC | graphite | 25C | 20-80% | 0.5C | 0.5C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_20-80_0.5/0.5C_d | SNL_18650_NMC_25C_20-80_0.5-0.5C_d | snl | NMC | graphite | 25C | 20-80% | 0.5C | 0.5C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_20-80_0.5/3C_a | SNL_18650_NMC_25C_20-80_0.5-3C_a | snl | NMC | graphite | 25C | 20-80% | 0.5C | 3C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_20-80_0.5/3C_a | SNL_18650_NMC_25C_20-80_0.5-3C_a | snl | NMC | graphite | 25C | 20-80% | 0.5C | 3C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_20-80_0.5/3C_b | SNL_18650_NMC_25C_20-80_0.5-3C_b | snl | NMC | graphite | 25C | 20-80% | 0.5C | 3C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_20-80_0.5/3C_b | SNL_18650_NMC_25C_20-80_0.5-3C_b | snl | NMC | graphite | 25C | 20-80% | 0.5C | 3C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_40-60_0.5/0.5C_a | SNL_18650_NMC_25C_40-60_0.5-0.5C_a | snl | NMC | graphite | 25C | 40-60% | 0.5C | 0.5C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_40-60_0.5/0.5C_a | SNL_18650_NMC_25C_40-60_0.5-0.5C_a | snl | NMC | graphite | 25C | 40-60% | 0.5C | 0.5C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_40-60_0.5/0.5C_b | SNL_18650_NMC_25C_40-60_0.5-0.5C_b | snl | NMC | graphite | 25C | 40-60% | 0.5C | 0.5C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_40-60_0.5/0.5C_b | SNL_18650_NMC_25C_40-60_0.5-0.5C_b | snl | NMC | graphite | 25C | 40-60% | 0.5C | 0.5C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_40-60_0.5/3C_a | SNL_18650_NMC_25C_40-60_0.5-3C_a | snl | NMC | graphite | 25C | 40-60% | 0.5C | 3C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_40-60_0.5/3C_a | SNL_18650_NMC_25C_40-60_0.5-3C_a | snl | NMC | graphite | 25C | 40-60% | 0.5C | 3C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_40-60_0.5/3C_b | SNL_18650_NMC_25C_40-60_0.5-3C_b | snl | NMC | graphite | 25C | 40-60% | 0.5C | 3C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_25C_40-60_0.5/3C_b | SNL_18650_NMC_25C_40-60_0.5-3C_b | snl | NMC | graphite | 25C | 40-60% | 0.5C | 3C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_35C_0-100_0.5/1C_a | SNL_18650_NMC_35C_0-100_0.5-1C_a | snl | NMC | graphite | 35C | 0-100% | 0.5C | 1C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_35C_0-100_0.5/1C_a | SNL_18650_NMC_35C_0-100_0.5-1C_a | snl | NMC | graphite | 35C | 0-100% | 0.5C | 1C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_35C_0-100_0.5/1C_b | SNL_18650_NMC_35C_0-100_0.5-1C_b | snl | NMC | graphite | 35C | 0-100% | 0.5C | 1C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_35C_0-100_0.5/1C_b | SNL_18650_NMC_35C_0-100_0.5-1C_b | snl | NMC | graphite | 35C | 0-100% | 0.5C | 1C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_35C_0-100_0.5/1C_c | SNL_18650_NMC_35C_0-100_0.5-1C_c | snl | NMC | graphite | 35C | 0-100% | 0.5C | 1C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_35C_0-100_0.5/1C_c | SNL_18650_NMC_35C_0-100_0.5-1C_c | snl | NMC | graphite | 35C | 0-100% | 0.5C | 1C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_35C_0-100_0.5/1C_d | SNL_18650_NMC_35C_0-100_0.5-1C_d | snl | NMC | graphite | 35C | 0-100% | 0.5C | 1C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_35C_0-100_0.5/1C_d | SNL_18650_NMC_35C_0-100_0.5-1C_d | snl | NMC | graphite | 35C | 0-100% | 0.5C | 1C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_35C_0-100_0.5/2C_a | SNL_18650_NMC_35C_0-100_0.5-2C_a | snl | NMC | graphite | 35C | 0-100% | 0.5C | 2C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_35C_0-100_0.5/2C_a | SNL_18650_NMC_35C_0-100_0.5-2C_a | snl | NMC | graphite | 35C | 0-100% | 0.5C | 2C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_35C_0-100_0.5/2C_b | SNL_18650_NMC_35C_0-100_0.5-2C_b | snl | NMC | graphite | 35C | 0-100% | 0.5C | 2C | 3Ah | 18650",
+      "error": "InvalidURL",
+      "reason": "URL can't contain control characters. '/data/snl/SNL_18650_NMC_35C_0-100_0.5/2C_b | SNL_18650_NMC_35C_0-100_0.5-2C_b | snl | NMC | graphite | 35C | 0-100% | 0.5C | 2C | 3Ah | 18650_cycle_data.csv' (found at least ' ')"
+    }
+  ],
+  "unexpected_cells": [],
+  "acquisition_complete": false
+}
