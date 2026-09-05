@@ -21,7 +21,7 @@
 > *"In this work, one EFC is based on the nominal capacity of the cell. Therefore, for each cell, the total capacity throughput was divided by the nominal capacity to get the total equivalent full cycle count."*
 
 ### 1.4 Verbatim Published EFC Ranges & Lifetime Statement (Preger et al. 2020, p. 120532-4):
-> *"The LFP cells exhibit substantially longer cycle life spans under the examined conditions: 2500 to 9000 EFC vs 250 to 1500 EFC for NCA cells and 200 to 2500 EFC for NMC cells. Most of the LFP cells had not reached 80% capacity by the conclusion of the study, and their longer-term degradation will be discussed in a subsequent work."*
+> *"The LFP cells exhibit substantially longer cycle life spans under the examined conditions: 2500 to 9000 EFC vs 250 to 1500 EFC for NCA cells and 200 to 2500 EFC for NMC cells. Most of the LFP cells had not reached 80% capacity by the conclusion of this study for the NCA and NMC cells, and their longer-term degradation will be reported in a later work."*
 
 ---
 
