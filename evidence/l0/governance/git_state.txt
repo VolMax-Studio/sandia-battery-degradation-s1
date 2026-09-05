@@ -1,13 +1,10 @@
 === GIT REVISION (SUBJECT SHA) ===
-7c29f97dad40cffaf071c8a2512c673816eba44b
+a1dd272e12770e08aa1df9957b386c45a5d30143
 
 === GIT SHOW --STAT --ONELINE ===
-7c29f97 fix(prereg): resolve R1-R9 findings, clean quote in GATE_DIFF_RESOLUTIONS, and pin dual stream acquisition
- L0.md                                           |  2 +-
- PREREGISTRATION.md                              | 37 +++++++++++++++----------
- evidence/l0/governance/COMMUNICATIONS.md        | 15 ++++++----
- evidence/l0/governance/GATE_DIFF_RESOLUTIONS.md |  2 +-
- 4 files changed, 33 insertions(+), 23 deletions(-)
+a1dd272 fix(prereg): enumerate fixed chemistry baselines, specify tolerance index, and require full coverage for Verified
+ PREREGISTRATION.md | 13 +++++++------
+ 1 file changed, 7 insertions(+), 6 deletions(-)
 
 === GIT STATUS --PORCELAIN ===
 
