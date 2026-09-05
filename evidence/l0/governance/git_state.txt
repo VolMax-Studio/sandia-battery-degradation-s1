@@ -1,5 +1,5 @@
  M evidence/l0/governance/git_state.txt
+4007a07 feat(engine): implement Target A1-H 12-model specification verification engine and unit test suite
+de01a7e feat(prereg): establish horizon-independent Target A1-H and 12-model specification robustness envelope
+8fa9d25 chore(governance): update git_state.txt
 6ce4913 chore(governance): record transmitted host inquiry and reference freeze completion
-41fded9 docs(prereg): record frozen-reference invariant against post-telemetry modification
-e3754bd chore(governance): record clean git state following reference freeze
-8c8f0d9 feat(reference): freeze Figure 2a human pixel measurements and deterministic geometry reconstruction
