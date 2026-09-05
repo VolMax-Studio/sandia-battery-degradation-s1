@@ -1,13 +1,10 @@
 === GIT REVISION (SUBJECT SHA) ===
-c16ea63d5e47c75ae8d0fcc15cd054ac34849a23
+23c9afaff3f9dc1c7570de7f368d992f7b693f4d
 
 === GIT SHOW --STAT --ONELINE ===
-c16ea63 chore(governance): record L0 gate pass, log #002 evidentiary failure, and update phase to preregistration drafting
- FAILURES.md        |  8 ++++++++
- L0.md              |  2 +-
- PROJECT_HANDOFF.md | 14 +++++++-------
- STATUS.md          | 12 ++++++------
- 4 files changed, 22 insertions(+), 14 deletions(-)
+23c9afa chore(governance): record BatteryArchive bulk acquisition and redistribution inquiry
+ evidence/l0/governance/COMMUNICATIONS.md | 25 +++++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
 
 === GIT STATUS --PORCELAIN ===
 
@@ -18,11 +15,13 @@ CANDIDATE.md
 CLAIM_PIN.md
 FAILURES.md
 L0.md
+PREREGISTRATION.md
 PROJECT_HANDOFF.md
 README.md
 STATUS.md
 evidence/l0/derived_artifacts.sha256
 evidence/l0/external_sources.sha256
+evidence/l0/governance/COMMUNICATIONS.md
 evidence/l0/governance/GATE_DIFF_RESOLUTIONS.md
 evidence/l0/governance/git_state.txt
 evidence/l0/raw_listing.txt
