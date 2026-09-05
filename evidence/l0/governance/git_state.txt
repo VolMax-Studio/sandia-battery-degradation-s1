@@ -1,5 +1,1 @@
- M evidence/l0/governance/git_state.txt
-01d97ef chore(governance): align handoff and status on supported acquisition route and redistribution invariants
-7184ddb chore(governance): update git_state.txt after run initialization
-538b6e7 feat(run): initialize run-001-a1h and advance phase to execution_preparation
-e0f202f chore(governance): update git_state.txt after engine implementation
+aa02e69 feat(finding): record FINDING-L0-ACCESS-DRIFT-001, derive A1-H eligibility manifest, and transition run-002-a1h to waiting for supported route
