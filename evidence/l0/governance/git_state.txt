@@ -1,10 +1,13 @@
 === GIT REVISION (SUBJECT SHA) ===
-23c9afaff3f9dc1c7570de7f368d992f7b693f4d
+7c29f97dad40cffaf071c8a2512c673816eba44b
 
 === GIT SHOW --STAT --ONELINE ===
-23c9afa chore(governance): record BatteryArchive bulk acquisition and redistribution inquiry
- evidence/l0/governance/COMMUNICATIONS.md | 25 +++++++++++++++++++++++++
- 1 file changed, 25 insertions(+)
+7c29f97 fix(prereg): resolve R1-R9 findings, clean quote in GATE_DIFF_RESOLUTIONS, and pin dual stream acquisition
+ L0.md                                           |  2 +-
+ PREREGISTRATION.md                              | 37 +++++++++++++++----------
+ evidence/l0/governance/COMMUNICATIONS.md        | 15 ++++++----
+ evidence/l0/governance/GATE_DIFF_RESOLUTIONS.md |  2 +-
+ 4 files changed, 33 insertions(+), 23 deletions(-)
 
 === GIT STATUS --PORCELAIN ===
 
