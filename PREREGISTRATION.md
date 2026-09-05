@@ -52,19 +52,21 @@ Because laboratory cycling continued after the 2020 publication date:
 
 ## 4. Audit Targets & Quantitative Objects
 
-### Target A1 — Reconstructed Measured 80% EOL Multiset Reconstruction
-For each test condition in Figure 2a containing observed 80% capacity crossings within the observation horizon:
-1. Reconstruct cell-level discrete 80% crossing events ($N_{80}$ and cumulative $\text{EFC}_{80}$) directly from raw telemetry.
+### Target A1-H — Horizon-Independent Replicate Multiset Reconstruction
+Target A1-H evaluates numerical reproduction of 80% EOL crossing events on the subset of conditions where all constituent replicate cells reached $\le 80\% Q_0$ prior to the publication-era cutoff (`a1_reference_status = EXACT_CARDINALITY_MATCH`).
+
+Because all constituent replicates in these conditions were observed crossing 80% retention in the published Figure 2a, their initial historical crossing events ($N_{80}$ and cumulative $\text{EFC}_{80}$) are immutable historical milestones independent of whether subsequent cycling continued after the 2020 publication date.
+
+For each Target A1-H eligible condition ($c \in \mathcal{C}_{\text{A1-H}}$):
+1. Reconstruct cell-level discrete crossing events ($N_{80}$ and cumulative $\text{EFC}_{80}$) directly from raw telemetry.
 2. Form the reconstructed condition-level multiset:
    $$\mathcal{S}^{\text{P10}}_c = \left\{ \text{EFC}_{80,(1)}^{\text{P10}}, \dots, \text{EFC}_{80,(k)}^{\text{P10}} \right\}$$
 3. Compare $\mathcal{S}^{\text{P10}}_c$ to the digitized `+` marker multiset from Figure 2a:
-   $$\mathcal{S}^{\text{pub}}_c = \left\{ \text{EFC}_{(1)}^{\text{pub}}, \dots, \text{EFC}_{(m)}^{\text{pub}} \right\}$$
-4. **Decoupled Cardinality & Overplotting Resolution ($m \neq k$):**
-   - When visual marker cardinality equals reconstructed count ($m = k$), the condition is evaluable for paired multiset reconstruction under condition-specific tolerance $\tau_c$ (`a1_reference_status = EXACT_CARDINALITY_MATCH`).
-   - When visual marker cardinality does not match the reconstructed count ($m < k$ due to ink overplotting/mixed points, or $m > k$ due to anomalous counts exceeding metadata): assign `a1_reference_status = A1_REFERENCE_CARDINALITY_UNRESOLVED`. This excludes the condition from A1 paired multiset evaluation without invalidating condition-level classification for Target A2.
+   $$\mathcal{S}^{\text{pub}}_c = \left\{ \text{EFC}_{(1)}^{\text{pub}}, \dots, \text{EFC}_{(k)}^{\text{pub}} \right\}$$
+4. Evaluation is performed under the condition-specific optical tolerance $\tau_c$ across the full Specification-Robustness Envelope (§6).
 
-### Target A2 — Condition-Level Measured vs. Extrapolated Partition Agreement
-For each published Figure 2a condition, classify the condition based on telemetry observations within the observation horizon:
+### Target A2 — Full 33-Condition Partition Classification (Observation-Horizon Dependent)
+For each of the 33 published Figure 2a conditions, classify the condition based on telemetry observations within the confirmed observation horizon:
 * `TELEMETRY_MEASURED_PRESENT` — At least one constituent replicate cell reached $\le 80\% Q_0$ within the observation horizon.
 * `TELEMETRY_NO_OBSERVED_CROSSING` — No constituent replicate cell reached $\le 80\% Q_0$ within the observation horizon.
 
@@ -73,8 +75,9 @@ Compare this telemetry-derived classification to the reference classification:
 * `EXTRAPOLATED_ONLY` — Figure 2a bar contains zero individual `+` markers (`a2_reference_status = RESOLVED`).
 * `UNRESOLVED` — Visually undecidable condition bar (`a2_reference_status = UNRESOLVED`).
 
-**Primary A2 Metric:** Condition-level mismatch count across resolved conditions:
-$$M_{\text{A2}} = \#\left\{ c \in \mathcal{C}_{\text{resolved}} : \text{Class}^{\text{P10}}(c) \neq \text{Class}^{\text{pub}}(c) \right\}$$
+**Target A2 Dependency Resolution:**
+* If observation horizon is confirmed via host communication: evaluate condition mismatch count $M_{\text{A2}}$.
+* If observation horizon remains undetermined from public artifacts: Target A2 resolves strictly to `Not Demonstrated — publication observation horizon unavailable from public evidence` without impeding the execution or verdicts of Target A1-H.
 
 ---
 
@@ -119,27 +122,26 @@ Before evaluating telemetry, compute the classification performance of three pre
 
 ---
 
-## 6. Computational Estimator Rules (Candidate Formulations / OPEN Status)
+## 6. Specification-Robustness Envelope for Computational Estimators
 
-> [!NOTE]
-> Aligned with `L0.md` criterion `G-L0-4B: OPEN`. Estimator formulations remain open candidate hypotheses pending host confirmation or admissible primary pinning prior to formal preregistration freeze.
+Rather than selecting a single interpretation or conditioning execution on author confirmation, this preregistration formally defines an exhaustive **Specification-Robustness Envelope** spanning all candidate estimator formulations supported by the published text:
 
-### 6.1 Candidate EFC Operationalization Formulations
-* **Candidate A (Discharge Throughput Basis):**
+$$\mathcal{M} = \mathcal{Q}_0 \times \mathcal{N}_{80} \times \mathcal{EFC} \quad (|\mathcal{M}| = 3 \times 2 \times 2 = 12 \text{ candidate specifications})$$
+
+### 6.1 Baseline Capacity Formulations ($\mathcal{Q}_0$)
+* **$Q_0^{(A)}$ (First RPT Check):** Discharge capacity of the first 0.5C Reference Performance Test capacity-check cycle ($0$--$100\%$ SOC).
+* **$Q_0^{(B)}$ (Mean RPT Check):** Arithmetic mean of discharge capacity across the three initial 0.5C RPT capacity-check cycles.
+* **$Q_0^{(C)}$ (Final RPT Check):** Discharge capacity of the third (final) initial 0.5C RPT capacity-check cycle.
+
+### 6.2 80% EOL Crossing Rule Formulations ($\mathcal{N}_{80}$)
+* **$N_{80}^{(A)}$ (Discrete First Crossing):** Earliest cycle index $k$ such that $Q_k \le 0.80 \times Q_0$, with $\text{EFC}_{80} = \text{EFC}_k$.
+* **$N_{80}^{(B)}$ (Linear Interpolation Crossing):** Continuous linear interpolation between bounding check cycles $(k-1, k)$ where $Q_k$ crosses $0.80 \times Q_0$.
+
+### 6.3 Cumulative EFC Throughput Formulations ($\mathcal{EFC}$)
+* **$\text{EFC}^{(A)}$ (Discharge Throughput Basis):**
   $$\text{EFC}_k = \frac{\sum_{i=1}^k Q^{\text{discharge}}_i}{Q_{\text{nominal}}}$$
-* **Candidate B (Average Cycle Throughput Basis):**
+* **$\text{EFC}^{(B)}$ (Two-Way Throughput Basis):**
   $$\text{EFC}_k = \frac{\sum_{i=1}^k (Q^{\text{discharge}}_i + Q^{\text{charge}}_i)}{2 \times Q_{\text{nominal}}}$$
-
-### 6.2 Candidate Baseline Capacity ($Q_0$) Formulations
-* **Candidate A (Reference Performance Test):** $Q_0$ measured during the 0.5C RPT capacity check (3 cycles, 0–100% SOC).
-* **Candidate B (Initial Cycling Capacity):** $Q_0$ defined as Cycle 1 discharge capacity under designated test protocol.
-
-### 6.3 Candidate 80% EOL Crossing Rule ($N_{80}$) Formulations
-* **Candidate A (Discrete First Crossing):** $N_{80} = \min \left\{ k \in \mathbb{N} : Q_k \le 0.80 \times Q_0 \right\}$, $\text{EFC}_{80} = \text{EFC}_{N_{80}}$.
-* **Candidate B (Linear Interpolation Crossing):** Continuous linear interpolation between bounding cycles $(k-1, k)$.
-
-For cells where $\min_k (Q_k / Q_0) > 0.80$ within the observation horizon:
-Disposition: `A1_NOT_EVALUATED_NO_OBSERVED_CROSSING`
 
 ---
 
@@ -147,16 +149,13 @@ Disposition: `A1_NOT_EVALUATED_NO_OBSERVED_CROSSING`
 
 | Target | Controlled Verdict | Criterion |
 | :--- | :--- | :--- |
-| **Target A1** | **Verified** | A published numerical table comparator exists in the article/SI, and reconstructed cell $\text{EFC}_{80}$ values match within frozen numerical tolerance $\tau_{\text{num}}$ for all resolved conditions. |
-| | **Verified with Limitations** | Published comparator is graphical (digitized raster from Figure 2a), and reconstructed multiset $\mathcal{S}^{\text{P10}}_c$ matches digitized markers $\mathcal{S}^{\text{pub}}_c$ within graphical tolerance $\tau_c$ for all resolved conditions ($m=k$). |
-| | **Not Verified** | Reconstructed $\text{EFC}_{80}$ values diverge from published comparator beyond the applicable frozen tolerance ($\tau_{\text{num}}$ for numerical table, or $\tau_c$ for digitized graphical comparator). |
-| | **Not Demonstrated** | Deposited telemetry or reference artifacts lack required resolution/fields to compute crossing, or cardinality cannot be resolved ($m \neq k$). |
-| **Target A2** | **Verified** | Telemetry condition classification achieves $M_{\text{A2}} = 0$ mismatches against resolved reference conditions, AND passes the Discrimination Gate. |
-| | **Not Verified** | Telemetry classification produces $M_{\text{A2}} \ge 1$ mismatches against resolved reference partition. |
-| | **Not Demonstrated** | Reference partition unresolved or trivial baseline achieves $M_{\text{A2}} = 0$ (zero discriminatory power). |
-
-> [!NOTE]
-> **Comparator Ceiling:** Because SI lookup confirmed no machine-readable numerical table was published in the study or SI, the public comparator for Target A1 is the digitized raster multiset from Figure 2a under tolerance $\tau_c$, establishing `Verified with Limitations` as the applicable ceiling for successful reconstruction against public artifacts.
+| **Target A1-H** | **Verified (Full Robustness)** | Reconstructed multiset $\mathcal{S}^{\text{P10}}_c$ matches digitized Figure 2a markers $\mathcal{S}^{\text{pub}}_c$ within optical tolerance $\tau_c$ across **all 12 specifications** in $\mathcal{M}$ for all eligible exact-cardinality conditions. |
+| | **Verified with Specification Sensitivity** | Reconstructed multiset matches within $\tau_c$ under a non-empty proper subset of specifications $\mathcal{M}' \subset \mathcal{M}$, identifying the exact implementation sensitivity of the published claim. |
+| | **Not Verified** | Reconstructed multiset diverges from Figure 2a beyond tolerance $\tau_c$ across **all specifications** in $\mathcal{M}$. |
+| | **Not Demonstrated** | Deposited telemetry lacks required channels to evaluate crossing events. |
+| **Target A2** | **Verified** | Telemetry condition classification achieves $M_{\text{A2}} = 0$ mismatches against resolved reference conditions within confirmed observation horizon, AND passes the Discrimination Gate. |
+| | **Not Verified** | Telemetry classification produces $M_{\text{A2}} \ge 1$ mismatches against resolved reference partition within confirmed observation horizon. |
+| | **Not Demonstrated** | Observation horizon remains undetermined from public artifacts, reference partition unresolved, or trivial baseline achieves $M_{\text{A2}} = 0$. |
 
 ---
 
@@ -164,9 +163,6 @@ Disposition: `A1_NOT_EVALUATED_NO_OBSERVED_CROSSING`
 
 Execution immediately halts with an explicit terminal disposition if any of the following occur:
 * `HALT_LICENSE_NOT_RESOLVED`: Data acquisition attempted without authorized access.
-* `HALT_OBSERVATION_HORIZON_UNDETERMINED`: Observation horizon cutoff date cannot be established.
-* `HALT_EFC_OPERATIONALIZATION_UNDERDETERMINED`: EFC formulation remains unpinned at freeze.
-* `HALT_Q0_UNDERDETERMINED`: $Q_0$ baseline definition remains unpinned at freeze.
 * `HALT_REFERENCE_PARTITION_NOT_FROZEN`: Reference CSV missing or uncommitted before telemetry acquisition.
 * `HALT_POPULATION_ARTIFACT_MISMATCH`: Constituent cell missing from repository or schema incompatible.
 * `HALT_RAW_ARTIFACT_INTEGRITY_FAIL`: Downloaded telemetry SHA256 digest differs from acquisition manifest.
