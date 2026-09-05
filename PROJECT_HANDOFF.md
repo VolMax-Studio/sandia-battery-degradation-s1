@@ -11,7 +11,7 @@ Deadline: 2026-09-21T20:00:00+02:00 (HOST_INPUT_CUTOFF)
 
 ## Phase
 
-Phase 2 Execution Preparation — State: WAITING_FOR_SUPPORTED_ACQUISITION_ROUTE (Engine Frozen: 4007a07 / Run: run-002-a1h / Required Inputs: 12 cells, SHA256: b95f3e3b...5b30)
+Phase 2 Execution Preparation — State: WAITING_FOR_SUPPORTED_ACQUISITION_ROUTE (Engine Frozen: 4007a07 / Run: run-002-a1h / Required Inputs: 12 cells, SHA256: e044432a...1128)
 
 Portfolio status: ACTIVE / FLAGSHIP INSTANCE
 
@@ -48,7 +48,7 @@ Public artifacts documented in ARTIFACTS.json, external_sources.sha256, and deri
 * **G-L0-5A (Analytical Use):** PASS — Public analytical-use basis established; host bulk access requested from info@batteryarchive.org.
 * **G-L0-5B (Redistribution):** PROHIBITED_PENDING_CONFIRMATION — Raw BatteryArchive files MUST NOT be redistributed in public repository. Repository contains only acquisition manifests, hashes, code, and derived audit outputs.
 * **Acquisition State:** WAITING_FOR_SUPPORTED_ACQUISITION_ROUTE (FINDING-L0-ACCESS-DRIFT-001 in `evidence/l0/findings/ACCESS_DRIFT.md`).
-* **Required Inputs Manifest:** `runs/run-002-a1h/a1_h_required_inputs.json` (SHA256: `b95f3e3b6a668ba4ce8d1bcee0fd824df07e428746e990503f2025a080695b30`; 5 conditions, 12 cells).
+* **Required Inputs Manifest:** `runs/run-002-a1h/a1_h_required_inputs.json` (SHA256: `e044432a2f14307d987ecde3695d9380416ab0192e8716848633697e9c3f1128`; 5 conditions, 12 cells).
 * **Target A1-H Execution:** UNBLOCKED (Evaluates 5 exact-cardinality conditions / 12 cells across 12-model specification envelope).
 * **Target A2 Execution:** AWAITING_AUTHORITATIVE_HORIZON_BOUNDARY (F35: explicit cutoff date, per-cell censoring index, or frozen snapshot).
 * **Host Input Cutoff:** `2026-09-21T20:00:00+02:00` (Europe/Belgrade) / `12:00 America/Denver` (9.5 U.S. business days post-Labor-Day).

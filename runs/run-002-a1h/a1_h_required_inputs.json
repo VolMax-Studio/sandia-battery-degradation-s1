@@ -1,11 +1,16 @@
 {
   "artifact": "a1_h_required_inputs",
   "description": "Mechanical enumeration of required cell telemetry inputs for Target A1-H verification.",
+  "generation_timestamp": "2026-09-06T00:50:00Z",
   "source_lineage": {
     "raw_listing_file": "evidence/l0/raw_listing.txt",
     "raw_listing_sha256": "c7967e949cb699a119ad47fd3bcc56b06c33cf985634daa5bc835f4518868a7f",
+    "raw_listing_total_lines": 97,
+    "raw_listing_comment_header_lines": 11,
+    "raw_listing_parsed_cells": 86,
     "eligibility_manifest_file": "artifacts/a1_h_eligibility_manifest.json",
-    "eligibility_manifest_sha256": "38ca21adb628e0165f3b85e849feead29b4a095a0774a4fc34e3d6c7ac0056f2"
+    "eligibility_manifest_sha256": "38ca21adb628e0165f3b85e849feead29b4a095a0774a4fc34e3d6c7ac0056f2",
+    "inherited_uncertainty_note": "Required input population is mechanically derived from the frozen digitized Figure 2a reference partition and inherits stated reference uncertainty."
   },
   "required_condition_count": 5,
   "required_cell_count": 12,

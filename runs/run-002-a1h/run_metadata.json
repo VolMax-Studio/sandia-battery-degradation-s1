@@ -14,7 +14,7 @@
     "engine_commit": "4007a07",
     "governance_commit": "2a9e48c",
     "a1_h_eligibility_manifest_sha256": "38ca21adb628e0165f3b85e849feead29b4a095a0774a4fc34e3d6c7ac0056f2",
-    "a1_h_required_inputs_sha256": "b95f3e3b6a668ba4ce8d1bcee0fd824df07e428746e990503f2025a080695b30",
+    "a1_h_required_inputs_sha256": "e044432a2f14307d987ecde3695d9380416ab0192e8716848633697e9c3f1128",
     "specification_matrix_sha256": "a8fa7e4d7fddb76ff5ffd761b21901bab3f69a6077df4f254298a22c00de3812",
     "figure2a_reference_sha256": "4f939332492716d87a51a315cf9b8d40d72dff28a305ae5c30d9bcba9c21b18b",
     "figure2a_source_manifest_sha256": "866ac17b08345ce4c6cf7b304244e2a84cd08157624fc3c2abce866a8756bcbf",

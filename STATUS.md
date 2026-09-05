@@ -12,7 +12,7 @@ active_run_id: run-002-a1h
 ready_for_acquisition: YES
 raw_redistribution: PROHIBITED_PENDING_CONFIRMATION
 acquisition_route_status: HOST_MEDIATED_ACCESS_REQUESTED (FINDING-L0-ACCESS-DRIFT-001)
-required_inputs_manifest: runs/run-002-a1h/a1_h_required_inputs.json (SHA256: b95f3e3b...5b30; 5 conditions, 12 cells)
+required_inputs_manifest: runs/run-002-a1h/a1_h_required_inputs.json (SHA256: e044432a...1128; 5 conditions, 12 cells)
 target_a1_h_status: UNBLOCKED (5 EXACT_CARDINALITY conditions / 12 required cells)
 target_a2_status: AWAITING_AUTHORITATIVE_HORIZON_BOUNDARY (F35: explicit cutoff date, per-cell censoring index, or frozen snapshot)
 host_input_cutoff: 2026-09-21T20:00:00+02:00 (Europe/Belgrade) / 12:00 America/Denver
