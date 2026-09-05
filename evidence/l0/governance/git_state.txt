@@ -1,1 +1,1 @@
-163a8d5 docs(manuscript): refine Axis 2 definition as observation vintages and reference resolution limits
+f79d43b feat(run): derive exact A1-H required inputs manifest and lock F31-F36/F38 cutoff governance in run-002-a1h
