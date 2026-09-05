@@ -1,40 +1,14 @@
 === GIT REVISION (SUBJECT SHA) ===
-44edee5b6e172e96b9b70605ccbdb47d969c70ca
+d6efae869446344c6526aaca985a78411afcebc1
 
 === GIT SHOW --STAT --ONELINE ===
-44edee5 feat(l0): clean candidate evaluation and L0 provenance dossier for Preger et al. (2020) battery degradation audit
- .gitignore                                         |  28 +
- ARTIFACTS.json                                     | 125 +++
- CANDIDATE.md                                       |  94 +++
- CLAIM_PIN.md                                       |  69 ++
- L0.md                                              | 118 +++
- PROJECT_HANDOFF.md                                 |  53 ++
- README.md                                          |  33 +
- STATUS.md                                          |  17 +
- evidence/l0/derived_artifacts.sha256               |   2 +
- evidence/l0/external_sources.sha256                |  13 +
- evidence/l0/governance/GATE_DIFF_RESOLUTIONS.md    |  22 +
- evidence/l0/governance/git_state.txt               |  49 ++
- evidence/l0/raw_listing.txt                        |  97 +++
- evidence/l0/scripts/generate_listing.py            |  43 +
- .../l0/source_pages/batteryarchive_cycle_list.html |  96 +++
- .../source_pages/batteryarchive_data_transfer.py   | 207 +++++
- .../batteryarchive_disruptive_list.html            |  96 +++
- evidence/l0/source_pages/batteryarchive_faq.html   | 137 ++++
- evidence/l0/source_pages/batteryarchive_index.html | 194 +++++
- .../l0/source_pages/batteryarchive_metadata.csv    | 117 +++
- .../l0/source_pages/batteryarchive_metadata.html   | 190 +++++
- evidence/l0/source_pages/batteryarchive_news.html  | 168 ++++
- .../l0/source_pages/batteryarchive_resources.html  | 181 +++++
- .../batteryarchive_study_summaries.html            | 153 ++++
- .../crossref_10_1149_1945_7111_abae37.json         | 886 +++++++++++++++++++++
- evidence/l0/source_pages/osti_1650174.json         |  66 ++
- evidence/l0/source_pages/redash_dashboard_api.json | 636 +++++++++++++++
- 27 files changed, 3890 insertions(+)
+d6efae8 chore(status): pin gate_subject_draft_sha to 44edee5 with literal git_state artifact
+ STATUS.md                            |  2 +-
+ evidence/l0/governance/git_state.txt | 47 ++++++++++++++++++++++++------------
+ 2 files changed, 33 insertions(+), 16 deletions(-)
 
 === GIT STATUS --SHORT ===
- M STATUS.md
- M evidence/l0/governance/git_state.txt
+(clean working tree)
 
 === GIT LS-TREE -R --NAME-ONLY ===
 .gitignore

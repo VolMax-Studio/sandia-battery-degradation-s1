@@ -4,7 +4,7 @@ owner: Ivan
 gate: Claude
 ops: Ananke
 branch: main
-gate_subject_draft_sha: 44edee5b6e172e96b9b70605ccbdb47d969c70ca
+gate_subject_draft_sha: d6efae869446344c6526aaca985a78411afcebc1
 gate_outcome: PENDING_L0_GATE_REVIEW
 accepted_by: null
 prereg_commit: null
