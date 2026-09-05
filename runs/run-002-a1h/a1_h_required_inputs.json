@@ -1,0 +1,93 @@
+{
+  "artifact": "a1_h_required_inputs",
+  "description": "Mechanical enumeration of required cell telemetry inputs for Target A1-H verification.",
+  "source_lineage": {
+    "raw_listing_file": "evidence/l0/raw_listing.txt",
+    "raw_listing_sha256": "c7967e949cb699a119ad47fd3bcc56b06c33cf985634daa5bc835f4518868a7f",
+    "eligibility_manifest_file": "artifacts/a1_h_eligibility_manifest.json",
+    "eligibility_manifest_sha256": "38ca21adb628e0165f3b85e849feead29b4a095a0774a4fc34e3d6c7ac0056f2"
+  },
+  "required_condition_count": 5,
+  "required_cell_count": 12,
+  "required_conditions": [
+    "LFP_0-100_25C_0.5-3C",
+    "NCA_0-100_15C_0.5-2C",
+    "NCA_0-100_25C_0.5-2C",
+    "NMC_0-100_15C_0.5-1C",
+    "NMC_0-100_25C_0.5-2C"
+  ],
+  "required_cells": [
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/3C_a",
+      "filename_base": "SNL_18650_LFP_25C_0-100_0.5-3C_a",
+      "condition_id": "LFP_0-100_25C_0.5-3C",
+      "chemistry": "LFP"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/3C_b",
+      "filename_base": "SNL_18650_LFP_25C_0-100_0.5-3C_b",
+      "condition_id": "LFP_0-100_25C_0.5-3C",
+      "chemistry": "LFP"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/3C_c",
+      "filename_base": "SNL_18650_LFP_25C_0-100_0.5-3C_c",
+      "condition_id": "LFP_0-100_25C_0.5-3C",
+      "chemistry": "LFP"
+    },
+    {
+      "cell_id": "SNL_18650_LFP_25C_0-100_0.5/3C_d",
+      "filename_base": "SNL_18650_LFP_25C_0-100_0.5-3C_d",
+      "condition_id": "LFP_0-100_25C_0.5-3C",
+      "chemistry": "LFP"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_15C_0-100_0.5/2C_a",
+      "filename_base": "SNL_18650_NCA_15C_0-100_0.5-2C_a",
+      "condition_id": "NCA_0-100_15C_0.5-2C",
+      "chemistry": "NCA"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_15C_0-100_0.5/2C_b",
+      "filename_base": "SNL_18650_NCA_15C_0-100_0.5-2C_b",
+      "condition_id": "NCA_0-100_15C_0.5-2C",
+      "chemistry": "NCA"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/2C_a",
+      "filename_base": "SNL_18650_NCA_25C_0-100_0.5-2C_a",
+      "condition_id": "NCA_0-100_25C_0.5-2C",
+      "chemistry": "NCA"
+    },
+    {
+      "cell_id": "SNL_18650_NCA_25C_0-100_0.5/2C_b",
+      "filename_base": "SNL_18650_NCA_25C_0-100_0.5-2C_b",
+      "condition_id": "NCA_0-100_25C_0.5-2C",
+      "chemistry": "NCA"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_a",
+      "filename_base": "SNL_18650_NMC_15C_0-100_0.5-1C_a",
+      "condition_id": "NMC_0-100_15C_0.5-1C",
+      "chemistry": "NMC"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_b",
+      "filename_base": "SNL_18650_NMC_15C_0-100_0.5-1C_b",
+      "condition_id": "NMC_0-100_15C_0.5-1C",
+      "chemistry": "NMC"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/2C_a",
+      "filename_base": "SNL_18650_NMC_25C_0-100_0.5-2C_a",
+      "condition_id": "NMC_0-100_25C_0.5-2C",
+      "chemistry": "NMC"
+    },
+    {
+      "cell_id": "SNL_18650_NMC_25C_0-100_0.5/2C_b",
+      "filename_base": "SNL_18650_NMC_25C_0-100_0.5-2C_b",
+      "condition_id": "NMC_0-100_25C_0.5-2C",
+      "chemistry": "NMC"
+    }
+  ]
+}

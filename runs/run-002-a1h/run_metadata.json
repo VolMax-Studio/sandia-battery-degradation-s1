@@ -13,10 +13,33 @@
     "prereg_a1h_commit": "de01a7e",
     "engine_commit": "4007a07",
     "governance_commit": "2a9e48c",
+    "a1_h_eligibility_manifest_sha256": "38ca21adb628e0165f3b85e849feead29b4a095a0774a4fc34e3d6c7ac0056f2",
+    "a1_h_required_inputs_sha256": "b95f3e3b6a668ba4ce8d1bcee0fd824df07e428746e990503f2025a080695b30",
     "specification_matrix_sha256": "a8fa7e4d7fddb76ff5ffd761b21901bab3f69a6077df4f254298a22c00de3812",
     "figure2a_reference_sha256": "4f939332492716d87a51a315cf9b8d40d72dff28a305ae5c30d9bcba9c21b18b",
     "figure2a_source_manifest_sha256": "866ac17b08345ce4c6cf7b304244e2a84cd08157624fc3c2abce866a8756bcbf",
     "reconstruct_a1_h_sha256": "09028293a2effa8e5399be20b691ddda50fc371fd0ad14fa936452bdf0484b44"
+  },
+  "required_inputs_specification": {
+    "manifest_file": "runs/run-002-a1h/a1_h_required_inputs.json",
+    "derived_required_condition_count": 5,
+    "derived_required_cell_count": 12,
+    "f32_inherited_uncertainty_rule": "The required-input population is mechanically derived from the frozen digitized Figure 2a reference partition and inherits that reference stated measurement, resolution, and classification uncertainty. No required condition or cell may be added or removed after telemetry observation on the basis of reinterpretation of the figure."
+  },
+  "acquisition_and_admissibility_rules": {
+    "f33_identity_rule": "Transport packaging is non-semantic. ZIP archives, attachments, renamed files, or host-specific filenames do not determine scientific identity. Canonical cell identity is resolved strictly via: (1) host-supplied mapping to canonical cell_id, (2) internal file metadata containing unique cell identifier, or (3) preregistered deterministic filename normalization mapping to a required cell_id. Any unresolved ambiguity or conflicting identity yields INPUT_IDENTITY_UNRESOLVED.",
+    "f34_schema_admissibility_rule": "Schema admissibility for Target A1-H is evaluated strictly against the frozen engine input contract embodied in commit 4007a07. Schema compliance establishes execution compatibility only; it does not establish that the received file is byte-identical, schema-identical, or vintage-identical to the data available when Figure 2a was generated.",
+    "f36_supported_route_rule": "Any acquisition route explicitly supplied or instructed by BatteryArchive or Sandia in response to the outstanding inquiry is accepted as a host-supported route (including email attachments, Google Drive, OneDrive, WeTransfer, SFTP, direct API/URL, or ZIP archives). Full provenance metadata (sender, domain, message identifier, receipt timestamp, URL/attachment id, raw byte count, and SHA256) is recorded upon ingestion.",
+    "host_input_cutoff": "2026-09-21T20:00:00+02:00",
+    "host_input_cutoff_utc": "2026-09-21T18:00:00Z",
+    "host_input_cutoff_denver": "2026-09-21T12:00:00-06:00",
+    "timing_source": "Operator local system clock (Europe/Belgrade, NTP service active, synchronized: yes). Measured at the moment usable bytes are physically accessible locally or host download route is operational."
+  },
+  "f38_decision_logic": {
+    "a1h_input_ready_definition": "A1H_INPUT_READY = TRUE iff for every canonical required input enumerated in a1_h_required_inputs.json: (1) usable bytes were acquired by HOST_INPUT_CUTOFF, (2) byte_count > 0, (3) canonical cell identity is uniquely resolved (no INPUT_IDENTITY_UNRESOLVED), (4) frozen-engine input contract passes, and (5) SHA-256 is captured. Any missing, ambiguous, zero-byte, or inadmissible required input => A1H_INPUT_READY = FALSE.",
+    "closure_disposition_on_cutoff": "CLOSED_REQUIRED_INPUTS_NOT_ACQUIRED_BY_PREREGISTERED_CUTOFF",
+    "cutoff_verdict": "Not Demonstrated",
+    "cutoff_public_limitation": "The acquisition window provided nine full U.S. business days plus the first half of 21 September 2026 after the Labor Day holiday. The resulting disposition therefore applies only to this preregistered acquisition window and does not demonstrate that the underlying telemetry does not exist or could not become accessible later."
   },
   "execution_rules": {
     "frozen_reference_rule": "Under no circumstances may Figure 2a reference coordinates, tau_c, or specification_matrix.json be modified during or after execution.",

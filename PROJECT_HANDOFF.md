@@ -7,11 +7,11 @@ Repository: VolMax-Studio/sandia-battery-degradation-s1
 Branch: main
 Phase: execution_preparation
 Preregistration commit: de01a7e (Target A1-H & Specification Envelope Frozen)
-Deadline: TBD (Set by Operator)
+Deadline: 2026-09-21T20:00:00+02:00 (HOST_INPUT_CUTOFF)
 
 ## Phase
 
-Phase 2 Execution Preparation — State: WAITING_FOR_SUPPORTED_ACQUISITION_ROUTE (Engine Frozen: 4007a07 / Run: run-002-a1h)
+Phase 2 Execution Preparation — State: WAITING_FOR_SUPPORTED_ACQUISITION_ROUTE (Engine Frozen: 4007a07 / Run: run-002-a1h / Required Inputs: 12 cells, SHA256: b95f3e3b...5b30)
 
 Portfolio status: ACTIVE / FLAGSHIP INSTANCE
 
@@ -48,8 +48,12 @@ Public artifacts documented in ARTIFACTS.json, external_sources.sha256, and deri
 * **G-L0-5A (Analytical Use):** PASS — Public analytical-use basis established; host bulk access requested from info@batteryarchive.org.
 * **G-L0-5B (Redistribution):** PROHIBITED_PENDING_CONFIRMATION — Raw BatteryArchive files MUST NOT be redistributed in public repository. Repository contains only acquisition manifests, hashes, code, and derived audit outputs.
 * **Acquisition State:** WAITING_FOR_SUPPORTED_ACQUISITION_ROUTE (FINDING-L0-ACCESS-DRIFT-001 in `evidence/l0/findings/ACCESS_DRIFT.md`).
-* **Target A1-H Execution:** UNBLOCKED (Horizon-independent 12-model specification envelope over 5 exact-cardinality conditions documented in `artifacts/a1_h_eligibility_manifest.json`).
+* **Required Inputs Manifest:** `runs/run-002-a1h/a1_h_required_inputs.json` (SHA256: `b95f3e3b6a668ba4ce8d1bcee0fd824df07e428746e990503f2025a080695b30`; 5 conditions, 12 cells).
+* **Target A1-H Execution:** UNBLOCKED (Evaluates 5 exact-cardinality conditions / 12 cells across 12-model specification envelope).
+* **Target A2 Execution:** AWAITING_AUTHORITATIVE_HORIZON_BOUNDARY (F35: explicit cutoff date, per-cell censoring index, or frozen snapshot).
+* **Host Input Cutoff:** `2026-09-21T20:00:00+02:00` (Europe/Belgrade) / `12:00 America/Denver` (9.5 U.S. business days post-Labor-Day).
+* **Late Evidence Policy:** SUPPLEMENTAL_ONLY (Post-cutoff evidence opens `run-003-a1h-late-host-evidence`; does not supersede `run-002`).
 
 ## Next Single Action
 
-Await host response/bulk transfer from info@batteryarchive.org, ingest raw cycler telemetry files into run-002-a1h, generate raw acquisition manifest, and execute the frozen A1-H 12-model verification engine.
+Await host response/bulk transfer from info@batteryarchive.org by 2026-09-21T20:00:00+02:00, ingest raw cycler telemetry files for the 12 required cells into run-002-a1h, generate raw acquisition manifest, and execute the frozen A1-H 12-model verification engine.
