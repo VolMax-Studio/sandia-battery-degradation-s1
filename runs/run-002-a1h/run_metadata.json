@@ -24,7 +24,7 @@
     "manifest_file": "runs/run-002-a1h/a1_h_required_inputs.json",
     "derived_required_condition_count": 5,
     "derived_required_cell_count": 12,
-    "f32_inherited_uncertainty_rule": "The required-input population is mechanically derived from the frozen digitized Figure 2a reference partition and inherits that reference stated measurement, resolution, and classification uncertainty. No required condition or cell may be added or removed after telemetry observation on the basis of reinterpretation of the figure."
+    "f32_inherited_uncertainty_rule": "The required-input population is mechanically derived from the frozen digitized Figure 2a reference partition and inherits that reference's stated measurement, resolution, and classification uncertainty. No required condition or cell may be added or removed after telemetry observation on the basis of reinterpretation of the figure."
   },
   "acquisition_and_admissibility_rules": {
     "f33_identity_rule": "Transport packaging is non-semantic. ZIP archives, attachments, renamed files, or host-specific filenames do not determine scientific identity. Canonical cell identity is resolved strictly via: (1) host-supplied mapping to canonical cell_id, (2) internal file metadata containing unique cell identifier, or (3) preregistered deterministic filename normalization mapping to a required cell_id. Any unresolved ambiguity or conflicting identity yields INPUT_IDENTITY_UNRESOLVED.",
