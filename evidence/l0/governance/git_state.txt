@@ -1,20 +1,21 @@
 === GIT REVISION (SUBJECT SHA) ===
-d6efae869446344c6526aaca985a78411afcebc1
+b86fccbc914c81e0fb6f03c6ef5410d72ace2f8f
 
 === GIT SHOW --STAT --ONELINE ===
-d6efae8 chore(status): pin gate_subject_draft_sha to 44edee5 with literal git_state artifact
- STATUS.md                            |  2 +-
- evidence/l0/governance/git_state.txt | 47 ++++++++++++++++++++++++------------
- 2 files changed, 33 insertions(+), 16 deletions(-)
+b86fccb fix(l0): resolve B1 verbatim quote, L0 breakdown note, and log governance failure in FAILURES.md
+ CLAIM_PIN.md | 2 +-
+ FAILURES.md  | 9 +++++++++
+ L0.md        | 5 +++++
+ 3 files changed, 15 insertions(+), 1 deletion(-)
 
 === GIT STATUS --SHORT ===
-(clean working tree)
 
 === GIT LS-TREE -R --NAME-ONLY ===
 .gitignore
 ARTIFACTS.json
 CANDIDATE.md
 CLAIM_PIN.md
+FAILURES.md
 L0.md
 PROJECT_HANDOFF.md
 README.md

@@ -46,8 +46,8 @@ Public artifacts documented in ARTIFACTS.json, external_sources.sha256, and deri
 
 Gate model/person: Claude
 Gate outcome: PENDING_L0_GATE_REVIEW
-Blocking findings: OPEN: P1-P10 remediation from Gate review
+Blocking findings: OPEN: Surgical clearance of B1, B2, B3 and governance failure
 
 ## Next Single Action
 
-Submit Candidate + L0 evidence dossier with literal artifacts to Claude for formal L0 Gate Review.
+Submit Candidate + L0 surgical clearance dossier with literal artifacts to Claude for formal L0 Gate Review.
