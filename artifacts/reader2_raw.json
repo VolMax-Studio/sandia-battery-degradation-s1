@@ -1,0 +1,285 @@
+{
+  "LFP_40-60_25C_0.5-0.5C": {
+    "plus_count": 0,
+    "bar_efc": 7760,
+    "plus_efc": [],
+    "published_class": "EXTRAPOLATED_ONLY"
+  },
+  "LFP_40-60_25C_0.5-3C": {
+    "plus_count": 0,
+    "bar_efc": 2790,
+    "plus_efc": [],
+    "published_class": "EXTRAPOLATED_ONLY"
+  },
+  "LFP_20-80_25C_0.5-0.5C": {
+    "plus_count": 0,
+    "bar_efc": 7160,
+    "plus_efc": [],
+    "published_class": "EXTRAPOLATED_ONLY"
+  },
+  "LFP_20-80_25C_0.5-3C": {
+    "plus_count": 2,
+    "bar_efc": 3480,
+    "plus_efc": [
+      3360,
+      3600
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "LFP_0-100_15C_0.5-1C": {
+    "plus_count": 0,
+    "bar_efc": 8780,
+    "plus_efc": [],
+    "published_class": "EXTRAPOLATED_ONLY"
+  },
+  "LFP_0-100_15C_0.5-2C": {
+    "plus_count": 0,
+    "bar_efc": 6390,
+    "plus_efc": [],
+    "published_class": "EXTRAPOLATED_ONLY"
+  },
+  "LFP_0-100_25C_0.5-0.5C": {
+    "plus_count": 0,
+    "bar_efc": 6370,
+    "plus_efc": [],
+    "published_class": "EXTRAPOLATED_ONLY"
+  },
+  "LFP_0-100_25C_0.5-1C": {
+    "plus_count": 0,
+    "bar_efc": 7160,
+    "plus_efc": [],
+    "published_class": "EXTRAPOLATED_ONLY"
+  },
+  "LFP_0-100_25C_0.5-2C": {
+    "plus_count": 0,
+    "bar_efc": 7670,
+    "plus_efc": [],
+    "published_class": "EXTRAPOLATED_ONLY"
+  },
+  "LFP_0-100_25C_0.5-3C": {
+    "plus_count": 4,
+    "bar_efc": 3450,
+    "plus_efc": [
+      2760,
+      3040,
+      3540,
+      3890
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "LFP_0-100_35C_0.5-1C": {
+    "plus_count": 0,
+    "bar_efc": 4460,
+    "plus_efc": [],
+    "published_class": "EXTRAPOLATED_ONLY"
+  },
+  "LFP_0-100_35C_0.5-2C": {
+    "plus_count": 0,
+    "bar_efc": 3090,
+    "plus_efc": [],
+    "published_class": "EXTRAPOLATED_ONLY"
+  },
+  "NMC_40-60_25C_0.5-0.5C": {
+    "plus_count": 2,
+    "bar_efc": 2130,
+    "plus_efc": [
+      2090,
+      2170
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NMC_40-60_25C_0.5-3C": {
+    "plus_count": 2,
+    "bar_efc": 2570,
+    "plus_efc": [
+      2460,
+      2680
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NMC_20-80_25C_0.5-0.5C": {
+    "plus_count": 4,
+    "bar_efc": 1640,
+    "plus_efc": [
+      780,
+      1790,
+      1900,
+      2140
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NMC_20-80_25C_0.5-3C": {
+    "plus_count": 2,
+    "bar_efc": 1280,
+    "plus_efc": [
+      830,
+      1740
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NMC_0-100_15C_0.5-1C": {
+    "plus_count": 2,
+    "bar_efc": 170,
+    "plus_efc": [
+      160,
+      180
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NMC_0-100_15C_0.5-2C": {
+    "plus_count": 2,
+    "bar_efc": 180,
+    "plus_efc": [
+      170,
+      190
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NMC_0-100_25C_0.5-0.5C": {
+    "plus_count": 2,
+    "bar_efc": 450,
+    "plus_efc": [
+      390,
+      510
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NMC_0-100_25C_0.5-1C": {
+    "plus_count": 4,
+    "bar_efc": 420,
+    "plus_efc": [
+      370,
+      410,
+      430,
+      470
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NMC_0-100_25C_0.5-2C": {
+    "plus_count": 2,
+    "bar_efc": 760,
+    "plus_efc": [
+      470,
+      1050
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NMC_0-100_25C_0.5-3C": {
+    "plus_count": 4,
+    "bar_efc": 610,
+    "plus_efc": [
+      580,
+      600,
+      620,
+      640
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NMC_0-100_35C_0.5-1C": {
+    "plus_count": 4,
+    "bar_efc": 640,
+    "plus_efc": [
+      610,
+      630,
+      650,
+      670
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NMC_0-100_35C_0.5-2C": {
+    "plus_count": 2,
+    "bar_efc": 660,
+    "plus_efc": [
+      650,
+      670
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NCA_40-60_25C_0.5-0.5C": {
+    "plus_count": 2,
+    "bar_efc": 1440,
+    "plus_efc": [
+      1290,
+      1590
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NCA_20-80_25C_0.5-0.5C": {
+    "plus_count": 4,
+    "bar_efc": 650,
+    "plus_efc": [
+      580,
+      610,
+      650,
+      680
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NCA_0-100_15C_0.5-1C": {
+    "plus_count": 2,
+    "bar_efc": 470,
+    "plus_efc": [
+      390,
+      550
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NCA_0-100_15C_0.5-2C": {
+    "plus_count": 2,
+    "bar_efc": 490,
+    "plus_efc": [
+      450,
+      530
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NCA_0-100_25C_0.5-0.5C": {
+    "plus_count": 2,
+    "bar_efc": 240,
+    "plus_efc": [
+      220,
+      260
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NCA_0-100_25C_0.5-1C": {
+    "plus_count": 4,
+    "bar_efc": 440,
+    "plus_efc": [
+      400,
+      420,
+      440,
+      480
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NCA_0-100_25C_0.5-2C": {
+    "plus_count": 2,
+    "bar_efc": 570,
+    "plus_efc": [
+      550,
+      590
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NCA_0-100_35C_0.5-1C": {
+    "plus_count": 4,
+    "bar_efc": 450,
+    "plus_efc": [
+      430,
+      440,
+      460,
+      470
+    ],
+    "published_class": "MEASURED_PRESENT"
+  },
+  "NCA_0-100_35C_0.5-2C": {
+    "plus_count": 2,
+    "bar_efc": 600,
+    "plus_efc": [
+      580,
+      620
+    ],
+    "published_class": "MEASURED_PRESENT"
+  }
+}
