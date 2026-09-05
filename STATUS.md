@@ -1,17 +1,16 @@
 project: sandia-battery-degradation-s1
 phase: preregistration_drafting
 owner: Ivan
-gate: Claude
+gate: COMPLETE (L0 PASS / Reference Freeze Locked)
 ops: Ananke
 branch: main
-gate_subject_draft_sha: 38fc41a293cb8f3c7b27be51a44e59db4b86bb3e
-gate_outcome: PASS
-accepted_by: Ivan
-prereg_commit: null
+reference_freeze_commit: 8c8f0d9
+figure2a_status: CLOSED_IMMUTABLE
 run_status: NOT_AUTHORIZED
+telemetry_acquired_bytes: 0
 independence_class: external_public_artifact_audit
 deadline: TBD
 verdict: null
 execution_state: PREREGISTRATION_DRAFTING
-blocking_issue: none (Reference freeze complete)
-next_action: Transmit 4-point host inquiry to info@batteryarchive.org and await host response for observation horizon determination.
+blocking_issue: Awaiting BatteryArchive host inquiry response (observation horizon & bulk access route)
+next_action: Await host response from info@batteryarchive.org to resolve observation horizon and authorized bulk route.
