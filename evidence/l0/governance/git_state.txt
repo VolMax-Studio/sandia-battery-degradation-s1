@@ -1,1 +1,1 @@
-aa02e69 feat(finding): record FINDING-L0-ACCESS-DRIFT-001, derive A1-H eligibility manifest, and transition run-002-a1h to waiting for supported route
+2bb3cdc docs(manuscript): draft triaxial verification manuscript and refine eligibility and access drift terminology
