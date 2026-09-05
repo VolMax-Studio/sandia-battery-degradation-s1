@@ -1,1 +1,1 @@
-f79d43b feat(run): derive exact A1-H required inputs manifest and lock F31-F36/F38 cutoff governance in run-002-a1h
+ffa5f42 fix(grammar): add apostrophe to reference's in f32 rule
