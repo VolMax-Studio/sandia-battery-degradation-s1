@@ -33,8 +33,8 @@
   },
   "a1_power_summary": {
     "total_measured_conditions": 23,
-    "high_discrimination_conditions": 16,
-    "moderate_discrimination_conditions": 4,
-    "low_discrimination_conditions": 3
+    "high_power_conditions": 14,
+    "moderate_power_conditions": 5,
+    "low_power_conditions": 4
   }
 }

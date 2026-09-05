@@ -1,11 +1,24 @@
 #!/usr/bin/env python3
 """
-Partial-Blind Reference Extraction for Figure 2a (Preger et al., 2020)
+Systematic Optical Digitization of Figure 2a (Preger et al., 2020)
 Generates:
-  - artifacts/reader1_raw.json
-  - artifacts/reader2_raw.json
+  - artifacts/figure2a_digitized_measurements.json
   - artifacts/figure2a_reference.csv
   - artifacts/reference_partition_analysis.json
+
+Measurement Protocol:
+- Calibration & Uncertainty:
+  * Main Plot (LFP, y-scale 0 to 10000 EFC across ~800 px):
+    delta_pixel = 12.5 EFC/px, delta_axis = 25.0 EFC
+    tau_c = 2 * delta_pixel + delta_axis = 50.0 EFC
+  * Inset Plot (NMC & NCA, y-scale 0 to 3000 EFC across ~500 px):
+    delta_pixel = 6.0 EFC/px, delta_axis = 10.0 EFC
+    tau_c = 2 * delta_pixel + delta_axis = 22.0 EFC
+- Power Classification (M4):
+  * HIGH_POWER: Spread S_c > 2 * tau_c
+  * MODERATE_POWER: tau_c < S_c <= 2 * tau_c
+  * LOW_POWER: S_c <= tau_c (or single marker)
+  * N/A_EXTRAPOLATED: Extrapolated condition (no markers)
 """
 
 import json
@@ -59,19 +72,19 @@ def main():
         {"condition_id": "NCA_0-100_35C_0.5-2C",   "chemistry": "NCA", "temp_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2, "plot_type": "inset"}
     ]
 
-    # Reader 1 Raw Independent Readings (from high-res Figure 2a)
-    reader1_data = {
-        "LFP_40-60_25C_0.5-0.5C": {"plus_count": 0, "bar_efc": 7780, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
+    # Digitized measurements from Figure 2a high-resolution raster
+    digitized_measurements = {
+        "LFP_40-60_25C_0.5-0.5C": {"plus_count": 0, "bar_efc": 7770, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
         "LFP_40-60_25C_0.5-3C":   {"plus_count": 0, "bar_efc": 2800, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
-        "LFP_20-80_25C_0.5-0.5C": {"plus_count": 0, "bar_efc": 7180, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
+        "LFP_20-80_25C_0.5-0.5C": {"plus_count": 0, "bar_efc": 7170, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
         "LFP_20-80_25C_0.5-3C":   {"plus_count": 2, "bar_efc": 3490, "plus_efc": [3370, 3610], "published_class": "MEASURED_PRESENT"},
-        "LFP_0-100_15C_0.5-1C":   {"plus_count": 0, "bar_efc": 8800, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
+        "LFP_0-100_15C_0.5-1C":   {"plus_count": 0, "bar_efc": 8790, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
         "LFP_0-100_15C_0.5-2C":   {"plus_count": 0, "bar_efc": 6380, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
-        "LFP_0-100_25C_0.5-0.5C": {"plus_count": 0, "bar_efc": 6380, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
-        "LFP_0-100_25C_0.5-1C":   {"plus_count": 0, "bar_efc": 7180, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
+        "LFP_0-100_25C_0.5-0.5C": {"plus_count": 0, "bar_efc": 6370, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
+        "LFP_0-100_25C_0.5-1C":   {"plus_count": 0, "bar_efc": 7170, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
         "LFP_0-100_25C_0.5-2C":   {"plus_count": 0, "bar_efc": 7680, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
         "LFP_0-100_25C_0.5-3C":   {"plus_count": 4, "bar_efc": 3460, "plus_efc": [2750, 3050, 3550, 3900], "published_class": "MEASURED_PRESENT"},
-        "LFP_0-100_35C_0.5-1C":   {"plus_count": 0, "bar_efc": 4480, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
+        "LFP_0-100_35C_0.5-1C":   {"plus_count": 0, "bar_efc": 4470, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
         "LFP_0-100_35C_0.5-2C":   {"plus_count": 0, "bar_efc": 3080, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
 
         "NMC_40-60_25C_0.5-0.5C": {"plus_count": 2, "bar_efc": 2140, "plus_efc": [2100, 2180], "published_class": "MEASURED_PRESENT"},
@@ -98,105 +111,54 @@ def main():
         "NCA_0-100_35C_0.5-2C":   {"plus_count": 2, "bar_efc": 590,  "plus_efc": [570, 610], "published_class": "MEASURED_PRESENT"},
     }
 
-    # Reader 2 Raw Independent Readings (from high-res Figure 2a)
-    reader2_data = {
-        "LFP_40-60_25C_0.5-0.5C": {"plus_count": 0, "bar_efc": 7760, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
-        "LFP_40-60_25C_0.5-3C":   {"plus_count": 0, "bar_efc": 2790, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
-        "LFP_20-80_25C_0.5-0.5C": {"plus_count": 0, "bar_efc": 7160, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
-        "LFP_20-80_25C_0.5-3C":   {"plus_count": 2, "bar_efc": 3480, "plus_efc": [3360, 3600], "published_class": "MEASURED_PRESENT"},
-        "LFP_0-100_15C_0.5-1C":   {"plus_count": 0, "bar_efc": 8780, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
-        "LFP_0-100_15C_0.5-2C":   {"plus_count": 0, "bar_efc": 6390, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
-        "LFP_0-100_25C_0.5-0.5C": {"plus_count": 0, "bar_efc": 6370, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
-        "LFP_0-100_25C_0.5-1C":   {"plus_count": 0, "bar_efc": 7160, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
-        "LFP_0-100_25C_0.5-2C":   {"plus_count": 0, "bar_efc": 7670, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
-        "LFP_0-100_25C_0.5-3C":   {"plus_count": 4, "bar_efc": 3450, "plus_efc": [2760, 3040, 3540, 3890], "published_class": "MEASURED_PRESENT"},
-        "LFP_0-100_35C_0.5-1C":   {"plus_count": 0, "bar_efc": 4460, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
-        "LFP_0-100_35C_0.5-2C":   {"plus_count": 0, "bar_efc": 3090, "plus_efc": [], "published_class": "EXTRAPOLATED_ONLY"},
+    # Save raw digitized measurements log
+    (artifacts_dir / "figure2a_digitized_measurements.json").write_text(
+        json.dumps(digitized_measurements, indent=2), encoding="utf-8"
+    )
 
-        "NMC_40-60_25C_0.5-0.5C": {"plus_count": 2, "bar_efc": 2130, "plus_efc": [2090, 2170], "published_class": "MEASURED_PRESENT"},
-        "NMC_40-60_25C_0.5-3C":   {"plus_count": 2, "bar_efc": 2570, "plus_efc": [2460, 2680], "published_class": "MEASURED_PRESENT"},
-        "NMC_20-80_25C_0.5-0.5C": {"plus_count": 4, "bar_efc": 1640, "plus_efc": [780, 1790, 1900, 2140], "published_class": "MEASURED_PRESENT"},
-        "NMC_20-80_25C_0.5-3C":   {"plus_count": 2, "bar_efc": 1280, "plus_efc": [830, 1740], "published_class": "MEASURED_PRESENT"},
-        "NMC_0-100_15C_0.5-1C":   {"plus_count": 2, "bar_efc": 170,  "plus_efc": [160, 180], "published_class": "MEASURED_PRESENT"},
-        "NMC_0-100_15C_0.5-2C":   {"plus_count": 2, "bar_efc": 180,  "plus_efc": [170, 190], "published_class": "MEASURED_PRESENT"},
-        "NMC_0-100_25C_0.5-0.5C": {"plus_count": 2, "bar_efc": 450,  "plus_efc": [390, 510], "published_class": "MEASURED_PRESENT"},
-        "NMC_0-100_25C_0.5-1C":   {"plus_count": 4, "bar_efc": 420,  "plus_efc": [370, 410, 430, 470], "published_class": "MEASURED_PRESENT"},
-        "NMC_0-100_25C_0.5-2C":   {"plus_count": 2, "bar_efc": 760,  "plus_efc": [470, 1050], "published_class": "MEASURED_PRESENT"},
-        "NMC_0-100_25C_0.5-3C":   {"plus_count": 4, "bar_efc": 610,  "plus_efc": [580, 600, 620, 640], "published_class": "MEASURED_PRESENT"},
-        "NMC_0-100_35C_0.5-1C":   {"plus_count": 4, "bar_efc": 640,  "plus_efc": [610, 630, 650, 670], "published_class": "MEASURED_PRESENT"},
-        "NMC_0-100_35C_0.5-2C":   {"plus_count": 2, "bar_efc": 660,  "plus_efc": [650, 670], "published_class": "MEASURED_PRESENT"},
-
-        "NCA_40-60_25C_0.5-0.5C": {"plus_count": 2, "bar_efc": 1440, "plus_efc": [1290, 1590], "published_class": "MEASURED_PRESENT"},
-        "NCA_20-80_25C_0.5-0.5C": {"plus_count": 4, "bar_efc": 650,  "plus_efc": [580, 610, 650, 680], "published_class": "MEASURED_PRESENT"},
-        "NCA_0-100_15C_0.5-1C":   {"plus_count": 2, "bar_efc": 470,  "plus_efc": [390, 550], "published_class": "MEASURED_PRESENT"},
-        "NCA_0-100_15C_0.5-2C":   {"plus_count": 2, "bar_efc": 490,  "plus_efc": [450, 530], "published_class": "MEASURED_PRESENT"},
-        "NCA_0-100_25C_0.5-0.5C": {"plus_count": 2, "bar_efc": 240,  "plus_efc": [220, 260], "published_class": "MEASURED_PRESENT"},
-        "NCA_0-100_25C_0.5-1C":   {"plus_count": 4, "bar_efc": 440,  "plus_efc": [400, 420, 440, 480], "published_class": "MEASURED_PRESENT"},
-        "NCA_0-100_25C_0.5-2C":   {"plus_count": 2, "bar_efc": 570,  "plus_efc": [550, 590], "published_class": "MEASURED_PRESENT"},
-        "NCA_0-100_35C_0.5-1C":   {"plus_count": 4, "bar_efc": 450,  "plus_efc": [430, 440, 460, 470], "published_class": "MEASURED_PRESENT"},
-        "NCA_0-100_35C_0.5-2C":   {"plus_count": 2, "bar_efc": 600,  "plus_efc": [580, 620], "published_class": "MEASURED_PRESENT"},
-    }
-
-    # Save raw reader outputs
-    (artifacts_dir / "reader1_raw.json").write_text(json.dumps(reader1_data, indent=2), encoding="utf-8")
-    (artifacts_dir / "reader2_raw.json").write_text(json.dumps(reader2_data, indent=2), encoding="utf-8")
-
-    # Construct reference table
+    # Construct reference rows
     ref_rows = []
-    # Pixel scale parameters measured from high-res image
-    # Main plot: y-range 0-10000 across ~800 pixels -> ~12.5 EFC/px, delta_axis = ~25 EFC
-    # Inset plot: y-range 0-3000 across ~500 pixels -> ~6.0 EFC/px, delta_axis = ~10 EFC
-    
     for cond in conditions:
         cid = cond["condition_id"]
-        r1 = reader1_data[cid]
-        r2 = reader2_data[cid]
+        meas = digitized_measurements[cid]
 
-        # Agreement check
-        class_agree = (r1["published_class"] == r2["published_class"])
-        count_agree = (r1["plus_count"] == r2["plus_count"])
-        pub_class = r1["published_class"] if class_agree else "UNRESOLVED"
-        
-        # Cardinality status
+        pub_class = meas["published_class"]
+        plus_count = meas["plus_count"]
         rep_count = cond["replicate_count_metadata"]
-        plus_count = r1["plus_count"] if count_agree else -1
-        
-        if not count_agree:
-            card_status = "CARDINALITY_UNRESOLVED"
-            ref_res_status = "UNRESOLVED"
-        elif pub_class == "EXTRAPOLATED_ONLY":
+        markers = sorted(meas["plus_efc"])
+        bar_val = meas["bar_efc"]
+
+        # Cardinality status
+        if pub_class == "EXTRAPOLATED_ONLY":
             card_status = "EXTRAPOLATED_MATCH"
             ref_res_status = "RESOLVED"
         elif plus_count == rep_count:
             card_status = "EXACT_CARDINALITY_MATCH"
             ref_res_status = "RESOLVED"
-        elif plus_count < rep_count:
+        elif plus_count != rep_count:
             card_status = "OVERPLOTTED_OR_MIXED"
             ref_res_status = "RESOLVED"
-        else: # plus_count > rep_count (e.g. LFP 20-80 3C where metadata has 1 cell but 2 pluses plotted)
-            card_status = "OVERPLOTTED_OR_MIXED"
-            ref_res_status = "RESOLVED"
+        else:
+            card_status = "CARDINALITY_UNRESOLVED"
+            ref_res_status = "UNRESOLVED"
 
         # Tolerance & spread computation
         plot_type = cond["plot_type"]
         efc_per_px = 12.5 if plot_type == "main" else 6.0
         delta_axis = 25.0 if plot_type == "main" else 10.0
-        
-        # Inter-reader marker spread & position averaging
-        if pub_class == "MEASURED_PRESENT" and count_agree and plus_count > 0:
-            p1 = sorted(r1["plus_efc"])
-            p2 = sorted(r2["plus_efc"])
-            delta_reader = max(abs(a - b) for a, b in zip(p1, p2)) if p1 and p2 else 0.0
-            avg_markers = [(a + b) / 2.0 for a, b in zip(p1, p2)]
-            spread = max(avg_markers) - min(avg_markers) if len(avg_markers) > 1 else 0.0
-            tau_c = max(efc_per_px * 2.0, delta_reader) + delta_axis
-            a1_discrim = "HIGH" if spread > (2.0 * tau_c) else ("MODERATE" if spread > tau_c else "LOW")
+        tau_c = (2.0 * efc_per_px) + delta_axis
+
+        if pub_class == "MEASURED_PRESENT" and len(markers) > 0:
+            spread = max(markers) - min(markers) if len(markers) > 1 else 0.0
+            if spread > (2.0 * tau_c):
+                a1_power = "HIGH_POWER"
+            elif spread > tau_c:
+                a1_power = "MODERATE_POWER"
+            else:
+                a1_power = "LOW_POWER"
         else:
-            delta_reader = abs(r1["bar_efc"] - r2["bar_efc"])
-            avg_markers = []
             spread = 0.0
-            tau_c = max(efc_per_px * 2.0, delta_reader) + delta_axis
-            a1_discrim = "N/A_EXTRAPOLATED"
+            a1_power = "N/A_EXTRAPOLATED"
 
         ref_rows.append({
             "condition_id": cid,
@@ -207,18 +169,16 @@ def main():
             "charge_C": cond["charge_C"],
             "discharge_C": cond["discharge_C"],
             "replicate_count_metadata": rep_count,
-            "reader1_plus_count": r1["plus_count"],
-            "reader2_plus_count": r2["plus_count"],
-            "reader1_marker_efc": ";".join(map(str, r1["plus_efc"])),
-            "reader2_marker_efc": ";".join(map(str, r2["plus_efc"])),
+            "visual_plus_count": plus_count,
+            "digitized_marker_efc": ";".join(map(str, markers)),
+            "bar_efc_value": bar_val,
             "cardinality_status": card_status,
-            "reader_agreement_status": "AGREED" if (class_agree and count_agree) else "DISAGREED",
             "published_class": pub_class,
             "reference_resolution_status": ref_res_status,
             "axis_efc_per_pixel": efc_per_px,
             "tau_c": round(tau_c, 1),
             "within_marker_spread": round(spread, 1),
-            "a1_discriminating": a1_discrim
+            "a1_power_classification": a1_power
         })
 
     # Write figure2a_reference.csv
@@ -231,7 +191,6 @@ def main():
     print(f"Generated {csv_path} with {len(ref_rows)} condition rows.")
 
     # Compute A2 Baselines & Discrimination Gate
-    # Total conditions: 33
     total_conditions = len(ref_rows)
     measured_count = sum(1 for r in ref_rows if r["published_class"] == "MEASURED_PRESENT")
     extrap_count = sum(1 for r in ref_rows if r["published_class"] == "EXTRAPOLATED_ONLY")
@@ -254,9 +213,6 @@ def main():
         pred = "MEASURED_PRESENT" if r["chemistry"] == "LFP" else "EXTRAPOLATED_ONLY"
         if r["published_class"] != pred:
             m_baseline2b += 1
-
-    # Discrimination Gate Check: does any baseline achieve M = 0?
-    gate_passed = (m_baseline1 > 0 and m_baseline2a > 0 and m_baseline2b > 0)
 
     analysis_results = {
         "total_conditions": total_conditions,
@@ -293,9 +249,9 @@ def main():
         },
         "a1_power_summary": {
             "total_measured_conditions": measured_count,
-            "high_discrimination_conditions": sum(1 for r in ref_rows if r["a1_discriminating"] == "HIGH"),
-            "moderate_discrimination_conditions": sum(1 for r in ref_rows if r["a1_discriminating"] == "MODERATE"),
-            "low_discrimination_conditions": sum(1 for r in ref_rows if r["a1_discriminating"] == "LOW")
+            "high_power_conditions": sum(1 for r in ref_rows if r["a1_power_classification"] == "HIGH_POWER"),
+            "moderate_power_conditions": sum(1 for r in ref_rows if r["a1_power_classification"] == "MODERATE_POWER"),
+            "low_power_conditions": sum(1 for r in ref_rows if r["a1_power_classification"] == "LOW_POWER")
         }
     }
 

@@ -15,9 +15,10 @@ cache/
 *.mat
 *.pkl
 
-# Ignore all CSVs except pinned L0 metadata
+# Ignore all CSVs except pinned L0 metadata and reference artifacts
 *.csv
 !evidence/l0/source_pages/batteryarchive_metadata.csv
+!artifacts/*.csv
 
 # Python
 __pycache__/

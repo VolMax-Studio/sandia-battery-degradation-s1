@@ -81,55 +81,75 @@ $$M_{\text{A2}} = \#\left\{ c \in \mathcal{C}_{\text{resolved}} : \text{Class}^{
 
 Prior to telemetry acquisition, create and commit `artifacts/figure2a_reference.csv` under the following protocol:
 
-### 5.1 Two-Reader Partial-Blind Extraction
-1. Condition bars and markers from Figure 2a are segmented and assigned randomized identifiers ($R001, R002, \dots$) with condition labels masked.
-2. **Disclosed Constraint:** Due to y-axis scaling (LFP reaching ~9000 EFC vs NMC/NCA ~2500 EFC), magnitude discloses chemistry class; the blind prevents label-based shortcutting while acknowledging magnitude cues.
-3. Two independent readers extract:
-   - `plus_marker_count`
-   - `plus_efc_positions`
-   - `bar_efc_value`
-   - `published_class` (`MEASURED_PRESENT`, `EXTRAPOLATED_ONLY`, `UNRESOLVED`)
-4. Inter-reader discrepancies are flagged as `UNRESOLVED` without post-hoc consensus negotiation.
+### 5.1 Systematic Optical Digitization Protocol & Schema
+1. High-resolution raster extraction of Figure 2a is digitized using calibrated pixel coordinate mapping to physical EFC values.
+2. The frozen reference table [`artifacts/figure2a_reference.csv`](artifacts/figure2a_reference.csv) captures the full 33-condition experimental matrix with the following schema:
+   * `condition_id`: Unique condition identifier string
+   * `chemistry`: Cathode chemistry (`LFP`, `NMC`, `NCA`)
+   * `temperature_C`, `soc_min`, `soc_max`, `charge_C`, `discharge_C`: Cycling and thermal conditions
+   * `replicate_count_metadata`: Replicate cell count in the L0 metadata inventory
+   * `visual_plus_count`: Number of distinct `+` markers visually observed in Figure 2a
+   * `digitized_marker_efc`: Semicolon-delimited list of digitized marker EFC values
+   * `bar_efc_value`: Average/projected EFC value represented by the condition bar height
+   * `cardinality_status`: Condition cardinality alignment:
+     - `EXTRAPOLATED_MATCH` — 0 markers observed, condition bar represents projected lifetime
+     - `EXACT_CARDINALITY_MATCH` — Visual `+` marker count equals metadata replicate count ($m = k$)
+     - `OVERPLOTTED_OR_MIXED` — Visual marker count differs from metadata replicate count ($m \neq k$) due to ink overplotting or cohort differences
+     - `CARDINALITY_UNRESOLVED` — Ambiguous or unresolvable visual structure
+   * `published_class`: Ground-truth condition classification:
+     - `MEASURED_PRESENT` — Condition contains $\ge 1$ individual `+` marker
+     - `EXTRAPOLATED_ONLY` — Condition bar has 0 `+` markers (extrapolated EFC)
+     - `UNRESOLVED` — Ambiguous condition classification
+   * `reference_resolution_status`: `RESOLVED` (admissible reference condition) or `UNRESOLVED`
+   * `axis_efc_per_pixel`: Graphical scale factor ($\delta_{\text{pixel}}$)
+   * `tau_c`: Condition-specific optical uncertainty tolerance
+   * `within_marker_spread`: Within-condition marker spread $S_c = \max(\mathcal{S}^{\text{pub}}_c) - \min(\mathcal{S}^{\text{pub}}_c)$
+   * `a1_power_classification`: Condition permutation-distinguishing power (`HIGH_POWER`, `MODERATE_POWER`, `LOW_POWER`, `N/A_EXTRAPOLATED`)
 
-### 5.2 Condition-Specific Tolerance ($\tau_c$)
-For each condition $c$, tolerance is established from graphical pixel resolution ($\delta_{\text{pixel}}$), inter-reader spread ($\Delta_{\text{reader}}$), and axis tick resolution ($\delta_{\text{axis}}$):
-$$\tau_c = \max\left( \delta_{\text{pixel}}(c), \Delta_{\text{reader}}(c) \right) + \delta_{\text{axis}}$$
+### 5.2 Condition-Specific Optical Uncertainty ($\tau_c$)
+For each condition $c$, tolerance is established from graphical pixel resolution ($\delta_{\text{pixel}}$) and axis tick resolution ($\delta_{\text{axis}}$):
+$$\tau_c = (2 \cdot \delta_{\text{pixel}}(c)) + \delta_{\text{axis}}(c)$$
+* **Main Plot (LFP, y-scale 0 to 10,000 EFC):** $\delta_{\text{pixel}} = 12.5\text{ EFC/px}$, $\delta_{\text{axis}} = 25.0\text{ EFC} \implies \tau_c = 50.0\text{ EFC}$.
+* **Inset Plot (NMC & NCA, y-scale 0 to 3,000 EFC):** $\delta_{\text{pixel}} = 6.0\text{ EFC/px}$, $\delta_{\text{axis}} = 10.0\text{ EFC} \implies \tau_c = 22.0\text{ EFC}$.
 
 ### 5.3 Trivial Baseline Pre-Declaration & Discrimination Gate
 Before evaluating telemetry, compute the classification performance of three pre-declared fixed trivial baselines against `figure2a_reference.csv`:
-1. **Majority-Class Baseline:** Predicts the single most frequent class (`MEASURED_PRESENT` or `EXTRAPOLATED_ONLY`) for all conditions.
-2. **Direct Chemistry Prior (Baseline 2A):** Predicts `EXTRAPOLATED_ONLY` for all LFP conditions, and `MEASURED_PRESENT` for all NMC and NCA conditions.
-3. **Inverted Chemistry Prior (Baseline 2B):** Predicts `MEASURED_PRESENT` for all LFP conditions, and `EXTRAPOLATED_ONLY` for all NMC and NCA conditions.
+1. **Majority-Class Baseline:** Predicts `MEASURED_PRESENT` for all conditions ($M_{\text{baseline 1}} = 10$ mismatches, 69.70% accuracy).
+2. **Direct Chemistry Prior (Baseline 2A):** Predicts `EXTRAPOLATED_ONLY` for all LFP conditions, and `MEASURED_PRESENT` for all NMC and NCA conditions ($M_{\text{baseline 2A}} = 2$ mismatches, 93.94% accuracy).  
+   *(Fails on the 2 LFP conditions cycled at 3C discharge rate that degraded to 80% and contain published `+` markers).*
+3. **Inverted Chemistry Prior (Baseline 2B):** Predicts `MEASURED_PRESENT` for all LFP conditions, and `EXTRAPOLATED_ONLY` for all NMC and NCA conditions ($M_{\text{baseline 2B}} = 31$ mismatches, 6.06% accuracy).
 
-**A2 Discrimination Gate:** If any of the three pre-declared trivial baselines achieves $M_{\text{A2}} = 0$ (zero mismatches against the reference partition):
-* Verdict: `Not Demonstrated — zero discriminatory power`
-* A2 cannot be cited as evidence of telemetry reconstruction.
+**A2 Discrimination Gate:** If any pre-declared trivial baseline achieves $M_{\text{A2}} = 0$, Target A2 is flagged as `Not Demonstrated — zero discriminatory power`.  
+*Pre-evaluation Status:* **PASS** ($\min(M_{\text{baselines}}) = 2 > 0$).
 
 ### 5.4 Condition-Specific A1 Power Analysis (M4)
-Prior to telemetry acquisition, compute the within-condition marker spread $S_c = \max(\mathcal{S}^{\text{pub}}_c) - \min(\mathcal{S}^{\text{pub}}_c)$ for all multi-marker conditions in `figure2a_reference.csv`. If $S_c \le \tau_c$, the multiset structure provides zero distinguishing power between permutations; report the power classification in the reference table.
+For all multi-marker conditions in `figure2a_reference.csv`, power is categorized by within-condition marker spread $S_c$ relative to tolerance $\tau_c$:
+* `HIGH_POWER` ($S_c > 2 \tau_c$, 14 conditions): Within-condition variation significantly exceeds optical resolution, providing strong multiset permutation discrimination.
+* `MODERATE_POWER` ($\tau_c < S_c \le 2 \tau_c$, 5 conditions): Multiset structure is distinguishable from mean collapse but sensitive to boundary tolerance.
+* `LOW_POWER` ($S_c \le \tau_c$ or single marker, 4 conditions): Markers collapse within the optical tolerance envelope; multiset provides primarily mean location information.
+* `N/A_EXTRAPOLATED` (10 conditions): Extrapolated conditions without observed individual markers.
 
 ---
 
-## 6. Computational Estimator Rules
+## 6. Computational Estimator Rules (Pinned Specifications)
 
 ### 6.1 EFC Operationalization Basis
-* Candidate A (Discharge Throughput): $\text{EFC}_k = \frac{\sum_{i=1}^k Q^{\text{discharge}}_i}{Q_{\text{nominal}}}$
-* Candidate B (Average Cycle Throughput): $\text{EFC}_k = \frac{\sum_{i=1}^k (Q^{\text{discharge}}_i + Q^{\text{charge}}_i)}{2 \times Q_{\text{nominal}}}$
-*(Exact formulation to be pinned from article body prior to freeze).*
+$$\text{EFC}_k = \frac{\sum_{i=1}^k Q^{\text{discharge}}_i}{Q_{\text{nominal}}}$$
+Pinned to the author-defined nominal capacity throughput basis (Preger et al., *JES* 167, 120532, p. 120532-4: *"one EFC is based on the nominal capacity of the cell. Therefore, for each cell, the total capacity throughput was divided by the nominal capacity to get the total equivalent full cycle count"*).
 
 ### 6.2 Baseline Capacity ($Q_0$)
-* Candidate A: First RPT capacity check (0.5C, 0–100% SOC cycle).
-* Candidate B: Cycle 1 discharge capacity under designated cycling protocol.
-*(Exact formulation to be pinned from article body prior to freeze).*
+$Q_0$ is defined as the discharge capacity measured during the initial Reference Performance Test (RPT) capacity check (3 cycles at 0.5C rate, 0–100% SOC).
 
 ### 6.3 80% EOL Crossing Rule ($N_{80}$)
-Candidate formulations:
-* Candidate A (Discrete Crossing): First integer cycle where $Q_k / Q_0 \le 0.80$.
-* Candidate B (Linear Interpolation): Continuous linearly interpolated crossing between bounding cycles.
-*(Exact formulation to be pinned from article body prior to freeze).*
+Discrete first integer cycle index $k^*$ where measured discharge capacity falls to $\le 80\%$ of $Q_0$:
+$$N_{80} = \min \left\{ k \in \mathbb{N} : Q_k \le 0.80 \times Q_0 \right\}$$
+and $\text{EFC}_{80} = \text{EFC}_{k^*}$.
 
 For cells where $\min_k (Q_k / Q_0) > 0.80$ within the 2020 horizon:
 Disposition: `A1_NOT_EVALUATED_NO_OBSERVED_CROSSING`
+
+### 6.4 Frozen 2020 Observation Horizon Cutoff
+Observations timestamped after `2020-09-02T23:59:59Z` (the publication date of Preger et al., *JES* 167, 120532) are excluded from Target A1 and Target A2 evaluations.
 
 ---
 

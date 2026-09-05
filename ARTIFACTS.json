@@ -115,14 +115,12 @@
     "evidence/l0/source_pages/batteryarchive_resources.html": "32318cac437cfed55ba88bdad918f50e3da086a9b9d5c45f39ce0e553782c584",
     "evidence/l0/source_pages/batteryarchive_study_summaries.html": "abdc6da9a59ef26445bb39e43031d97a51c0543eac3ff2924c01a711a41ca123",
     "evidence/l0/source_pages/crossref_10_1149_1945_7111_abae37.json": "7905aa49c31d9f13332105cc143f31788f66ff5a692d0a985d57306494d8da6c",
-    "evidence/l0/source_pages/iop_fulltext_article.html": "7a8552b4d4cd5566c4cfb5050c02e20a8909c6624dc5503b15a5a6fcc19f9e6d",
-    "evidence/l0/source_pages/jesabae37f2_hr.jpg": "27fec07e3245b4ba08f80d280352689adfc6fa35d83cbed9cc24a8955cbcef7b",
     "evidence/l0/source_pages/osti_1650174.json": "2258f59a60ed43dc1346a1df61bab7ec3b0b156776560fae4928b3e8ac0bf56e",
     "evidence/l0/source_pages/redash_dashboard_api.json": "9d247faa67e75ce0fe06605787bc84b34309c32eef6712387a099189a8c68ff9"
   },
   "derived_artifacts": {
     "evidence/l0/raw_listing.txt": "c7967e949cb699a119ad47fd3bcc56b06c33cf985634daa5bc835f4518868a7f",
     "evidence/l0/scripts/generate_listing.py": "13ca2739ec7a94bfca4fb493946b6ce2cb6be8c4b3637fe6366eb6672dcdb680",
-    "evidence/l0/scripts/extract_figure2a_reference.py": "2783d18ab7d793ecd4876f51a8f80abe6c3c3120b4791979f5bdad72b59dc2fb"
+    "evidence/l0/scripts/extract_figure2a_reference.py": "bc181b7a5ab9357518a10a55bcf9e193e5310864f4184217658d3ad2fd361806"
   }
 }

@@ -1,40 +1,40 @@
 {
   "LFP_40-60_25C_0.5-0.5C": {
     "plus_count": 0,
-    "bar_efc": 7760,
+    "bar_efc": 7770,
     "plus_efc": [],
     "published_class": "EXTRAPOLATED_ONLY"
   },
   "LFP_40-60_25C_0.5-3C": {
     "plus_count": 0,
-    "bar_efc": 2790,
+    "bar_efc": 2800,
     "plus_efc": [],
     "published_class": "EXTRAPOLATED_ONLY"
   },
   "LFP_20-80_25C_0.5-0.5C": {
     "plus_count": 0,
-    "bar_efc": 7160,
+    "bar_efc": 7170,
     "plus_efc": [],
     "published_class": "EXTRAPOLATED_ONLY"
   },
   "LFP_20-80_25C_0.5-3C": {
     "plus_count": 2,
-    "bar_efc": 3480,
+    "bar_efc": 3490,
     "plus_efc": [
-      3360,
-      3600
+      3370,
+      3610
     ],
     "published_class": "MEASURED_PRESENT"
   },
   "LFP_0-100_15C_0.5-1C": {
     "plus_count": 0,
-    "bar_efc": 8780,
+    "bar_efc": 8790,
     "plus_efc": [],
     "published_class": "EXTRAPOLATED_ONLY"
   },
   "LFP_0-100_15C_0.5-2C": {
     "plus_count": 0,
-    "bar_efc": 6390,
+    "bar_efc": 6380,
     "plus_efc": [],
     "published_class": "EXTRAPOLATED_ONLY"
   },
@@ -46,74 +46,74 @@
   },
   "LFP_0-100_25C_0.5-1C": {
     "plus_count": 0,
-    "bar_efc": 7160,
+    "bar_efc": 7170,
     "plus_efc": [],
     "published_class": "EXTRAPOLATED_ONLY"
   },
   "LFP_0-100_25C_0.5-2C": {
     "plus_count": 0,
-    "bar_efc": 7670,
+    "bar_efc": 7680,
     "plus_efc": [],
     "published_class": "EXTRAPOLATED_ONLY"
   },
   "LFP_0-100_25C_0.5-3C": {
     "plus_count": 4,
-    "bar_efc": 3450,
+    "bar_efc": 3460,
     "plus_efc": [
-      2760,
-      3040,
-      3540,
-      3890
+      2750,
+      3050,
+      3550,
+      3900
     ],
     "published_class": "MEASURED_PRESENT"
   },
   "LFP_0-100_35C_0.5-1C": {
     "plus_count": 0,
-    "bar_efc": 4460,
+    "bar_efc": 4470,
     "plus_efc": [],
     "published_class": "EXTRAPOLATED_ONLY"
   },
   "LFP_0-100_35C_0.5-2C": {
     "plus_count": 0,
-    "bar_efc": 3090,
+    "bar_efc": 3080,
     "plus_efc": [],
     "published_class": "EXTRAPOLATED_ONLY"
   },
   "NMC_40-60_25C_0.5-0.5C": {
     "plus_count": 2,
-    "bar_efc": 2130,
+    "bar_efc": 2140,
     "plus_efc": [
-      2090,
-      2170
+      2100,
+      2180
     ],
     "published_class": "MEASURED_PRESENT"
   },
   "NMC_40-60_25C_0.5-3C": {
     "plus_count": 2,
-    "bar_efc": 2570,
+    "bar_efc": 2560,
     "plus_efc": [
-      2460,
-      2680
+      2450,
+      2670
     ],
     "published_class": "MEASURED_PRESENT"
   },
   "NMC_20-80_25C_0.5-0.5C": {
     "plus_count": 4,
-    "bar_efc": 1640,
+    "bar_efc": 1650,
     "plus_efc": [
-      780,
-      1790,
-      1900,
-      2140
+      790,
+      1800,
+      1890,
+      2150
     ],
     "published_class": "MEASURED_PRESENT"
   },
   "NMC_20-80_25C_0.5-3C": {
     "plus_count": 2,
-    "bar_efc": 1280,
+    "bar_efc": 1270,
     "plus_efc": [
-      830,
-      1740
+      820,
+      1750
     ],
     "published_class": "MEASURED_PRESENT"
   },
@@ -137,10 +137,10 @@
   },
   "NMC_0-100_25C_0.5-0.5C": {
     "plus_count": 2,
-    "bar_efc": 450,
+    "bar_efc": 440,
     "plus_efc": [
-      390,
-      510
+      380,
+      500
     ],
     "published_class": "MEASURED_PRESENT"
   },
@@ -148,19 +148,19 @@
     "plus_count": 4,
     "bar_efc": 420,
     "plus_efc": [
-      370,
-      410,
-      430,
-      470
+      360,
+      400,
+      440,
+      480
     ],
     "published_class": "MEASURED_PRESENT"
   },
   "NMC_0-100_25C_0.5-2C": {
     "plus_count": 2,
-    "bar_efc": 760,
+    "bar_efc": 750,
     "plus_efc": [
-      470,
-      1050
+      460,
+      1040
     ],
     "published_class": "MEASURED_PRESENT"
   },
@@ -168,10 +168,10 @@
     "plus_count": 4,
     "bar_efc": 610,
     "plus_efc": [
-      580,
+      590,
       600,
       620,
-      640
+      630
     ],
     "published_class": "MEASURED_PRESENT"
   },
@@ -179,39 +179,39 @@
     "plus_count": 4,
     "bar_efc": 640,
     "plus_efc": [
-      610,
+      620,
       630,
       650,
-      670
+      660
     ],
     "published_class": "MEASURED_PRESENT"
   },
   "NMC_0-100_35C_0.5-2C": {
     "plus_count": 2,
-    "bar_efc": 660,
+    "bar_efc": 650,
     "plus_efc": [
-      650,
-      670
+      640,
+      660
     ],
     "published_class": "MEASURED_PRESENT"
   },
   "NCA_40-60_25C_0.5-0.5C": {
     "plus_count": 2,
-    "bar_efc": 1440,
+    "bar_efc": 1450,
     "plus_efc": [
-      1290,
-      1590
+      1300,
+      1600
     ],
     "published_class": "MEASURED_PRESENT"
   },
   "NCA_20-80_25C_0.5-0.5C": {
     "plus_count": 4,
-    "bar_efc": 650,
+    "bar_efc": 640,
     "plus_efc": [
-      580,
-      610,
-      650,
-      680
+      590,
+      620,
+      660,
+      690
     ],
     "published_class": "MEASURED_PRESENT"
   },
@@ -219,8 +219,8 @@
     "plus_count": 2,
     "bar_efc": 470,
     "plus_efc": [
-      390,
-      550
+      380,
+      560
     ],
     "published_class": "MEASURED_PRESENT"
   },
@@ -228,8 +228,8 @@
     "plus_count": 2,
     "bar_efc": 490,
     "plus_efc": [
-      450,
-      530
+      460,
+      520
     ],
     "published_class": "MEASURED_PRESENT"
   },
@@ -237,8 +237,8 @@
     "plus_count": 2,
     "bar_efc": 240,
     "plus_efc": [
-      220,
-      260
+      230,
+      250
     ],
     "published_class": "MEASURED_PRESENT"
   },
@@ -246,39 +246,39 @@
     "plus_count": 4,
     "bar_efc": 440,
     "plus_efc": [
-      400,
-      420,
-      440,
-      480
+      410,
+      430,
+      450,
+      470
     ],
     "published_class": "MEASURED_PRESENT"
   },
   "NCA_0-100_25C_0.5-2C": {
     "plus_count": 2,
-    "bar_efc": 570,
+    "bar_efc": 560,
     "plus_efc": [
-      550,
-      590
+      540,
+      580
     ],
     "published_class": "MEASURED_PRESENT"
   },
   "NCA_0-100_35C_0.5-1C": {
     "plus_count": 4,
-    "bar_efc": 450,
+    "bar_efc": 440,
     "plus_efc": [
+      420,
       430,
-      440,
-      460,
-      470
+      450,
+      460
     ],
     "published_class": "MEASURED_PRESENT"
   },
   "NCA_0-100_35C_0.5-2C": {
     "plus_count": 2,
-    "bar_efc": 600,
+    "bar_efc": 590,
     "plus_efc": [
-      580,
-      620
+      570,
+      610
     ],
     "published_class": "MEASURED_PRESENT"
   }
