@@ -1,4 +1,5 @@
  M evidence/l0/governance/git_state.txt
+6ce4913 chore(governance): record transmitted host inquiry and reference freeze completion
+41fded9 docs(prereg): record frozen-reference invariant against post-telemetry modification
+e3754bd chore(governance): record clean git state following reference freeze
 8c8f0d9 feat(reference): freeze Figure 2a human pixel measurements and deterministic geometry reconstruction
-87fe895 feat(ref): simplify interactive_digitizer to ultra-simple 2-pass click mode
-e4b38fd feat(ref): add crash-proof click handlers and per-bar step-by-step guidance in interactive_digitizer
