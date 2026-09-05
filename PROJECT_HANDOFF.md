@@ -42,12 +42,14 @@ Public artifacts documented in ARTIFACTS.json, external_sources.sha256, and deri
 - Complete cell inventory: 86 SNL cells cataloged in `evidence/l0/raw_listing.txt`.
 - Captured web pages in `evidence/l0/source_pages/`.
 
-## Gate Status
+## Gate Status & Governance Clearance
 
-Gate model/person: Claude
-Gate outcome: PASS (Candidate L0 Admissibility Complete)
-Blocking findings: None. G-L0-5 pending dataset redistribution confirmation (no raw data download permitted until resolved).
+* **Gate model/person:** NONE — Claude retired from this instance.
+* **G-L0-5A (Analytical Use):** PASS — Public analytical-use basis established; acquisition authorized via official BatteryArchive data transfer route.
+* **G-L0-5B (Redistribution):** PROHIBITED_PENDING_CONFIRMATION — Raw BatteryArchive files MUST NOT be redistributed in public repository. Repository contains only acquisition manifests, hashes, code, and derived audit outputs.
+* **Acquisition State:** READY_FOR_ACQUISITION via documented supported route (`batteryarchive_data_transfer.py` protocol).
+* **Target A1-H Execution:** UNBLOCKED (Horizon-independent 12-model specification envelope).
 
 ## Next Single Action
 
-Acquire SNL cycle summary telemetry files for run-001-a1h, generate raw acquisition manifest, and execute the frozen A1-H 12-model verification engine.
+Acquire SNL cycle summary telemetry files for run-001-a1h via documented BatteryArchive protocol, generate raw acquisition manifest, and execute the frozen A1-H 12-model verification engine.
