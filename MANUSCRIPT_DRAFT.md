@@ -13,8 +13,8 @@
 Quantitative claims regarding battery degradation rates govern capital allocation in grid storage, warranty liability underwriting, and emerging regulatory frameworks such as the EU Digital Battery Passport. However, independent computational reproduction of published battery degradation benchmarks frequently encounters undocumented barriers beyond simple numerical divergence. 
 
 In this work, we present an independent, preregistered computational audit of the landmark Sandia National Laboratories commercial lithium-ion degradation study (Preger et al., *J. Electrochem. Soc.* 167, 120532, 2020). We formulate a **triaxial audit framework** demonstrating that the long-term verifiability of empirical battery degradation claims degrades along three independent dimensions:
-1. **Semantic Specification Ambiguity ($\\mathcal{M}$):** Under-specified natural language descriptions of initial baseline capacity ($Q_0$), cycle-to-cycle 80% capacity retention crossing interpolation ($N_{80}$), and cumulative Equivalent Full Cycle throughput ($\\text{EFC}$) yielding a combinatorial space of 12 valid candidate estimator models.
-2. **Observation Horizon Vintages:** Continued laboratory cycler operation following publication, which confounds historical publication-era lifetime endpoints with post-publication cycling data.
+1. **Semantic Specification Ambiguity ($\mathcal{M}$):** Under-specified natural language descriptions of initial baseline capacity ($Q_0$), cycle-to-cycle 80% capacity retention crossing interpolation ($N_{80}$), and cumulative Equivalent Full Cycle throughput ($\text{EFC}$) yielding a combinatorial space of 12 valid candidate estimator models.
+2. **Observation Vintages and Reference Resolution Boundaries:** Continued laboratory cycling following publication combined with graphical and replicate cardinality boundaries (14 extrapolated-only, 11 cardinality/horizon unresolved, 3 metadata-exceeding anomalies), isolating exactly 5 conditions as strictly horizon-independent multiset comparators.
 3. **Access-Layer Drift:** The temporal decay of data acquisition interfaces, wherein historically documented public direct-download endpoints transition to host-mediated inquiry protocols over multi-year horizons.
 
 Prior to telemetry ingestion, we establish an immutable, human-assisted graphical ground truth from the published raster (Figure 2a) with verifiable raw pixel provenance (SHA-256: `642696...7616b`, canonical click digest: `03f462...09f0`). We prove that among the 33 published cycling conditions, exactly **5 conditions** constitute a strictly horizon-independent numerical multiset reconstruction subset (Target A1-H), while the remaining 28 conditions represent public-artifact resolution boundaries (14 extrapolated-only, 11 cardinality/horizon unresolved, and 3 metadata-exceeding anomalies). We furthermore document an empirical access-layer failure (`FINDING-L0-ACCESS-DRIFT-001`), where the canonical 2021 static downloader pattern returns HTTP 404 across all 86 constituent cell streams. We present our frozen verification engine and audit trail as a prototype for robust, specification-invariant battery passport assurance.
@@ -23,12 +23,12 @@ Prior to telemetry ingestion, we establish an immutable, human-assisted graphica
 
 ## 1. Introduction
 
-Commercial lithium-ion battery cycling studies provide essential foundational empirical data for degradation modeling, remaining useful life (RUL) estimation, and safety qualification. The study published by Preger et al. (2020) at Sandia National Laboratories represents one of the most widely cited open benchmarks in electrochemical literature, comparing commercial $\\text{LiFePO}_4$ (LFP), $\\text{LiNi}_{0.8}\\text{Co}_{0.15}\\text{Al}_{0.05}\\text{O}_2$ (NCA), and $\\text{LiNi}_{0.33}\\text{Mn}_{0.33}\\text{Co}_{0.33}\\text{O}_2$ (NMC) cells across varied temperatures, depth-of-discharge (DOD) regimes, and discharge C-rates.
+Commercial lithium-ion battery cycling studies provide essential foundational empirical data for degradation modeling, remaining useful life (RUL) estimation, and safety qualification. The study published by Preger et al. (2020) at Sandia National Laboratories represents one of the most widely cited open benchmarks in electrochemical literature, comparing commercial $\text{LiFePO}_4$ (LFP), $\text{LiNi}_{0.8}\text{Co}_{0.15}\text{Al}_{0.05}\text{O}_2$ (NCA), and $\text{LiNi}_{0.33}\text{Mn}_{0.33}\text{Co}_{0.33}\text{O}_2$ (NMC) cells across varied temperatures, depth-of-discharge (DOD) regimes, and discharge C-rates.
 
 With the advent of mandatory battery passports (e.g. European Union Regulation 2023/1542) and digital product warranties, computational verification of physical test data must transition from ad-hoc research replication to formal, auditable verification protocols. An effective verification protocol must be capable of distinguishing between:
 * Genuine numerical discrepancies in raw telemetry,
 * Interpretive divergence arising from ambiguous estimator definitions,
-* Temporal misalignment caused by continuous test operations, and
+* Temporal misalignment and resolution limits caused by continuous testing and raster representation, and
 * Infrastructure-level access decay.
 
 This paper details the end-to-end architecture, preregistration, and empirical findings of an independent audit of Preger et al. (2020), conducted under the Protocol-10 (P10) autonomous scientific verification framework.
@@ -36,11 +36,11 @@ This paper details the end-to-end architecture, preregistration, and empirical f
 ```mermaid
 graph TD
     subgraph Triaxial Verification Framework
-        A1[Axis 1: Semantic Specification] --> M[12-Model Robustness Envelope M]
-        A2[Axis 2: Observation Horizon] --> H[Horizon-Independent Subset A1-H]
-        A3[Axis 3: Access Persistence] --> D[Access Drift Finding FINDING-001]
+        A1["Axis 1: Semantic Specification"] --> M["12-Model Robustness Envelope M"]
+        A2["Axis 2: Observation Vintages & Reference Resolution"] --> H["Horizon-Independent Subset A1-H & Resolution Limits"]
+        A3["Axis 3: Access Persistence"] --> D["Access Drift Finding FINDING-001"]
     end
-    M --> V[Controlled P10 Verdict Engine]
+    M --> V["Controlled P10 Verdict Engine"]
     H --> V
     D --> V
 ```
@@ -53,15 +53,17 @@ graph TD
 Scientific papers frequently describe data processing routines in concise prose (e.g., *"cells were cycled to 80% capacity retention"* and *"normalized by equivalent full cycles"*). In practice, mapping raw cycler time-series to discrete crossing coordinates involves several distinct methodological choices:
 * **Initial Reference Capacity ($Q_0$):** Can be defined by the first 0.5C Reference Performance Test (RPT) capacity check ($Q_0^{(A)}$), the arithmetic mean of the three initial RPT check cycles ($Q_0^{(B)}$), or the final baseline check cycle prior to matrix cycling ($Q_0^{(C)}$).
 * **80% Retention Crossing Rule ($N_{80}$):** Can be evaluated as the discrete cycle index of the first cycle below $0.80 Q_0$ ($N_{80}^{(A)}$) or via continuous linear interpolation between bounding check cycles ($N_{80}^{(B)}$).
-* **Cumulative Throughput Basis ($\\text{EFC}$):** Can be computed exclusively from cumulative discharge throughput ($\\text{EFC}^{(A)}$) or two-way charge/discharge throughput ($\\text{EFC}^{(B)}$).
+* **Cumulative Throughput Basis ($\text{EFC}$):** Can be computed exclusively from cumulative discharge throughput ($\text{EFC}^{(A)}$) or two-way charge/discharge throughput ($\text{EFC}^{(B)}$).
 
 To prevent researcher degrees of freedom or post-hoc parameter tuning, we formulate an exhaustive **Specification-Robustness Envelope** spanning all valid permutations:
-$$\\mathcal{M} = \\mathcal{Q}_0 \\times \\mathcal{N}_{80} \\times \\mathcal{EFC} \\quad (|\\mathcal{M}| = 3 \\times 2 \\times 2 = 12 \\text{ candidate models})$$
+$$\mathcal{M} = \mathcal{Q}_0 \times \mathcal{N}_{80} \times \mathcal{EFC} \quad (|\mathcal{M}| = 3 \times 2 \times 2 = 12 \text{ candidate models})$$
 
-### 2.2 Axis 2: Observation Horizon & Telemetry Censoring
-As noted on BatteryArchive.org, physical cycling of the Sandia cells continued after publication of the 2020 paper. Consequently, contemporaneous telemetry files contain cycles executed months or years after the publication cutoff. Evaluating published lifetime markers requires either:
-* Knowledge of the exact calendar observation cutoff date (to censor subsequent cycles), or
-* Identification of an exact-cardinality cohort subset where all replicates crossed the 80% EOL threshold *prior* to the 2020 publication date, rendering their initial crossing events immutable historical milestones.
+### 2.2 Axis 2: Observation Vintages and Reference Resolution Limits
+As noted on BatteryArchive.org, physical cycling of the Sandia cells continued after publication of the 2020 paper. Consequently, contemporaneous telemetry files contain cycles executed months or years after the publication cutoff. Evaluating published lifetime markers requires navigating two interrelated constraints:
+* **Temporal Censoring:** Ongoing post-publication cycling data cannot be distinguished from publication-era observations without a verified calendar cutoff timestamp.
+* **Reference Resolution Boundaries:** In a published static raster, conditions where individual replicates are omitted, overplotted, or visually indistinguishable ($N_{\text{vis}} < N_{\text{rep}}$) cannot serve as exact multiset comparators without auxiliary telemetry metadata.
+
+By formal derivation, the audit isolates the exact subset of conditions where all constituent replicates crossed the 80% EOL threshold *prior* to the 2020 publication date ($N_{\text{vis}} = N_{\text{rep}}$), rendering their historical crossing events immutable and evaluable without cutoff dependencies.
 
 ### 2.3 Axis 3: Access-Layer Governance & Interface Persistence
 Verifiability requires not only that data exists, but that the acquisition pathway remains operable over multi-year horizons. The migration of dataset endpoints, changes in API contracts, or transitions from static direct downloads to host-mediated inquiry protocols constitute access-layer drift that directly impacts third-party automated verification.
