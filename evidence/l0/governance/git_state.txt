@@ -1,1 +1,1 @@
-ffa5f42 fix(grammar): add apostrophe to reference's in f32 rule
+eaacf06 feat(freeze): establish canonical A1-H required inputs manifest e044432a and lock run-002 governance cutoff
