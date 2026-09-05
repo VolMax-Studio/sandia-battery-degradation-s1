@@ -83,9 +83,10 @@ $$M_{\text{A2}} = \#\left\{ c \in \mathcal{C}_{\text{resolved}} : \text{Class}^{
 To prevent synthetic or unverified measurements (FAILURES #002 / #003), `artifacts/figure2a_reference.csv` is generated exclusively from raw human-captured pixel coordinates via a deterministic transformation script:
 
 ### 5.1 Evidentiary Traceability Chain
-1. **Source Image Manifest:** Pinned in [`evidence/l0/figure2a_source_manifest.json`](evidence/l0/figure2a_source_manifest.json) with publisher URL, DOI, and remote/local SHA256 (no copyrighted publisher binaries committed to git).
-2. **Raw Pixel Coordinate Capture:** Interactive digitization session records operator identity, timestamp, axis calibration bounds ($y_{\text{px}, 0}, y_{\text{px}, \text{max}}$), and marker click coordinates $(x_{\text{px}}, y_{\text{px}})$ into `artifacts/figure2a_raw_pixel_clicks.json`.
+1. **Source Image Manifest:** Pinned in [`artifacts/figure2a_source_manifest.json`](artifacts/figure2a_source_manifest.json) with publisher URL, DOI, exact crop SHA256 (`6426967ea7bdc106836273b034a236a04bc398e221d579a3aa66226232d7616b`), and dimensions (no copyrighted publisher binaries committed to git).
+2. **Raw Pixel Coordinate Capture:** Interactive digitization session records operator identity, timestamp, axis calibration bounds ($y_{\text{px}, 0}, y_{\text{px}, \text{max}}$), and marker click coordinates $(x_{\text{px}}, y_{\text{px}})$ into `artifacts/figure2a_raw_pixel_clicks.json`. Canonical SHA-256 digest: `03f46254729dce6707f902f0c52aed438db36d1a682ebe629b644b78919909f0`.
 3. **Deterministic Coordinate Transform:** [`evidence/l0/scripts/pixel_to_efc.py`](evidence/l0/scripts/pixel_to_efc.py) executes linear transformation from pixel space to physical EFC space, deriving $\tau_c$, spreads, and decoupled target statuses.
+4. **Frozen-Reference Invariant:** No Figure 2a click coordinate, condition assignment, calibration rule, tolerance rule, or reference classification may be modified after reference commit `8c8f0d9` on the basis of subsequently observed BatteryArchive telemetry.
 
 ### 5.2 Mathematical Transformation & Optical Uncertainty
 For each plot panel (Main LFP plot: $0$--$10{,}000\text{ EFC}$; Inset NMC/NCA plot: $0$--$3{,}000\text{ EFC}$):
@@ -99,7 +100,6 @@ $$\tau_c = (2 \cdot \text{Scale}) + \delta_{\text{axis}}$$
 * `replicate_count_metadata`: Replicate cell count from L0 metadata inventory
 * `visual_plus_count`: Number of distinct `+` markers clicked in raw pixel capture
 * `digitized_marker_efc`: Semicolon-delimited list of deterministically computed marker EFC values
-* `bar_efc_value`: Deterministically computed condition bar height
 * `cardinality_status`: `EXACT_CARDINALITY_MATCH`, `OVERPLOTTED_OR_MIXED`, `EXTRAPOLATED_MATCH`, `ANOMALOUS_COUNT_EXCEEDS_METADATA`, `CARDINALITY_UNRESOLVED`
 * `a2_published_class`: `MEASURED_PRESENT`, `EXTRAPOLATED_ONLY`, `UNRESOLVED`
 * `a2_reference_status`: `RESOLVED`, `UNRESOLVED`
