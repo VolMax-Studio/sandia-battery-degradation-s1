@@ -1,10 +1,19 @@
 === GIT REVISION (SUBJECT SHA) ===
-df1724cc3de8561f02cb6a80f9e2568403854f0a
+7bf856191251f5e1a8aebc0e82999844ed6e49bf
 
 === GIT SHOW --STAT --ONELINE ===
-df1724c docs(prereg): document SI lookup finding pinning digitized Figure 2a raster as primary comparator
- PREREGISTRATION.md | 4 ++++
- 1 file changed, 4 insertions(+)
+7bf8561 feat(ref): complete Reference-Freeze pass with captured SI/IOP evidence, two-reader outputs, and figure2a_reference.csv
+ ARTIFACTS.json                                     |   7 +-
+ L0.md                                              |   8 +-
+ artifacts/reader1_raw.json                         | 285 +++++++++
+ artifacts/reader2_raw.json                         | 285 +++++++++
+ artifacts/reference_partition_analysis.json        |  40 ++
+ evidence/l0/derived_artifacts.sha256               |   1 +
+ evidence/l0/external_sources.sha256                |   2 +
+ evidence/l0/scripts/extract_figure2a_reference.py  | 308 ++++++++++
+ evidence/l0/source_pages/iop_fulltext_article.html | 644 +++++++++++++++++++++
+ evidence/l0/source_pages/jesabae37f2_hr.jpg        | Bin 0 -> 1766254 bytes
+ 10 files changed, 1575 insertions(+), 5 deletions(-)
 
 === GIT STATUS --PORCELAIN ===
 
@@ -19,12 +28,16 @@ PREREGISTRATION.md
 PROJECT_HANDOFF.md
 README.md
 STATUS.md
+artifacts/reader1_raw.json
+artifacts/reader2_raw.json
+artifacts/reference_partition_analysis.json
 evidence/l0/derived_artifacts.sha256
 evidence/l0/external_sources.sha256
 evidence/l0/governance/COMMUNICATIONS.md
 evidence/l0/governance/GATE_DIFF_RESOLUTIONS.md
 evidence/l0/governance/git_state.txt
 evidence/l0/raw_listing.txt
+evidence/l0/scripts/extract_figure2a_reference.py
 evidence/l0/scripts/generate_listing.py
 evidence/l0/source_pages/batteryarchive_cycle_list.html
 evidence/l0/source_pages/batteryarchive_data_transfer.py
@@ -37,5 +50,7 @@ evidence/l0/source_pages/batteryarchive_news.html
 evidence/l0/source_pages/batteryarchive_resources.html
 evidence/l0/source_pages/batteryarchive_study_summaries.html
 evidence/l0/source_pages/crossref_10_1149_1945_7111_abae37.json
+evidence/l0/source_pages/iop_fulltext_article.html
+evidence/l0/source_pages/jesabae37f2_hr.jpg
 evidence/l0/source_pages/osti_1650174.json
 evidence/l0/source_pages/redash_dashboard_api.json
