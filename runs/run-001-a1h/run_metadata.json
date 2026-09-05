@@ -1,0 +1,23 @@
+{
+  "run_id": "run-001-a1h",
+  "target": "Target A1-H (Horizon-Independent Replicate Multiset Reconstruction)",
+  "initialized_at": "2026-09-05T20:41:30Z",
+  "frozen_lineage": {
+    "reference_commit": "8c8f0d9",
+    "frozen_reference_invariant_commit": "41fded9",
+    "prereg_a1h_commit": "de01a7e",
+    "engine_commit": "4007a07",
+    "governance_commit": "e0f202f",
+    "specification_matrix_sha256": "a8fa7e4d7fddb76ff5ffd761b21901bab3f69a6077df4f254298a22c00de3812",
+    "figure2a_reference_sha256": "4f939332492716d87a51a315cf9b8d40d72dff28a305ae5c30d9bcba9c21b18b",
+    "figure2a_source_manifest_sha256": "866ac17b08345ce4c6cf7b304244e2a84cd08157624fc3c2abce866a8756bcbf",
+    "reconstruct_a1_h_sha256": "09028293a2effa8e5399be20b691ddda50fc371fd0ad14fa936452bdf0484b44"
+  },
+  "execution_rules": {
+    "frozen_reference_rule": "Under no circumstances may Figure 2a reference coordinates, tau_c, or specification_matrix.json be modified during or after execution.",
+    "defect_handling_rule": "If an execution error occurs (e.g. unexpected schema formatting), the issue must be documented as an execution finding; any code patch requires a new commit and a new run ID (e.g. run-002-a1h). run-001-a1h remains immutable.",
+    "outcome_reporting": "Full 12-model specification matrix (M01-M12), element-wise residuals, condition pass rates, and global consistency flag must be reported verbatim."
+  },
+  "acquisition_status": "READY_FOR_ACQUISITION",
+  "telemetry_execution_status": "NOT_YET_RUN"
+}

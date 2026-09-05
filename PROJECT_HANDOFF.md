@@ -5,13 +5,13 @@
 Project: sandia-battery-degradation-s1
 Repository: VolMax-Studio/sandia-battery-degradation-s1
 Branch: main
-Phase: preregistration_drafting
-Preregistration commit: None (Pre-Preregistration Drafting Phase)
+Phase: execution_preparation
+Preregistration commit: de01a7e (Target A1-H & Specification Envelope Frozen)
 Deadline: TBD (Set by Operator)
 
 ## Phase
 
-Phase 1 Preregistration Drafting — Execution State: NOT AUTHORIZED (L0 Complete / Gate PASS)
+Phase 2 Execution Preparation — State: READY_FOR_ACQUISITION (Engine Frozen: 4007a07 / Run: run-001-a1h)
 
 Portfolio status: ACTIVE / FLAGSHIP INSTANCE
 
@@ -50,4 +50,4 @@ Blocking findings: None. G-L0-5 pending dataset redistribution confirmation (no 
 
 ## Next Single Action
 
-Transmit 4-point host inquiry to info@batteryarchive.org and await host response for observation horizon determination.
+Acquire SNL cycle summary telemetry files for run-001-a1h, generate raw acquisition manifest, and execute the frozen A1-H 12-model verification engine.
