@@ -96,11 +96,12 @@ For each condition $c$, tolerance is established from graphical pixel resolution
 $$\tau_c = \max\left( \delta_{\text{pixel}}(c), \Delta_{\text{reader}}(c) \right) + \delta_{\text{axis}}$$
 
 ### 5.3 Trivial Baseline Pre-Declaration & Discrimination Gate
-Before evaluating telemetry, compute the classification performance of two pre-declared trivial baselines against `figure2a_reference.csv`:
-1. **Majority-Class Baseline:** Predicts the most frequent class for all conditions.
-2. **Optimal Chemistry-Only Baseline:** Evaluates the best-performing mapping from cathode chemistry $\{ \text{LFP}, \text{NMC}, \text{NCA} \} \to \{ \text{MEASURED\_PRESENT}, \text{EXTRAPOLATED\_ONLY} \}$ that minimizes mismatches against `figure2a_reference.csv`.
+Before evaluating telemetry, compute the classification performance of three pre-declared fixed trivial baselines against `figure2a_reference.csv`:
+1. **Majority-Class Baseline:** Predicts the single most frequent class (`MEASURED_PRESENT` or `EXTRAPOLATED_ONLY`) for all conditions.
+2. **Direct Chemistry Prior (Baseline 2A):** Predicts `EXTRAPOLATED_ONLY` for all LFP conditions, and `MEASURED_PRESENT` for all NMC and NCA conditions.
+3. **Inverted Chemistry Prior (Baseline 2B):** Predicts `MEASURED_PRESENT` for all LFP conditions, and `EXTRAPOLATED_ONLY` for all NMC and NCA conditions.
 
-**A2 Discrimination Gate:** If any pre-declared trivial baseline achieves $M_{\text{A2}} = 0$ (zero mismatches against the reference partition):
+**A2 Discrimination Gate:** If any of the three pre-declared trivial baselines achieves $M_{\text{A2}} = 0$ (zero mismatches against the reference partition):
 * Verdict: `Not Demonstrated — zero discriminatory power`
 * A2 cannot be cited as evidence of telemetry reconstruction.
 
@@ -136,9 +137,9 @@ Disposition: `A1_NOT_EVALUATED_NO_OBSERVED_CROSSING`
 
 | Target | Controlled Verdict | Criterion |
 | :--- | :--- | :--- |
-| **Target A1** | **Verified** | A published numerical table comparator exists in the article/SI, and reconstructed cell $\text{EFC}_{80}$ values match within frozen numerical tolerance $\tau_{\text{num}}$. |
+| **Target A1** | **Verified** | A published numerical table comparator exists in the article/SI, and reconstructed cell $\text{EFC}_{80}$ values match within frozen numerical tolerance $\tau_{\text{num}}$ for all resolved conditions. |
 | | **Verified with Limitations** | Published comparator is graphical (digitized raster from Figure 2a), and reconstructed multiset $\mathcal{S}^{\text{P10}}_c$ matches digitized markers $\mathcal{S}^{\text{pub}}_c$ within graphical tolerance $\tau_c$ for all resolved conditions. |
-| | **Not Verified** | Reconstructed $\text{EFC}_{80}$ values diverge from published comparator beyond tolerance $\tau$. |
+| | **Not Verified** | Reconstructed $\text{EFC}_{80}$ values diverge from published comparator beyond the applicable frozen tolerance ($\tau_{\text{num}}$ for numerical table comparator, or $\tau_c$ for digitized graphical comparator). |
 | | **Not Demonstrated** | Deposited telemetry or reference artifacts lack required resolution/fields to compute crossing, or cardinality cannot be resolved. |
 | **Target A2** | **Verified** | Telemetry condition classification achieves $M_{\text{A2}} = 0$ mismatches against resolved reference conditions, AND passes the Discrimination Gate. |
 | | **Not Verified** | Telemetry classification produces $M_{\text{A2}} \ge 1$ mismatches against resolved reference partition. |
