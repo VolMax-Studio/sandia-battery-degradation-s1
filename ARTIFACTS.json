@@ -121,6 +121,7 @@
   "derived_artifacts": {
     "evidence/l0/raw_listing.txt": "c7967e949cb699a119ad47fd3bcc56b06c33cf985634daa5bc835f4518868a7f",
     "evidence/l0/scripts/generate_listing.py": "13ca2739ec7a94bfca4fb493946b6ce2cb6be8c4b3637fe6366eb6672dcdb680",
-    "evidence/l0/scripts/extract_figure2a_reference.py": "bc181b7a5ab9357518a10a55bcf9e193e5310864f4184217658d3ad2fd361806"
+    "evidence/l0/scripts/pixel_to_efc.py": "eab68618b646ecd6648b595c8012929842d94ebf9f2a68e4b33fbb26b09a261d",
+    "evidence/l0/scripts/interactive_digitizer.py": "f078d8f354b6afe410733fd04af5d0c6eeca10da35dd7bae50e3288dfa4bf769"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "figure": "Figure 2",
+  "panel": "Figure 2a",
+  "publication_doi": "10.1149/1945-7111/abae37",
+  "publisher_image_url": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37/largeimage/jesabae37f2_hr.jpg",
+  "source_image_sha256": "27fec07e3245b4ba08f80d280352689adfc6fa35d83cbed9cc24a8955cbcef7b",
+  "caption": "Figure 2. Degradation metrics across cycling conditions: (a) Equivalent full cycles to reach 80% capacity retention for commercial LFP, NCA, and NMC cells...",
+  "optical_digitization_architecture": {
+    "method": "human_assisted_raw_pixel_capture",
+    "raw_input_format": "pixel_coordinates (x_px, y_px)",
+    "calibration_points": "y_axis_ticks (y_px_0 -> 0 EFC, y_px_top -> EFC_max)",
+    "deterministic_transform": "efc = efc_max * (y_px_0 - y_px) / (y_px_0 - y_px_top)",
+    "status": "PENDING_HUMAN_DIGITIZATION_SESSION"
+  }
+}

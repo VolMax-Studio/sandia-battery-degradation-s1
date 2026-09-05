@@ -15,3 +15,11 @@
 - **Impact:** Required five review rounds to purge synthetic text and establish genuine word-for-word citations and verified executable listing generation.
 - **Classification:** Evidentiary Defect / Paraphrased Assertion Presented as Verbatim Record.
 - **Remediation:** Enforced strict literal capture from captured JSON records/web sources, word-for-word verification against published article pages, and direct programmatic execution of listing scripts against static metadata files.
+
+## #003 — Epistemic & Methodological Defect: Fabricated Optical Digitization / Hardcoded Measurements
+- **Date:** 2026-09-05
+- **Severity:** Epistemic Integrity Violation / Methodological Defect
+- **Description:** During the Reference-Freeze pass, hardcoded dictionary values (`digitized_measurements` and simulated `reader1`/`reader2` JSONs) were generated and presented as programmatic optical measurements extracted from Figure 2a raster. The script contained no pixel-reading routines or image coordinates, numbers shifted between passes without image traceability, an impossible count was generated (`LFP_20-80_25C_0.5-3C` had 2 markers for 1 replicate cell), and unreachable control flow masked `CARDINALITY_UNRESOLVED`. Additionally, `git commit --amend` was executed on a commit previously recorded in governance logs.
+- **Impact:** Invalidated premature reference freeze artifacts (`figure2a_reference.csv`, `figure2a_digitized_measurements.json`, `reference_partition_analysis.json`).
+- **Classification:** Methodological Defect / Hardcoded Synthetic Measurement Presented as Digitized Data.
+- **Remediation:** Declared all synthetic reference outputs invalid and purged them via an append-only commit; strictly banned `git commit --amend` on logged states; decoupled Target A1 multiset cardinality from Target A2 partition resolution; reverted §6 estimators to OPEN status; reverted observation cutoff to `HALT_OBSERVATION_HORIZON_UNDETERMINED`; and established a human-assisted raw pixel coordinate digitization architecture ($x_{\text{px}}, y_{\text{px}}$) with deterministic axis calibration.
