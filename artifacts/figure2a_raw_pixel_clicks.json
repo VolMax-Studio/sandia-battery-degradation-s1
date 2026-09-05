@@ -1,0 +1,635 @@
+{
+  "operator": "Ivan",
+  "timestamp": "2026-09-05T20:09:06.151365+00:00",
+  "source_image_filename": "figure2_crop.png",
+  "source_image_sha256": "6426967ea7bdc106836273b034a236a04bc398e221d579a3aa66226232d7616b",
+  "axis_calibration": {
+    "main_plot_lfp": {
+      "y_px_0": 781.0,
+      "y_px_max": 6.5,
+      "efc_max": 10000.0,
+      "delta_axis": 25.0
+    },
+    "inset_plot_nmc_nca": {
+      "y_px_0": 592.2,
+      "y_px_max": 216.8,
+      "efc_max": 3000.0,
+      "delta_axis": 10.0
+    }
+  },
+  "conditions": {
+    "LFP_40-60_25C_0.5-0.5C": {
+      "condition_id": "LFP_40-60_25C_0.5-0.5C",
+      "chemistry": "LFP",
+      "temperature_C": 25,
+      "soc_min": 40,
+      "soc_max": 60,
+      "charge_C": 0.5,
+      "discharge_C": 0.5,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "LFP_40-60_25C_0.5-3C": {
+      "condition_id": "LFP_40-60_25C_0.5-3C",
+      "chemistry": "LFP",
+      "temperature_C": 25,
+      "soc_min": 40,
+      "soc_max": 60,
+      "charge_C": 0.5,
+      "discharge_C": 3.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "LFP_20-80_25C_0.5-0.5C": {
+      "condition_id": "LFP_20-80_25C_0.5-0.5C",
+      "chemistry": "LFP",
+      "temperature_C": 25,
+      "soc_min": 20,
+      "soc_max": 80,
+      "charge_C": 0.5,
+      "discharge_C": 0.5,
+      "replicate_count_metadata": 4,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "LFP_20-80_25C_0.5-3C": {
+      "condition_id": "LFP_20-80_25C_0.5-3C",
+      "chemistry": "LFP",
+      "temperature_C": 25,
+      "soc_min": 20,
+      "soc_max": 80,
+      "charge_C": 0.5,
+      "discharge_C": 3.0,
+      "replicate_count_metadata": 1,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 269.41,
+          "y_px": 524.71,
+          "plot": "main"
+        },
+        {
+          "x_px": 265.88,
+          "y_px": 547.06,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "LFP_0-100_15C_0.5-1C": {
+      "condition_id": "LFP_0-100_15C_0.5-1C",
+      "chemistry": "LFP",
+      "temperature_C": 15,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 1.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "LFP_0-100_15C_0.5-2C": {
+      "condition_id": "LFP_0-100_15C_0.5-2C",
+      "chemistry": "LFP",
+      "temperature_C": 15,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 2.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "LFP_0-100_25C_0.5-0.5C": {
+      "condition_id": "LFP_0-100_25C_0.5-0.5C",
+      "chemistry": "LFP",
+      "temperature_C": 25,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 0.5,
+      "replicate_count_metadata": 1,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "LFP_0-100_25C_0.5-1C": {
+      "condition_id": "LFP_0-100_25C_0.5-1C",
+      "chemistry": "LFP",
+      "temperature_C": 25,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 1.0,
+      "replicate_count_metadata": 4,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "LFP_0-100_25C_0.5-2C": {
+      "condition_id": "LFP_0-100_25C_0.5-2C",
+      "chemistry": "LFP",
+      "temperature_C": 25,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 2.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "LFP_0-100_25C_0.5-3C": {
+      "condition_id": "LFP_0-100_25C_0.5-3C",
+      "chemistry": "LFP",
+      "temperature_C": 25,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 3.0,
+      "replicate_count_metadata": 4,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 465.88,
+          "y_px": 495.29,
+          "plot": "main"
+        },
+        {
+          "x_px": 468.24,
+          "y_px": 517.65,
+          "plot": "main"
+        },
+        {
+          "x_px": 465.88,
+          "y_px": 541.18,
+          "plot": "main"
+        },
+        {
+          "x_px": 464.71,
+          "y_px": 585.88,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "LFP_0-100_35C_0.5-1C": {
+      "condition_id": "LFP_0-100_35C_0.5-1C",
+      "chemistry": "LFP",
+      "temperature_C": 35,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 1.0,
+      "replicate_count_metadata": 4,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "LFP_0-100_35C_0.5-2C": {
+      "condition_id": "LFP_0-100_35C_0.5-2C",
+      "chemistry": "LFP",
+      "temperature_C": 35,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 2.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "NMC_40-60_25C_0.5-0.5C": {
+      "condition_id": "NMC_40-60_25C_0.5-0.5C",
+      "chemistry": "NMC",
+      "temperature_C": 25,
+      "soc_min": 40,
+      "soc_max": 60,
+      "charge_C": 0.5,
+      "discharge_C": 0.5,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "NMC_40-60_25C_0.5-3C": {
+      "condition_id": "NMC_40-60_25C_0.5-3C",
+      "chemistry": "NMC",
+      "temperature_C": 25,
+      "soc_min": 40,
+      "soc_max": 60,
+      "charge_C": 0.5,
+      "discharge_C": 3.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 617.65,
+          "y_px": 628.24,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NMC_20-80_25C_0.5-0.5C": {
+      "condition_id": "NMC_20-80_25C_0.5-0.5C",
+      "chemistry": "NMC",
+      "temperature_C": 25,
+      "soc_min": 20,
+      "soc_max": 80,
+      "charge_C": 0.5,
+      "discharge_C": 0.5,
+      "replicate_count_metadata": 4,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 647.06,
+          "y_px": 601.18,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NMC_20-80_25C_0.5-3C": {
+      "condition_id": "NMC_20-80_25C_0.5-3C",
+      "chemistry": "NMC",
+      "temperature_C": 25,
+      "soc_min": 20,
+      "soc_max": 80,
+      "charge_C": 0.5,
+      "discharge_C": 3.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 694.12,
+          "y_px": 630.59,
+          "plot": "main"
+        },
+        {
+          "x_px": 695.29,
+          "y_px": 645.88,
+          "plot": "main"
+        },
+        {
+          "x_px": 692.94,
+          "y_px": 725.88,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NMC_0-100_15C_0.5-1C": {
+      "condition_id": "NMC_0-100_15C_0.5-1C",
+      "chemistry": "NMC",
+      "temperature_C": 15,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 1.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 723.53,
+          "y_px": 662.35,
+          "plot": "main"
+        },
+        {
+          "x_px": 723.53,
+          "y_px": 722.35,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NMC_0-100_15C_0.5-2C": {
+      "condition_id": "NMC_0-100_15C_0.5-2C",
+      "chemistry": "NMC",
+      "temperature_C": 15,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 2.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 769.41,
+          "y_px": 771.76,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NMC_0-100_25C_0.5-0.5C": {
+      "condition_id": "NMC_0-100_25C_0.5-0.5C",
+      "chemistry": "NMC",
+      "temperature_C": 25,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 0.5,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 797.65,
+          "y_px": 765.88,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NMC_0-100_25C_0.5-1C": {
+      "condition_id": "NMC_0-100_25C_0.5-1C",
+      "chemistry": "NMC",
+      "temperature_C": 25,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 1.0,
+      "replicate_count_metadata": 4,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 829.41,
+          "y_px": 751.76,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NMC_0-100_25C_0.5-2C": {
+      "condition_id": "NMC_0-100_25C_0.5-2C",
+      "chemistry": "NMC",
+      "temperature_C": 25,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 2.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 861.18,
+          "y_px": 740.0,
+          "plot": "main"
+        },
+        {
+          "x_px": 860.0,
+          "y_px": 758.82,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NMC_0-100_25C_0.5-3C": {
+      "condition_id": "NMC_0-100_25C_0.5-3C",
+      "chemistry": "NMC",
+      "temperature_C": 25,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 3.0,
+      "replicate_count_metadata": 4,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 889.41,
+          "y_px": 708.24,
+          "plot": "main"
+        },
+        {
+          "x_px": 891.76,
+          "y_px": 745.88,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NMC_0-100_35C_0.5-1C": {
+      "condition_id": "NMC_0-100_35C_0.5-1C",
+      "chemistry": "NMC",
+      "temperature_C": 35,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 1.0,
+      "replicate_count_metadata": 4,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 918.82,
+          "y_px": 738.82,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NMC_0-100_35C_0.5-2C": {
+      "condition_id": "NMC_0-100_35C_0.5-2C",
+      "chemistry": "NMC",
+      "temperature_C": 35,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 2.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 950.59,
+          "y_px": 738.82,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NCA_40-60_25C_0.5-0.5C": {
+      "condition_id": "NCA_40-60_25C_0.5-0.5C",
+      "chemistry": "NCA",
+      "temperature_C": 25,
+      "soc_min": 40,
+      "soc_max": 60,
+      "charge_C": 0.5,
+      "discharge_C": 0.5,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 984.71,
+          "y_px": 734.12,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NCA_20-80_25C_0.5-0.5C": {
+      "condition_id": "NCA_20-80_25C_0.5-0.5C",
+      "chemistry": "NCA",
+      "temperature_C": 25,
+      "soc_min": 20,
+      "soc_max": 80,
+      "charge_C": 0.5,
+      "discharge_C": 0.5,
+      "replicate_count_metadata": 4,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 1071.76,
+          "y_px": 669.41,
+          "plot": "main"
+        },
+        {
+          "x_px": 1074.12,
+          "y_px": 690.59,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NCA_0-100_15C_0.5-1C": {
+      "condition_id": "NCA_0-100_15C_0.5-1C",
+      "chemistry": "NCA",
+      "temperature_C": 15,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 1.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "NCA_0-100_15C_0.5-2C": {
+      "condition_id": "NCA_0-100_15C_0.5-2C",
+      "chemistry": "NCA",
+      "temperature_C": 15,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 2.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 1149.41,
+          "y_px": 731.76,
+          "plot": "main"
+        },
+        {
+          "x_px": 1148.24,
+          "y_px": 758.82,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NCA_0-100_25C_0.5-0.5C": {
+      "condition_id": "NCA_0-100_25C_0.5-0.5C",
+      "chemistry": "NCA",
+      "temperature_C": 25,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 0.5,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "NCA_0-100_25C_0.5-1C": {
+      "condition_id": "NCA_0-100_25C_0.5-1C",
+      "chemistry": "NCA",
+      "temperature_C": 25,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 1.0,
+      "replicate_count_metadata": 4,
+      "plot_location": "main",
+      "raw_markers_px": [],
+      "visual_assessment": "EXTRAPOLATED_ONLY"
+    },
+    "NCA_0-100_25C_0.5-2C": {
+      "condition_id": "NCA_0-100_25C_0.5-2C",
+      "chemistry": "NCA",
+      "temperature_C": 25,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 2.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 1223.53,
+          "y_px": 743.53,
+          "plot": "main"
+        },
+        {
+          "x_px": 1225.88,
+          "y_px": 738.82,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NCA_0-100_35C_0.5-1C": {
+      "condition_id": "NCA_0-100_35C_0.5-1C",
+      "chemistry": "NCA",
+      "temperature_C": 35,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 1.0,
+      "replicate_count_metadata": 4,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 1254.12,
+          "y_px": 744.71,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    },
+    "NCA_0-100_35C_0.5-2C": {
+      "condition_id": "NCA_0-100_35C_0.5-2C",
+      "chemistry": "NCA",
+      "temperature_C": 35,
+      "soc_min": 0,
+      "soc_max": 100,
+      "charge_C": 0.5,
+      "discharge_C": 2.0,
+      "replicate_count_metadata": 2,
+      "plot_location": "main",
+      "raw_markers_px": [
+        {
+          "x_px": 1285.88,
+          "y_px": 767.06,
+          "plot": "main"
+        },
+        {
+          "x_px": 1316.47,
+          "y_px": 748.24,
+          "plot": "main"
+        },
+        {
+          "x_px": 1320.0,
+          "y_px": 750.59,
+          "plot": "main"
+        }
+      ],
+      "visual_assessment": "MEASURED_PRESENT"
+    }
+  }
+}

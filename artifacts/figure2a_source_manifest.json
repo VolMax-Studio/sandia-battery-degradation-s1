@@ -1,0 +1,64 @@
+{
+  "artifact": "figure2a_source_manifest",
+  "generated_at": "2026-09-05T20:25:30Z",
+  "source_document": {
+    "title": "Degradation of Commercial Lithium-Ion Cells as a Function of Chemistry and Cycling Conditions",
+    "authors": "Yuliya Preger et al.",
+    "journal": "Journal of The Electrochemical Society",
+    "volume": 167,
+    "article_number": "120532",
+    "page": "120532-4",
+    "figure": "Figure 2a",
+    "doi": "10.1149/1945-7111/abae37",
+    "osti_id": "1650174",
+    "osti_url": "https://www.osti.gov/biblio/1650174",
+    "dataset_host": "BatteryArchive.org",
+    "dataset_study_id": "snl"
+  },
+  "source_image_provenance": {
+    "source_file": "figure2_crop.png",
+    "sha256": "6426967ea7bdc106836273b034a236a04bc398e221d579a3aa66226232d7616b",
+    "pixel_width": 1479,
+    "pixel_height": 1027,
+    "color_channels": 3,
+    "redistribution_policy": "NO_REDISTRIBUTION (Original publisher raster retained locally in ephemeral storage; only derived deterministic coordinates and transformation code are tracked in repository)"
+  },
+  "coordinate_geometry": {
+    "main_plot_bbox": {
+      "x_min_px": 0.0,
+      "x_max_px": 1479.0,
+      "y_min_px": 6.5,
+      "y_max_px": 781.0,
+      "calibration": {
+        "y_px_0": 781.0,
+        "y_px_max": 6.5,
+        "efc_max": 10000.0,
+        "scale_efc_per_px": 12.91,
+        "delta_axis_efc": 25.0,
+        "tau_c_efc": 50.8
+      }
+    },
+    "inset_plot_bbox": {
+      "x_min_px": 806.0,
+      "x_max_px": 1409.0,
+      "y_min_px": 217.0,
+      "y_max_px": 593.0,
+      "calibration": {
+        "y_px_0": 592.2,
+        "y_px_max": 216.8,
+        "efc_max": 3000.0,
+        "scale_efc_per_px": 7.99,
+        "delta_axis_efc": 10.0,
+        "tau_c_efc": 26.0
+      }
+    }
+  },
+  "click_lineage": {
+    "history": "Initial exploratory capture (interactive_digitizer.py) recorded 72 raw clicks across both plots in an un-scoped single pass with over-counting and duplicate clustering artifacts. In the subsequent precision session (gui_digitizer.py), the operator performed condition-scoped digitization over the 23 measured conditions, recording exactly 33 distinct marker coordinates. All 33 coordinates sit on the main plot area (y in [495, 772] px) and are 100% accounted for with zero dropped and zero duplicated coordinates.",
+    "total_raw_clicks": 33,
+    "unique_raw_coordinates": 33,
+    "dropped_clicks": 0,
+    "duplicated_coordinates": 0,
+    "canonical_clicks_sha256": "03f46254729dce6707f902f0c52aed438db36d1a682ebe629b644b78919909f0"
+  }
+}

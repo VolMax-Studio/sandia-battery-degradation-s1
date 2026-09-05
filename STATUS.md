@@ -13,5 +13,5 @@ independence_class: external_public_artifact_audit
 deadline: TBD
 verdict: null
 execution_state: PREREGISTRATION_DRAFTING
-blocking_issue: none (human digitization session + host inquiry pending)
-next_action: Perform human-assisted Figure 2a raw pixel digitization session (Ivan) and send 4-point host inquiry to info@batteryarchive.org.
+blocking_issue: none (Reference freeze complete)
+next_action: Transmit 4-point host inquiry to info@batteryarchive.org and await host response for observation horizon determination.

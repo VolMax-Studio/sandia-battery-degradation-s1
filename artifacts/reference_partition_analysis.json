@@ -1,0 +1,40 @@
+{
+  "total_conditions": 33,
+  "class_marginals": {
+    "MEASURED_PRESENT": 19,
+    "EXTRAPOLATED_ONLY": 14,
+    "UNRESOLVED": 0
+  },
+  "marginal_percentages": {
+    "MEASURED_PRESENT_pct": 57.58,
+    "EXTRAPOLATED_ONLY_pct": 42.42
+  },
+  "predeclared_baselines": {
+    "baseline_1_majority_class": {
+      "predicted_class": "MEASURED_PRESENT",
+      "mismatches": 14,
+      "accuracy_pct": 57.58
+    },
+    "baseline_2a_direct_chemistry_prior": {
+      "rule": "LFP -> EXTRAPOLATED_ONLY, NMC/NCA -> MEASURED_PRESENT",
+      "mismatches": 6,
+      "accuracy_pct": 81.82,
+      "mismatch_details": "2 LFP conditions (20-80 3C and 0-100 3C) are MEASURED_PRESENT in Figure 2a, so direct chemistry prior fails on those 2 conditions."
+    },
+    "baseline_2b_inverted_chemistry_prior": {
+      "rule": "LFP -> MEASURED_PRESENT, NMC/NCA -> EXTRAPOLATED_ONLY",
+      "mismatches": 27,
+      "accuracy_pct": 18.18
+    }
+  },
+  "a2_discrimination_gate": {
+    "status": "PASS",
+    "explanation": "Baseline 2A has M = 6 mismatches. Since min(M_baselines) = 6 > 0, Target A2 has non-trivial discriminatory power and passes the Discrimination Gate."
+  },
+  "a1_power_summary": {
+    "total_measured_conditions": 19,
+    "high_power_conditions": 9,
+    "moderate_power_conditions": 1,
+    "low_power_conditions": 9
+  }
+}
