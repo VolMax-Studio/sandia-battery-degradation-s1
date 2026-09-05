@@ -1,12 +1,4 @@
- M ARTIFACTS.json
- M PROJECT_HANDOFF.md
- M STATUS.md
- M evidence/l0/derived_artifacts.sha256
  M evidence/l0/governance/git_state.txt
- M evidence/l0/scripts/pixel_to_efc.py
-?? artifacts/
-?? evidence/l0/scripts/gui_digitizer.py
-?? evidence/l0/scripts/guided_digitizer.py
+8c8f0d9 feat(reference): freeze Figure 2a human pixel measurements and deterministic geometry reconstruction
 87fe895 feat(ref): simplify interactive_digitizer to ultra-simple 2-pass click mode
 e4b38fd feat(ref): add crash-proof click handlers and per-bar step-by-step guidance in interactive_digitizer
-5e81f56 feat(ref): complete interactive_digitizer GUI workflow for human digitization session
