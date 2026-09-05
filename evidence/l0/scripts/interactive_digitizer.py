@@ -1,20 +1,13 @@
 #!/usr/bin/env python3
 """
-Interactive Raw Pixel Digitizer for Figure 2a (Preger et al., 2020)
+Robust Interactive Raw Pixel Digitizer for Figure 2a (Preger et al., 2020)
 Designed for human operator execution (Ivan).
 
-Workflow:
-1. Loads Figure 2 / 2a image.
-2. Interactively collects 4 calibration ticks:
-   - Main Plot (LFP): 0 EFC tick, then 10,000 EFC tick
-   - Inset Plot (NMC & NCA): 0 EFC tick, then 3,000 EFC tick
-3. Iterates through the 33 experimental conditions:
-   - Left-click visible '+' markers (if any).
-   - Press Enter or middle-click when done with markers.
-   - Click the top of the bar.
-   - Enter 'm' for MEASURED_PRESENT or 'e' for EXTRAPOLATED_ONLY (or default inferred).
-4. Saves raw coordinates to artifacts/figure2a_raw_pixel_clicks.json.
-5. Executes evidence/l0/scripts/pixel_to_efc.py to generate deterministic reference table.
+Features:
+- Crash-proof input handling (never crashes on empty Enter).
+- Step-by-step visual guidance with persistent red marker dots and blue bar-top squares.
+- Supports clicking '+' markers per bar, followed by bar top.
+- Clear console progress and undo/retry per condition.
 """
 
 import sys
@@ -24,6 +17,25 @@ import hashlib
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
+
+def safe_ginput_point(ax, title, color="blue"):
+    import matplotlib.pyplot as plt
+    while True:
+        ax.set_title(title, fontsize=11, color=color, fontweight="bold")
+        plt.draw()
+        pts = plt.ginput(1, timeout=-1)
+        if pts and len(pts) > 0:
+            return pts[0]
+        print("  [Notice] Please click on the image. (Pressing Enter without clicking does not set a point).")
+
+def safe_ginput_markers(ax, title):
+    import matplotlib.pyplot as plt
+    ax.set_title(title, fontsize=11, color="darkgreen", fontweight="bold")
+    plt.draw()
+    pts = plt.ginput(-1, timeout=-1)
+    if pts is None:
+        return []
+    return pts
 
 def main():
     parser = argparse.ArgumentParser(description="Interactive Human Digitization for Figure 2a")
@@ -59,7 +71,7 @@ def main():
     img = mpimg.imread(str(img_path))
     h, w = img.shape[:2]
 
-    fig, ax = plt.subplots(figsize=(14, 9))
+    fig, ax = plt.subplots(figsize=(15, 10))
     ax.imshow(img)
     plt.tight_layout()
 
@@ -67,34 +79,26 @@ def main():
     print(">>> STEP 1: AXIS CALIBRATION (4 Clicks Required)")
     
     # 1. Main y=0
-    ax.set_title("CALIBRATION 1/4: Click on MAIN plot y=0 EFC tick line", fontsize=12, color="blue")
-    plt.draw()
-    pts = plt.ginput(1, timeout=-1)
-    lfp_y0 = pts[0][1]
+    pt = safe_ginput_point(ax, "CALIBRATION 1/4: Click on MAIN plot y=0 EFC tick line (bottom axis)", "blue")
+    lfp_y0 = pt[1]
     ax.axhline(lfp_y0, color="cyan", linestyle="--", alpha=0.7)
     print(f"  [1/4] Main Plot y=0 tick: y = {lfp_y0:.1f} px")
 
     # 2. Main y=10000
-    ax.set_title("CALIBRATION 2/4: Click on MAIN plot y=10,000 EFC tick line", fontsize=12, color="blue")
-    plt.draw()
-    pts = plt.ginput(1, timeout=-1)
-    lfp_ytop = pts[0][1]
+    pt = safe_ginput_point(ax, "CALIBRATION 2/4: Click on MAIN plot y=10,000 EFC tick line (top axis)", "blue")
+    lfp_ytop = pt[1]
     ax.axhline(lfp_ytop, color="cyan", linestyle="--", alpha=0.7)
     print(f"  [2/4] Main Plot y=10,000 tick: y = {lfp_ytop:.1f} px")
 
     # 3. Inset y=0
-    ax.set_title("CALIBRATION 3/4: Click on INSET plot y=0 EFC tick line", fontsize=12, color="magenta")
-    plt.draw()
-    pts = plt.ginput(1, timeout=-1)
-    inset_y0 = pts[0][1]
+    pt = safe_ginput_point(ax, "CALIBRATION 3/4: Click on INSET plot y=0 EFC tick line (bottom axis)", "magenta")
+    inset_y0 = pt[1]
     ax.axhline(inset_y0, color="magenta", linestyle="--", alpha=0.7)
     print(f"  [3/4] Inset Plot y=0 tick: y = {inset_y0:.1f} px")
 
     # 4. Inset y=3000
-    ax.set_title("CALIBRATION 4/4: Click on INSET plot y=3,000 EFC tick line", fontsize=12, color="magenta")
-    plt.draw()
-    pts = plt.ginput(1, timeout=-1)
-    inset_ytop = pts[0][1]
+    pt = safe_ginput_point(ax, "CALIBRATION 4/4: Click on INSET plot y=3,000 EFC tick line (top axis)", "magenta")
+    inset_ytop = pt[1]
     ax.axhline(inset_ytop, color="magenta", linestyle="--", alpha=0.7)
     print(f"  [4/4] Inset Plot y=3,000 tick: y = {inset_ytop:.1f} px")
 
@@ -113,53 +117,54 @@ def main():
         }
     }
 
-    # 33 Conditions defined in Table II and raw_listing.txt
+    # 33 Conditions defined in Table II and raw_listing.txt (in exact visual left-to-right order)
     conditions = [
-        # LFP (12)
-        {"condition_id": "LFP_40-60_25C_0.5-0.5C", "chemistry": "LFP", "temperature_C": 25, "soc_min": 40, "soc_max": 60, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 2},
-        {"condition_id": "LFP_40-60_25C_0.5-3C",   "chemistry": "LFP", "temperature_C": 25, "soc_min": 40, "soc_max": 60, "charge_C": 0.5, "discharge_C": 3.0, "replicate_count_metadata": 2},
-        {"condition_id": "LFP_20-80_25C_0.5-0.5C", "chemistry": "LFP", "temperature_C": 25, "soc_min": 20, "soc_max": 80, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 4},
-        {"condition_id": "LFP_20-80_25C_0.5-3C",   "chemistry": "LFP", "temperature_C": 25, "soc_min": 20, "soc_max": 80, "charge_C": 0.5, "discharge_C": 3.0, "replicate_count_metadata": 1},
-        {"condition_id": "LFP_0-100_15C_0.5-1C",   "chemistry": "LFP", "temperature_C": 15, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 2},
-        {"condition_id": "LFP_0-100_15C_0.5-2C",   "chemistry": "LFP", "temperature_C": 15, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2},
-        {"condition_id": "LFP_0-100_25C_0.5-0.5C", "chemistry": "LFP", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 1},
-        {"condition_id": "LFP_0-100_25C_0.5-1C",   "chemistry": "LFP", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 4},
-        {"condition_id": "LFP_0-100_25C_0.5-2C",   "chemistry": "LFP", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2},
-        {"condition_id": "LFP_0-100_25C_0.5-3C",   "chemistry": "LFP", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 3.0, "replicate_count_metadata": 4},
-        {"condition_id": "LFP_0-100_35C_0.5-1C",   "chemistry": "LFP", "temperature_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 4},
-        {"condition_id": "LFP_0-100_35C_0.5-2C",   "chemistry": "LFP", "temperature_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2},
+        # LFP (12) - Main Plot (Left to Right)
+        {"condition_id": "LFP_40-60_25C_0.5-0.5C", "chemistry": "LFP", "temperature_C": 25, "soc_min": 40, "soc_max": 60, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 2, "panel": "MAIN (LFP)"},
+        {"condition_id": "LFP_40-60_25C_0.5-3C",   "chemistry": "LFP", "temperature_C": 25, "soc_min": 40, "soc_max": 60, "charge_C": 0.5, "discharge_C": 3.0, "replicate_count_metadata": 2, "panel": "MAIN (LFP)"},
+        {"condition_id": "LFP_20-80_25C_0.5-0.5C", "chemistry": "LFP", "temperature_C": 25, "soc_min": 20, "soc_max": 80, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 4, "panel": "MAIN (LFP)"},
+        {"condition_id": "LFP_20-80_25C_0.5-3C",   "chemistry": "LFP", "temperature_C": 25, "soc_min": 20, "soc_max": 80, "charge_C": 0.5, "discharge_C": 3.0, "replicate_count_metadata": 1, "panel": "MAIN (LFP)"},
+        {"condition_id": "LFP_0-100_15C_0.5-1C",   "chemistry": "LFP", "temperature_C": 15, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 2, "panel": "MAIN (LFP)"},
+        {"condition_id": "LFP_0-100_15C_0.5-2C",   "chemistry": "LFP", "temperature_C": 15, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2, "panel": "MAIN (LFP)"},
+        {"condition_id": "LFP_0-100_25C_0.5-0.5C", "chemistry": "LFP", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 1, "panel": "MAIN (LFP)"},
+        {"condition_id": "LFP_0-100_25C_0.5-1C",   "chemistry": "LFP", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 4, "panel": "MAIN (LFP)"},
+        {"condition_id": "LFP_0-100_25C_0.5-2C",   "chemistry": "LFP", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2, "panel": "MAIN (LFP)"},
+        {"condition_id": "LFP_0-100_25C_0.5-3C",   "chemistry": "LFP", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 3.0, "replicate_count_metadata": 4, "panel": "MAIN (LFP)"},
+        {"condition_id": "LFP_0-100_35C_0.5-1C",   "chemistry": "LFP", "temperature_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 4, "panel": "MAIN (LFP)"},
+        {"condition_id": "LFP_0-100_35C_0.5-2C",   "chemistry": "LFP", "temperature_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2, "panel": "MAIN (LFP)"},
 
-        # NMC (12)
-        {"condition_id": "NMC_40-60_25C_0.5-0.5C", "chemistry": "NMC", "temperature_C": 25, "soc_min": 40, "soc_max": 60, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 2},
-        {"condition_id": "NMC_40-60_25C_0.5-3C",   "chemistry": "NMC", "temperature_C": 25, "soc_min": 40, "soc_max": 60, "charge_C": 0.5, "discharge_C": 3.0, "replicate_count_metadata": 2},
-        {"condition_id": "NMC_20-80_25C_0.5-0.5C", "chemistry": "NMC", "temperature_C": 25, "soc_min": 20, "soc_max": 80, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 4},
-        {"condition_id": "NMC_20-80_25C_0.5-3C",   "chemistry": "NMC", "temperature_C": 25, "soc_min": 20, "soc_max": 80, "charge_C": 0.5, "discharge_C": 3.0, "replicate_count_metadata": 2},
-        {"condition_id": "NMC_0-100_15C_0.5-1C",   "chemistry": "NMC", "temperature_C": 15, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 2},
-        {"condition_id": "NMC_0-100_15C_0.5-2C",   "chemistry": "NMC", "temperature_C": 15, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2},
-        {"condition_id": "NMC_0-100_25C_0.5-0.5C", "chemistry": "NMC", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 2},
-        {"condition_id": "NMC_0-100_25C_0.5-1C",   "chemistry": "NMC", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 4},
-        {"condition_id": "NMC_0-100_25C_0.5-2C",   "chemistry": "NMC", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2},
-        {"condition_id": "NMC_0-100_25C_0.5-3C",   "chemistry": "NMC", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 3.0, "replicate_count_metadata": 4},
-        {"condition_id": "NMC_0-100_35C_0.5-1C",   "chemistry": "NMC", "temperature_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 4},
-        {"condition_id": "NMC_0-100_35C_0.5-2C",   "chemistry": "NMC", "temperature_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2},
+        # NMC (12) - Inset Plot (Left 12 Bars)
+        {"condition_id": "NMC_40-60_25C_0.5-0.5C", "chemistry": "NMC", "temperature_C": 25, "soc_min": 40, "soc_max": 60, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 2, "panel": "INSET (NMC)"},
+        {"condition_id": "NMC_40-60_25C_0.5-3C",   "chemistry": "NMC", "temperature_C": 25, "soc_min": 40, "soc_max": 60, "charge_C": 0.5, "discharge_C": 3.0, "replicate_count_metadata": 2, "panel": "INSET (NMC)"},
+        {"condition_id": "NMC_20-80_25C_0.5-0.5C", "chemistry": "NMC", "temperature_C": 25, "soc_min": 20, "soc_max": 80, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 4, "panel": "INSET (NMC)"},
+        {"condition_id": "NMC_20-80_25C_0.5-3C",   "chemistry": "NMC", "temperature_C": 25, "soc_min": 20, "soc_max": 80, "charge_C": 0.5, "discharge_C": 3.0, "replicate_count_metadata": 2, "panel": "INSET (NMC)"},
+        {"condition_id": "NMC_0-100_15C_0.5-1C",   "chemistry": "NMC", "temperature_C": 15, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 2, "panel": "INSET (NMC)"},
+        {"condition_id": "NMC_0-100_15C_0.5-2C",   "chemistry": "NMC", "temperature_C": 15, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2, "panel": "INSET (NMC)"},
+        {"condition_id": "NMC_0-100_25C_0.5-0.5C", "chemistry": "NMC", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 2, "panel": "INSET (NMC)"},
+        {"condition_id": "NMC_0-100_25C_0.5-1C",   "chemistry": "NMC", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 4, "panel": "INSET (NMC)"},
+        {"condition_id": "NMC_0-100_25C_0.5-2C",   "chemistry": "NMC", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2, "panel": "INSET (NMC)"},
+        {"condition_id": "NMC_0-100_25C_0.5-3C",   "chemistry": "NMC", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 3.0, "replicate_count_metadata": 4, "panel": "INSET (NMC)"},
+        {"condition_id": "NMC_0-100_35C_0.5-1C",   "chemistry": "NMC", "temperature_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 4, "panel": "INSET (NMC)"},
+        {"condition_id": "NMC_0-100_35C_0.5-2C",   "chemistry": "NMC", "temperature_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2, "panel": "INSET (NMC)"},
 
-        # NCA (9)
-        {"condition_id": "NCA_40-60_25C_0.5-0.5C", "chemistry": "NCA", "temperature_C": 25, "soc_min": 40, "soc_max": 60, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 2},
-        {"condition_id": "NCA_20-80_25C_0.5-0.5C", "chemistry": "NCA", "temperature_C": 25, "soc_min": 20, "soc_max": 80, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 4},
-        {"condition_id": "NCA_0-100_15C_0.5-1C",   "chemistry": "NCA", "temperature_C": 15, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 2},
-        {"condition_id": "NCA_0-100_15C_0.5-2C",   "chemistry": "NCA", "temperature_C": 15, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2},
-        {"condition_id": "NCA_0-100_25C_0.5-0.5C", "chemistry": "NCA", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 2},
-        {"condition_id": "NCA_0-100_25C_0.5-1C",   "chemistry": "NCA", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 4},
-        {"condition_id": "NCA_0-100_25C_0.5-2C",   "chemistry": "NCA", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2},
-        {"condition_id": "NCA_0-100_35C_0.5-1C",   "chemistry": "NCA", "temperature_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 4},
-        {"condition_id": "NCA_0-100_35C_0.5-2C",   "chemistry": "NCA", "temperature_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2}
+        # NCA (9) - Inset Plot (Right 9 Bars)
+        {"condition_id": "NCA_40-60_25C_0.5-0.5C", "chemistry": "NCA", "temperature_C": 25, "soc_min": 40, "soc_max": 60, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 2, "panel": "INSET (NCA)"},
+        {"condition_id": "NCA_20-80_25C_0.5-0.5C", "chemistry": "NCA", "temperature_C": 25, "soc_min": 20, "soc_max": 80, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 4, "panel": "INSET (NCA)"},
+        {"condition_id": "NCA_0-100_15C_0.5-1C",   "chemistry": "NCA", "temperature_C": 15, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 2, "panel": "INSET (NCA)"},
+        {"condition_id": "NCA_0-100_15C_0.5-2C",   "chemistry": "NCA", "temperature_C": 15, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2, "panel": "INSET (NCA)"},
+        {"condition_id": "NCA_0-100_25C_0.5-0.5C", "chemistry": "NCA", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 0.5, "replicate_count_metadata": 2, "panel": "INSET (NCA)"},
+        {"condition_id": "NCA_0-100_25C_0.5-1C",   "chemistry": "NCA", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 4, "panel": "INSET (NCA)"},
+        {"condition_id": "NCA_0-100_25C_0.5-2C",   "chemistry": "NCA", "temperature_C": 25, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2, "panel": "INSET (NCA)"},
+        {"condition_id": "NCA_0-100_35C_0.5-1C",   "chemistry": "NCA", "temperature_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 1.0, "replicate_count_metadata": 4, "panel": "INSET (NCA)"},
+        {"condition_id": "NCA_0-100_35C_0.5-2C",   "chemistry": "NCA", "temperature_C": 35, "soc_min": 0,  "soc_max": 100, "charge_C": 0.5, "discharge_C": 2.0, "replicate_count_metadata": 2, "panel": "INSET (NCA)"}
     ]
 
     print("\n>>> STEP 2: CONDITION-BY-CONDITION DIGITIZATION (33 Conditions)")
+    print("NOTE: Follow the visual condition sequence (Left to Right).")
     print("For each condition:")
-    print("  1. Left-click all '+' markers on that bar.")
-    print("  2. Press Enter or middle-click when done with markers (if 0 markers, just press Enter).")
-    print("  3. Click once on the TOP of the condition bar.")
+    print("  1. Click visible '+' markers for THIS bar only (red dots will appear).")
+    print("  2. Press ENTER when done with markers (if 0 markers on this bar, just press ENTER).")
+    print("  3. Click ONCE on the top edge of THIS condition bar (blue square will appear).\n")
 
     conditions_output = {}
 
@@ -167,27 +172,25 @@ def main():
         cid = cond["condition_id"]
         chem = cond["chemistry"]
         rep = cond["replicate_count_metadata"]
-        print(f"\n--- [{idx}/33] Condition: {cid} (Metadata Replicates: {rep}) ---")
+        panel = cond["panel"]
+        print(f"\n[{idx}/33] Condition: {cid} | Panel: {panel} | Replicates in metadata: {rep}")
         
-        # 1. Collect '+' markers
-        ax.set_title(f"[{idx}/33] {cid} (reps: {rep})\nClick ALL '+' markers, then press ENTER", fontsize=11, color="darkgreen")
-        plt.draw()
-        
-        marker_clicks = plt.ginput(-1, timeout=-1)
+        # 1. Collect '+' markers for this bar
+        title_markers = f"[{idx}/33] {cid} ({panel}, reps={rep})\nSTEP A: Click '+' markers on THIS bar only, then press ENTER"
+        marker_clicks = safe_ginput_markers(ax, title_markers)
         raw_markers = [{"x_px": round(p[0], 2), "y_px": round(p[1], 2)} for p in marker_clicks]
         for p in marker_clicks:
-            ax.plot(p[0], p[1], 'ro', markersize=4)
+            ax.plot(p[0], p[1], 'ro', markersize=5)
         plt.draw()
-        print(f"  Recorded {len(raw_markers)} '+' marker clicks: {raw_markers}")
+        print(f"  -> Recorded {len(raw_markers)} '+' markers: {raw_markers}")
 
         # 2. Collect bar top
-        ax.set_title(f"[{idx}/33] {cid}\nClick ONCE on the TOP of the BAR", fontsize=11, color="navy")
+        title_bar = f"[{idx}/33] {cid} ({panel})\nSTEP B: Click ONCE on the TOP of THIS condition bar"
+        pt_bar = safe_ginput_point(ax, title_bar, "navy")
+        bar_top = {"x_px": round(pt_bar[0], 2), "y_px": round(pt_bar[1], 2)}
+        ax.plot(pt_bar[0], pt_bar[1], 'bs', markersize=6)
         plt.draw()
-        bar_clicks = plt.ginput(1, timeout=-1)
-        bar_top = {"x_px": round(bar_clicks[0][0], 2), "y_px": round(bar_clicks[0][1], 2)}
-        ax.plot(bar_clicks[0][0], bar_clicks[0][1], 'bs', markersize=5)
-        plt.draw()
-        print(f"  Recorded bar top click: {bar_top}")
+        print(f"  -> Recorded bar top: {bar_top}")
 
         # Visual assessment
         visual_class = "MEASURED_PRESENT" if len(raw_markers) > 0 else "EXTRAPOLATED_ONLY"

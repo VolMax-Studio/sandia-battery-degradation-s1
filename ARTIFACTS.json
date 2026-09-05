@@ -122,6 +122,6 @@
     "evidence/l0/raw_listing.txt": "c7967e949cb699a119ad47fd3bcc56b06c33cf985634daa5bc835f4518868a7f",
     "evidence/l0/scripts/generate_listing.py": "13ca2739ec7a94bfca4fb493946b6ce2cb6be8c4b3637fe6366eb6672dcdb680",
     "evidence/l0/scripts/pixel_to_efc.py": "eab68618b646ecd6648b595c8012929842d94ebf9f2a68e4b33fbb26b09a261d",
-    "evidence/l0/scripts/interactive_digitizer.py": "462f2fbeac1856134f65e78abfb749b925e61e678b565381626927a77122f9f5"
+    "evidence/l0/scripts/interactive_digitizer.py": "f78dbcebed2d5f88fc8dc7314ff5ce302a5012417753681b70dc293ff8d811f5"
   }
 }
