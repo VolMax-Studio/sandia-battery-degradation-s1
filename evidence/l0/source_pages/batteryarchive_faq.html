@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="Description" content="A tool for easy analysis, visualization and comparison of cell battery data across many institutions">
+    <meta name="Keywords" content="battery chemistry, battery cell data, science, machine learning, data science, data publication, python, data service">
+    <title>BatteryArchive.org</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/replacer.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/fav/favicon-16x16.png">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35086283-2"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-35086283-2');
+    </script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Ranga', 'Julius Sans One', 'Montserrat']
+            }
+        });
+    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-md-3">
+        <a class="navbar-brand" href="index.html">BatteryArchive.org</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+	    <li class="nav-item">
+		     <a class="nav-link" href="cycle_list.html?t=0001">Cycling tests</a>
+	    </li>
+	    <li class="nav-item">
+		     <a class="nav-link" href="disruptive_list.html?t=0001">Disruptive tests</a>
+	    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="study_summaries.html">Studies</a>
+            </li>
+	    <li class="nav-item">
+            <a class="nav-link" href="metadata.html">Metadata</a>
+           </li>
+	    <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+	  <li class="nav-item active">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+	  <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          </ul>
+        </div>
+      </nav>
+
+    <body>
+
+    <div class="py-5 my-5 text-center text-lg-left">
+        <div class="pb-3" id="content-07">
+            <div class="container py-3 my-3">
+                    <h2 class="display-4 mb-3 ">Frequently Asked Questions</h2>
+
+                    <div class="row align-items-center justify-content-around py-3">
+                        <div class="col">
+			    <p class="text-justify">
+			    <b>For Users:</b>
+			    </p>
+                            <h3>Q: How should I credit the data that I downloaded?</h3>
+                            <p class="text-justify">
+			    A: Use of any data featured on this site for publication purposes should include references to the article that describes the experiments conducted for generating the data. Individual groups may have additional guidelines for the use of their data. In such cases, the <a href="study_summaries.html">Summary of Studies</a> page links to the group’s website for these policies.
+			       Additionally, please cite www.batteryarchive.org as the source from where the data was downloaded. It takes significant effort to import and standardize datasets and review the final tagging with each group.
+                            </p>
+                            <h3>Q: What is the relationship between Battery Archive and the Battery Data Genome?</h3>
+                            <p class="text-justify">
+			    A: The <a href="https://www.sciencedirect.com/science/article/abs/pii/S2542435122004093" target=_blank>Battery Data Genome (BDG)</a> envisions a network of interconnected data hubs for different types of battery data (material to system) and at different levels of access (some restricted access, some public). Common data and metadata standards will facilitate communication between these databases. Battery Archive is one example of a public battery database and we look forward to adopting data standards as they emerge. The BDG publication captures some of our early efforts to facilitate communication between different software resources.
+                            </p>
+                            <h3>Q: How do I download data for many cells at once?</h3>
+                            <p class="text-justify">
+			    A: Please contact <a href="mailto:info@batteryarchive.org">info@batteryarchive.org</a> for information on how to download datasets.
+
+                            </p>
+                            <h3>Q: Why am I getting an ‘active content removed’ warning when I try to access the site?</h3>
+                            <p class="text-justify">
+			    A: The firewalls of certain institutions do not allow access to interactive content such as the plots of cell degradation that are featured on this site. You can still access static sections such as the Studies page. To access active content, go to the website outside of your institution’s network.
+                            </p>
+                            <h3>Q: How are the cells named and how is metadata assigned? </h3>
+                            <p class="text-justify">
+			    A: Please see the <a href="metadata.html">Metadata</a> page.
+                            </p>
+			    <p class="text-justify">
+			    <b>For Contributors:</b>
+			    </p>
+                            <h3>Q: How do I improve Battery Archive or install a verion on my servers?</h3>
+                            <p class="text-justify">
+			    A: The software behind Battery Archive is available on Github as an <a href="https://github.com/battery-lcf/battery-archive-sandbox" target=_blank">open-source project</a>. You can clone the software on your Linux server and contribute your improvements to the project. For more information on how to contribute, you can also contact us <a href='mailto:info@batteryarchive.org'>info@batteryarchive.org</a>.
+                            </p>
+                            <h3>Q: How do I add data to the site?</h3>
+                            <p class="text-justify">
+                              A: We are in the process of developing a data upload page based on our experience preparing the first few data sets. In the meantime, please email <a href='mailto:info@batteryarchive.org'>info@batteryarchive.org</a>.
+                            </p>
+                        </div>
+                      </div>
+
+            </div>
+        </div>
+    </div>
+
+        
+ <p class="lead col text-center text-secondary">Based on <a href="https://github.com/battery-lcf" target=_blank>https://github.com/battery-lcf</a></p>
+        </div>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/replacer.js"></script>
+    </body>
+</html>

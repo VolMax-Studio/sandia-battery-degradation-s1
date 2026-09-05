@@ -1,0 +1,66 @@
+{
+  "language": "English",
+  "entry_date": "2026-08-21T12:46:06Z",
+  "relation": "Journal Name: Journal of the Electrochemical Society (Online) Journal Issue: 12 Journal Volume: 167",
+  "report_number": "SAND-2020-8433J",
+  "identifier": "AC04-94AL85000; NA0003525",
+  "journal_issue": "12",
+  "country_publication": "United States",
+  "publisher": "IOP Publishing",
+  "journal_type": "AM",
+  "doi": "10.1149/1945-7111/abae37",
+  "description": "Energy storage systems with Li-ion batteries are increasingly deployed to maintain a robust and resilient grid and facilitate the integration of renewable energy resources. However, appropriate selection of cells for different applications is difficult due to limited public data comparing the most commonly used off-the-shelf Li-ion chemistries under the same operating conditions. This article details a multi-year cycling study of commercial LiFePO<SUB>4</SUB> (LFP), LiNi<SUB>x</SUB>Co<SUB>y</SUB>Al<SUB>1\u2013x\u2013y</SUB>O<SUB>2</SUB> (NCA), and LiNi<SUB>x</SUB>Mn<SUB>y</SUB>Co<SUB>1\u2013x\u2013y</SUB>O<SUB>2</SUB> (NMC) cells, varying the discharge rate, depth of discharge (DOD), and environment temperature. The capacity and discharge energy retention, as well as the round-trip efficiency, were compared. Even when operated within manufacturer specifications, the range of cycling conditions had a profound effect on cell degradation, with time to reach 80% capacity varying by thousands of hours and cycle counts among cells of each chemistry. The degradation of cells in this study was compared to that of similar cells in previous studies to identify universal trends and to provide a standard deviation for performance. All cycling files have been made publicly available at batteryarchive.org, a recently developed repository for visualization and comparison of battery data, to facilitate future experimental and modeling efforts.",
+  "title": "Degradation of Commercial Lithium-Ion Cells as a Function of Chemistry and Cycling Conditions",
+  "other_number": "Journal ID: ISSN 1945-7111;689942",
+  "contract_number": "AC04-94AL85000; NA0003525",
+  "publication_date": "2020-09-02T00:00:00Z",
+  "journal_volume": "167",
+  "osti_id": "1650174",
+  "journal_name": "Journal of the Electrochemical Society (Online)",
+  "product_type": "Journal Article",
+  "authors": [
+    "Preger, Yuliya [Sandia National Lab. (SNL-NM), Albuquerque, NM (United States). Energy Storage Technology and Systems] (ORCID:0000000185582529)",
+    "Barkholtz, Heather M. [Sandia National Lab. (SNL-NM), Albuquerque, NM (United States). Energy Storage Technology and Systems]",
+    "Fresquez, Armando [Sandia National Lab. (SNL-NM), Albuquerque, NM (United States). Advanced Power Sources R&D]",
+    "Campbell, Daniel L. [Sandia National Lab. (SNL-NM), Albuquerque, NM (United States). Statistical Sciences]",
+    "Juba, Benjamin W. [Sandia National Lab. (SNL-NM), Albuquerque, NM (United States). Materials Reliability]",
+    "Rom\u00e0n-Kustas, Jessica [Sandia National Lab. (SNL-NM), Albuquerque, NM (United States). Materials Reliability] (ORCID:0000000318790234)",
+    "Ferreira, Summer R. [Sandia National Lab. (SNL-NM), Albuquerque, NM (United States). Renewable and Distributed Systems Integration]",
+    "Chalamala, Babu [Sandia National Lab. (SNL-NM), Albuquerque, NM (United States). Energy Storage Technology and Systems] (ORCID:000000030469636X)"
+  ],
+  "subjects": [
+    "25 ENERGY STORAGE",
+    "energy storage systems",
+    "grid energy storage",
+    "lithium ion battery",
+    "long-term cycling"
+  ],
+  "article_type": "Accepted Manuscript",
+  "format": "Article No. 120532",
+  "doe_contract_number": "AC04-94AL85000; NA0003525",
+  "sponsor_orgs": [
+    "USDOE National Nuclear Security Administration (NNSA)",
+    "USDOE Office of Electricity (OE)"
+  ],
+  "research_orgs": [
+    "Sandia National Laboratories (SNL-NM), Albuquerque, NM (United States)"
+  ],
+  "journal_issn": "ISSN 1945-7111",
+  "other_identifiers": [
+    "Journal ID: ISSN 1945-7111;689942"
+  ],
+  "links": [
+    {
+      "rel": "citation",
+      "href": "https://www.osti.gov/biblio/1650174"
+    },
+    {
+      "rel": "fulltext",
+      "href": "https://www.osti.gov/servlets/purl/1650174"
+    },
+    {
+      "rel": "citation_doe_pages",
+      "href": "https://www.osti.gov/pages/biblio/1650174"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# Data Handling Invariant (B-6 Prevention)
+# Raw telemetry datasets and binary time-series must never be committed to git.
+# Public repository distributes data_manifest.json, checksums, and reproducible scripts only.
+
+data/
+raw/
+downloads/
+cache/
+
+# Binary & tabular raw files
+*.parquet
+*.feather
+*.h5
+*.h5py
+*.mat
+*.pkl
+
+# Ignore all CSVs except pinned L0 metadata
+*.csv
+!evidence/l0/source_pages/batteryarchive_metadata.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/

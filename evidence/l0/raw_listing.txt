@@ -1,0 +1,97 @@
+# BatteryArchive.org SNL (Sandia National Laboratories) Cell Inventory
+# Generated from: evidence/l0/source_pages/batteryarchive_metadata.csv
+# Total SNL Cells: 86
+#
+# Note on File Naming Standard:
+# Database Cell ID contains '/' in charge/discharge rate (e.g. SNL_18650_LFP_25C_0-100_0.5/1C_a).
+# Filesystem Filename Base converts '/' to '-' (e.g. SNL_18650_LFP_25C_0-100_0.5-1C_a)
+# per BatteryArchive data_transfer.py:L135 (file_name = cell_id.replace('/', '-'))
+#
+cell_id | filename_base | study | cathode | anode | temp_C | soc_range | crate_c | crate_d | cap_ah | form_factor
+--------|---------------|-------|---------|-------|--------|-----------|---------|---------|--------|------------
+SNL_18650_LFP_15C_0-100_0.5/1C_a | SNL_18650_LFP_15C_0-100_0.5-1C_a | snl | LFP | graphite | 15C | 0-100% | 0.5C | 1C | 1.1Ah | 18650
+SNL_18650_LFP_15C_0-100_0.5/1C_b | SNL_18650_LFP_15C_0-100_0.5-1C_b | snl | LFP | graphite | 15C | 0-100% | 0.5C | 1C | 1.1Ah | 18650
+SNL_18650_LFP_15C_0-100_0.5/2C_a | SNL_18650_LFP_15C_0-100_0.5-2C_a | snl | LFP | graphite | 15C | 0-100% | 0.5C | 2C | 1.1Ah | 18650
+SNL_18650_LFP_15C_0-100_0.5/2C_b | SNL_18650_LFP_15C_0-100_0.5-2C_b | snl | LFP | graphite | 15C | 0-100% | 0.5C | 2C | 1.1Ah | 18650
+SNL_18650_LFP_25C_0-100_0.5/0.5C_a | SNL_18650_LFP_25C_0-100_0.5-0.5C_a | snl | LFP | graphite | 25C | 0-100% | 0.5C | 0.5C | 1.1Ah | 18650
+SNL_18650_LFP_25C_0-100_0.5/1C_a | SNL_18650_LFP_25C_0-100_0.5-1C_a | snl | LFP | graphite | 25C | 0-100% | 0.5C | 1C | 1.1Ah | 18650
+SNL_18650_LFP_25C_0-100_0.5/1C_b | SNL_18650_LFP_25C_0-100_0.5-1C_b | snl | LFP | graphite | 25C | 0-100% | 0.5C | 1C | 1.1Ah | 18650
+SNL_18650_LFP_25C_0-100_0.5/1C_c | SNL_18650_LFP_25C_0-100_0.5-1C_c | snl | LFP | graphite | 25C | 0-100% | 0.5C | 1C | 1.1Ah | 18650
+SNL_18650_LFP_25C_0-100_0.5/1C_d | SNL_18650_LFP_25C_0-100_0.5-1C_d | snl | LFP | graphite | 25C | 0-100% | 0.5C | 1C | 1.1Ah | 18650
+SNL_18650_LFP_25C_0-100_0.5/2C_a | SNL_18650_LFP_25C_0-100_0.5-2C_a | snl | LFP | graphite | 25C | 0-100% | 0.5C | 2C | 1.1Ah | 18650
+SNL_18650_LFP_25C_0-100_0.5/2C_b | SNL_18650_LFP_25C_0-100_0.5-2C_b | snl | LFP | graphite | 25C | 0-100% | 0.5C | 2C | 1.1Ah | 18650
+SNL_18650_LFP_25C_0-100_0.5/3C_a | SNL_18650_LFP_25C_0-100_0.5-3C_a | snl | LFP | graphite | 25C | 0-100% | 0.5C | 3C | 1.1Ah | 18650
+SNL_18650_LFP_25C_0-100_0.5/3C_b | SNL_18650_LFP_25C_0-100_0.5-3C_b | snl | LFP | graphite | 25C | 0-100% | 0.5C | 3C | 1.1Ah | 18650
+SNL_18650_LFP_25C_0-100_0.5/3C_c | SNL_18650_LFP_25C_0-100_0.5-3C_c | snl | LFP | graphite | 25C | 0-100% | 0.5C | 3C | 1.1Ah | 18650
+SNL_18650_LFP_25C_0-100_0.5/3C_d | SNL_18650_LFP_25C_0-100_0.5-3C_d | snl | LFP | graphite | 25C | 0-100% | 0.5C | 3C | 1.1Ah | 18650
+SNL_18650_LFP_25C_20-80_0.5/0.5C_a | SNL_18650_LFP_25C_20-80_0.5-0.5C_a | snl | LFP | graphite | 25C | 20-80% | 0.5C | 0.5C | 1.1Ah | 18650
+SNL_18650_LFP_25C_20-80_0.5/0.5C_b | SNL_18650_LFP_25C_20-80_0.5-0.5C_b | snl | LFP | graphite | 25C | 20-80% | 0.5C | 0.5C | 1.1Ah | 18650
+SNL_18650_LFP_25C_20-80_0.5/0.5C_c | SNL_18650_LFP_25C_20-80_0.5-0.5C_c | snl | LFP | graphite | 25C | 20-80% | 0.5C | 0.5C | 1.1Ah | 18650
+SNL_18650_LFP_25C_20-80_0.5/0.5C_d | SNL_18650_LFP_25C_20-80_0.5-0.5C_d | snl | LFP | graphite | 25C | 20-80% | 0.5C | 0.5C | 1.1Ah | 18650
+SNL_18650_LFP_25C_20-80_0.5/3C_a | SNL_18650_LFP_25C_20-80_0.5-3C_a | snl | LFP | graphite | 25C | 20-80% | 0.5C | 3C | 1.1Ah | 18650
+SNL_18650_LFP_25C_40-60_0.5/0.5C_a | SNL_18650_LFP_25C_40-60_0.5-0.5C_a | snl | LFP | graphite | 25C | 40-60% | 0.5C | 0.5C | 1.1Ah | 18650
+SNL_18650_LFP_25C_40-60_0.5/0.5C_b | SNL_18650_LFP_25C_40-60_0.5-0.5C_b | snl | LFP | graphite | 25C | 40-60% | 0.5C | 0.5C | 1.1Ah | 18650
+SNL_18650_LFP_25C_40-60_0.5/3C_a | SNL_18650_LFP_25C_40-60_0.5-3C_a | snl | LFP | graphite | 25C | 40-60% | 0.5C | 3C | 1.1Ah | 18650
+SNL_18650_LFP_25C_40-60_0.5/3C_b | SNL_18650_LFP_25C_40-60_0.5-3C_b | snl | LFP | graphite | 25C | 40-60% | 0.5C | 3C | 1.1Ah | 18650
+SNL_18650_LFP_35C_0-100_0.5/1C_a | SNL_18650_LFP_35C_0-100_0.5-1C_a | snl | LFP | graphite | 35C | 0-100% | 0.5C | 1C | 1.1Ah | 18650
+SNL_18650_LFP_35C_0-100_0.5/1C_b | SNL_18650_LFP_35C_0-100_0.5-1C_b | snl | LFP | graphite | 35C | 0-100% | 0.5C | 1C | 1.1Ah | 18650
+SNL_18650_LFP_35C_0-100_0.5/1C_c | SNL_18650_LFP_35C_0-100_0.5-1C_c | snl | LFP | graphite | 35C | 0-100% | 0.5C | 1C | 1.1Ah | 18650
+SNL_18650_LFP_35C_0-100_0.5/1C_d | SNL_18650_LFP_35C_0-100_0.5-1C_d | snl | LFP | graphite | 35C | 0-100% | 0.5C | 1C | 1.1Ah | 18650
+SNL_18650_LFP_35C_0-100_0.5/2C_a | SNL_18650_LFP_35C_0-100_0.5-2C_a | snl | LFP | graphite | 35C | 0-100% | 0.5C | 2C | 1.1Ah | 18650
+SNL_18650_LFP_35C_0-100_0.5/2C_b | SNL_18650_LFP_35C_0-100_0.5-2C_b | snl | LFP | graphite | 35C | 0-100% | 0.5C | 2C | 1.1Ah | 18650
+SNL_18650_NCA_15C_0-100_0.5/1C_a | SNL_18650_NCA_15C_0-100_0.5-1C_a | snl | NCA | graphite | 15C | 0-100% | 0.5C | 1C | 3.2Ah | 18650
+SNL_18650_NCA_15C_0-100_0.5/1C_b | SNL_18650_NCA_15C_0-100_0.5-1C_b | snl | NCA | graphite | 15C | 0-100% | 0.5C | 1C | 3.2Ah | 18650
+SNL_18650_NCA_15C_0-100_0.5/2C_a | SNL_18650_NCA_15C_0-100_0.5-2C_a | snl | NCA | graphite | 15C | 0-100% | 0.5C | 2C | 3.2Ah | 18650
+SNL_18650_NCA_15C_0-100_0.5/2C_b | SNL_18650_NCA_15C_0-100_0.5-2C_b | snl | NCA | graphite | 15C | 0-100% | 0.5C | 2C | 3.2Ah | 18650
+SNL_18650_NCA_25C_0-100_0.5/0.5C_a | SNL_18650_NCA_25C_0-100_0.5-0.5C_a | snl | NCA | graphite | 25C | 0-100% | 0.5C | 0.5C | 3.2Ah | 18650
+SNL_18650_NCA_25C_0-100_0.5/0.5C_b | SNL_18650_NCA_25C_0-100_0.5-0.5C_b | snl | NCA | graphite | 25C | 0-100% | 0.5C | 0.5C | 3.2Ah | 18650
+SNL_18650_NCA_25C_0-100_0.5/1C_a | SNL_18650_NCA_25C_0-100_0.5-1C_a | snl | NCA | graphite | 25C | 0-100% | 0.5C | 1C | 3.2Ah | 18650
+SNL_18650_NCA_25C_0-100_0.5/1C_b | SNL_18650_NCA_25C_0-100_0.5-1C_b | snl | NCA | graphite | 25C | 0-100% | 0.5C | 1C | 3.2Ah | 18650
+SNL_18650_NCA_25C_0-100_0.5/1C_c | SNL_18650_NCA_25C_0-100_0.5-1C_c | snl | NCA | graphite | 25C | 0-100% | 0.5C | 1C | 3.2Ah | 18650
+SNL_18650_NCA_25C_0-100_0.5/1C_d | SNL_18650_NCA_25C_0-100_0.5-1C_d | snl | NCA | graphite | 25C | 0-100% | 0.5C | 1C | 3.2Ah | 18650
+SNL_18650_NCA_25C_0-100_0.5/2C_a | SNL_18650_NCA_25C_0-100_0.5-2C_a | snl | NCA | graphite | 25C | 0-100% | 0.5C | 2C | 3.2Ah | 18650
+SNL_18650_NCA_25C_0-100_0.5/2C_b | SNL_18650_NCA_25C_0-100_0.5-2C_b | snl | NCA | graphite | 25C | 0-100% | 0.5C | 2C | 3.2Ah | 18650
+SNL_18650_NCA_25C_20-80_0.5/0.5C_a | SNL_18650_NCA_25C_20-80_0.5-0.5C_a | snl | NCA | graphite | 25C | 20-80% | 0.5C | 0.5C | 3.2Ah | 18650
+SNL_18650_NCA_25C_20-80_0.5/0.5C_b | SNL_18650_NCA_25C_20-80_0.5-0.5C_b | snl | NCA | graphite | 25C | 20-80% | 0.5C | 0.5C | 3.2Ah | 18650
+SNL_18650_NCA_25C_20-80_0.5/0.5C_c | SNL_18650_NCA_25C_20-80_0.5-0.5C_c | snl | NCA | graphite | 25C | 20-80% | 0.5C | 0.5C | 3.2Ah | 18650
+SNL_18650_NCA_25C_20-80_0.5/0.5C_d | SNL_18650_NCA_25C_20-80_0.5-0.5C_d | snl | NCA | graphite | 25C | 20-80% | 0.5C | 0.5C | 3.2Ah | 18650
+SNL_18650_NCA_25C_40-60_0.5/0.5C_a | SNL_18650_NCA_25C_40-60_0.5-0.5C_a | snl | NCA | graphite | 25C | 40-60% | 0.5C | 0.5C | 3.2Ah | 18650
+SNL_18650_NCA_25C_40-60_0.5/0.5C_b | SNL_18650_NCA_25C_40-60_0.5-0.5C_b | snl | NCA | graphite | 25C | 40-60% | 0.5C | 0.5C | 3.2Ah | 18650
+SNL_18650_NCA_35C_0-100_0.5/1C_a | SNL_18650_NCA_35C_0-100_0.5-1C_a | snl | NCA | graphite | 35C | 0-100% | 0.5C | 1C | 3.2Ah | 18650
+SNL_18650_NCA_35C_0-100_0.5/1C_b | SNL_18650_NCA_35C_0-100_0.5-1C_b | snl | NCA | graphite | 35C | 0-100% | 0.5C | 1C | 3.2Ah | 18650
+SNL_18650_NCA_35C_0-100_0.5/1C_c | SNL_18650_NCA_35C_0-100_0.5-1C_c | snl | NCA | graphite | 35C | 0-100% | 0.5C | 1C | 3.2Ah | 18650
+SNL_18650_NCA_35C_0-100_0.5/1C_d | SNL_18650_NCA_35C_0-100_0.5-1C_d | snl | NCA | graphite | 35C | 0-100% | 0.5C | 1C | 3.2Ah | 18650
+SNL_18650_NCA_35C_0-100_0.5/2C_a | SNL_18650_NCA_35C_0-100_0.5-2C_a | snl | NCA | graphite | 35C | 0-100% | 0.5C | 2C | 3.2Ah | 18650
+SNL_18650_NCA_35C_0-100_0.5/2C_b | SNL_18650_NCA_35C_0-100_0.5-2C_b | snl | NCA | graphite | 35C | 0-100% | 0.5C | 2C | 3.2Ah | 18650
+SNL_18650_NMC_15C_0-100_0.5/1C_a | SNL_18650_NMC_15C_0-100_0.5-1C_a | snl | NMC | graphite | 15C | 0-100% | 0.5C | 1C | 3Ah | 18650
+SNL_18650_NMC_15C_0-100_0.5/1C_b | SNL_18650_NMC_15C_0-100_0.5-1C_b | snl | NMC | graphite | 15C | 0-100% | 0.5C | 1C | 3Ah | 18650
+SNL_18650_NMC_15C_0-100_0.5/2C_a | SNL_18650_NMC_15C_0-100_0.5-2C_a | snl | NMC | graphite | 15C | 0-100% | 0.5C | 2C | 3Ah | 18650
+SNL_18650_NMC_15C_0-100_0.5/2C_b | SNL_18650_NMC_15C_0-100_0.5-2C_b | snl | NMC | graphite | 15C | 0-100% | 0.5C | 2C | 3Ah | 18650
+SNL_18650_NMC_25C_0-100_0.5/0.5C_a | SNL_18650_NMC_25C_0-100_0.5-0.5C_a | snl | NMC | graphite | 25C | 0-100% | 0.5C | 0.5C | 3Ah | 18650
+SNL_18650_NMC_25C_0-100_0.5/0.5C_b | SNL_18650_NMC_25C_0-100_0.5-0.5C_b | snl | NMC | graphite | 25C | 0-100% | 0.5C | 0.5C | 3Ah | 18650
+SNL_18650_NMC_25C_0-100_0.5/1C_a | SNL_18650_NMC_25C_0-100_0.5-1C_a | snl | NMC | graphite | 25C | 0-100% | 0.5C | 1C | 3Ah | 18650
+SNL_18650_NMC_25C_0-100_0.5/1C_b | SNL_18650_NMC_25C_0-100_0.5-1C_b | snl | NMC | graphite | 25C | 0-100% | 0.5C | 1C | 3Ah | 18650
+SNL_18650_NMC_25C_0-100_0.5/1C_c | SNL_18650_NMC_25C_0-100_0.5-1C_c | snl | NMC | graphite | 25C | 0-100% | 0.5C | 1C | 3Ah | 18650
+SNL_18650_NMC_25C_0-100_0.5/1C_d | SNL_18650_NMC_25C_0-100_0.5-1C_d | snl | NMC | graphite | 25C | 0-100% | 0.5C | 1C | 3Ah | 18650
+SNL_18650_NMC_25C_0-100_0.5/2C_a | SNL_18650_NMC_25C_0-100_0.5-2C_a | snl | NMC | graphite | 25C | 0-100% | 0.5C | 2C | 3Ah | 18650
+SNL_18650_NMC_25C_0-100_0.5/2C_b | SNL_18650_NMC_25C_0-100_0.5-2C_b | snl | NMC | graphite | 25C | 0-100% | 0.5C | 2C | 3Ah | 18650
+SNL_18650_NMC_25C_0-100_0.5/3C_a | SNL_18650_NMC_25C_0-100_0.5-3C_a | snl | NMC | graphite | 25C | 0-100% | 0.5C | 3C | 3Ah | 18650
+SNL_18650_NMC_25C_0-100_0.5/3C_b | SNL_18650_NMC_25C_0-100_0.5-3C_b | snl | NMC | graphite | 25C | 0-100% | 0.5C | 3C | 3Ah | 18650
+SNL_18650_NMC_25C_0-100_0.5/3C_c | SNL_18650_NMC_25C_0-100_0.5-3C_c | snl | NMC | graphite | 25C | 0-100% | 0.5C | 3C | 3Ah | 18650
+SNL_18650_NMC_25C_0-100_0.5/3C_d | SNL_18650_NMC_25C_0-100_0.5-3C_d | snl | NMC | graphite | 25C | 0-100% | 0.5C | 3C | 3Ah | 18650
+SNL_18650_NMC_25C_20-80_0.5/0.5C_a | SNL_18650_NMC_25C_20-80_0.5-0.5C_a | snl | NMC | graphite | 25C | 20-80% | 0.5C | 0.5C | 3Ah | 18650
+SNL_18650_NMC_25C_20-80_0.5/0.5C_b | SNL_18650_NMC_25C_20-80_0.5-0.5C_b | snl | NMC | graphite | 25C | 20-80% | 0.5C | 0.5C | 3Ah | 18650
+SNL_18650_NMC_25C_20-80_0.5/0.5C_c | SNL_18650_NMC_25C_20-80_0.5-0.5C_c | snl | NMC | graphite | 25C | 20-80% | 0.5C | 0.5C | 3Ah | 18650
+SNL_18650_NMC_25C_20-80_0.5/0.5C_d | SNL_18650_NMC_25C_20-80_0.5-0.5C_d | snl | NMC | graphite | 25C | 20-80% | 0.5C | 0.5C | 3Ah | 18650
+SNL_18650_NMC_25C_20-80_0.5/3C_a | SNL_18650_NMC_25C_20-80_0.5-3C_a | snl | NMC | graphite | 25C | 20-80% | 0.5C | 3C | 3Ah | 18650
+SNL_18650_NMC_25C_20-80_0.5/3C_b | SNL_18650_NMC_25C_20-80_0.5-3C_b | snl | NMC | graphite | 25C | 20-80% | 0.5C | 3C | 3Ah | 18650
+SNL_18650_NMC_25C_40-60_0.5/0.5C_a | SNL_18650_NMC_25C_40-60_0.5-0.5C_a | snl | NMC | graphite | 25C | 40-60% | 0.5C | 0.5C | 3Ah | 18650
+SNL_18650_NMC_25C_40-60_0.5/0.5C_b | SNL_18650_NMC_25C_40-60_0.5-0.5C_b | snl | NMC | graphite | 25C | 40-60% | 0.5C | 0.5C | 3Ah | 18650
+SNL_18650_NMC_25C_40-60_0.5/3C_a | SNL_18650_NMC_25C_40-60_0.5-3C_a | snl | NMC | graphite | 25C | 40-60% | 0.5C | 3C | 3Ah | 18650
+SNL_18650_NMC_25C_40-60_0.5/3C_b | SNL_18650_NMC_25C_40-60_0.5-3C_b | snl | NMC | graphite | 25C | 40-60% | 0.5C | 3C | 3Ah | 18650
+SNL_18650_NMC_35C_0-100_0.5/1C_a | SNL_18650_NMC_35C_0-100_0.5-1C_a | snl | NMC | graphite | 35C | 0-100% | 0.5C | 1C | 3Ah | 18650
+SNL_18650_NMC_35C_0-100_0.5/1C_b | SNL_18650_NMC_35C_0-100_0.5-1C_b | snl | NMC | graphite | 35C | 0-100% | 0.5C | 1C | 3Ah | 18650
+SNL_18650_NMC_35C_0-100_0.5/1C_c | SNL_18650_NMC_35C_0-100_0.5-1C_c | snl | NMC | graphite | 35C | 0-100% | 0.5C | 1C | 3Ah | 18650
+SNL_18650_NMC_35C_0-100_0.5/1C_d | SNL_18650_NMC_35C_0-100_0.5-1C_d | snl | NMC | graphite | 35C | 0-100% | 0.5C | 1C | 3Ah | 18650
+SNL_18650_NMC_35C_0-100_0.5/2C_a | SNL_18650_NMC_35C_0-100_0.5-2C_a | snl | NMC | graphite | 35C | 0-100% | 0.5C | 2C | 3Ah | 18650
+SNL_18650_NMC_35C_0-100_0.5/2C_b | SNL_18650_NMC_35C_0-100_0.5-2C_b | snl | NMC | graphite | 35C | 0-100% | 0.5C | 2C | 3Ah | 18650

@@ -1,0 +1,886 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          4
+        ]
+      ],
+      "date-time": "2026-09-04T16:17:19Z",
+      "timestamp": 1788538639763,
+      "version": "build-2803163510"
+    },
+    "reference-count": 48,
+    "publisher": "The Electrochemical Society",
+    "issue": "12",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              9,
+              2
+            ]
+          ],
+          "date-time": "2020-09-02T00:00:00Z",
+          "timestamp": 1599004800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 237,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              9,
+              2
+            ]
+          ],
+          "date-time": "2020-09-02T00:00:00Z",
+          "timestamp": 1599004800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 237,
+        "URL": "https://iopscience.iop.org/info/page/text-and-data-mining"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Department of Energy Office of Electricity Energy Storage Program"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "iopscience.iop.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Electrochem. Soc."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          1,
+          9
+        ]
+      ]
+    },
+    "abstract": "<jats:p>\n                    Energy storage systems with Li-ion batteries are increasingly deployed to maintain a robust and resilient grid and facilitate the integration of renewable energy resources. However, appropriate selection of cells for different applications is difficult due to limited public data comparing the most commonly used off-the-shelf Li-ion chemistries under the same operating conditions. This article details a multi-year cycling study of commercial LiFePO\n                    <jats:sub>4</jats:sub>\n                    (LFP), LiNi\n                    <jats:sub>x</jats:sub>\n                    Co\n                    <jats:sub>y</jats:sub>\n                    Al\n                    <jats:sub>1\u2212x\u2212y</jats:sub>\n                    O\n                    <jats:sub>2</jats:sub>\n                    (NCA), and LiNi\n                    <jats:sub>x</jats:sub>\n                    Mn\n                    <jats:sub>y</jats:sub>\n                    Co\n                    <jats:sub>1\u2212x\u2212y</jats:sub>\n                    O\n                    <jats:sub>2</jats:sub>\n                    (NMC) cells, varying the discharge rate, depth of discharge (DOD), and environment temperature. The capacity and discharge energy retention, as well as the round-trip efficiency, were compared. Even when operated within manufacturer specifications, the range of cycling conditions had a profound effect on cell degradation, with time to reach 80% capacity varying by thousands of hours and cycle counts among cells of each chemistry. The degradation of cells in this study was compared to that of similar cells in previous studies to identify universal trends and to provide a standard deviation for performance. All cycling files have been made publicly available at batteryarchive.org, a recently developed repository for visualization and comparison of battery data, to facilitate future experimental and modeling efforts.\n                  </jats:p>",
+    "DOI": "10.1149/1945-7111/abae37",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          8,
+          11
+        ]
+      ],
+      "date-time": "2020-08-11T18:33:53Z",
+      "timestamp": 1597170833000
+    },
+    "page": "120532",
+    "update-policy": "https://doi.org/10.1088/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 573,
+    "title": [
+      "Degradation of Commercial Lithium-Ion Cells as a Function of Chemistry and Cycling Conditions"
+    ],
+    "prefix": "10.1149",
+    "volume": "167",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8558-2529",
+        "authenticated-orcid": false,
+        "given": "Yuliya",
+        "family": "Preger",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Heather M.",
+        "family": "Barkholtz",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Armando",
+        "family": "Fresquez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daniel L.",
+        "family": "Campbell",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Benjamin W.",
+        "family": "Juba",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1879-0234",
+        "authenticated-orcid": false,
+        "given": "Jessica",
+        "family": "Rom\u00e0n-Kustas",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Summer R.",
+        "family": "Ferreira",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0469-636X",
+        "authenticated-orcid": false,
+        "given": "Babu",
+        "family": "Chalamala",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "77",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          9,
+          2
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "jesabae37bib1",
+        "doi-asserted-by": "publisher",
+        "first-page": "375",
+        "DOI": "10.1016/j.renene.2014.11.058",
+        "volume": "76",
+        "author": "Diouf",
+        "year": "2015",
+        "journal-title": "Renew. Energy"
+      },
+      {
+        "key": "jesabae37bib2",
+        "doi-asserted-by": "publisher",
+        "first-page": "2696",
+        "DOI": "10.1039/C8EE01419A",
+        "volume": "11",
+        "author": "G\u00fcr",
+        "year": "2018",
+        "journal-title": "Energy Environ. Sci."
+      },
+      {
+        "key": "jesabae37bib3",
+        "author": ""
+      },
+      {
+        "key": "jesabae37bib4",
+        "doi-asserted-by": "publisher",
+        "first-page": "541",
+        "DOI": "10.1016/j.jpowsour.2009.05.036",
+        "volume": "194",
+        "author": "Dubarry",
+        "year": "2009",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib5",
+        "doi-asserted-by": "publisher",
+        "first-page": "296",
+        "DOI": "10.1016/j.jpowsour.2012.02.068",
+        "volume": "208",
+        "author": "Kassem",
+        "year": "2012",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib6",
+        "doi-asserted-by": "publisher",
+        "first-page": "A1872",
+        "DOI": "10.1149/2.0411609jes",
+        "volume": "163",
+        "author": "Keil",
+        "year": "2016",
+        "journal-title": "J. Electrochem. Soc."
+      },
+      {
+        "key": "jesabae37bib7",
+        "doi-asserted-by": "publisher",
+        "first-page": "254",
+        "DOI": "10.1016/j.jpowsour.2017.01.133",
+        "volume": "345",
+        "author": "Lewerenz",
+        "year": "2017",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib8",
+        "doi-asserted-by": "publisher",
+        "first-page": "2301",
+        "DOI": "10.1002/celc.201800326",
+        "volume": "5",
+        "author": "Sun",
+        "year": "2018",
+        "journal-title": "ChemElectroChem"
+      },
+      {
+        "key": "jesabae37bib9",
+        "doi-asserted-by": "publisher",
+        "first-page": "153",
+        "DOI": "10.1016/j.est.2018.01.019",
+        "volume": "17",
+        "author": "Naumann",
+        "year": "2018",
+        "journal-title": "J. Energy Storage"
+      },
+      {
+        "key": "jesabae37bib10",
+        "doi-asserted-by": "publisher",
+        "first-page": "185",
+        "DOI": "10.1016/j.jpowsour.2018.01.080",
+        "volume": "380",
+        "author": "Crawford",
+        "year": "2018",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib11",
+        "doi-asserted-by": "publisher",
+        "first-page": "383",
+        "DOI": "10.1038/s41560-019-0356-8",
+        "volume": "4",
+        "author": "Severson",
+        "year": "2019",
+        "journal-title": "Nat. Energy"
+      },
+      {
+        "key": "jesabae37bib12",
+        "doi-asserted-by": "publisher",
+        "first-page": "525",
+        "DOI": "10.1016/j.electacta.2015.08.056",
+        "volume": "178",
+        "author": "Waldmann",
+        "year": "2015",
+        "journal-title": "Electrochim. Acta"
+      },
+      {
+        "key": "jesabae37bib13",
+        "doi-asserted-by": "publisher",
+        "first-page": "A6066",
+        "DOI": "10.1149/2.0091701jes",
+        "volume": "164",
+        "author": "Keil",
+        "year": "2017",
+        "journal-title": "J. Electrochem. Soc."
+      },
+      {
+        "key": "jesabae37bib14",
+        "doi-asserted-by": "publisher",
+        "first-page": "39",
+        "DOI": "10.1016/j.jpowsour.2017.05.015",
+        "volume": "358",
+        "author": "Dubarry",
+        "year": "2017",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib15",
+        "doi-asserted-by": "publisher",
+        "first-page": "839",
+        "DOI": "10.1016/j.jpowsour.2013.09.143",
+        "volume": "248",
+        "author": "Ecker",
+        "year": "2014",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib16",
+        "doi-asserted-by": "publisher",
+        "first-page": "44",
+        "DOI": "10.1016/j.est.2015.05.003",
+        "volume": "1",
+        "author": "Schuster",
+        "year": "2015",
+        "journal-title": "J. Energy Storage"
+      },
+      {
+        "key": "jesabae37bib17",
+        "doi-asserted-by": "publisher",
+        "first-page": "335",
+        "DOI": "10.1016/j.electacta.2018.04.045",
+        "volume": "273",
+        "author": "Maheshwari",
+        "year": "2018",
+        "journal-title": "Electrochim. Acta"
+      },
+      {
+        "key": "jesabae37bib18",
+        "doi-asserted-by": "publisher",
+        "first-page": "A2697",
+        "DOI": "10.1149/2.1701712jes",
+        "volume": "164",
+        "author": "Barkholtz",
+        "year": "2017",
+        "journal-title": "J. Electrochem. Soc."
+      },
+      {
+        "key": "jesabae37bib19",
+        "doi-asserted-by": "publisher",
+        "first-page": "226777",
+        "DOI": "10.1016/j.jpowsour.2019.226777",
+        "volume": "435",
+        "author": "Barkholtz",
+        "year": "2019",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib20",
+        "doi-asserted-by": "publisher",
+        "first-page": "72",
+        "DOI": "10.1016/S0378-7753(02)00490-1",
+        "volume": "113",
+        "author": "Spotnitz",
+        "year": "2003",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib21",
+        "doi-asserted-by": "publisher",
+        "first-page": "28",
+        "DOI": "10.1016/j.jpowsour.2017.05.110",
+        "volume": "360",
+        "author": "Yang",
+        "year": "2017",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib22",
+        "author": "Mongird",
+        "year": "2019"
+      },
+      {
+        "key": "jesabae37bib23",
+        "doi-asserted-by": "publisher",
+        "first-page": "129",
+        "DOI": "10.1016/j.jpowsour.2014.03.112",
+        "volume": "262",
+        "author": "Waldmann",
+        "year": "2014",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib24",
+        "doi-asserted-by": "publisher",
+        "first-page": "107",
+        "DOI": "10.1016/j.jpowsour.2018.02.063",
+        "volume": "384",
+        "author": "Waldmann",
+        "year": "2018",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib25",
+        "doi-asserted-by": "publisher",
+        "first-page": "52",
+        "DOI": "10.1016/j.carbon.2016.04.008",
+        "volume": "105",
+        "author": "An",
+        "year": "2016",
+        "journal-title": "Carbon"
+      },
+      {
+        "key": "jesabae37bib26",
+        "doi-asserted-by": "publisher",
+        "first-page": "495",
+        "DOI": "10.1016/j.electacta.2017.03.126",
+        "volume": "240",
+        "author": "Ruiz",
+        "year": "2017",
+        "journal-title": "Electrochim. Acta"
+      },
+      {
+        "key": "jesabae37bib27",
+        "doi-asserted-by": "publisher",
+        "first-page": "802",
+        "DOI": "10.1016/j.electacta.2013.08.074",
+        "volume": "111",
+        "author": "Tan",
+        "year": "2013",
+        "journal-title": "Electrochim. Acta"
+      },
+      {
+        "key": "jesabae37bib28",
+        "doi-asserted-by": "publisher",
+        "first-page": "599",
+        "DOI": "10.1007/s10008-012-1893-2",
+        "volume": "17",
+        "author": "Song",
+        "year": "2013",
+        "journal-title": "J. Solid State Electrochem."
+      },
+      {
+        "key": "jesabae37bib29",
+        "doi-asserted-by": "publisher",
+        "first-page": "2139",
+        "DOI": "10.1007/s11581-018-2607-2",
+        "volume": "25",
+        "author": "Yi",
+        "year": "2019",
+        "journal-title": "Ionics"
+      },
+      {
+        "key": "jesabae37bib30",
+        "doi-asserted-by": "publisher",
+        "first-page": "88",
+        "DOI": "10.1016/j.jpowsour.2016.12.040",
+        "volume": "342",
+        "author": "Friesen",
+        "year": "2017",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib31",
+        "doi-asserted-by": "publisher",
+        "first-page": "67",
+        "DOI": "10.1016/j.jpowsour.2019.04.034",
+        "volume": "426",
+        "author": "Wang",
+        "year": "2019",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib32",
+        "doi-asserted-by": "publisher",
+        "first-page": "194",
+        "DOI": "10.1016/j.egypro.2018.09.047",
+        "volume": "151",
+        "author": "Bryden",
+        "year": "2018",
+        "journal-title": "Energy Procedia"
+      },
+      {
+        "key": "jesabae37bib33",
+        "doi-asserted-by": "publisher",
+        "first-page": "3942",
+        "DOI": "10.1016/j.jpowsour.2010.11.134",
+        "volume": "196",
+        "author": "Wang",
+        "year": "2011",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib34",
+        "doi-asserted-by": "publisher",
+        "first-page": "573",
+        "DOI": "10.1016/j.jpowsour.2014.10.153",
+        "volume": "275",
+        "author": "Sarasketa-Zabala",
+        "year": "2015",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib35",
+        "doi-asserted-by": "publisher",
+        "first-page": "50",
+        "DOI": "10.1016/j.jpowsour.2014.02.103",
+        "volume": "260",
+        "author": "Watanabe",
+        "year": "2014",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib36",
+        "doi-asserted-by": "publisher",
+        "first-page": "A2682",
+        "DOI": "10.1149/2.0491811jes",
+        "volume": "165",
+        "author": "Li",
+        "year": "2018",
+        "journal-title": "J. Electrochem. Soc."
+      },
+      {
+        "key": "jesabae37bib37",
+        "doi-asserted-by": "publisher",
+        "first-page": "113818",
+        "DOI": "10.1016/j.apenergy.2019.113818",
+        "volume": "255",
+        "author": "Zhang",
+        "year": "2019",
+        "journal-title": "Appl. Energy"
+      },
+      {
+        "key": "jesabae37bib38",
+        "doi-asserted-by": "publisher",
+        "first-page": "47",
+        "DOI": "10.1016/j.apenergy.2017.05.018",
+        "volume": "200",
+        "author": "de Hoog",
+        "year": "2017",
+        "journal-title": "Appl. Energy"
+      },
+      {
+        "key": "jesabae37bib39",
+        "doi-asserted-by": "publisher",
+        "first-page": "641",
+        "DOI": "10.1016/j.jpowsour.2018.07.018",
+        "volume": "400",
+        "author": "Gao",
+        "year": "2018",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib40",
+        "doi-asserted-by": "publisher",
+        "first-page": "408",
+        "DOI": "10.1016/j.jpowsour.2014.02.052",
+        "volume": "258",
+        "author": "Dubarry",
+        "year": "2014",
+        "journal-title": "J. Power Sources"
+      },
+      {
+        "key": "jesabae37bib41",
+        "doi-asserted-by": "publisher",
+        "first-page": "25695",
+        "DOI": "10.1039/C8RA04074E",
+        "volume": "8",
+        "author": "Sun",
+        "year": "2018",
+        "journal-title": "RSC Adv."
+      },
+      {
+        "key": "jesabae37bib42",
+        "first-page": "2593780",
+        "author": "Cui",
+        "year": "2018",
+        "journal-title": "Scanning"
+      },
+      {
+        "key": "jesabae37bib43",
+        "doi-asserted-by": "publisher",
+        "first-page": "323",
+        "DOI": "10.1016/j.electacta.2015.05.039",
+        "volume": "173",
+        "author": "Zheng",
+        "year": "2015",
+        "journal-title": "Electrochim. Acta"
+      },
+      {
+        "key": "jesabae37bib44",
+        "doi-asserted-by": "publisher",
+        "first-page": "325",
+        "DOI": "10.1016/j.est.2017.07.004",
+        "volume": "13",
+        "author": "Mussa",
+        "year": "2017",
+        "journal-title": "J. Energy Storage"
+      },
+      {
+        "key": "jesabae37bib45",
+        "doi-asserted-by": "publisher",
+        "first-page": "511",
+        "DOI": "10.1016/j.enpol.2012.04.017",
+        "volume": "46",
+        "author": "Lunz",
+        "year": "2012",
+        "journal-title": "Energy Policy"
+      },
+      {
+        "key": "jesabae37bib46",
+        "doi-asserted-by": "publisher",
+        "first-page": "256",
+        "DOI": "10.1016/j.electacta.2011.12.019",
+        "volume": "62",
+        "author": "Zheng",
+        "year": "2012",
+        "journal-title": "Electrochim. Acta"
+      },
+      {
+        "key": "jesabae37bib47",
+        "doi-asserted-by": "publisher",
+        "first-page": "A1007",
+        "DOI": "10.1149/2.056406jes",
+        "volume": "161",
+        "author": "Hayashi",
+        "year": "2014",
+        "journal-title": "J. Electrochem. Soc."
+      },
+      {
+        "key": "jesabae37bib48",
+        "doi-asserted-by": "publisher",
+        "first-page": "383",
+        "DOI": "10.1016/j.est.2018.03.016",
+        "volume": "17",
+        "author": "Paul",
+        "year": "2018",
+        "journal-title": "J. Energy Storage"
+      }
+    ],
+    "container-title": [
+      "Journal of The Electrochemical Society"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37",
+        "content-type": "text/html",
+        "content-version": "am",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37/pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37/pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37/pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "similarity-checking"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          25
+        ]
+      ],
+      "date-time": "2021-11-25T17:10:04Z",
+      "timestamp": 1637860204000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          1,
+          9
+        ]
+      ]
+    },
+    "references-count": 48,
+    "journal-issue": {
+      "issue": "12",
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            1,
+            9
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1149/1945-7111/abae37",
+    "relation": {},
+    "ISSN": [
+      "0013-4651",
+      "1945-7111"
+    ],
+    "issn-type": [
+      {
+        "value": "0013-4651",
+        "type": "print"
+      },
+      {
+        "value": "1945-7111",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          1,
+          9
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Degradation of Commercial Lithium-Ion Cells as a Function of Chemistry and Cycling Conditions",
+        "name": "article_title",
+        "label": "Article Title"
+      },
+      {
+        "value": "Journal of The Electrochemical Society",
+        "name": "journal_title",
+        "label": "Journal Title"
+      },
+      {
+        "value": "paper",
+        "name": "article_type",
+        "label": "Article Type"
+      },
+      {
+        "value": "\u00a9 2020 The Author(s). Published on behalf of The Electrochemical Society by IOP Publishing Limited",
+        "name": "copyright_information",
+        "label": "Copyright Information"
+      },
+      {
+        "value": "2020-05-27",
+        "name": "date_received",
+        "label": "Date Received",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "name": "date_accepted",
+        "label": "Date Accepted",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "2020-09-02",
+        "name": "date_epub",
+        "label": "Online publication date",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      }
+    ]
+  }
+}

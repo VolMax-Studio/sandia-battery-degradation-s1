@@ -1,0 +1,636 @@
+{
+  "name": "Cycle Test Cell List",
+  "layout": [],
+  "dashboard_filters_enabled": false,
+  "updated_at": "2025-11-14T16:27:49.500Z",
+  "created_at": "2022-06-04T00:56:20.655Z",
+  "options": {},
+  "widgets": [
+    {
+      "id": 24,
+      "width": 1,
+      "options": {
+        "parameterMappings": {
+          "cathode": {
+            "name": "cathode",
+            "type": "dashboard-level",
+            "mapTo": "cathode",
+            "value": null,
+            "title": ""
+          },
+          "anode": {
+            "name": "anode",
+            "type": "dashboard-level",
+            "mapTo": "anode",
+            "value": null,
+            "title": ""
+          },
+          "ah": {
+            "name": "ah",
+            "type": "dashboard-level",
+            "mapTo": "ah",
+            "value": null,
+            "title": ""
+          },
+          "temperature": {
+            "name": "temperature",
+            "type": "dashboard-level",
+            "mapTo": "temperature",
+            "value": null,
+            "title": ""
+          },
+          "crate_c": {
+            "name": "crate_c",
+            "type": "dashboard-level",
+            "mapTo": "crate_c",
+            "value": null,
+            "title": ""
+          },
+          "crate_d": {
+            "name": "crate_d",
+            "type": "dashboard-level",
+            "mapTo": "crate_d",
+            "value": null,
+            "title": ""
+          },
+          "soc_max": {
+            "name": "soc_max",
+            "type": "dashboard-level",
+            "mapTo": "soc_max",
+            "value": null,
+            "title": ""
+          },
+          "soc_min": {
+            "name": "soc_min",
+            "type": "dashboard-level",
+            "mapTo": "soc_min",
+            "value": null,
+            "title": ""
+          },
+          "source": {
+            "name": "source",
+            "type": "dashboard-level",
+            "mapTo": "source",
+            "value": null,
+            "title": ""
+          },
+          "form_factor": {
+            "name": "form_factor",
+            "type": "dashboard-level",
+            "mapTo": "form_factor",
+            "value": null,
+            "title": ""
+          }
+        },
+        "isHidden": false,
+        "position": {
+          "autoHeight": false,
+          "sizeX": 6,
+          "sizeY": 27,
+          "minSizeX": 2,
+          "maxSizeX": 6,
+          "minSizeY": 1,
+          "maxSizeY": 1000,
+          "col": 0,
+          "row": 0
+        }
+      },
+      "text": "",
+      "updated_at": "2022-12-30T17:28:59.830Z",
+      "created_at": "2022-12-30T17:28:21.808Z",
+      "visualization": {
+        "type": "SELECTION_TABLE",
+        "name": "Selection Table",
+        "description": "",
+        "options": {
+          "itemsPerPage": 25,
+          "paginationSize": "default",
+          "buttonArr": [
+            {
+              "name": "Cycle Data",
+              "linkUrlTemplate": "public/dashboards/61PzyYn9u56njtPDOh37VVBFasGusUlxc7WZ1FSj?org_slug=default&p_cell_id={{ @ }}",
+              "linkOpenInNewTab": true,
+              "columnName": "cell_id",
+              "props": {
+                "href": "public/dashboards/61PzyYn9u56njtPDOh37VVBFasGusUlxc7WZ1FSj?org_slug=default&p_cell_id=[]",
+                "text": "Cycle Data",
+                "target": "_blank",
+                "title": "Cycle Data"
+              }
+            }
+          ],
+          "columns": [
+            {
+              "booleanValues": [
+                "false",
+                "true"
+              ],
+              "imageUrlTemplate": "{{ @ }}",
+              "imageTitleTemplate": "{{ @ }}",
+              "imageWidth": "",
+              "imageHeight": "",
+              "linkUrlTemplate": "public/dashboards/61PzyYn9u56njtPDOh37VVBFasGusUlxc7WZ1FSj?org_slug=default&p_cell_id={{ @ }}",
+              "linkTextTemplate": "{{ @ }}",
+              "linkTitleTemplate": "{{ @ }}",
+              "linkOpenInNewTab": true,
+              "name": "cell_id",
+              "type": "string",
+              "displayAs": "link",
+              "visible": true,
+              "order": 100000,
+              "title": "Cell ID",
+              "allowSearch": false,
+              "alignContent": "left",
+              "allowHTML": true,
+              "highlightLinks": false
+            },
+            {
+              "booleanValues": [
+                "false",
+                "true"
+              ],
+              "imageUrlTemplate": "{{ @ }}",
+              "imageTitleTemplate": "{{ @ }}",
+              "imageWidth": "",
+              "imageHeight": "",
+              "linkUrlTemplate": "{{ @ }}",
+              "linkTextTemplate": "{{ @ }}",
+              "linkTitleTemplate": "{{ @ }}",
+              "linkOpenInNewTab": true,
+              "name": "anode",
+              "type": "string",
+              "displayAs": "string",
+              "visible": true,
+              "order": 100001,
+              "title": "Anode",
+              "allowSearch": false,
+              "alignContent": "left",
+              "allowHTML": true,
+              "highlightLinks": false
+            },
+            {
+              "booleanValues": [
+                "false",
+                "true"
+              ],
+              "imageUrlTemplate": "{{ @ }}",
+              "imageTitleTemplate": "{{ @ }}",
+              "imageWidth": "",
+              "imageHeight": "",
+              "linkUrlTemplate": "{{ @ }}",
+              "linkTextTemplate": "{{ @ }}",
+              "linkTitleTemplate": "{{ @ }}",
+              "linkOpenInNewTab": true,
+              "name": "cathode",
+              "type": "string",
+              "displayAs": "string",
+              "visible": true,
+              "order": 100002,
+              "title": "Cathode",
+              "allowSearch": false,
+              "alignContent": "left",
+              "allowHTML": true,
+              "highlightLinks": false
+            },
+            {
+              "booleanValues": [
+                "false",
+                "true"
+              ],
+              "imageUrlTemplate": "{{ @ }}",
+              "imageTitleTemplate": "{{ @ }}",
+              "imageWidth": "",
+              "imageHeight": "",
+              "linkUrlTemplate": "{{ @ }}",
+              "linkTextTemplate": "{{ @ }}",
+              "linkTitleTemplate": "{{ @ }}",
+              "linkOpenInNewTab": true,
+              "name": "source",
+              "type": "string",
+              "displayAs": "string",
+              "visible": true,
+              "order": 100003,
+              "title": "Source",
+              "allowSearch": false,
+              "alignContent": "left",
+              "allowHTML": true,
+              "highlightLinks": false
+            },
+            {
+              "numberFormat": "0,0.00",
+              "booleanValues": [
+                "false",
+                "true"
+              ],
+              "imageUrlTemplate": "{{ @ }}",
+              "imageTitleTemplate": "{{ @ }}",
+              "imageWidth": "",
+              "imageHeight": "",
+              "linkUrlTemplate": "{{ @ }}",
+              "linkTextTemplate": "{{ @ }}",
+              "linkTitleTemplate": "{{ @ }}",
+              "linkOpenInNewTab": true,
+              "name": "ah",
+              "type": "float",
+              "displayAs": "number",
+              "visible": true,
+              "order": 100004,
+              "title": "Ah",
+              "allowSearch": false,
+              "alignContent": "right",
+              "allowHTML": true,
+              "highlightLinks": false
+            },
+            {
+              "booleanValues": [
+                "false",
+                "true"
+              ],
+              "imageUrlTemplate": "{{ @ }}",
+              "imageTitleTemplate": "{{ @ }}",
+              "imageWidth": "",
+              "imageHeight": "",
+              "linkUrlTemplate": "{{ @ }}",
+              "linkTextTemplate": "{{ @ }}",
+              "linkTitleTemplate": "{{ @ }}",
+              "linkOpenInNewTab": true,
+              "name": "form_factor",
+              "type": "string",
+              "displayAs": "string",
+              "visible": true,
+              "order": 100005,
+              "title": "Form Factor",
+              "allowSearch": false,
+              "alignContent": "left",
+              "allowHTML": true,
+              "highlightLinks": false
+            },
+            {
+              "booleanValues": [
+                "false",
+                "true"
+              ],
+              "imageUrlTemplate": "{{ @ }}",
+              "imageTitleTemplate": "{{ @ }}",
+              "imageWidth": "",
+              "imageHeight": "",
+              "linkUrlTemplate": "{{ @ }}",
+              "linkTextTemplate": "{{ @ }}",
+              "linkTitleTemplate": "{{ @ }}",
+              "linkOpenInNewTab": true,
+              "name": "tester",
+              "type": "string",
+              "displayAs": "string",
+              "visible": false,
+              "order": 100006,
+              "title": "tester",
+              "allowSearch": false,
+              "alignContent": "left",
+              "allowHTML": true,
+              "highlightLinks": false
+            },
+            {
+              "numberFormat": "0,0.00",
+              "booleanValues": [
+                "false",
+                "true"
+              ],
+              "imageUrlTemplate": "{{ @ }}",
+              "imageTitleTemplate": "{{ @ }}",
+              "imageWidth": "",
+              "imageHeight": "",
+              "linkUrlTemplate": "{{ @ }}",
+              "linkTextTemplate": "{{ @ }}",
+              "linkTitleTemplate": "{{ @ }}",
+              "linkOpenInNewTab": true,
+              "name": "temperature",
+              "type": "float",
+              "displayAs": "number",
+              "visible": true,
+              "order": 100007,
+              "title": "Temperature (C)",
+              "allowSearch": false,
+              "alignContent": "right",
+              "allowHTML": true,
+              "highlightLinks": false
+            },
+            {
+              "numberFormat": "0,0.00",
+              "booleanValues": [
+                "false",
+                "true"
+              ],
+              "imageUrlTemplate": "{{ @ }}",
+              "imageTitleTemplate": "{{ @ }}",
+              "imageWidth": "",
+              "imageHeight": "",
+              "linkUrlTemplate": "{{ @ }}",
+              "linkTextTemplate": "{{ @ }}",
+              "linkTitleTemplate": "{{ @ }}",
+              "linkOpenInNewTab": true,
+              "name": "soc_max",
+              "type": "float",
+              "displayAs": "number",
+              "visible": true,
+              "order": 100008,
+              "title": "Max SOC",
+              "allowSearch": false,
+              "alignContent": "right",
+              "allowHTML": true,
+              "highlightLinks": false
+            },
+            {
+              "numberFormat": "0,0.00",
+              "booleanValues": [
+                "false",
+                "true"
+              ],
+              "imageUrlTemplate": "{{ @ }}",
+              "imageTitleTemplate": "{{ @ }}",
+              "imageWidth": "",
+              "imageHeight": "",
+              "linkUrlTemplate": "{{ @ }}",
+              "linkTextTemplate": "{{ @ }}",
+              "linkTitleTemplate": "{{ @ }}",
+              "linkOpenInNewTab": true,
+              "name": "soc_min",
+              "type": "float",
+              "displayAs": "number",
+              "visible": true,
+              "order": 100009,
+              "title": "Min SOC",
+              "allowSearch": false,
+              "alignContent": "right",
+              "allowHTML": true,
+              "highlightLinks": false
+            },
+            {
+              "numberFormat": "0,0.00",
+              "booleanValues": [
+                "false",
+                "true"
+              ],
+              "imageUrlTemplate": "{{ @ }}",
+              "imageTitleTemplate": "{{ @ }}",
+              "imageWidth": "",
+              "imageHeight": "",
+              "linkUrlTemplate": "{{ @ }}",
+              "linkTextTemplate": "{{ @ }}",
+              "linkTitleTemplate": "{{ @ }}",
+              "linkOpenInNewTab": true,
+              "name": "crate_c",
+              "type": "float",
+              "displayAs": "number",
+              "visible": true,
+              "order": 100010,
+              "title": "Charge Rate (C)",
+              "allowSearch": false,
+              "alignContent": "right",
+              "allowHTML": true,
+              "highlightLinks": false
+            },
+            {
+              "numberFormat": "0,0.00",
+              "booleanValues": [
+                "false",
+                "true"
+              ],
+              "imageUrlTemplate": "{{ @ }}",
+              "imageTitleTemplate": "{{ @ }}",
+              "imageWidth": "",
+              "imageHeight": "",
+              "linkUrlTemplate": "{{ @ }}",
+              "linkTextTemplate": "{{ @ }}",
+              "linkTitleTemplate": "{{ @ }}",
+              "linkOpenInNewTab": true,
+              "name": "crate_d",
+              "type": "float",
+              "displayAs": "number",
+              "visible": true,
+              "order": 100011,
+              "title": "Discharge Rate (C)",
+              "allowSearch": false,
+              "alignContent": "right",
+              "allowHTML": true,
+              "highlightLinks": false
+            }
+          ]
+        },
+        "updated_at": "2022-12-30T17:38:38.170Z",
+        "created_at": "2022-06-29T22:41:20.804Z",
+        "query": {
+          "id": 29,
+          "name": "Cycle Test Cell List",
+          "description": null,
+          "options": {
+            "apply_auto_limit": true,
+            "parameters": [
+              {
+                "title": "cathode",
+                "name": "cathode",
+                "type": "query",
+                "global": false,
+                "locals": [],
+                "queryId": 3,
+                "multiValuesOptions": {
+                  "prefix": "'",
+                  "suffix": "'",
+                  "separator": ","
+                },
+                "value": [
+                  "LCO",
+                  "LFP",
+                  "NCA",
+                  "NMC",
+                  "NMC-LCO",
+                  "NMC  "
+                ]
+              },
+              {
+                "title": "anode",
+                "name": "anode",
+                "type": "query",
+                "global": false,
+                "locals": [],
+                "queryId": 4,
+                "multiValuesOptions": {
+                  "prefix": "'",
+                  "suffix": "'",
+                  "separator": ","
+                },
+                "value": [
+                  "graphite"
+                ]
+              },
+              {
+                "title": "ah",
+                "name": "ah",
+                "type": "query",
+                "global": false,
+                "locals": [],
+                "queryId": 5,
+                "multiValuesOptions": {
+                  "prefix": "'",
+                  "suffix": "'",
+                  "separator": ","
+                },
+                "value": [
+                  "1.35",
+                  "2.36",
+                  "2.8",
+                  "3",
+                  "3.2",
+                  "3.3",
+                  "3.4",
+                  "5",
+                  "1.1",
+                  "0.74"
+                ]
+              },
+              {
+                "title": "temperature",
+                "name": "temperature",
+                "type": "query",
+                "global": false,
+                "locals": [],
+                "queryId": 8,
+                "multiValuesOptions": {
+                  "prefix": "'",
+                  "suffix": "'",
+                  "separator": ","
+                },
+                "value": [
+                  "15",
+                  "23",
+                  "25",
+                  "35",
+                  "40",
+                  "-5",
+                  "45"
+                ]
+              },
+              {
+                "title": "crate_c",
+                "name": "crate_c",
+                "type": "query",
+                "global": false,
+                "locals": [],
+                "queryId": 9,
+                "multiValuesOptions": {
+                  "prefix": "'",
+                  "suffix": "'",
+                  "separator": ","
+                },
+                "value": [
+                  "0.5",
+                  "1",
+                  "0.2",
+                  "1.5",
+                  "2.0"
+                ]
+              },
+              {
+                "title": "crate_d",
+                "name": "crate_d",
+                "type": "query",
+                "global": false,
+                "locals": [],
+                "queryId": 10,
+                "multiValuesOptions": {
+                  "prefix": "'",
+                  "suffix": "'",
+                  "separator": ","
+                },
+                "value": [
+                  "0.5",
+                  "1",
+                  "1.5",
+                  "1.84",
+                  "2",
+                  "3"
+                ]
+              },
+              {
+                "title": "soc_max",
+                "name": "soc_max",
+                "type": "query",
+                "global": false,
+                "locals": [],
+                "queryId": 11,
+                "multiValuesOptions": {
+                  "prefix": "'",
+                  "suffix": "'",
+                  "separator": ","
+                },
+                "value": [
+                  "60",
+                  "80",
+                  "96.5",
+                  "100"
+                ]
+              },
+              {
+                "title": "soc_min",
+                "name": "soc_min",
+                "type": "query",
+                "global": false,
+                "locals": [],
+                "queryId": 12,
+                "multiValuesOptions": {
+                  "prefix": "'",
+                  "suffix": "'",
+                  "separator": ","
+                },
+                "value": [
+                  "2.5",
+                  "20",
+                  "40",
+                  "0",
+                  "50"
+                ]
+              },
+              {
+                "title": "source",
+                "name": "source",
+                "type": "query",
+                "global": false,
+                "locals": [],
+                "queryId": 6,
+                "multiValuesOptions": {
+                  "prefix": "'",
+                  "suffix": "'",
+                  "separator": ","
+                },
+                "value": [
+                  "HNEI",
+                  "UL-PUR",
+                  "calce",
+                  "oxford",
+                  "snl"
+                ]
+              },
+              {
+                "title": "form_factor",
+                "name": "form_factor",
+                "type": "query",
+                "global": false,
+                "locals": [],
+                "queryId": 7,
+                "multiValuesOptions": {
+                  "prefix": "'",
+                  "suffix": "'",
+                  "separator": ","
+                },
+                "value": [
+                  "18650",
+                  "pouch",
+                  "prismatic"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

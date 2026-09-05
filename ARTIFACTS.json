@@ -1,0 +1,125 @@
+{
+  "instance": "sandia-battery-degradation-s1",
+  "phase": "candidate_l0",
+  "generated_at": "2026-09-05T18:37:00Z",
+  "publication": {
+    "title": "Degradation of Commercial Lithium-Ion Cells as a Function of Chemistry and Cycling Conditions",
+    "journal": "Journal of The Electrochemical Society",
+    "volume": 167,
+    "issue": 12,
+    "article_number": "120532",
+    "pages": "120532-1 to 120532-13",
+    "year": 2020,
+    "doi": "10.1149/1945-7111/abae37",
+    "crossref_license_url": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "crossref_license_date": "2020-09-02",
+    "osti_id": "1650174",
+    "osti_url": "https://www.osti.gov/biblio/1650174",
+    "iop_url": "https://iopscience.iop.org/article/10.1149/1945-7111/abae37",
+    "sandia_url": "https://www.sandia.gov/research/publications/details/degradation-of-commercial-lithium-ion-cells-as-a-function-of-chemistry-and-2020-01-09/",
+    "authors": [
+      "Yuliya Preger",
+      "Heather M. Barkholtz",
+      "Armando Fresquez",
+      "Daniel L. Campbell",
+      "Benjamin W. Juba",
+      "Jessica Rom\u00e0n-Kustas",
+      "Summer R. Ferreira",
+      "Babu Chalamala"
+    ],
+    "performing_organization": "Sandia National Laboratories (SNL-NM), Albuquerque, NM (United States)",
+    "sponsoring_agencies": [
+      "USDOE National Nuclear Security Administration (NNSA)",
+      "USDOE Office of Electricity (OE)"
+    ],
+    "publication_license": "CC BY-NC-ND 4.0 (Open Access via ECS / IOP Publishing; Verified via Crossref Record)"
+  },
+  "primary_data_repository": {
+    "platform": "BatteryArchive.org",
+    "url": "https://www.batteryarchive.org",
+    "study_id": "snl",
+    "study_summary_url": "https://www.batteryarchive.org/study_summaries.html",
+    "metadata_url": "https://www.batteryarchive.org/metadata.html",
+    "faq_url": "https://www.batteryarchive.org/faq.html",
+    "database_dashboard_url": "https://database.batteryarchive.org/public/dashboards/dG5C30gXNzH77rMeApZ4lIOrjy0m7pencFScWFA5",
+    "framework_github": "https://github.com/battery-lcf/battery-archive-sandbox",
+    "data_download_prefix": "https://www.batteryarchive.org/data/",
+    "dataset_access": "public",
+    "dataset_reuse_terms": "citation/attribution required; no explicit standalone dataset license identified in captured L0 evidence",
+    "framework_tools_license": "GNU GPLv3 / NTESS retained rights (Contract DE-NA0003525)"
+  },
+  "cell_cohort": {
+    "total_snl_cells": 86,
+    "tested_chemistries": {
+      "LFP": {
+        "manufacturer": "A123 Systems",
+        "model": "APR18650M1A",
+        "nominal_capacity_ah": 1.1,
+        "nominal_voltage_v": 3.3,
+        "cell_count": 30
+      },
+      "NMC": {
+        "manufacturer": "LG Chem",
+        "model": "18650 (commercial 3.0 Ah, Part #18650HG2)",
+        "nominal_capacity_ah": 3.0,
+        "nominal_voltage_v": 3.6,
+        "cell_count": 32
+      },
+      "NCA": {
+        "manufacturer": "Panasonic",
+        "model": "NCR18650B",
+        "nominal_capacity_ah": 3.2,
+        "nominal_voltage_v": 3.6,
+        "cell_count": 24
+      }
+    },
+    "cell_id_database_schema": "SNL_18650_{cathode}_{temperature}C_{min_soc}-{max_soc}_{charge_rate}/{discharge_rate}C_{replicate}",
+    "cell_filename_schema": "SNL_18650_{cathode}_{temperature}C_{min_soc}-{max_soc}_{charge_rate}-{discharge_rate}C_{replicate}",
+    "cycle_data_file_format": "{cell_filename}_cycle_data.csv",
+    "timeseries_data_file_format": "{cell_filename}_timeseries.csv",
+    "cycle_data_columns_declared": [
+      "Cycle_Index",
+      "Test_Time (s)",
+      "Min_Current (A)",
+      "Max_Current (A)",
+      "Min_Voltage (V)",
+      "Max_Voltage (V)",
+      "Charge_Capacity (Ah)",
+      "Discharge_Capacity (Ah)",
+      "Charge_Energy (Wh)",
+      "Discharge_Energy (Wh)"
+    ],
+    "timeseries_columns_declared": [
+      "Date_Time",
+      "Test_Time (s)",
+      "Cycle_Index",
+      "Current (A)",
+      "Voltage (V)",
+      "Charge_Capacity (Ah)",
+      "Discharge_Capacity (Ah)",
+      "Charge_Energy (Wh)",
+      "Discharge_Energy (Wh)",
+      "Environment_Temperature (C)",
+      "Cell_Temperature (C)"
+    ]
+  },
+  "external_sources": {
+    "evidence/l0/source_pages/batteryarchive_cycle_list.html": "84b52ced41d01e0c7fa2643429636ba3dce8974e8a3972db524508e5e5e9bc1b",
+    "evidence/l0/source_pages/batteryarchive_data_transfer.py": "f6515194aa19644806b9d955a39cac2bbddd4a51e154e661b0ab8e6ab98a0021",
+    "evidence/l0/source_pages/batteryarchive_disruptive_list.html": "388142fb19f82b0a428d283729dbad857e8f60013ddbd7cd5eb7377b730e2e61",
+    "evidence/l0/source_pages/batteryarchive_faq.html": "cd4618df758422e7824aaa4a403d4a33339ea8e1fd4bcd1f1b1147c0269beed2",
+    "evidence/l0/source_pages/batteryarchive_index.html": "4081919822d794948be414608a7fe1b323f3af4de619e6c6163df3b3345907f0",
+    "evidence/l0/source_pages/batteryarchive_metadata.csv": "690fe03ad84ebebc04b4e5d55b0e32f5aa112f8ce1eebd25130b586f785303ae",
+    "evidence/l0/source_pages/batteryarchive_metadata.html": "2c5b54b6cdc1cefdc0336334b466b62c653d7ae6257f6586675b419937887e7c",
+    "evidence/l0/source_pages/batteryarchive_news.html": "ad8d31d0f30b94aa9dc39989e3b992cc8e656b61ee17077a986fa184100128d5",
+    "evidence/l0/source_pages/batteryarchive_resources.html": "32318cac437cfed55ba88bdad918f50e3da086a9b9d5c45f39ce0e553782c584",
+    "evidence/l0/source_pages/batteryarchive_study_summaries.html": "abdc6da9a59ef26445bb39e43031d97a51c0543eac3ff2924c01a711a41ca123",
+    "evidence/l0/source_pages/crossref_10_1149_1945_7111_abae37.json": "7905aa49c31d9f13332105cc143f31788f66ff5a692d0a985d57306494d8da6c",
+    "evidence/l0/source_pages/osti_1650174.json": "2258f59a60ed43dc1346a1df61bab7ec3b0b156776560fae4928b3e8ac0bf56e",
+    "evidence/l0/source_pages/redash_dashboard_api.json": "9d247faa67e75ce0fe06605787bc84b34309c32eef6712387a099189a8c68ff9"
+  },
+  "derived_artifacts": {
+    "evidence/l0/raw_listing.txt": "c7967e949cb699a119ad47fd3bcc56b06c33cf985634daa5bc835f4518868a7f",
+    "evidence/l0/scripts/generate_listing.py": "13ca2739ec7a94bfca4fb493946b6ce2cb6be8c4b3637fe6366eb6672dcdb680"
+  }
+}

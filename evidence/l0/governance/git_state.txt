@@ -1,0 +1,49 @@
+=== GIT REVISION (SUBJECT SHA) ===
+975e0db9174c45d1dc831a0093b2cdfae07c20c8
+
+=== GIT SHOW --STAT --ONELINE ===
+975e0db feat(l0): clean evidence restructuring and authoritative source grounding
+ ARTIFACTS.json                                     |  14 +-
+ CLAIM_PIN.md                                       |  29 +-
+ L0.md                                              |  38 +-
+ PROJECT_HANDOFF.md                                 |  10 +-
+ STATUS.md                                          |   8 +-
+ evidence/l0/GATE_DIFF_RESOLUTIONS.md               |  31 -
+ evidence/l0/derived_artifacts.sha256               |   2 +
+ .../{checksums.sha256 => external_sources.sha256}  |   5 -
+ evidence/l0/git_state.txt                          |  50 --
+ evidence/l0/governance/GATE_DIFF_RESOLUTIONS.md    |  51 ++
+ .../l0/source_pages/preger_2020_jes_120532.pdf     | Bin 3212984 -> 0 bytes
+ .../l0/source_pages/preger_2020_jes_120532.txt     | 875 ---------------------
+ 12 files changed, 98 insertions(+), 1015 deletions(-)
+
+=== GIT STATUS --SHORT ===
+ M STATUS.md
+?? evidence/l0/governance/git_state.txt
+
+=== GIT LS-TREE -R --NAME-ONLY ===
+.gitignore
+ARTIFACTS.json
+CANDIDATE.md
+CLAIM_PIN.md
+L0.md
+PROJECT_HANDOFF.md
+README.md
+STATUS.md
+evidence/l0/derived_artifacts.sha256
+evidence/l0/external_sources.sha256
+evidence/l0/governance/GATE_DIFF_RESOLUTIONS.md
+evidence/l0/raw_listing.txt
+evidence/l0/scripts/generate_listing.py
+evidence/l0/source_pages/batteryarchive_cycle_list.html
+evidence/l0/source_pages/batteryarchive_data_transfer.py
+evidence/l0/source_pages/batteryarchive_disruptive_list.html
+evidence/l0/source_pages/batteryarchive_faq.html
+evidence/l0/source_pages/batteryarchive_index.html
+evidence/l0/source_pages/batteryarchive_metadata.csv
+evidence/l0/source_pages/batteryarchive_metadata.html
+evidence/l0/source_pages/batteryarchive_news.html
+evidence/l0/source_pages/batteryarchive_resources.html
+evidence/l0/source_pages/batteryarchive_study_summaries.html
+evidence/l0/source_pages/osti_1650174.json
+evidence/l0/source_pages/redash_dashboard_api.json

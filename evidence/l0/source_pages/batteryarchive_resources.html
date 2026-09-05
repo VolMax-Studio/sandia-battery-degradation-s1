@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="Description" content="A tool for easy analysis, visualization and comparison of cell battery data across many institutions">
+    <meta name="Keywords" content="battery chemistry, battery cell data, science, machine learning, data science, data publication, python, data service">
+    <title>BatteryArchive.org</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/replacer.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/fav/favicon-16x16.png">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35086283-2"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-35086283-2');
+    </script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Ranga', 'Julius Sans One', 'Montserrat']
+            }
+        });
+    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-md-3">
+        <a class="navbar-brand" href="index.html">BatteryArchive.org</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+	    <li class="nav-item">
+		        <a class="nav-link" href="cycle_list.html?t=0001">Cycling tests</a>
+	    </li>
+	    <li class="nav-item">
+		     <a class="nav-link" href="disruptive_list.html?t=0001">Disruptive tests</a>
+	    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="study_summaries.html">Studies</a>
+            </li>
+	    <li class="nav-item">
+            <a class="nav-link" href="metadata.html">Metadata</a>
+          </li>
+	    <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+	  <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+	  <li class="nav-item active">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          </ul>
+        </div>
+      </nav>
+
+    <body>
+
+    <div class="py-5 my-5 text-center text-lg-left">
+        <div class="pb-3" id="content-07">
+            <div class="container py-3 my-3">
+                    <h2 class="display-4 mb-3 ">Resources</h2>
+
+                    <div class="row align-items-center justify-content-around py-3">
+                        <div class="col">
+			    <p class="text-justify">
+                            This page is intended to help users find other public battery-related software and datasets. The listing of a resource is not intended to be an endorsement. Please let us know  if there are other resources that should be listed here.
+			    </p>
+			    <h3>DATASETS</h3>
+                            <p class="text-justify">
+			    <b><a href="https://www.nrel.gov/transportation/battery-failure.html" target=_blank>Battery Failure Databank</a></b>: The spreadsheet features data collected from hundreds of abuse tests conducted on commercial Li-ion batteries. Methods of abuse include nail penetration, thermal abuse, and internal short-circuiting. Additionally, most tests feature associated high-speed X-ray radiography videos for review alongside the data.
+			    </p>
+			    <p class="text-justify">
+			    <b><a href="https://lygte-info.dk/review/batteries2012/Common18650comparator.php" target=_blank>Battery Rate Test Comparator</a></b>: The site features standard rate tests and cell specifications for commercial Li-ion batteries manufactured since 2012.
+			    </p>
+ <p class="text-justify">
+          <b><a href=" https://enpolite.org/" target=_blank>ENPOLITE</a></b>: The interactive plots feature data collected from over 1000 Li-ion cells compared across energy, power, lifetime, and temperature for both cycling and calendar aging.  
+          </p> 
+
+ <p class="text-justify">
+          <b><a href="https://www.sciencedirect.com/science/article/pii/S2666546821000355" target=_blank>Lithium-ion battery data and where to find it</a></b>: This article summarizes battery testing data sets that were public as of early 2021. Several are available on Battery Archive in a standard format.
+          </p> 
+
+          <p class="text-justify">
+            <b><a href="https://www.mdpi.com/2313-0105/9/7/385" target=_blank> Lithium-ion Battery Data: From Production to Prediction</a></b>: This article summarizes testing protocols for generating battery data, open source software for manipulating battery data, and publicly available battery testing datasets as of mid-2023.
+            </p> 
+
+			    <h3>ECONOMIC ANALYSIS</h3>
+                            <p class="text-justify">
+			    <b><a href=" https://www.anl.gov/tcp/batpac-battery-manufacturing-cost-estimation" target=_blank>BatPAC: Battery Manufacturing Cost Estimation</a></b>:  This spreadsheet estimates the cost of manufacturing Li-ion batteries and examines trade-offs that result from different user requirements such as power, energy, and charging time.
+			    </p>
+			    <p class="text-justify">
+			    <b><a href="https://www.nrel.gov/transportation/b2u-calculator.html" target=_blank>Battery Second-Use Repurposing Cost Calculator</a></b>:   This spreadsheet explores the effects of different repurposing strategies and assumptions on the economics of reusing batteries from plug-in electric vehicles.
+		            </p>
+			    <p class="text-justify">
+			    <b><a href="https://www.nrel.gov/transportation/blast.html" target=_blank>BLAST: Battery Lifetime Analysis and Simulation Tool Suite</a></b>:  This tool assesses Li-ion battery lifespan for behind-the-meter, vehicle, and stationary applications by pairing a battery degradation model with electrical and thermal performance models.
+			    </p>
+			    <p class="text-justify">
+			    <b><a href="https://www.sandia.gov/ess-ssl/tools/quest/" target=_blank>QuESt</a></b>:  This open source, Python-based application suite for energy storage simulation and analysis helps users evaluate energy storage systems for difference use cases.
+			    </p>
+			    <p class="text-justify">
+			    <b><a href="https://www.storagevet.com/" target=_blank>StorageVet</a></b>:  This open-source, Python-based energy storage valuation tool helps estimate the benefits and costs of energy storage in diverse use cases. The tool also analyzes where to place and install energy storage, the optimum size, and controls options.
+                            </p>
+			    <h3>MATERIALS</h3>
+                            <p class="text-justify">
+			    <b><a href="https://www.nrel.gov/transportation/microstructure.html" target=_blank>Battery Microstructures Library</a></b>:   The library features a variety of Li-ion positive and negative electrode data samples for microstructure characterization and modeling.
+			    </p>
+			    <p class="text-justify">
+			    <b><a href="https://materialsproject.org/" target=_blank>The Materials Project</a></b>:  The database includes various properties for Li-ion battery candidate materials and enables computational materials science.
+                            </p>
+			     <p class="text-justify">
+          <b><a href="https://www.sandia.gov/ess-ssl/thermodynamic-web-calculator/about.html" target=_blank>Thermodynamic Web Calculator</a></b>: This calculator estimates heats of reaction associated with thermal runaway of layered metal oxide cathode materials based on the underlying thermodynamics for specific metal compositions, degrees of delithiation, and coexisting organic material.
+          </p>
+
+			    <h3>SOFTWARE</h3>
+                            <p class="text-justify">
+			    A critical review of the open source battery software landscape in late 2020 is given <a href="https://medium.com/batterybits/the-battery-software-open-source-landscape-933b88957ef5 " target=_blank>here</a>.
+			    </p>
+			    <h5>Data Management</h5>
+                            <p class="text-justify">
+			    <b><a href="https://github.com/TRI-AMDD/beep" target=_blank>BEEP (Battery Evaluation and Early Prediction)</a></b>:  This open-source, Python-based package parses and featurizes battery cycling data to enable cycle life prediction.
+			    </p>
+			    <p class="text-justify">
+			    <b><a href="https://github.com/jepegit/cellpy" target=_blank>cellpy</a></b>:  This open-source, Python-based package parses and enables manipulation of Arbin cycling data.
+			    </p>
+			    <p class="text-justify">
+			    <b><a href="http://dattes.gitlab.io/" target=_blank>DATTES</a></b>:  This open-source, Matlab-based package parses and featurizes battery cycling data, and enables use of experimental results for model identification.
+			    </p>
+
+			    </p>
+			    <p class="text-justify">
+			    <b><a href="https://github.com/Samuel-Buteau/universal-battery-database" target=_blank>Universal Battery Database</a></b>: This open-source, Python-based package can be used for managing Li-ion cell data.</a>
+			    </p>
+
+			    <h5>Electrochemical Impedance Spectroscopy (EIS)</h5>
+			    <p class="text-justify">
+			    <b><a href="https://ecsarxiv.org/kze9x/" target=_blank>EIS: Measurement Model Program</a></b>:  This software identifies the error structure of EIS measurements and fits custom models to the data.
+			    </p>
+			    <p class="text-justify">
+			    <b><a href="https://github.com/ECSHackWeek/impedance.py" target=_blank>impedance.py</a></b>: This open-source, Python-based package for EIS data contains modules for data preprocessing, validation, model fitting, and visualization.
+			    </p>
+			    <h5>General Modeling</h5>
+                            <p class="text-justify">
+			    <b><a href="https://www.pybamm.org/" target=blank>PyBaMM (Python Battery Mathematics Modeling)</a></b>:  This open-source, Python-based package uses various physics-based models to simulate physical properties such as voltage, concentration, and temperature of a Li-ion battery operated under different experimental protocols. PyBaMM also has growing capability for simulating degradation mechanisms.
+                            </p>
+                        </div>
+                      </div>
+
+            </div>
+        </div>
+    </div>
+
+        
+ <p class="lead col text-center text-secondary">Based on <a href="https://github.com/battery-lcf" target=_blank>https://github.com/battery-lcf</a></p>
+        </div>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/replacer.js"></script>
+    </body>
+</html>

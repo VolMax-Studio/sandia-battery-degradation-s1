@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="Description" content="A tool for easy analysis, visualization and comparison of cell battery data across many institutions">
+    <meta name="Keywords" content="battery chemistry, battery cell data, science, machine learning, data science, data publication, python, data service">
+    <title>BatteryArchive.org</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/replacer.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/fav/favicon-16x16.png">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35086283-2"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-35086283-2');
+    </script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Ranga', 'Julius Sans One', 'Montserrat']
+            }
+        });
+    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-md-3">
+        <a class="navbar-brand" href="index.html">BatteryArchive.org</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+	    <li class="nav-item">
+		     <a class="nav-link" href="cycle_list.html?t=0001">Cycling tests</a>
+	    </li>
+	    <li class="nav-item">
+		     <a class="nav-link" href="disruptive_list.html?t=0001">Disruptive tests</a>
+	    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="study_summaries.html">Studies</a>
+            </li>
+	    <li class="nav-item">
+            <a class="nav-link" href="metadata.html">Metadata</a>
+          </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+	    <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+	  <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          </ul>
+        </div>
+      </nav>
+
+    <body>
+
+    <div class="py-5 my-5 text-center text-lg-left">
+        <div class="pb-3" id="content-07">
+            <div class="container py-3 my-3">
+                    <h2 class="display-4 mb-3 ">News</h2>
+
+                    <div class="row align-items-center justify-content-around py-3">
+                        <div class="col">
+                          <h3>Expansion to Battery Safety Data</h3>
+                            <h4> November 2023</h4>
+                            <p class="text-justify">
+                            Battery Archive has expanded from battery cycling data to battery safety data. Results of mechanical indentation tests are now available under the Disruptive tests tab. 
+ 
+                            </p>
+          <br>
+                          <h3>Updated Software Package</h3>
+                          <h4> May 2023</h4>
+                          <p class="text-justify">
+                          Software package underlying BatteryArchive.org updated on <a href="https://github.com/battery-lcf/batteryarchive-agent">github</a>. We delivered a presentation on the project at Open Source Summit North America 2023: <a href="https://static.sched.com/hosted_files/ossna2023/19/Open_source_for_battery_systems.pdf" target="_blank">Bringing Open-Source to Battery Systems Development and Operation</a>. 
+                          </p>
+        <br>
+                          <h3>Site Updates and New Data</h3>
+                            <h4> December 2022</h4>
+                            <p class="text-justify">
+                            Public site has been updated with new features to improve the user experience. We have added datasets from Underwriters Labs, Purdue University, and the University of Michigan. 
+                            </p>
+			    <br>
+				<h3>Site Highlighted in Battery Bits</h3>
+                            <h4> September 2021</h4>
+                            <p class="text-justify">
+                            An article outlining the history and development of Battery Archive was published in the blog <a href="https://medium.com/batterybits/introducing-batteryarchive-org-a-public-battery-data-repository-d8c23da5eca6" target="_blank">Battery Bits</a>. 
+                            </p>
+			    <br>
+				<h3>Integration with Other Battery Analysis Tools</h3>
+                            <h4>June 2021</h4>
+                            <p class="text-justify">
+                            Data from Battery Archive will be cross-posted in <a href="https://enpolite.org/" target="_blank">ENPOLITE</a> -  a <a href="https://pubs.acs.org/doi/10.1021/acsenergylett.1c00743" target="_blank">new tool</a> developed by RWTH Aachen for comparing batteries across energy, power, lifetime, and temperature. We are also working on integration with <a href="https://www.sciencedirect.com/science/article/pii/S2352711020300492?via%3Dihub" target="_blank">BEEP</a> to facilitate parsing and featurization of data for their machine learning models.
+                            </p>
+			    <br>
+			    <h3>Open Source Software Released</h3>
+                            <h4>April 2021</h4>
+                            <p class="text-justify">
+			    Software package underlying BatteryArchive.org now available on <a href="https://github.com/battery-lcf/battery-archive-sandbox">github</a>. The system is built around Redash, a robust open-source extract-transform-load engine. The present release also includes starter queries, a database, schema, and a data importer, and guidance on connecting to Jupyter Notebook.
+                            </p>
+			    <br>
+			    <h3>Published Preprint about Site Software</h3>
+                            <h4>March 2021</h4>
+                            <p class="text-justify">
+                            Published a <a href="https://ecsarxiv.org/h7c24">preprint</a> that describes the architecture of Battery Archive. We are planning to release the software soon. <br>Datasets from Purdue, Underwriters Labs, RWTH Aachen, NASA, UC Berkeley, and University College London are in the pipeline.
+                            </p>
+			    <br>
+                            <h3>Site Continues Expanding</h3>
+			    <h4>December 2020</h4>
+                            <p class="text-justify">
+			    Datasets from Oxford and CALCE have been uploaded and content from other institutions is in the pipeline. We’ve added pages to explain the Metadata used for tagging in the database, address FAQ, and highlight other excellent Resources for battery data analysis.
+                            </p>
+			    <br>
+                            <h3>BatteryArchive.org Publicly Launched</h3>
+			    <h4>September 2, 2020</h4>
+                            <p class="text-justify">
+			    Site is launched publicly with datasets from Hawai’i Natural Energy Institute and Sandia National Labs. Data sets from other institutions are in the pipeline. Initial capabilities include filtering by basic metadata and visualization of efficiencies, capacity/energy, and voltage curves over time. The ability to model the data is currently being beta-tested.
+                            </p>
+			    <br>
+                            <h3>Site Prototype Completed</h3>
+			    <h4>March 2020</h4>
+                            <p class="text-justify">
+			    V0 prototype completed and tested internally with database and UX support from Sandia National Labs.
+                            </p>
+			    <br>
+                            <h3>Site Development Begins</h3>
+			    <h4>October 2019</h4>
+                            <p class="text-justify">
+			    Development of batteryarchive.org begins following the DOE Office of Electricity Energy Storage Program peer review. Presentations and conversations crystallize gaps in open battery data sharing and the ability to easily compare data between studies.
+                            </p>
+                        </div>
+                        </div>
+                      </div>
+
+            </div>
+        </div>
+    </div>
+
+        
+ <p class="lead col text-center text-secondary">Based on <a href="https://github.com/battery-lcf" target=_blank>https://github.com/battery-lcf</a></p>
+        </div>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/replacer.js"></script>
+    </body>
+
