@@ -1,7 +1,8 @@
 project: sandia-battery-degradation-s1
-phase: execution_preparation
+phase: waiting_for_telemetry_or_cutoff
 owner: Ivan
 gate: NONE (Claude retired; L0 PASS / Reference Freeze Locked)
+ratification: RATIFIED — HOST_INPUT_CUTOFF FREEZE on tree f2b50e2 (Ivan, 2026-09-06T10:00:43+02:00)
 ops: Ananke
 branch: main
 engine_freeze: COMPLETE

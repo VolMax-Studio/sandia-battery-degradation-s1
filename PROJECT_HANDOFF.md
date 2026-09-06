@@ -45,6 +45,7 @@ Public artifacts documented in ARTIFACTS.json, external_sources.sha256, and deri
 ## Gate Status & Governance Clearance
 
 * **Gate model/person:** NONE — Claude retired from this instance.
+* **Ratification Status:** RATIFIED — HOST_INPUT_CUTOFF FREEZE on tree `f2b50e2` (Ivan, 2026-09-06T10:00:43+02:00).
 * **G-L0-5A (Analytical Use):** PASS — Public analytical-use basis established; host bulk access requested from info@batteryarchive.org.
 * **G-L0-5B (Redistribution):** PROHIBITED_PENDING_CONFIRMATION — Raw BatteryArchive files MUST NOT be redistributed in public repository. Repository contains only acquisition manifests, hashes, code, and derived audit outputs.
 * **Acquisition State:** WAITING_FOR_SUPPORTED_ACQUISITION_ROUTE (FINDING-L0-ACCESS-DRIFT-001 in `evidence/l0/findings/ACCESS_DRIFT.md`).
