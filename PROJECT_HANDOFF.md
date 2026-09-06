@@ -50,7 +50,8 @@ Public artifacts documented in ARTIFACTS.json, external_sources.sha256, and deri
 * **Acquisition State:** WAITING_FOR_SUPPORTED_ACQUISITION_ROUTE (FINDING-L0-ACCESS-DRIFT-001 in `evidence/l0/findings/ACCESS_DRIFT.md`).
 * **Required Inputs Manifest:** `runs/run-002-a1h/a1_h_required_inputs.json` (SHA256: `e044432a2f14307d987ecde3695d9380416ab0192e8716848633697e9c3f1128`; 5 conditions, 12 cells).
 * **Target A1-H Execution:** UNBLOCKED (Evaluates 5 exact-cardinality conditions / 12 cells across 12-model specification envelope).
-* **Target A2 Execution:** AWAITING_AUTHORITATIVE_HORIZON_BOUNDARY (F35: explicit cutoff date, per-cell censoring index, or frozen snapshot).
+* **Target A2 Execution:** AWAITING_AUTHORITATIVE_HORIZON_BOUNDARY (F35: explicit cutoff date, per-cell censoring index, or frozen snapshot; 11 marker-deficit conditions subject to composite label limitation).
+* **Git State Construction Rule:** `evidence/l0/governance/git_state.txt` records preceding commit milestone by construction and does not self-reference the containing commit.
 * **Host Input Cutoff:** `2026-09-21T20:00:00+02:00` (Europe/Belgrade) / `12:00 America/Denver` (9.5 U.S. business days post-Labor-Day).
 * **Late Evidence Policy:** SUPPLEMENTAL_ONLY (Post-cutoff evidence opens `run-003-a1h-late-host-evidence`; does not supersede `run-002`).
 

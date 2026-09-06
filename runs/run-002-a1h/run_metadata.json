@@ -28,9 +28,11 @@
     "figure2a_reference_quantified_limitations": {
       "digitizer_anomaly_rate": "3 of 33 conditions (9.1%) exhibit physically impossible marker counts where digitized crossing count exceeds known metadata replicate count: LFP_20-80_25C_0.5-3C (2 markers vs 1 cell), NMC_20-80_25C_0.5-3C (3 markers vs 2 cells), and NCA_0-100_35C_0.5-2C (3 markers vs 2 cells). All 3 are formally excluded from Target A1-H.",
       "marker_deficit_conditions": "11 of 33 conditions (33.3%) exhibit marker deficits (N_vis < N_rep). Deficit arises from either visual overplotting/marker occlusion in the published raster, unreached 80% crossing prior to the publication-era observation horizon, or a combination thereof.",
+      "marker_deficit_composite_label_note": "The eligibility category INELIGIBLE_CARDINALITY_OR_HORIZON_UNRESOLVED on 11 conditions is a composite label conflating visual marker deficit (overplotting/occlusion) and unreached 80% crossing prior to the observation horizon; documented as a known reference limitation for Target A2.",
       "extrapolated_only_conditions": "14 of 33 conditions (42.4%) contain zero published crossing markers in Figure 2a (purely extrapolated cohort; evaluated under Target A2).",
       "exact_cardinality_eligible_conditions": "5 of 33 conditions (15.2%, spanning 12 cells) exhibit exact cardinality (N_vis == N_rep > 0) and constitute the complete Target A1-H evaluation cohort."
-    }
+    },
+    "git_state_construction_note": "The evidence/l0/governance/git_state.txt artifact records the preceding commit milestone by construction and does not self-reference the commit in which it is contained."
   },
   "acquisition_and_admissibility_rules": {
     "f33_identity_rule": "Transport packaging is non-semantic. ZIP archives, attachments, renamed files, or host-specific filenames do not determine scientific identity. Canonical cell identity is resolved strictly via: (1) host-supplied mapping to canonical cell_id, (2) internal file metadata containing unique cell identifier, or (3) preregistered deterministic filename normalization mapping to a required cell_id. Any unresolved ambiguity or conflicting identity yields INPUT_IDENTITY_UNRESOLVED.",
