@@ -1,0 +1,34 @@
+[
+  {
+    "public_repo_path": "evidence/l0/source_pages/batteryarchive_study_summaries.html",
+    "sha256": "abdc6da9a59ef26445bb39e43031d97a51c0543eac3ff2924c01a711a41ca123",
+    "line_ranges_1based": [
+      [
+        119,
+        122
+      ]
+    ],
+    "bounded_reading": "General protocol: capacity checks of three 0.5C full-SOC charge/discharge cycles; no exact row-specific counter/reset or interval-boundary definition."
+  },
+  {
+    "public_repo_path": "evidence/l0/source_pages/batteryarchive_data_transfer.py",
+    "sha256": "f6515194aa19644806b9d955a39cac2bbddd4a51e154e661b0ab8e6ab98a0021",
+    "line_ranges_1based": [
+      [
+        49,
+        73
+      ],
+      [
+        96,
+        110
+      ]
+    ],
+    "bounded_reading": "Public helper uses a heuristic around empty cycles and a Cycle_Index-based EFC helper; neither supplies validated interval/counter semantics. It was read, not executed. Its value-based heuristic is not adopted for sample selection or role/representation classification."
+  },
+  {
+    "public_repo_path": "evidence/l0/source_pages/batteryarchive_metadata.csv",
+    "sha256": "690fe03ad84ebebc04b4e5d55b0e32f5aa112f8ce1eebd25130b586f785303ae",
+    "line_ranges_1based": [],
+    "bounded_reading": "Metadata supplies identity and nominal protocol labels, not per-row scientific roles or measured capacities."
+  }
+]

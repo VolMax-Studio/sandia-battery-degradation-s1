@@ -1,0 +1,7 @@
+# Operator ratification of RB0 v1.0.3
+
+The operator ratified RB0_OBSERVATION_ELIGIBILITY_CONTRACT v1.0.3 at fa61d1ea5dcdc650dae03e5b6a7186b0cfc4ea74 as the governing contract for SANDIA_86_CELL_REFERENCE_BASELINE_v1. This is a sanitized administrative record; the literal captured act remains private. Frozen contract bytes and numerical rules are unchanged. Earlier prepared-for-review statuses are historical; this separate record supplies ratification.
+
+EXPOSURE_CLASS remains POST_CORPUS_VIEW_EXPLORATORY. Throughput flow states are coverage/throughput sub-decisions within THROUGHPUT_REPRESENTATION_MAPPING_V1, not scientific row-role classifications and not Q_k eligibility. Before gate execution the fixed reference plan must contain at least one independently resolved NO_FLOW and one CHARGE_DIRECTION_ONLY case wherever source-verifiable candidates can be established without outcome selection; otherwise record that scope UNTESTED/UNRESOLVED without fabrication.
+
+The next authorization covers only representation rules, parameters and the twelve-case reference manifest for freeze preparation. No reference labeling, predictions, EFC/EFC80, representation gate execution, or RB1–RB5 is authorized. STOP for operator review. All contributors to instrument construction remain disqualified from producing/adjudicating that instrument's sealed reference labels. No adjudicator is designated by this record.

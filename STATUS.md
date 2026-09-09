@@ -16,3 +16,7 @@ Next authorized phase: after this sanitized closure is pinned and pushed, activa
 ## Baseline activation
 
 The sanitized A1-H closure was pushed and independently read back from origin/main. SANDIA_86_CELL_REFERENCE_BASELINE_v1 is now active solely for RB0 preparation, with EXPOSURE_CLASS=POST_CORPUS_VIEW_EXPLORATORY. [RB0 v1.0.3](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/RB0_OBSERVATION_ELIGIBILITY_CONTRACT.md) is prepared for operator review. RB1–RB5 remain STOPPED; no scientific calculations have run.
+
+## RB0 ratification and representation preparation
+
+RB0 v1.0.3 at fa61d1ea5dcdc650dae03e5b6a7186b0cfc4ea74 is ratified; see the [Operator record](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/RB0_RATIFICATION.md). Only representation rules/parameters/case-manifest preparation is authorized. The [preparation package](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/representation-preparation-v1/README.md) is ready for review with explicit source-case gaps; no execution freeze, reference labels, predictions or RB1–RB5 outputs.

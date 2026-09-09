@@ -1,0 +1,56 @@
+[
+  {
+    "chemistry": "LFP",
+    "cell_id": "SNL_18650_LFP_15C_0-100_0.5/1C_a",
+    "nominal_protocol": {
+      "SOC": "0-100%",
+      "charge_rate": "0.5C",
+      "discharge_rate": "1C"
+    },
+    "archive_filename": "SNL LFP.zip",
+    "archive_sha256": "006a335cbcdabc858a85ab0cdbc59a7001150751cf22abe8a7132c85ef63223d",
+    "cycle_member": "SNL LFP/SNL_18650_LFP_15C_0-100_0.5-1C_a_cycle_data.csv",
+    "cycle_member_sha256": "59f0d300ce9b9d9539d53f82db08e38b6ba9c9210e2b87609a047244ea03db47",
+    "timeseries_member": "SNL LFP/SNL_18650_LFP_15C_0-100_0.5-1C_a_timeseries.csv",
+    "timeseries_member_sha256": "0c9cfabb3146173fa4c6d41690cf68f55fdbf3d6a5c8ea7d6c825e9b1812c1df",
+    "header_sha256": "f413094f65960adad7347f70aa5291258f078ae511511503dd55171d58dbc7cd",
+    "selection_pool_size_from_existing_metadata": 20,
+    "selection_rule": "Lexicographically first canonical cell among existing metadata with full SOC, 0.5C charge, and non-0.5C working discharge; no measured capacities/currents used."
+  },
+  {
+    "chemistry": "NCA",
+    "cell_id": "SNL_18650_NCA_15C_0-100_0.5/1C_a",
+    "nominal_protocol": {
+      "SOC": "0-100%",
+      "charge_rate": "0.5C",
+      "discharge_rate": "1C"
+    },
+    "archive_filename": "SNL NCA.zip",
+    "archive_sha256": "39a4cad9b283e94a1b50283f01364ee168b38e1108c72b75b3ca209697890cee",
+    "cycle_member": "SNL NCA/SNL_18650_NCA_15C_0-100_0.5-1C_a_cycle_data.csv",
+    "cycle_member_sha256": "c8903ad1585ebf97d90d9cde8a79fe3f3bfdfc6cb065acf80c75686aa623d8bc",
+    "timeseries_member": "SNL NCA/SNL_18650_NCA_15C_0-100_0.5-1C_a_timeseries.csv",
+    "timeseries_member_sha256": "4e816ca6765250d180fbabdb41d9fed1bfca1fad74ed88e94676b8626900c648",
+    "header_sha256": "f413094f65960adad7347f70aa5291258f078ae511511503dd55171d58dbc7cd",
+    "selection_pool_size_from_existing_metadata": 16,
+    "selection_rule": "Lexicographically first canonical cell among existing metadata with full SOC, 0.5C charge, and non-0.5C working discharge; no measured capacities/currents used."
+  },
+  {
+    "chemistry": "NMC",
+    "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_a",
+    "nominal_protocol": {
+      "SOC": "0-100%",
+      "charge_rate": "0.5C",
+      "discharge_rate": "1C"
+    },
+    "archive_filename": "SNL NMC.zip",
+    "archive_sha256": "d84fd3940eb802a19ae2c28902263e8dc5d4d320b034d1406206e8ba56664137",
+    "cycle_member": "SNL NMC/SNL_18650_NMC_15C_0-100_0.5-1C_a_cycle_data.csv",
+    "cycle_member_sha256": "61c54e8583e6f3cb487dabefbbb8965e766a915d66f2cede6ead4c955a7be529",
+    "timeseries_member": "SNL NMC/SNL_18650_NMC_15C_0-100_0.5-1C_a_timeseries.csv",
+    "timeseries_member_sha256": "f99880c6c84a2e5011001bf8a61fb148ad0cfa06e6908deba7e928b17b85a6cf",
+    "header_sha256": "f413094f65960adad7347f70aa5291258f078ae511511503dd55171d58dbc7cd",
+    "selection_pool_size_from_existing_metadata": 20,
+    "selection_rule": "Lexicographically first canonical cell among existing metadata with full SOC, 0.5C charge, and non-0.5C working discharge; no measured capacities/currents used."
+  }
+]

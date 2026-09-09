@@ -1,0 +1,28 @@
+{
+  "record_type": "SANITIZED_OPERATOR_RATIFICATION",
+  "recorded_at_utc": "2026-09-09T17:56:23.576181+00:00",
+  "contract_id": "RB0_OBSERVATION_ELIGIBILITY_CONTRACT",
+  "contract_version": "1.0.3",
+  "governing_public_commit": "fa61d1ea5dcdc650dae03e5b6a7186b0cfc4ea74",
+  "status": "RATIFIED",
+  "frozen_artifact_sha256": {
+    "RB0_OBSERVATION_ELIGIBILITY_CONTRACT.md": "3117beb7abbad6dc6e4cec72b6b617581a7d74a5c310ff8ceb8cee384963d383",
+    "RB0_OBSERVATION_ELIGIBILITY_CONTRACT.json": "8b826eee7c5048aeb23ed9a1f853d90c0a6985c78e38fcf39e8c57594cf79fff",
+    "RB0_PARAMETERS.json": "400197c30b4cec2d095a1a96e0e86819f751e34b7fa7a5d3d625e7448550d341",
+    "RB0_REPRESENTATION_GATE_DESIGN.md": "72b8e267ab2e9bbb105423684381481b17a95965c9f0c14d5ea395c8ff5f82d6"
+  },
+  "EXPOSURE_CLASS": "POST_CORPUS_VIEW_EXPLORATORY",
+  "interpretation": "Throughput-only flow states are coverage/throughput sub-decisions within THROUGHPUT_REPRESENTATION_MAPPING_V1, not scientific row roles and not Q_k eligibility.",
+  "required_flow_reference_coverage": {
+    "NO_FLOW": 1,
+    "CHARGE_DIRECTION_ONLY": 1,
+    "condition": "independently resolved source-verifiable candidates, without outcome-based selection",
+    "if_unavailable": "UNTESTED_OR_UNRESOLVED; never manufacture cases"
+  },
+  "authorized_next_action": "Prepare rules, parameters and the 12-case reference manifest for freeze only",
+  "reference_labels_authorized": false,
+  "predictions_authorized": false,
+  "gate_execution_authorized": false,
+  "RB1_RB5_authorized": false,
+  "public_record_is_literal_operator_capture": false
+}
