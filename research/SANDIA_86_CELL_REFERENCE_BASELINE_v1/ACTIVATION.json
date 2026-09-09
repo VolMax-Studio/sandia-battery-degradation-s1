@@ -10,5 +10,7 @@
   "scientific_calculations_performed": false,
   "A2_TARGET_STATUS": "UNRESOLVED",
   "A1_H_reopened": false,
-  "contract_version": "1.0.0"
+  "contract_version": "1.0.1",
+  "classifier_falsification_status": "NOT_EXECUTED",
+  "RB1_prerequisite": "Reviewed classifier falsification followed by separate RB1-only GO"
 }

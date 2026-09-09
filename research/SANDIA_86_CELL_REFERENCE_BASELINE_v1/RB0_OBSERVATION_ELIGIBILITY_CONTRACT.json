@@ -1,23 +1,13 @@
 {
   "contract_id": "RB0_OBSERVATION_ELIGIBILITY_CONTRACT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "status": "PREPARED_FOR_OPERATOR_REVIEW",
   "baseline_id": "SANDIA_86_CELL_REFERENCE_BASELINE_v1",
   "EXPOSURE_CLASS": "POST_CORPUS_VIEW_EXPLORATORY",
   "RB1_RB5_EXECUTION_AUTHORIZED": false,
   "normative_document": "RB0_OBSERVATION_ELIGIBILITY_CONTRACT.md",
-  "normative_document_sha256": "edd1b0085fd6d0bf93335425380284a35c7eb6f5a0e64260a9962d0e97c46571",
+  "normative_document_sha256": "e4fabbfb78b9cd876ab911e463da1efc064fb1d3cc3e1de32c14f0e292f7084b",
   "precedence": "Normative Markdown supplies all eligibility and null/zero rules; this JSON indexes requirements, not an executable estimator.",
-  "parameters_proposed_for_review": {
-    "retention_threshold_fraction": 0.8,
-    "check_rate_C": 0.5,
-    "active_plateau_relative_current_tolerance": 0.05,
-    "initial_check_block_size": 3,
-    "shape_segment_count": 3,
-    "shape_min_points": 3,
-    "numeric_representation": "binary64",
-    "round_before_decision": false
-  },
   "observation_key": [
     "source_member_sha256",
     "data_row_position_1based"
@@ -107,5 +97,32 @@
   ],
   "source_role_mapping_status": "TO_BE_ESTABLISHED_BEFORE_FUTURE_METRIC_EXECUTION",
   "operator_review": "REQUIRED",
-  "scientific_calculations_performed": false
+  "scientific_calculations_performed": false,
+  "parameters_proposed_for_review": {
+    "retention_threshold_fraction": 0.8,
+    "check_rate_C": 0.5,
+    "active_plateau_relative_current_tolerance": 0.05,
+    "initial_check_block_size": 3,
+    "shape_segment_count": 3,
+    "shape_min_points": 3,
+    "numeric_representation": "binary64",
+    "round_before_decision": false
+  },
+  "parameter_artifact": "RB0_PARAMETERS.json",
+  "parameter_artifact_sha256": "88010f8599296964bcf033c2375ab0677aa6c84e5b49108a57b0f7013cf02a75",
+  "parameter_change_policy": "FIXED_WITHIN_VERSION; approval required before execution",
+  "role_mapping_routes": [
+    "EXPLICIT_SOURCE_LABEL",
+    "DETERMINISTIC_SOURCE_OBSERVABLE_MAPPING"
+  ],
+  "role_throughput_orthogonal": true,
+  "representation_reason_codes": [
+    "INCREMENT_REPRESENTATION_UNRESOLVED",
+    "OPERATION_BOUNDARY_AGGREGATION_UNRESOLVED",
+    "AGGREGATED_DISJOINT_INCREMENT",
+    "OVERLAPPING_INCREMENT"
+  ],
+  "classifier_falsification_required_before_RB1": true,
+  "classifier_falsification_status": "NOT_EXECUTED",
+  "next_scientific_stage_after_classifier_gate": "RB1_ONLY_REQUIRES_SEPARATE_GO"
 }

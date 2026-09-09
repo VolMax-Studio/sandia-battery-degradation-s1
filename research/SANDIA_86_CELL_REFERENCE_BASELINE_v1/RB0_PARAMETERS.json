@@ -1,0 +1,24 @@
+{
+  "parameter_artifact": "RB0_PARAMETERS",
+  "contract_version": "1.0.1",
+  "status": "VERSION_BOUND_PENDING_OPERATOR_APPROVAL",
+  "CURRENT_CORROBORATION_TOLERANCE": 0.05,
+  "CHECK_RATE_C": 0.5,
+  "RATIONALE": "Retain the previously proposed 5% engineering corroboration band without fitting source outcomes. A 2% band would assert tighter precision than has been justified; a 10% band would weaken corroboration without a documented need. The 5% choice is a declared design convention, not a calibrated instrument-accuracy bound. It is never sufficient by itself to classify a capacity check. The later reviewer-reported 1.81% example did not select this value and is not treated here as independent validation.",
+  "change_policy": "No in-version change; feasibility counts are not a reason to widen the band. Any change requires a new reviewed contract version and preservation/reporting of prior results.",
+  "role_classifier_code_status": "NOT_IMPLEMENTED",
+  "protocol_specific_phase_parameters": "NOT_YET_ESTABLISHED; must be sourced, frozen and approved before validation",
+  "classifier_reference_sample_size": 24,
+  "reference_rows_per_chemistry": 8,
+  "required_chemistries": [
+    "LFP",
+    "NCA",
+    "NMC"
+  ],
+  "minimum_check_positives_per_chemistry": 2,
+  "minimum_working_negatives_per_chemistry": 1,
+  "minimum_charge_only_negatives_total": 1,
+  "minimum_rest_negatives_total": 1,
+  "classifier_falsification_status": "NOT_EXECUTED",
+  "RB1_RB5_EXECUTION_AUTHORIZED": false
+}
