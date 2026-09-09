@@ -13,3 +13,7 @@ HALT_BRANCH_REFERENCE_COVERAGE remains UNTESTED/UNRESOLVED. No current reference
 SOURCE_SEMANTICS_EVIDENCE.json/.md records the documentary resolution attempt: six parameters remain null/UNESTABLISHED, with exact hashes and locators for inspected official sources. Equipment/protocol descriptions do not define this export's counter, zero, coverage or association semantics. No raw scientific values were used to fill gaps.
 
 Read READINESS.json first. FREEZE_ELIGIBLE=NO. STOP before representation freeze or reference adjudication. No labels, predictions, instrument execution, EFC/EFC80 or RB1–RB5 outputs.
+
+## Documentary-resolution stop
+
+The NMC prior-exposure record is corrected through row 6; candidate selection and hashes are unchanged. A single six-question export-semantics inquiry is prepared outside the public scientific tree and has not been sent. SOURCE_SEMANTICS_RESOLUTION_STATUS.json records the actual dispatch/response state; SOURCE_REPLY_BINDING_PROTOCOL.json defines future evidence binding. All six parameters remain null. Start_Time/End_Time header presence is schema evidence, not an established interval convention. No 1,032 NOT_EVALUABLE results have been computed; the inability to evaluate under unresolved prerequisites is a conditional contract consequence only. No further candidate-window inspection is authorized by this step.

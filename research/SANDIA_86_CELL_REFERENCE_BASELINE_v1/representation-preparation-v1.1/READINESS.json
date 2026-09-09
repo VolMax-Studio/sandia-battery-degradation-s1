@@ -24,5 +24,9 @@
   "no_reference_labels_generated": true,
   "no_predictions_generated": true,
   "no_representation_execution": true,
-  "RB1_RB5_executed": false
+  "RB1_RB5_executed": false,
+  "inquiry_status": "PREPARED_NOT_SENT",
+  "external_response": "NOT_RECEIVED",
+  "gate_status": "CANNOT_START",
+  "NOT_EVALUABLE_records_generated": 0
 }

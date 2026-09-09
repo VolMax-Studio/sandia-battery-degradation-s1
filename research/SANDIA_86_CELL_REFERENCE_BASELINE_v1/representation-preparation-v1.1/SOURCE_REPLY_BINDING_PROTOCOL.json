@@ -1,0 +1,38 @@
+{
+  "record_type": "SOURCE_REPLY_BINDING_PROTOCOL",
+  "status": "PREPARED_NO_REPLY_RECEIVED",
+  "parameter_keys": [
+    "current_polarity_convention",
+    "current_zero_code_semantics_and_resolution",
+    "counter_reset_convention",
+    "interval_endpoint_inclusion",
+    "sampling_cadence_and_coverage_rule",
+    "timeseries_to_cycle_association_rule"
+  ],
+  "source_reply_requirements": [
+    "Preserve original received message bytes without normalization and record SHA-256.",
+    "Record source/sender, original Message-ID, original Date header and actual received/capture timestamp with provenance; do not invent missing headers or independent timestamp assurance.",
+    "Pin documentary pointers by exact URL, retrieved bytes SHA-256, timestamp and locators; a URL alone does not establish a parameter.",
+    "For every affected parameter distinguish EXPLICIT_ANSWER, DOCUMENTARY_POINTER, PARTIAL_ANSWER or UNRESOLVED; record literal excerpt separately from analyst interpretation.",
+    "Record dataset/export/version applicability, units, qualification and unresolved dependencies.",
+    "Keep parameter value null unless the received evidence establishes that parameter for the relevant export; partial answers retain unresolved components and do not become defaults.",
+    "Version the evidence-to-parameter mapping append-only and preserve superseded evidence.",
+    "A reply does not itself freeze an instrument, assign reference labels, generate predictions or authorize gate/RB1\u2013RB5 execution."
+  ],
+  "future_per_parameter_binding_fields": [
+    "parameter_key",
+    "answer_class",
+    "original_message_sha256",
+    "source_message_id",
+    "source_date",
+    "capture_timestamp",
+    "literal_excerpt_locator",
+    "documentary_pointer_artifact_sha256",
+    "export_applicability",
+    "interpretation",
+    "established_value_or_null",
+    "unresolved_components"
+  ],
+  "received_message_records": [],
+  "evidence_bindings": []
+}

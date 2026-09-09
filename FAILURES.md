@@ -42,3 +42,7 @@
 - **Prospective requirement:** Every derived quantity in the new exploratory baseline must have a versioned observation-eligibility contract before calculation.
 - **Evidence:** [Preregistration defect record](governance/run-002-review/FAILURE_005_PREREGISTRATION.md).
 - **Boundary:** Frozen §7 contains no estimator-nonconformance verdict criterion; this is recorded without amending it or assigning a reserved verdict outside its definition.
+
+### Follow-up to #005 — representation prerequisite, documentary status only
+
+The exploratory representation preparation currently has 0/6 export-semantics parameters established in the inspected documentary sources, including counter/reset meaning needed to justify per-row throughput accumulation. This is a related prerequisite gap: an arithmetic formula does not establish what a source row represents. It does not revise the finding that A1-H EFC arithmetic conformed to its frozen formula, and it does not constitute 1,032 computed NOT_EVALUABLE outcomes. No baseline calculation has run. The representation gate cannot start under the current evidence; a bounded source inquiry is prepared and no assumption contract or dataset-wide negative verdict is assigned. See [documentary status](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/representation-preparation-v1.1/SOURCE_SEMANTICS_RESOLUTION_STATUS.json).

@@ -1,0 +1,16 @@
+{
+  "recorded_at_utc": "2026-09-09T21:20:12.424713+00:00",
+  "kind": "PROVENANCE_ONLY",
+  "prior_manifest_sha256": "394820a003a5af1615987a3631a7082a2bb1acc1e28cd40429c98ad4eeef81ea",
+  "corrected_manifest_sha256": "43d0961d5f13c265a8b527a3c6c8445a54fe3a484a76379705a0c7442ed47dc0",
+  "case_id": "REP-NMC-02",
+  "prior_exposure_rows": [
+    5
+  ],
+  "corrected_exposure_rows": [
+    5,
+    6
+  ],
+  "all_candidate_rows_and_hashes_unchanged": true,
+  "source_values_inspected": false
+}

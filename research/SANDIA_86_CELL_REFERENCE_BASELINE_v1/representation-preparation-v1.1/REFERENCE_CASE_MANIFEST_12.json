@@ -279,12 +279,12 @@
       "specific_prior_exposure": {
         "A1H_target": true,
         "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_a",
-        "basis": "Supplied review identifies this exact cell and early rows 1\u20135 as previously inspected; earlier threshold neighborhood around row 148 also examined. Selection remains metadata-only lexicographic.",
+        "basis": "Reviewer correction: this exact A1-H target had its first six rows previously displayed in the initial-block feasibility review; the earlier five-row attribution was incomplete. Earlier threshold neighborhood around row 148 was also examined. Selection remains metadata-only lexicographic.",
         "current_window_overlap_with_explicit_prior_early_exposure": [
           3,
           4
         ],
-        "other_current_rows_exposure": "Not established individually; do not claim unseen/holdout status.",
+        "other_current_rows_exposure": "Every row in this current candidate window overlaps the reported first-six-row exposure; no unseen/holdout claim.",
         "required_on_any_later_NMC_scope": "Carry this specific early-row/A1H-target exposure limitation in the scope record."
       }
     },
@@ -343,11 +343,12 @@
       "specific_prior_exposure": {
         "A1H_target": true,
         "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_a",
-        "basis": "Supplied review identifies this exact cell and early rows 1\u20135 as previously inspected; earlier threshold neighborhood around row 148 also examined. Selection remains metadata-only lexicographic.",
+        "basis": "Reviewer correction: this exact A1-H target had its first six rows previously displayed in the initial-block feasibility review; the earlier five-row attribution was incomplete. Earlier threshold neighborhood around row 148 was also examined. Selection remains metadata-only lexicographic.",
         "current_window_overlap_with_explicit_prior_early_exposure": [
-          5
+          5,
+          6
         ],
-        "other_current_rows_exposure": "Not established individually; do not claim unseen/holdout status.",
+        "other_current_rows_exposure": "Every row in this current candidate window overlaps the reported first-six-row exposure; no unseen/holdout claim.",
         "required_on_any_later_NMC_scope": "Carry this specific early-row/A1H-target exposure limitation in the scope record."
       }
     },
@@ -536,5 +537,12 @@
     "OVERLAPPING_INCREMENT": "UNTESTED",
     "REPRESENTATION_UNRESOLVED_prefix_stop": "UNTESTED_OR_UNRESOLVED",
     "limitation": "No stop-branch reference case is established. A later PASS_SCOPED must explicitly exclude validation of these untested behaviors; agreement on benign increments cannot validate prefix stopping."
+  },
+  "provenance_correction": {
+    "recorded_at_utc": "2026-09-09T21:20:12.424713+00:00",
+    "kind": "PROVENANCE_ONLY",
+    "prior_manifest_sha256": "394820a003a5af1615987a3631a7082a2bb1acc1e28cd40429c98ad4eeef81ea",
+    "correction": "NMC early-row exposure extends through row 6; REP-NMC-02 exposure [5] becomes [5,6]. No source selection, source row hashes, scientific definitions or labels changed.",
+    "basis": "Explicit reviewer correction supplied by operator in this task"
   }
 }
