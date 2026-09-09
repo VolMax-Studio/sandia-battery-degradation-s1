@@ -1,0 +1,21 @@
+{
+  "recorded_at_utc": "2026-09-09T21:30:22.323431+00:00",
+  "inquiry_status": "SENT_AWAITING_RESPONSE",
+  "sent_at": "2026-09-09T23:24:04+02:00",
+  "recipient": "info@batteryarchive.org",
+  "recipient_organization": "BatteryArchive",
+  "subject": "Sandia dataset: clarification of six export-semantics conventions",
+  "questions": 6,
+  "question_scope": [
+    "current polarity",
+    "zero semantics",
+    "capacity/reset representation",
+    "interval endpoints",
+    "cadence/coverage",
+    "timeseries-to-cycle association"
+  ],
+  "private_evidence_reference": "SANDIA_SOURCE_SEMANTICS_SENT_20260909",
+  "sent_rfc822_sha256": "c21c607652859c72a1565daa4bc3ddd26a011b772b08c7cc5809e90031ab6c0c",
+  "sent_rfc822_bytes": 5899,
+  "verification": "Unique matching Gmail Sent search result; original RFC822 retrieved and Date, recipient, subject and six numbered questions checked. Sent evidence does not establish delivery or a source response."
+}

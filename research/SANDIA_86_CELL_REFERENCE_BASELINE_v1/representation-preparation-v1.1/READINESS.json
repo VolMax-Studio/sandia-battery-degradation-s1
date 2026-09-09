@@ -25,8 +25,10 @@
   "no_predictions_generated": true,
   "no_representation_execution": true,
   "RB1_RB5_executed": false,
-  "inquiry_status": "PREPARED_NOT_SENT",
+  "inquiry_status": "SENT_AWAITING_RESPONSE",
   "external_response": "NOT_RECEIVED",
   "gate_status": "CANNOT_START",
-  "NOT_EVALUABLE_records_generated": 0
+  "NOT_EVALUABLE_records_generated": 0,
+  "next_dependency": "EXTERNAL_SOURCE_RESPONSE",
+  "sent_receipt": "SOURCE_SEMANTICS_SENT_RECEIPT.json"
 }

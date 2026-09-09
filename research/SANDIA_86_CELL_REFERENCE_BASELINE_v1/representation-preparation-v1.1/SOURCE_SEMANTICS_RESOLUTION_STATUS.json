@@ -1,12 +1,12 @@
 {
-  "recorded_at_utc": "2026-09-09T21:20:12.424713+00:00",
+  "recorded_at_utc": "2026-09-09T21:30:22.323431+00:00",
   "SOURCE_PARAMETERS_ESTABLISHED": 0,
   "SOURCE_PARAMETERS_TOTAL": 6,
   "REPRESENTATION_FREEZE_ELIGIBLE": "NO",
   "REPRESENTATION_GATE": "CANNOT_START",
   "RB1": "UNAUTHORIZED",
   "RB1_RB5_EXECUTED": false,
-  "inquiry_status": "PREPARED_NOT_SENT",
+  "inquiry_status": "SENT_AWAITING_RESPONSE",
   "external_response": "NOT_RECEIVED",
   "current_evidence_scope": "Inspected/pinned documentary sources do not establish six export-specific conventions; not a claim that no documentation exists anywhere.",
   "NOT_EVALUABLE_records_generated": 0,
@@ -15,5 +15,8 @@
   "source_windows_newly_inspected": false,
   "reference_labels_generated": false,
   "optional_case_locations_generated": false,
-  "representation_predictions_generated": false
+  "representation_predictions_generated": false,
+  "next_dependency": "EXTERNAL_SOURCE_RESPONSE",
+  "sent_receipt": "SOURCE_SEMANTICS_SENT_RECEIPT.json",
+  "sent_at": "2026-09-09T23:24:04+02:00"
 }

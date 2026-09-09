@@ -20,3 +20,7 @@ The sanitized A1-H closure was pushed and independently read back from origin/ma
 ## RB0 ratification and representation preparation
 
 RB0 v1.0.3 at fa61d1ea5dcdc650dae03e5b6a7186b0cfc4ea74 is ratified; see the [Operator record](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/RB0_RATIFICATION.md). Only representation rules/parameters/case-manifest preparation is authorized. The [preparation package](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/representation-preparation-v1.1/README.md) is ready for review with explicit source-case gaps; no execution freeze, reference labels, predictions or RB1–RB5 outputs.
+
+## Source-semantics inquiry — sent, awaiting response
+
+The Operator sent the six-question inquiry to BatteryArchive on 2026-09-09 at 23:24:04 +02:00. See the [sanitized sent receipt](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/representation-preparation-v1.1/SOURCE_SEMANTICS_SENT_RECEIPT.json). The original message remains private. SOURCE_PARAMETERS remain 0/6 ESTABLISHED; FREEZE_ELIGIBLE=NO; REPRESENTATION_GATE=CANNOT_START. NEXT_DEPENDENCY=EXTERNAL_SOURCE_RESPONSE. RB1–RB5 remain unauthorized and unexecuted. STOP pending the source response.
