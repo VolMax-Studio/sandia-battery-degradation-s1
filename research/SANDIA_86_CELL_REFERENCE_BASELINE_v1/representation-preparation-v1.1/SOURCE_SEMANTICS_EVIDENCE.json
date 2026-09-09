@@ -1,0 +1,138 @@
+{
+  "evidence_scope": "Pinned local public protocol/helper/metadata documents plus fresh official SNL study methods page. Search limited to documentary/schema/protocol evidence; no capacity/current outcomes or empirical timestamp patterns used to infer defaults. Not an exhaustive claim about unpublished device/export documentation.",
+  "sources": [
+    {
+      "source_id": "STUDY_SUMMARY",
+      "public_repo_path": "evidence/l0/source_pages/batteryarchive_study_summaries.html",
+      "sha256": "abdc6da9a59ef26445bb39e43031d97a51c0543eac3ff2924c01a711a41ca123",
+      "line_range_1based": [
+        119,
+        122
+      ]
+    },
+    {
+      "source_id": "DOWNLOAD_HELPER",
+      "public_repo_path": "evidence/l0/source_pages/batteryarchive_data_transfer.py",
+      "sha256": "f6515194aa19644806b9d955a39cac2bbddd4a51e154e661b0ab8e6ab98a0021",
+      "line_range_1based": [
+        49,
+        73
+      ]
+    },
+    {
+      "source_id": "DOWNLOAD_ASSOCIATION",
+      "public_repo_path": "evidence/l0/source_pages/batteryarchive_data_transfer.py",
+      "sha256": "f6515194aa19644806b9d955a39cac2bbddd4a51e154e661b0ab8e6ab98a0021",
+      "line_range_1based": [
+        129,
+        157
+      ]
+    },
+    {
+      "source_id": "METADATA_DOC",
+      "public_repo_path": "evidence/l0/source_pages/batteryarchive_metadata.html",
+      "sha256": "2c5b54b6cdc1cefdc0336334b466b62c653d7ae6257f6586675b419937887e7c",
+      "line_range_1based": [
+        87,
+        95
+      ]
+    },
+    {
+      "source_id": "METADATA_RATE",
+      "public_repo_path": "evidence/l0/source_pages/batteryarchive_metadata.html",
+      "sha256": "2c5b54b6cdc1cefdc0336334b466b62c653d7ae6257f6586675b419937887e7c",
+      "line_range_1based": [
+        157,
+        165
+      ]
+    },
+    {
+      "source_id": "SNL_METHODS_CURRENT_CAPTURE",
+      "url": "https://www.batteryarchive.org/snl_study.html",
+      "sha256": "c14919b4f6412ea34aa624dac81dbcb9f8f8fb30f67bf0f76687cce355dcb847",
+      "capture_date_utc": "2026-09-09T21:08:51.236898+00:00",
+      "line_range_1based": [
+        84,
+        92
+      ],
+      "capture_delivery": "Full HTML retained as a local source capture, not included in the public Git tree; exact URL/hash/line locators supplied."
+    }
+  ],
+  "parameters": [
+    {
+      "parameter": "current_polarity_convention",
+      "status": "UNESTABLISHED",
+      "value": null,
+      "source_ids": [
+        "METADATA_RATE",
+        "SNL_METHODS_CURRENT_CAPTURE"
+      ],
+      "reason": "Charge/discharge protocol rates are described, but no signed-current export-column polarity convention is stated. Do not infer polarity from observed signs.",
+      "establishing_locator": null,
+      "reason_no_default": "Documentation does not supply the required export-specific fact."
+    },
+    {
+      "parameter": "current_zero_code_semantics_and_resolution",
+      "status": "UNESTABLISHED",
+      "value": null,
+      "source_ids": [
+        "DOWNLOAD_HELPER",
+        "SNL_METHODS_CURRENT_CAPTURE"
+      ],
+      "reason": "The helper tests literal zeros heuristically; equipment names do not establish channel-specific zero-code meaning, resolution or logging validity. Heuristic comparison is not calibration evidence.",
+      "establishing_locator": null,
+      "reason_no_default": "Documentation does not supply the required export-specific fact."
+    },
+    {
+      "parameter": "sampling_cadence_and_coverage_rule",
+      "status": "UNESTABLISHED",
+      "value": null,
+      "source_ids": [
+        "SNL_METHODS_CURRENT_CAPTURE",
+        "DOWNLOAD_ASSOCIATION"
+      ],
+      "reason": "Protocol durations and cycle-round structure do not specify acquisition logging cadence, event-driven sampling or complete-coverage criteria.",
+      "establishing_locator": null,
+      "reason_no_default": "Documentation does not supply the required export-specific fact."
+    },
+    {
+      "parameter": "interval_endpoint_inclusion",
+      "status": "UNESTABLISHED",
+      "value": null,
+      "source_ids": [
+        "DOWNLOAD_ASSOCIATION",
+        "STUDY_SUMMARY"
+      ],
+      "reason": "File naming and protocol ordering do not specify inclusive/exclusive sample endpoints or whether row boundaries overlap in recorded increments.",
+      "establishing_locator": null,
+      "reason_no_default": "Documentation does not supply the required export-specific fact."
+    },
+    {
+      "parameter": "counter_reset_convention",
+      "status": "UNESTABLISHED",
+      "value": null,
+      "source_ids": [
+        "DOWNLOAD_HELPER",
+        "SNL_METHODS_CURRENT_CAPTURE"
+      ],
+      "reason": "Neither source supplies export counter/reset conventions defining per-row versus cumulative quantities. The public EFC helper is not a counter-semantics specification.",
+      "establishing_locator": null,
+      "reason_no_default": "Documentation does not supply the required export-specific fact."
+    },
+    {
+      "parameter": "timeseries_to_cycle_association_rule",
+      "status": "UNESTABLISHED",
+      "value": null,
+      "source_ids": [
+        "DOWNLOAD_ASSOCIATION",
+        "DOWNLOAD_HELPER"
+      ],
+      "reason": "Matched filenames identify the cell; shared Cycle_Index alone does not resolve repeated indices or sample-to-row association. No duplicate-safe association rule is documented.",
+      "establishing_locator": null,
+      "reason_no_default": "Documentation does not supply the required export-specific fact."
+    }
+  ],
+  "overall_status": "UNESTABLISHED",
+  "bound_parameter_count": 0,
+  "unestablished_parameter_count": 6
+}

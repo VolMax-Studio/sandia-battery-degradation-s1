@@ -1,0 +1,540 @@
+{
+  "manifest_id": "REPRESENTATION_REFERENCE_CASE_MANIFEST_v1.1",
+  "status": "PREPARED_FOR_FREEZE_REVIEW_NOT_FROZEN_FOR_EXECUTION",
+  "instrument": "THROUGHPUT_REPRESENTATION_MAPPING_V1",
+  "governing_RB0_commit": "fa61d1ea5dcdc650dae03e5b6a7186b0cfc4ea74",
+  "EXPOSURE_CLASS": "POST_CORPUS_VIEW_EXPLORATORY",
+  "case_slots": 12,
+  "case_slots_per_chemistry": 4,
+  "concrete_candidate_windows": 6,
+  "missing_source_case_slots": 6,
+  "mandatory_strata_confirmed": false,
+  "selection_is_reference_labeling": false,
+  "case_selection_uses_outcomes": false,
+  "cases": [
+    {
+      "case_id": "REP-LFP-01",
+      "chemistry": "LFP",
+      "required_evidence_situation": "INITIAL_BLOCK_TO_WORKING_TRANSITION_CANDIDATE",
+      "mandatory_for_chemistry_pass": true,
+      "case_location_status": "CANDIDATE_WINDOW_STRATUM_NOT_CONFIRMED",
+      "source": {
+        "chemistry": "LFP",
+        "cell_id": "SNL_18650_LFP_15C_0-100_0.5/1C_a",
+        "nominal_protocol": {
+          "SOC": "0-100%",
+          "charge_rate": "0.5C",
+          "discharge_rate": "1C"
+        },
+        "archive_filename": "SNL LFP.zip",
+        "archive_sha256": "006a335cbcdabc858a85ab0cdbc59a7001150751cf22abe8a7132c85ef63223d",
+        "cycle_member": "SNL LFP/SNL_18650_LFP_15C_0-100_0.5-1C_a_cycle_data.csv",
+        "cycle_member_sha256": "59f0d300ce9b9d9539d53f82db08e38b6ba9c9210e2b87609a047244ea03db47",
+        "timeseries_member": "SNL LFP/SNL_18650_LFP_15C_0-100_0.5-1C_a_timeseries.csv",
+        "timeseries_member_sha256": "0c9cfabb3146173fa4c6d41690cf68f55fdbf3d6a5c8ea7d6c825e9b1812c1df",
+        "header_sha256": "f413094f65960adad7347f70aa5291258f078ae511511503dd55171d58dbc7cd",
+        "selection_pool_size_from_existing_metadata": 20,
+        "selection_rule": "Lexicographically first canonical cell among existing metadata with full SOC, 0.5C charge, and non-0.5C working discharge; no measured capacities/currents used."
+      },
+      "candidate_row_positions_1based": [
+        3,
+        4
+      ],
+      "csv_physical_lines_1based": [
+        4,
+        5
+      ],
+      "exact_physical_row_sha256": [
+        "1d29b2b6d5378ecf9a5ec065fafd16164b7eac3c2dc3a80540722ee0f72a319b",
+        "5b35b1c05ea1aff030d113ccfe40d2d04b0ea2d512b58e9e2632c64e114eef82"
+      ],
+      "context_physical_lines_1based": [
+        2,
+        8
+      ],
+      "location_rationale": "Initial three-check protocol motivates this leading-window question; ordinal anchors do NOT assert that these rows instantiate the requested protocol strata. Independent source adjudication must establish that, otherwise the mandatory case cannot pass.",
+      "channel_scope": [
+        "Charge_Capacity (Ah)",
+        "Discharge_Capacity (Ah)"
+      ],
+      "reference_representation": null,
+      "reference_flow_state": null,
+      "prediction_representation": null,
+      "prediction_flow_state": null,
+      "adjudicator": null,
+      "prior_exposure": "Corpus viewed; prior A1-H transition findings known. Not an unseen holdout. Capacity values and current outcomes were not used for this selection.",
+      "flow_slot_dual_use_permitted": false
+    },
+    {
+      "case_id": "REP-LFP-02",
+      "chemistry": "LFP",
+      "required_evidence_situation": "ORDINARY_WITHIN_BLOCK_CANDIDATE",
+      "mandatory_for_chemistry_pass": true,
+      "case_location_status": "CANDIDATE_WINDOW_STRATUM_NOT_CONFIRMED",
+      "source": {
+        "chemistry": "LFP",
+        "cell_id": "SNL_18650_LFP_15C_0-100_0.5/1C_a",
+        "nominal_protocol": {
+          "SOC": "0-100%",
+          "charge_rate": "0.5C",
+          "discharge_rate": "1C"
+        },
+        "archive_filename": "SNL LFP.zip",
+        "archive_sha256": "006a335cbcdabc858a85ab0cdbc59a7001150751cf22abe8a7132c85ef63223d",
+        "cycle_member": "SNL LFP/SNL_18650_LFP_15C_0-100_0.5-1C_a_cycle_data.csv",
+        "cycle_member_sha256": "59f0d300ce9b9d9539d53f82db08e38b6ba9c9210e2b87609a047244ea03db47",
+        "timeseries_member": "SNL LFP/SNL_18650_LFP_15C_0-100_0.5-1C_a_timeseries.csv",
+        "timeseries_member_sha256": "0c9cfabb3146173fa4c6d41690cf68f55fdbf3d6a5c8ea7d6c825e9b1812c1df",
+        "header_sha256": "f413094f65960adad7347f70aa5291258f078ae511511503dd55171d58dbc7cd",
+        "selection_pool_size_from_existing_metadata": 20,
+        "selection_rule": "Lexicographically first canonical cell among existing metadata with full SOC, 0.5C charge, and non-0.5C working discharge; no measured capacities/currents used."
+      },
+      "candidate_row_positions_1based": [
+        5,
+        6
+      ],
+      "csv_physical_lines_1based": [
+        6,
+        7
+      ],
+      "exact_physical_row_sha256": [
+        "814f745072b48b1c5ebbffd2fa8e25af64c419fb68e9162b399597884cee605d",
+        "327b8358f48bf3fa9b98ae6f3f00ed32d92b65397c43e754afa74bec1bcc0648"
+      ],
+      "context_physical_lines_1based": [
+        2,
+        8
+      ],
+      "location_rationale": "Earliest two-row window strictly after and disjoint from the unchanged [3,4] transition window: [5,6]. Ordinal selection only, no capacity/current inspection. Ordinary-within-block stratum remains unconfirmed; retain unresolved if not established, without substituting a more favorable window.",
+      "channel_scope": [
+        "Charge_Capacity (Ah)",
+        "Discharge_Capacity (Ah)"
+      ],
+      "reference_representation": null,
+      "reference_flow_state": null,
+      "prediction_representation": null,
+      "prediction_flow_state": null,
+      "adjudicator": null,
+      "prior_exposure": "Corpus viewed; prior A1-H transition findings known. Not an unseen holdout. Capacity values and current outcomes were not used for this selection.",
+      "flow_slot_dual_use_permitted": false
+    },
+    {
+      "case_id": "REP-NCA-01",
+      "chemistry": "NCA",
+      "required_evidence_situation": "INITIAL_BLOCK_TO_WORKING_TRANSITION_CANDIDATE",
+      "mandatory_for_chemistry_pass": true,
+      "case_location_status": "CANDIDATE_WINDOW_STRATUM_NOT_CONFIRMED",
+      "source": {
+        "chemistry": "NCA",
+        "cell_id": "SNL_18650_NCA_15C_0-100_0.5/1C_a",
+        "nominal_protocol": {
+          "SOC": "0-100%",
+          "charge_rate": "0.5C",
+          "discharge_rate": "1C"
+        },
+        "archive_filename": "SNL NCA.zip",
+        "archive_sha256": "39a4cad9b283e94a1b50283f01364ee168b38e1108c72b75b3ca209697890cee",
+        "cycle_member": "SNL NCA/SNL_18650_NCA_15C_0-100_0.5-1C_a_cycle_data.csv",
+        "cycle_member_sha256": "c8903ad1585ebf97d90d9cde8a79fe3f3bfdfc6cb065acf80c75686aa623d8bc",
+        "timeseries_member": "SNL NCA/SNL_18650_NCA_15C_0-100_0.5-1C_a_timeseries.csv",
+        "timeseries_member_sha256": "4e816ca6765250d180fbabdb41d9fed1bfca1fad74ed88e94676b8626900c648",
+        "header_sha256": "f413094f65960adad7347f70aa5291258f078ae511511503dd55171d58dbc7cd",
+        "selection_pool_size_from_existing_metadata": 16,
+        "selection_rule": "Lexicographically first canonical cell among existing metadata with full SOC, 0.5C charge, and non-0.5C working discharge; no measured capacities/currents used."
+      },
+      "candidate_row_positions_1based": [
+        3,
+        4
+      ],
+      "csv_physical_lines_1based": [
+        4,
+        5
+      ],
+      "exact_physical_row_sha256": [
+        "9cc258f773d11efc4bc5dadf657f5c6f376fdcb82e5ee465419fab658376aacb",
+        "83990443c200cd89874e9092d93b88072e1ccf62957b97f71a9d62d4430aa31d"
+      ],
+      "context_physical_lines_1based": [
+        2,
+        8
+      ],
+      "location_rationale": "Initial three-check protocol motivates this leading-window question; ordinal anchors do NOT assert that these rows instantiate the requested protocol strata. Independent source adjudication must establish that, otherwise the mandatory case cannot pass.",
+      "channel_scope": [
+        "Charge_Capacity (Ah)",
+        "Discharge_Capacity (Ah)"
+      ],
+      "reference_representation": null,
+      "reference_flow_state": null,
+      "prediction_representation": null,
+      "prediction_flow_state": null,
+      "adjudicator": null,
+      "prior_exposure": "Corpus viewed; prior A1-H transition findings known. Not an unseen holdout. Capacity values and current outcomes were not used for this selection.",
+      "flow_slot_dual_use_permitted": false
+    },
+    {
+      "case_id": "REP-NCA-02",
+      "chemistry": "NCA",
+      "required_evidence_situation": "ORDINARY_WITHIN_BLOCK_CANDIDATE",
+      "mandatory_for_chemistry_pass": true,
+      "case_location_status": "CANDIDATE_WINDOW_STRATUM_NOT_CONFIRMED",
+      "source": {
+        "chemistry": "NCA",
+        "cell_id": "SNL_18650_NCA_15C_0-100_0.5/1C_a",
+        "nominal_protocol": {
+          "SOC": "0-100%",
+          "charge_rate": "0.5C",
+          "discharge_rate": "1C"
+        },
+        "archive_filename": "SNL NCA.zip",
+        "archive_sha256": "39a4cad9b283e94a1b50283f01364ee168b38e1108c72b75b3ca209697890cee",
+        "cycle_member": "SNL NCA/SNL_18650_NCA_15C_0-100_0.5-1C_a_cycle_data.csv",
+        "cycle_member_sha256": "c8903ad1585ebf97d90d9cde8a79fe3f3bfdfc6cb065acf80c75686aa623d8bc",
+        "timeseries_member": "SNL NCA/SNL_18650_NCA_15C_0-100_0.5-1C_a_timeseries.csv",
+        "timeseries_member_sha256": "4e816ca6765250d180fbabdb41d9fed1bfca1fad74ed88e94676b8626900c648",
+        "header_sha256": "f413094f65960adad7347f70aa5291258f078ae511511503dd55171d58dbc7cd",
+        "selection_pool_size_from_existing_metadata": 16,
+        "selection_rule": "Lexicographically first canonical cell among existing metadata with full SOC, 0.5C charge, and non-0.5C working discharge; no measured capacities/currents used."
+      },
+      "candidate_row_positions_1based": [
+        5,
+        6
+      ],
+      "csv_physical_lines_1based": [
+        6,
+        7
+      ],
+      "exact_physical_row_sha256": [
+        "a7e5994c391ec2de09bc945d1bc8d03eca90021fcdfe01d8612be74a10c9213a",
+        "58bcf487bd4c9c5fbc141de9ce76f07f659688790aa6719b63eb0390ad38b9e1"
+      ],
+      "context_physical_lines_1based": [
+        2,
+        8
+      ],
+      "location_rationale": "Earliest two-row window strictly after and disjoint from the unchanged [3,4] transition window: [5,6]. Ordinal selection only, no capacity/current inspection. Ordinary-within-block stratum remains unconfirmed; retain unresolved if not established, without substituting a more favorable window.",
+      "channel_scope": [
+        "Charge_Capacity (Ah)",
+        "Discharge_Capacity (Ah)"
+      ],
+      "reference_representation": null,
+      "reference_flow_state": null,
+      "prediction_representation": null,
+      "prediction_flow_state": null,
+      "adjudicator": null,
+      "prior_exposure": "Corpus viewed; prior A1-H transition findings known. Not an unseen holdout. Capacity values and current outcomes were not used for this selection.",
+      "flow_slot_dual_use_permitted": false
+    },
+    {
+      "case_id": "REP-NMC-01",
+      "chemistry": "NMC",
+      "required_evidence_situation": "INITIAL_BLOCK_TO_WORKING_TRANSITION_CANDIDATE",
+      "mandatory_for_chemistry_pass": true,
+      "case_location_status": "CANDIDATE_WINDOW_STRATUM_NOT_CONFIRMED",
+      "source": {
+        "chemistry": "NMC",
+        "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_a",
+        "nominal_protocol": {
+          "SOC": "0-100%",
+          "charge_rate": "0.5C",
+          "discharge_rate": "1C"
+        },
+        "archive_filename": "SNL NMC.zip",
+        "archive_sha256": "d84fd3940eb802a19ae2c28902263e8dc5d4d320b034d1406206e8ba56664137",
+        "cycle_member": "SNL NMC/SNL_18650_NMC_15C_0-100_0.5-1C_a_cycle_data.csv",
+        "cycle_member_sha256": "61c54e8583e6f3cb487dabefbbb8965e766a915d66f2cede6ead4c955a7be529",
+        "timeseries_member": "SNL NMC/SNL_18650_NMC_15C_0-100_0.5-1C_a_timeseries.csv",
+        "timeseries_member_sha256": "f99880c6c84a2e5011001bf8a61fb148ad0cfa06e6908deba7e928b17b85a6cf",
+        "header_sha256": "f413094f65960adad7347f70aa5291258f078ae511511503dd55171d58dbc7cd",
+        "selection_pool_size_from_existing_metadata": 20,
+        "selection_rule": "Lexicographically first canonical cell among existing metadata with full SOC, 0.5C charge, and non-0.5C working discharge; no measured capacities/currents used."
+      },
+      "candidate_row_positions_1based": [
+        3,
+        4
+      ],
+      "csv_physical_lines_1based": [
+        4,
+        5
+      ],
+      "exact_physical_row_sha256": [
+        "c31e1918d4884f77c9b4c870a37a27494ca1574fd9a18cc63a8d7f46d4cef069",
+        "17452e48216a8685fbf240bbdf6095467ce8ed9b2937ab93a0c572de88b8f306"
+      ],
+      "context_physical_lines_1based": [
+        2,
+        8
+      ],
+      "location_rationale": "Initial three-check protocol motivates this leading-window question; ordinal anchors do NOT assert that these rows instantiate the requested protocol strata. Independent source adjudication must establish that, otherwise the mandatory case cannot pass.",
+      "channel_scope": [
+        "Charge_Capacity (Ah)",
+        "Discharge_Capacity (Ah)"
+      ],
+      "reference_representation": null,
+      "reference_flow_state": null,
+      "prediction_representation": null,
+      "prediction_flow_state": null,
+      "adjudicator": null,
+      "prior_exposure": "Corpus viewed; prior A1-H transition findings known. Not an unseen holdout. Capacity values and current outcomes were not used for this selection.",
+      "flow_slot_dual_use_permitted": false,
+      "specific_prior_exposure": {
+        "A1H_target": true,
+        "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_a",
+        "basis": "Supplied review identifies this exact cell and early rows 1\u20135 as previously inspected; earlier threshold neighborhood around row 148 also examined. Selection remains metadata-only lexicographic.",
+        "current_window_overlap_with_explicit_prior_early_exposure": [
+          3,
+          4
+        ],
+        "other_current_rows_exposure": "Not established individually; do not claim unseen/holdout status.",
+        "required_on_any_later_NMC_scope": "Carry this specific early-row/A1H-target exposure limitation in the scope record."
+      }
+    },
+    {
+      "case_id": "REP-NMC-02",
+      "chemistry": "NMC",
+      "required_evidence_situation": "ORDINARY_WITHIN_BLOCK_CANDIDATE",
+      "mandatory_for_chemistry_pass": true,
+      "case_location_status": "CANDIDATE_WINDOW_STRATUM_NOT_CONFIRMED",
+      "source": {
+        "chemistry": "NMC",
+        "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_a",
+        "nominal_protocol": {
+          "SOC": "0-100%",
+          "charge_rate": "0.5C",
+          "discharge_rate": "1C"
+        },
+        "archive_filename": "SNL NMC.zip",
+        "archive_sha256": "d84fd3940eb802a19ae2c28902263e8dc5d4d320b034d1406206e8ba56664137",
+        "cycle_member": "SNL NMC/SNL_18650_NMC_15C_0-100_0.5-1C_a_cycle_data.csv",
+        "cycle_member_sha256": "61c54e8583e6f3cb487dabefbbb8965e766a915d66f2cede6ead4c955a7be529",
+        "timeseries_member": "SNL NMC/SNL_18650_NMC_15C_0-100_0.5-1C_a_timeseries.csv",
+        "timeseries_member_sha256": "f99880c6c84a2e5011001bf8a61fb148ad0cfa06e6908deba7e928b17b85a6cf",
+        "header_sha256": "f413094f65960adad7347f70aa5291258f078ae511511503dd55171d58dbc7cd",
+        "selection_pool_size_from_existing_metadata": 20,
+        "selection_rule": "Lexicographically first canonical cell among existing metadata with full SOC, 0.5C charge, and non-0.5C working discharge; no measured capacities/currents used."
+      },
+      "candidate_row_positions_1based": [
+        5,
+        6
+      ],
+      "csv_physical_lines_1based": [
+        6,
+        7
+      ],
+      "exact_physical_row_sha256": [
+        "b4e79f96dd8b2571a1227cec5678ba59f2522dc3432f383259fd1b3e6f8eff67",
+        "2bd9511efa3d7dede298ba31e987aa53779504166c4b2bdecee1acf06c81f5a0"
+      ],
+      "context_physical_lines_1based": [
+        2,
+        8
+      ],
+      "location_rationale": "Earliest two-row window strictly after and disjoint from the unchanged [3,4] transition window: [5,6]. Ordinal selection only, no capacity/current inspection. Ordinary-within-block stratum remains unconfirmed; retain unresolved if not established, without substituting a more favorable window.",
+      "channel_scope": [
+        "Charge_Capacity (Ah)",
+        "Discharge_Capacity (Ah)"
+      ],
+      "reference_representation": null,
+      "reference_flow_state": null,
+      "prediction_representation": null,
+      "prediction_flow_state": null,
+      "adjudicator": null,
+      "prior_exposure": "Corpus viewed; prior A1-H transition findings known. Not an unseen holdout. Capacity values and current outcomes were not used for this selection.",
+      "flow_slot_dual_use_permitted": false,
+      "specific_prior_exposure": {
+        "A1H_target": true,
+        "cell_id": "SNL_18650_NMC_15C_0-100_0.5/1C_a",
+        "basis": "Supplied review identifies this exact cell and early rows 1\u20135 as previously inspected; earlier threshold neighborhood around row 148 also examined. Selection remains metadata-only lexicographic.",
+        "current_window_overlap_with_explicit_prior_early_exposure": [
+          5
+        ],
+        "other_current_rows_exposure": "Not established individually; do not claim unseen/holdout status.",
+        "required_on_any_later_NMC_scope": "Carry this specific early-row/A1H-target exposure limitation in the scope record."
+      }
+    },
+    {
+      "case_id": "REP-OPTIONAL-01",
+      "chemistry": null,
+      "chemistry_assignment_status": "PENDING_SOURCE_VERIFIABLE_LOCATION",
+      "required_evidence_situation": "FLOW_NO_FLOW",
+      "mandatory_for_chemistry_pass": false,
+      "reserved_use": "FLOW_VALIDATION",
+      "reservation_is_reference_label": false,
+      "requested_flow_reference_state": "NO_FLOW",
+      "case_location_status": "MISSING_SOURCE_CASE",
+      "source": null,
+      "candidate_row_positions_1based": null,
+      "channel_scope": [
+        "Charge_Capacity (Ah)",
+        "Discharge_Capacity (Ah)"
+      ],
+      "missing_reason": "No documentary/schema locator establishes a case under the six currently unestablished source semantics. No outcome search, flow prediction or label generation performed; absence of a located case is not absence in the corpus.",
+      "reference_representation": null,
+      "reference_flow_state": null,
+      "prediction_representation": null,
+      "prediction_flow_state": null,
+      "adjudicator": null
+    },
+    {
+      "case_id": "REP-OPTIONAL-02",
+      "chemistry": null,
+      "chemistry_assignment_status": "PENDING_SOURCE_VERIFIABLE_LOCATION",
+      "required_evidence_situation": "FLOW_CHARGE_DIRECTION_ONLY",
+      "mandatory_for_chemistry_pass": false,
+      "reserved_use": "FLOW_VALIDATION",
+      "reservation_is_reference_label": false,
+      "requested_flow_reference_state": "CHARGE_DIRECTION_ONLY",
+      "case_location_status": "MISSING_SOURCE_CASE",
+      "source": null,
+      "candidate_row_positions_1based": null,
+      "channel_scope": [
+        "Charge_Capacity (Ah)",
+        "Discharge_Capacity (Ah)"
+      ],
+      "missing_reason": "No documentary/schema locator establishes a case under the six currently unestablished source semantics. No outcome search, flow prediction or label generation performed; absence of a located case is not absence in the corpus.",
+      "reference_representation": null,
+      "reference_flow_state": null,
+      "prediction_representation": null,
+      "prediction_flow_state": null,
+      "adjudicator": null
+    },
+    {
+      "case_id": "REP-OPTIONAL-03",
+      "chemistry": null,
+      "chemistry_assignment_status": "PENDING_SOURCE_VERIFIABLE_LOCATION",
+      "required_evidence_situation": "HALT_BOUNDARY_OR_PROVENANCE",
+      "mandatory_for_chemistry_pass": false,
+      "reserved_use": "HALT_BRANCH_EVIDENCE",
+      "reservation_is_reference_label": false,
+      "requested_flow_reference_state": null,
+      "case_location_status": "MISSING_SOURCE_CASE",
+      "source": null,
+      "candidate_row_positions_1based": null,
+      "channel_scope": [
+        "Charge_Capacity (Ah)",
+        "Discharge_Capacity (Ah)"
+      ],
+      "missing_reason": "No documentary/schema locator establishes a case under the six currently unestablished source semantics. No outcome search, flow prediction or label generation performed; absence of a located case is not absence in the corpus.",
+      "reference_representation": null,
+      "reference_flow_state": null,
+      "prediction_representation": null,
+      "prediction_flow_state": null,
+      "adjudicator": null
+    },
+    {
+      "case_id": "REP-OPTIONAL-04",
+      "chemistry": null,
+      "chemistry_assignment_status": "PENDING_SOURCE_VERIFIABLE_LOCATION",
+      "required_evidence_situation": "HALT_BOUNDARY_OR_PROVENANCE",
+      "mandatory_for_chemistry_pass": false,
+      "reserved_use": "HALT_BRANCH_EVIDENCE",
+      "reservation_is_reference_label": false,
+      "requested_flow_reference_state": null,
+      "case_location_status": "MISSING_SOURCE_CASE",
+      "source": null,
+      "candidate_row_positions_1based": null,
+      "channel_scope": [
+        "Charge_Capacity (Ah)",
+        "Discharge_Capacity (Ah)"
+      ],
+      "missing_reason": "No documentary/schema locator establishes a case under the six currently unestablished source semantics. No outcome search, flow prediction or label generation performed; absence of a located case is not absence in the corpus.",
+      "reference_representation": null,
+      "reference_flow_state": null,
+      "prediction_representation": null,
+      "prediction_flow_state": null,
+      "adjudicator": null
+    },
+    {
+      "case_id": "REP-OPTIONAL-05",
+      "chemistry": null,
+      "chemistry_assignment_status": "PENDING_SOURCE_VERIFIABLE_LOCATION",
+      "required_evidence_situation": "HALT_BOUNDARY_OR_PROVENANCE",
+      "mandatory_for_chemistry_pass": false,
+      "reserved_use": "HALT_BRANCH_EVIDENCE",
+      "reservation_is_reference_label": false,
+      "requested_flow_reference_state": null,
+      "case_location_status": "MISSING_SOURCE_CASE",
+      "source": null,
+      "candidate_row_positions_1based": null,
+      "channel_scope": [
+        "Charge_Capacity (Ah)",
+        "Discharge_Capacity (Ah)"
+      ],
+      "missing_reason": "No documentary/schema locator establishes a case under the six currently unestablished source semantics. No outcome search, flow prediction or label generation performed; absence of a located case is not absence in the corpus.",
+      "reference_representation": null,
+      "reference_flow_state": null,
+      "prediction_representation": null,
+      "prediction_flow_state": null,
+      "adjudicator": null
+    },
+    {
+      "case_id": "REP-OPTIONAL-06",
+      "chemistry": null,
+      "chemistry_assignment_status": "PENDING_SOURCE_VERIFIABLE_LOCATION",
+      "required_evidence_situation": "HALT_BOUNDARY_OR_PROVENANCE",
+      "mandatory_for_chemistry_pass": false,
+      "reserved_use": "HALT_BRANCH_EVIDENCE",
+      "reservation_is_reference_label": false,
+      "requested_flow_reference_state": null,
+      "case_location_status": "MISSING_SOURCE_CASE",
+      "source": null,
+      "candidate_row_positions_1based": null,
+      "channel_scope": [
+        "Charge_Capacity (Ah)",
+        "Discharge_Capacity (Ah)"
+      ],
+      "missing_reason": "No documentary/schema locator establishes a case under the six currently unestablished source semantics. No outcome search, flow prediction or label generation performed; absence of a located case is not absence in the corpus.",
+      "reference_representation": null,
+      "reference_flow_state": null,
+      "prediction_representation": null,
+      "prediction_flow_state": null,
+      "adjudicator": null
+    }
+  ],
+  "flow_reference_coverage_requirements": {
+    "minimum_independently_resolved_NO_FLOW": 1,
+    "minimum_independently_resolved_CHARGE_DIRECTION_ONLY": 1,
+    "current_assignment": "Explicit optional reservations allocated; concrete source cases and independent flow reference coverage NOT_ESTABLISHED",
+    "case_count_constraint": "Twelve slots total, final four per chemistry; flow uses only the two optional reservations and may not share any mandatory window.",
+    "unavailability_policy": "Record UNTESTED/UNRESOLVED; no inferred/fabricated cases or zero-throughput claim in that scope.",
+    "fill_policy": "Version any source locator assignment and quota resolution before freeze and before predictions, using the declared global source-only order."
+  },
+  "freeze_readiness": "NOT_ELIGIBLE: missing source cases, unresolved optional chemistry allocation, unestablished source semantics/strata and flow/halt coverage; no reference adjudication yet.",
+  "preparation_version": "1.1",
+  "parent_manifest_sha256": "bfb572dc0ca944eb7f2e1214f6ce216a862cdc617848d472ba95844dc01bf61b",
+  "case_slots_per_chemistry_interpretation": "Final manifest requirement; six mandatory slots assigned (two/chemistry), six optional reservations await source-verified chemistry assignment, capped at two optional/chemistry. Not a claim that all current slots are assigned.",
+  "optional_allocation": {
+    "flow_slots": {
+      "NO_FLOW": "REP-OPTIONAL-01",
+      "CHARGE_DIRECTION_ONLY": "REP-OPTIONAL-02"
+    },
+    "halt_slots": [
+      "REP-OPTIONAL-03",
+      "REP-OPTIONAL-04",
+      "REP-OPTIONAL-05",
+      "REP-OPTIONAL-06"
+    ],
+    "optional_chemistry_quota": 2,
+    "search_order": [
+      "canonical cell_id ascending across the unchanged metadata-only full-SOC / 0.5C-charge / non-0.5C-discharge pool",
+      "cycle member path ascending",
+      "source data-row start position ascending",
+      "source data-row end position ascending"
+    ],
+    "processing_order": [
+      "reserve first qualifying NO_FLOW source-evidence case",
+      "reserve first qualifying CHARGE_DIRECTION_ONLY source-evidence case",
+      "fill remaining four slots from qualifying documented halt/boundary/provenance cases in the same order"
+    ],
+    "qualification": "Only documented schema/protocol/coverage evidence satisfying the ratified rules; no capacity magnitude, threshold, EFC80, published outcome or classifier prediction may select a case. Requested coverage category is not a generated reference label.",
+    "disjointness": "Flow windows must exclude every mandatory source-row key and each other; all selected optional cases use distinct source-row keys. Mandatory/flow dual use forbidden.",
+    "quota_handling": "Assign optional chemistry from actual source identity, never from slot convenience; no chemistry may exceed two optional slots. If required flow reservations cannot coexist with the final four-per-chemistry requirement, report ALLOCATION_CONFLICT and keep FREEZE_ELIGIBLE=NO; do not silently move to a later outcome-favorable candidate or rewrite RB0.",
+    "unavailable": "Keep MISSING_SOURCE_CASE; document which search/evidence scope remains unestablished; no fabricated states.",
+    "selection_status": "ORDER_FIXED_IN_PREPARATION; no optional source candidate qualified/selected yet."
+  },
+  "mandatory_windows_disjoint": true,
+  "HALT_BRANCH_REFERENCE_COVERAGE": {
+    "OVERLAPPING_INCREMENT": "UNTESTED",
+    "REPRESENTATION_UNRESOLVED_prefix_stop": "UNTESTED_OR_UNRESOLVED",
+    "limitation": "No stop-branch reference case is established. A later PASS_SCOPED must explicitly exclude validation of these untested behaviors; agreement on benign increments cannot validate prefix stopping."
+  }
+}

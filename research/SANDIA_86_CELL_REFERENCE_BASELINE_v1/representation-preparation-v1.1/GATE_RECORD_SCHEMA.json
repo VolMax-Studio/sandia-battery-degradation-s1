@@ -1,0 +1,44 @@
+{
+  "schema_id": "REPRESENTATION_GATE_RECORD_SCHEMA_v1",
+  "status": "SPECIFICATION_ONLY_NO_RECORDS_GENERATED",
+  "record_key": [
+    "case_id",
+    "source_member_sha256",
+    "interval_key",
+    "channel"
+  ],
+  "required_fields": [
+    "rule_sha256",
+    "parameter_sha256",
+    "case_manifest_sha256",
+    "reference_label_artifact_sha256",
+    "reference_adjudicator_identity",
+    "construction_independence_declaration",
+    "reference_representation",
+    "reference_flow_state",
+    "prediction_representation",
+    "prediction_flow_state",
+    "evidence_locators",
+    "agreement_status",
+    "reason_codes",
+    "representation_scope",
+    "flow_scope",
+    "specific_prior_exposure",
+    "HALT_BRANCH_REFERENCE_COVERAGE",
+    "untested_behavior_exclusions"
+  ],
+  "allowed_representation_states": [
+    "PER_ROW_INCREMENT",
+    "AGGREGATED_DISJOINT_INCREMENT",
+    "OVERLAPPING_INCREMENT",
+    "REPRESENTATION_UNRESOLVED"
+  ],
+  "allowed_flow_states": [
+    "BIDIRECTIONAL_FLOW",
+    "CHARGE_DIRECTION_ONLY",
+    "NO_FLOW",
+    "FLOW_STATE_UNRESOLVED"
+  ],
+  "empty_preparation_fields_mean": "NOT_PRODUCED; distinct from a later instrument prediction of REPRESENTATION_UNRESOLVED",
+  "records_generated": 0
+}

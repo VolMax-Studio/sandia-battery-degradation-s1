@@ -1,0 +1,28 @@
+{
+  "preparation_version": "1.1",
+  "MANDATORY_WINDOWS_DISJOINT": "YES",
+  "FLOW_SLOTS_EXPLICIT": "YES",
+  "NMC_EXPOSURE_RECORDED": "YES",
+  "HALT_BRANCH_SCOPE_RECORDED": "YES",
+  "SOURCE_PARAMETERS": "UNESTABLISHED",
+  "NEW_OUTCOME_SELECTION": "NONE",
+  "FREEZE_ELIGIBLE": "NO",
+  "case_slots": 12,
+  "source_anchored_candidate_windows": 6,
+  "optional_reserved_missing_cases": 6,
+  "optional_chemistry_assignments": "PENDING_SOURCE_LOCATORS; final quota two optional/chemistry",
+  "FLOW_REFERENCE_COVERAGE": "UNTESTED_UNRESOLVED",
+  "HALT_BRANCH_REFERENCE_COVERAGE": "UNTESTED_UNRESOLVED",
+  "readiness_blockers": [
+    "Six source-bound export/coverage parameters unestablished",
+    "Six optional source locations missing and chemistry assignment pending",
+    "Mandatory candidate protocol strata not independently established",
+    "NO_FLOW and CHARGE_DIRECTION_ONLY reference coverage unestablished",
+    "No established halt-branch reference coverage",
+    "No qualified construction-independent reference adjudicator designated"
+  ],
+  "no_reference_labels_generated": true,
+  "no_predictions_generated": true,
+  "no_representation_execution": true,
+  "RB1_RB5_executed": false
+}

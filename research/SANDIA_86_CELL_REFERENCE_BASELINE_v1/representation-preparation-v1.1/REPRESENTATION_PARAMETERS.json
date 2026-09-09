@@ -1,0 +1,47 @@
+{
+  "instrument": "THROUGHPUT_REPRESENTATION_MAPPING_V1",
+  "rules_version": "1.1-preparation",
+  "status": "PREPARED_FOR_FREEZE_REVIEW_NOT_EXECUTION",
+  "governing_contract_version": "1.0.3",
+  "EXPOSURE_CLASS": "POST_CORPUS_VIEW_EXPLORATORY",
+  "rules_sha256": "02db4b8352ab53eb91e740fa824992eb40864ac946b25e342f2ada065d5e51ed",
+  "reference_case_slots": 12,
+  "slots_per_chemistry": 4,
+  "chemistries": [
+    "LFP",
+    "NCA",
+    "NMC"
+  ],
+  "minimum_mandatory_agreements_per_passed_chemistry": 2,
+  "mandatory_strata": [
+    "INITIAL_BLOCK_TO_WORKING_TRANSITION",
+    "ORDINARY_WITHIN_BLOCK_INTERVAL"
+  ],
+  "max_definite_disagreements_per_passed_chemistry": 0,
+  "all_three_chemistries_minimum_mandatory_agreements": 6,
+  "minimum_independently_resolved_flow_cases_if_source_verifiable": {
+    "NO_FLOW": 1,
+    "CHARGE_DIRECTION_ONLY": 1
+  },
+  "flow_scope_if_unavailable": "UNTESTED_OR_UNRESOLVED; no claimed zero-flow validation",
+  "source_bound_parameters": {
+    "current_polarity_convention": null,
+    "current_zero_code_semantics_and_resolution": null,
+    "sampling_cadence_and_coverage_rule": null,
+    "interval_endpoint_inclusion": null,
+    "counter_reset_convention": null,
+    "timeseries_to_cycle_association_rule": null
+  },
+  "null_parameter_meaning": "SOURCE_FACT_NOT_ESTABLISHED; not numeric zero or runtime default",
+  "new_numeric_thresholds": null,
+  "RB0_role_current_tolerance_retained": 0.05,
+  "role_current_tolerance_used_for_flow_decisions": false,
+  "capacity_values_used_for_case_selection": false,
+  "predictions_authorized": false,
+  "reference_labels_authorized": false,
+  "representation_gate_authorized": false,
+  "RB1_RB5_authorized": false,
+  "manifest_version": "1.1",
+  "optional_slot_plan": "Two named global flow reservations and four named halt-evidence reservations; final optional chemistry quota remains two per chemistry.",
+  "source_semantics_evidence_sha256": "bf2bc0a1ce6506d1add00d2bdd7d8d458fc15d10163a11e3b92b7642dbe3211d"
+}

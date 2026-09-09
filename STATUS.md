@@ -19,4 +19,4 @@ The sanitized A1-H closure was pushed and independently read back from origin/ma
 
 ## RB0 ratification and representation preparation
 
-RB0 v1.0.3 at fa61d1ea5dcdc650dae03e5b6a7186b0cfc4ea74 is ratified; see the [Operator record](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/RB0_RATIFICATION.md). Only representation rules/parameters/case-manifest preparation is authorized. The [preparation package](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/representation-preparation-v1/README.md) is ready for review with explicit source-case gaps; no execution freeze, reference labels, predictions or RB1–RB5 outputs.
+RB0 v1.0.3 at fa61d1ea5dcdc650dae03e5b6a7186b0cfc4ea74 is ratified; see the [Operator record](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/RB0_RATIFICATION.md). Only representation rules/parameters/case-manifest preparation is authorized. The [preparation package](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/representation-preparation-v1.1/README.md) is ready for review with explicit source-case gaps; no execution freeze, reference labels, predictions or RB1–RB5 outputs.
