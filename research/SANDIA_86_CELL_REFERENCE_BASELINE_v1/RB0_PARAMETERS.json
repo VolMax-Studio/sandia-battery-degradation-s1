@@ -1,10 +1,10 @@
 {
   "parameter_artifact": "RB0_PARAMETERS",
-  "contract_version": "1.0.1",
+  "contract_version": "1.0.2",
   "status": "VERSION_BOUND_PENDING_OPERATOR_APPROVAL",
   "CURRENT_CORROBORATION_TOLERANCE": 0.05,
   "CHECK_RATE_C": 0.5,
-  "RATIONALE": "Retain the previously proposed 5% engineering corroboration band without fitting source outcomes. A 2% band would assert tighter precision than has been justified; a 10% band would weaken corroboration without a documented need. The 5% choice is a declared design convention, not a calibrated instrument-accuracy bound. It is never sufficient by itself to classify a capacity check. The later reviewer-reported 1.81% example did not select this value and is not treated here as independent validation.",
+  "RATIONALE": "Retain the previously proposed 5% engineering corroboration band without fitting source outcomes. A 2% band would assert tighter precision than has been justified; a 10% band would weaken corroboration without a documented need. The 5% choice is a declared design convention, not a calibrated instrument-accuracy bound. It is necessary within Route B and never sufficient by itself to classify a capacity check. The later reviewer-reported 1.81% example did not select this value and is not treated here as independent validation.",
   "change_policy": "No in-version change; feasibility counts are not a reason to widen the band. Any change requires a new reviewed contract version and preservation/reporting of prior results.",
   "role_classifier_code_status": "NOT_IMPLEMENTED",
   "protocol_specific_phase_parameters": "NOT_YET_ESTABLISHED; must be sourced, frozen and approved before validation",
@@ -17,8 +17,34 @@
   ],
   "minimum_check_positives_per_chemistry": 2,
   "minimum_working_negatives_per_chemistry": 1,
-  "minimum_charge_only_negatives_total": 1,
-  "minimum_rest_negatives_total": 1,
+  "minimum_charge_only_negatives_total": 2,
+  "minimum_rest_negatives_total": 2,
   "classifier_falsification_status": "NOT_EXECUTED",
-  "RB1_RB5_EXECUTION_AUTHORIZED": false
+  "RB1_RB5_EXECUTION_AUTHORIZED": false,
+  "negative_class_distinct_cell_requirement": "At least two distinct cells within charge-only and at least two distinct cells within rest/zero-throughput; cross-class reuse allowed",
+  "negative_class_chemistry_policy": "Seek source-verified diversity; never manufacture unavailable classes; missing coverage remains an explicit limitation and cannot satisfy PASS requirements",
+  "CURRENT_TOLERANCE_ROLE": "Necessary corroborative condition inside Route B; not sufficient alone",
+  "adjudicator_disqualification": "Any author/specifier/implementer of an instrument or its rules cannot produce/adjudicate that instrument reference labels; adjudicator independent of construction and blinded to predictions, no institutional-independence claim",
+  "representation_instrument": "THROUGHPUT_REPRESENTATION_MAPPING_V1",
+  "representation_states": [
+    "PER_ROW_INCREMENT",
+    "AGGREGATED_DISJOINT_INCREMENT",
+    "OVERLAPPING_INCREMENT",
+    "REPRESENTATION_UNRESOLVED"
+  ],
+  "representation_gate_status": "DESIGN_ONLY_NOT_EXECUTED",
+  "representation_reference_cases_proposed": 12,
+  "representation_cases_per_chemistry": 4,
+  "representation_gate_design": "RB0_REPRESENTATION_GATE_DESIGN.md",
+  "representation_gate_design_sha256": "64b78cd0ce67e9d1d2a75da9c1e966778d7e0ed325310f8c78d3caf876ace5ca",
+  "execution_sequence": [
+    "RB0_APPROVAL",
+    "REPRESENTATION_MAPPING_FREEZE",
+    "REPRESENTATION_FEASIBILITY_FALSIFICATION",
+    "REVIEW",
+    "ROLE_CLASSIFIER_FREEZE_AND_INDEPENDENT_SAMPLE",
+    "CLASSIFIER_FALSIFICATION",
+    "REVIEW",
+    "SEPARATE_RB1_ONLY_GO"
+  ]
 }

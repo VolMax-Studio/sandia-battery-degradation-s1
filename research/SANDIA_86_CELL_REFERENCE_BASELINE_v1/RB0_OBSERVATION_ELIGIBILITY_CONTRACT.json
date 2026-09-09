@@ -1,12 +1,12 @@
 {
   "contract_id": "RB0_OBSERVATION_ELIGIBILITY_CONTRACT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "status": "PREPARED_FOR_OPERATOR_REVIEW",
   "baseline_id": "SANDIA_86_CELL_REFERENCE_BASELINE_v1",
   "EXPOSURE_CLASS": "POST_CORPUS_VIEW_EXPLORATORY",
   "RB1_RB5_EXECUTION_AUTHORIZED": false,
   "normative_document": "RB0_OBSERVATION_ELIGIBILITY_CONTRACT.md",
-  "normative_document_sha256": "e4fabbfb78b9cd876ab911e463da1efc064fb1d3cc3e1de32c14f0e292f7084b",
+  "normative_document_sha256": "e54c0733a4cdffec842dd954563f0a004ff6f1483b0f21981a53b404c9fff4e5",
   "precedence": "Normative Markdown supplies all eligibility and null/zero rules; this JSON indexes requirements, not an executable estimator.",
   "observation_key": [
     "source_member_sha256",
@@ -109,7 +109,7 @@
     "round_before_decision": false
   },
   "parameter_artifact": "RB0_PARAMETERS.json",
-  "parameter_artifact_sha256": "88010f8599296964bcf033c2375ab0677aa6c84e5b49108a57b0f7013cf02a75",
+  "parameter_artifact_sha256": "e1df6cbe6a429f46a830b44eeb8a090604ababb096695d46b4003d9ea575ba7b",
   "parameter_change_policy": "FIXED_WITHIN_VERSION; approval required before execution",
   "role_mapping_routes": [
     "EXPLICIT_SOURCE_LABEL",
@@ -124,5 +124,9 @@
   ],
   "classifier_falsification_required_before_RB1": true,
   "classifier_falsification_status": "NOT_EXECUTED",
-  "next_scientific_stage_after_classifier_gate": "RB1_ONLY_REQUIRES_SEPARATE_GO"
+  "next_scientific_stage_after_classifier_gate": "RB1_ONLY_REQUIRES_SEPARATE_GO",
+  "representation_instrument": "THROUGHPUT_REPRESENTATION_MAPPING_V1",
+  "representation_falsification_required_before_role_classifier": true,
+  "representation_gate_status": "DESIGN_ONLY_NOT_EXECUTED",
+  "reference_adjudicator_independent_of_instrument_construction": true
 }

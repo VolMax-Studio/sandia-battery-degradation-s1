@@ -1,0 +1,11 @@
+# Semantic change register: RB0 v1.0.1 → v1.0.2
+
+Base: f7f20d5554e74c7ed6c7ac96b4a60ca3a4769807. Status remains PREPARED_FOR_OPERATOR_REVIEW. Exactly five bounded changes:
+
+1. **Adjudicator independence:** authors/specifiers/implementers of either instrument or its rules are explicitly disqualified from producing/adjudicating that instrument's reference labels. Independence is construction-versus-adjudication and prediction blinding, not an institutional claim.
+2. **Representation instrument:** THROUGHPUT_REPRESENTATION_MAPPING_V1 has its own four-state decision and pre-RB1 validation record. The proposed gate design uses 12 source-evidence cases, four per chemistry, including the initial transition, with no fabricated states/labels, no cumulative calculations and scope-limited conclusions. The role gate cannot validate representation implicitly.
+3. **Representation first:** RB0 approval → representation freeze → bounded feasibility/falsification → review → role-classifier freeze/sample → falsification → review → separate RB1-only GO. Unresolved representation halts the dependent channel prefix; valid pre-gap evidence is retained. No relaxation of THROUGHPUT_V1.
+4. **Tolerance wording:** unchanged 0.05 is explicitly necessary within Route B and insufficient alone. Numeric value, rationale's prospective status and no outcome-dependent widening policy remain unchanged.
+5. **Known-failure negatives:** 24-row role sample stays eight per chemistry; charge-only and rest negatives increase from one to two each, from distinct cells within each class. Working negatives ≥1/chemistry and capacity-check positives ≥2/chemistry remain. Seek genuine chemistry diversity without inventing unavailable classes. Missing coverage remains a limitation and cannot be outcome-dependently replaced.
+
+All quantity-table rows are byte-identical to v1.0.1. Q0 block, 0.8 threshold, EFC and interpolation arithmetic, row identity, true-zero rules, null propagation, censoring, model/condition summaries, slope windows and scientific exclusions are unchanged. Earlier semantic-change registers remain historical records. JSON/version/hash/README edits consistently reflect these five changes. No source outcomes were inspected for rule selection, labels generated, classifiers implemented or RB1–RB5 executed.
