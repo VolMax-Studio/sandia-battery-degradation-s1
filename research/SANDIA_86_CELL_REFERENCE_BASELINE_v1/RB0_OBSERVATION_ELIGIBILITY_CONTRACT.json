@@ -1,0 +1,111 @@
+{
+  "contract_id": "RB0_OBSERVATION_ELIGIBILITY_CONTRACT",
+  "version": "1.0.0",
+  "status": "PREPARED_FOR_OPERATOR_REVIEW",
+  "baseline_id": "SANDIA_86_CELL_REFERENCE_BASELINE_v1",
+  "EXPOSURE_CLASS": "POST_CORPUS_VIEW_EXPLORATORY",
+  "RB1_RB5_EXECUTION_AUTHORIZED": false,
+  "normative_document": "RB0_OBSERVATION_ELIGIBILITY_CONTRACT.md",
+  "normative_document_sha256": "edd1b0085fd6d0bf93335425380284a35c7eb6f5a0e64260a9962d0e97c46571",
+  "precedence": "Normative Markdown supplies all eligibility and null/zero rules; this JSON indexes requirements, not an executable estimator.",
+  "parameters_proposed_for_review": {
+    "retention_threshold_fraction": 0.8,
+    "check_rate_C": 0.5,
+    "active_plateau_relative_current_tolerance": 0.05,
+    "initial_check_block_size": 3,
+    "shape_segment_count": 3,
+    "shape_min_points": 3,
+    "numeric_representation": "binary64",
+    "round_before_decision": false
+  },
+  "observation_key": [
+    "source_member_sha256",
+    "data_row_position_1based"
+  ],
+  "quantity_registry": [
+    {
+      "metric_family": "registry_identity",
+      "eligibility": "source metadata",
+      "example_null_reason": "UNKNOWN_METADATA",
+      "normative_section": 6
+    },
+    {
+      "metric_family": "row_diagnostics",
+      "eligibility": "complete parsed member",
+      "example_null_reason": "INCOMPLETE_SOURCE",
+      "normative_section": 6
+    },
+    {
+      "metric_family": "Q0",
+      "eligibility": "initial three CAPACITY_CHECK_V1 observations",
+      "example_null_reason": "INITIAL_CHECK_BLOCK_UNESTABLISHED",
+      "normative_section": 6
+    },
+    {
+      "metric_family": "Q_k_retention",
+      "eligibility": "CAPACITY_CHECK_V1 and positive Q0",
+      "example_null_reason": "ROLE_UNDETERMINED",
+      "normative_section": 6
+    },
+    {
+      "metric_family": "EFCA",
+      "eligibility": "THROUGHPUT_V1 discharge prefix",
+      "example_null_reason": "DISCHARGE_COVERAGE_GAP",
+      "normative_section": 6
+    },
+    {
+      "metric_family": "EFCB",
+      "eligibility": "THROUGHPUT_V1 two-channel prefix",
+      "example_null_reason": "TWO_WAY_COVERAGE_GAP",
+      "normative_section": 6
+    },
+    {
+      "metric_family": "N80_discrete",
+      "eligibility": "eligible first-observed post-baseline crossing",
+      "example_null_reason": "INCOMPLETE_OBSERVATION_HISTORY",
+      "normative_section": 6
+    },
+    {
+      "metric_family": "N80_interpolated",
+      "eligibility": "bounding eligible checks and valid EFC span",
+      "example_null_reason": "NO_VALID_BRACKET",
+      "normative_section": 6
+    },
+    {
+      "metric_family": "observability_censoring",
+      "eligibility": "complete eligible observation sequence",
+      "example_null_reason": "NOT_EVALUABLE",
+      "normative_section": 6
+    },
+    {
+      "metric_family": "model_sensitivity",
+      "eligibility": "observed variant subset with status counts",
+      "example_null_reason": "INSUFFICIENT_OBSERVED_VARIANTS",
+      "normative_section": 6
+    },
+    {
+      "metric_family": "condition_summaries",
+      "eligibility": "same exact group and variant",
+      "example_null_reason": "INSUFFICIENT_OBSERVED_CELLS",
+      "normative_section": 6
+    },
+    {
+      "metric_family": "shape_slopes",
+      "eligibility": "fixed eligible-observation thirds",
+      "example_null_reason": "INSUFFICIENT_OR_GAPPED_SEGMENT",
+      "normative_section": 6
+    }
+  ],
+  "out_of_scope": [
+    "energy_efficiency_metrics",
+    "resistance",
+    "measured_temperature_inference",
+    "causal_effects",
+    "knee_detection",
+    "Figure2a_verdict",
+    "A2_resolution"
+  ],
+  "source_role_mapping_status": "TO_BE_ESTABLISHED_BEFORE_FUTURE_METRIC_EXECUTION",
+  "operator_review": "REQUIRED",
+  "scientific_calculations_performed": false
+}

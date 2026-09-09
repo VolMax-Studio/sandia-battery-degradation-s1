@@ -1,0 +1,14 @@
+{
+  "baseline_id": "SANDIA_86_CELL_REFERENCE_BASELINE_v1",
+  "activated_at_utc": "2026-09-09T16:39:42.429178+00:00",
+  "EXPOSURE_CLASS": "POST_CORPUS_VIEW_EXPLORATORY",
+  "activation_scope": "RB0_PREPARATION_ONLY",
+  "public_closure_commit": "245bd6e623e7b01eb0dc39925b344f3550a61629",
+  "public_closure_push_confirmed": true,
+  "RB0_STATUS": "PREPARED_FOR_OPERATOR_REVIEW",
+  "RB1_RB5_STATUS": "STOPPED_NOT_AUTHORIZED",
+  "scientific_calculations_performed": false,
+  "A2_TARGET_STATUS": "UNRESOLVED",
+  "A1_H_reopened": false,
+  "contract_version": "1.0.0"
+}
