@@ -12,7 +12,7 @@ An independent, pre-registered computational verification instance under the P10
 
 See [STATUS.md](STATUS.md), [operator-ratified closure](governance/run-002-review/A1H_CLOSURE.md), and the two separate [failure records](FAILURES.md). Frozen preregistration and engine bytes remain unchanged. Private source/custody artifacts are not distributed by this repository.
 
-The POST_CORPUS_VIEW_EXPLORATORY 86-cell baseline is now activated for [RB0 contract review](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/RB0_OBSERVATION_ELIGIBILITY_CONTRACT.md), following the successfully pushed public closure. RB0 v1.0.2 is prepared; scientific RB1–RB5 calculation remains stopped and is not yet authorized.
+The POST_CORPUS_VIEW_EXPLORATORY 86-cell baseline is now activated for [RB0 contract review](research/SANDIA_86_CELL_REFERENCE_BASELINE_v1/RB0_OBSERVATION_ELIGIBILITY_CONTRACT.md), following the successfully pushed public closure. RB0 v1.0.3 is prepared; scientific RB1–RB5 calculation remains stopped and is not yet authorized.
 
 ---
 

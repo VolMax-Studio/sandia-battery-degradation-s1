@@ -1,12 +1,12 @@
 {
   "contract_id": "RB0_OBSERVATION_ELIGIBILITY_CONTRACT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "status": "PREPARED_FOR_OPERATOR_REVIEW",
   "baseline_id": "SANDIA_86_CELL_REFERENCE_BASELINE_v1",
   "EXPOSURE_CLASS": "POST_CORPUS_VIEW_EXPLORATORY",
   "RB1_RB5_EXECUTION_AUTHORIZED": false,
   "normative_document": "RB0_OBSERVATION_ELIGIBILITY_CONTRACT.md",
-  "normative_document_sha256": "e54c0733a4cdffec842dd954563f0a004ff6f1483b0f21981a53b404c9fff4e5",
+  "normative_document_sha256": "3117beb7abbad6dc6e4cec72b6b617581a7d74a5c310ff8ceb8cee384963d383",
   "precedence": "Normative Markdown supplies all eligibility and null/zero rules; this JSON indexes requirements, not an executable estimator.",
   "observation_key": [
     "source_member_sha256",
@@ -109,7 +109,7 @@
     "round_before_decision": false
   },
   "parameter_artifact": "RB0_PARAMETERS.json",
-  "parameter_artifact_sha256": "e1df6cbe6a429f46a830b44eeb8a090604ababb096695d46b4003d9ea575ba7b",
+  "parameter_artifact_sha256": "400197c30b4cec2d095a1a96e0e86819f751e34b7fa7a5d3d625e7448550d341",
   "parameter_change_policy": "FIXED_WITHIN_VERSION; approval required before execution",
   "role_mapping_routes": [
     "EXPLICIT_SOURCE_LABEL",
@@ -128,5 +128,7 @@
   "representation_instrument": "THROUGHPUT_REPRESENTATION_MAPPING_V1",
   "representation_falsification_required_before_role_classifier": true,
   "representation_gate_status": "DESIGN_ONLY_NOT_EXECUTED",
-  "reference_adjudicator_independent_of_instrument_construction": true
+  "reference_adjudicator_independent_of_instrument_construction": true,
+  "representation_pass_scope_has_mandatory_nonempty_evidence": true,
+  "throughput_flow_state_independent_of_scientific_role": true
 }

@@ -1,0 +1,11 @@
+# Semantic diff: RB0 v1.0.2 → v1.0.3
+
+Base: 35ac2c7de0960c26fce207cb59e2d2ff9ad4c3c0. Status: PREPARED_FOR_OPERATOR_REVIEW; not ratified and no execution authorized.
+
+**C1 only:** Representation PASS_SCOPED now requires, per included chemistry, independently resolved reference labels and definite agreeing predictions for the initial-block-to-working transition and an ordinary within-block interval. Zero definite disagreements are permitted among all resolved cases in that chemistry. Missing/unresolved/abstained mandatory cases exclude the chemistry; empty scopes cannot pass. An all-three-chemistry scope needs at least six mandatory agreements. Optional unavailable states remain untested/unresolved. Failure is attributed to its chemistry; any other passed scope must be explicitly bounded. Correctly recognizing an overlap does not make that interval eligible for throughput.
+
+**C2 only:** Throughput-only evidence can establish direct flow states independently of scientific row-role classification. Source-evidenced NO_FLOW or CHARGE_DIRECTION_ONLY may support justified zero channels under the unchanged coverage/validity/representation rules. These states do not assign scientific roles or Q_k eligibility. Pre-role-gate references to source-identified rest/charge-only were replaced with their direct flow-evidence meaning.
+
+**Bookkeeping only, outside the scientific tree:** the new HTTP-verification receipt uses requested_commit_present_in_page with a freshly measured Boolean. The prior v1.0.2 artifact used a different key, commit_present=true, rather than storing null under requested_commit_present_in_page. Historical receipts remain unchanged; the new key avoids an absent-field lookup being interpreted as null.
+
+All prior quantity-table rows, numeric scientific parameters, 0.05 tolerance, 24-row role and 12-case representation sample sizes, formulas, initial Q0 block, model count, censoring and execution sequencing remain unchanged. Version/hash/README and machine-readable constraint edits implement only C1/C2. No outcomes inspected for rule selection, no labels generated, no instrument implemented or run, no RB1–RB5. Construction/adjudication disqualification is unchanged and remains binding on all contributors who specified the instruments, including the contract author and contributing reviewers.

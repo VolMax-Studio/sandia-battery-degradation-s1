@@ -10,7 +10,7 @@
   "scientific_calculations_performed": false,
   "A2_TARGET_STATUS": "UNRESOLVED",
   "A1_H_reopened": false,
-  "contract_version": "1.0.2",
+  "contract_version": "1.0.3",
   "classifier_falsification_status": "NOT_EXECUTED",
   "RB1_prerequisite": "Representation freeze/gate/review before role-classifier construction and its separate freeze/gate/review; separate RB1-only GO",
   "representation_gate_status": "DESIGN_ONLY_NOT_EXECUTED"

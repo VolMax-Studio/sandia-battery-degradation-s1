@@ -1,6 +1,6 @@
 {
   "parameter_artifact": "RB0_PARAMETERS",
-  "contract_version": "1.0.2",
+  "contract_version": "1.0.3",
   "status": "VERSION_BOUND_PENDING_OPERATOR_APPROVAL",
   "CURRENT_CORROBORATION_TOLERANCE": 0.05,
   "CHECK_RATE_C": 0.5,
@@ -36,7 +36,7 @@
   "representation_reference_cases_proposed": 12,
   "representation_cases_per_chemistry": 4,
   "representation_gate_design": "RB0_REPRESENTATION_GATE_DESIGN.md",
-  "representation_gate_design_sha256": "64b78cd0ce67e9d1d2a75da9c1e966778d7e0ed325310f8c78d3caf876ace5ca",
+  "representation_gate_design_sha256": "72b8e267ab2e9bbb105423684381481b17a95965c9f0c14d5ea395c8ff5f82d6",
   "execution_sequence": [
     "RB0_APPROVAL",
     "REPRESENTATION_MAPPING_FREEZE",
@@ -46,5 +46,24 @@
     "CLASSIFIER_FALSIFICATION",
     "REVIEW",
     "SEPARATE_RB1_ONLY_GO"
-  ]
+  ],
+  "representation_pass_scope_requirements": {
+    "empty_or_purely_unresolved_scope_allowed": false,
+    "mandatory_cases_per_included_chemistry": [
+      "INITIAL_BLOCK_TO_WORKING_TRANSITION",
+      "ORDINARY_WITHIN_BLOCK_INTERVAL"
+    ],
+    "reference_and_prediction": "INDEPENDENTLY_RESOLVED_REFERENCE_AND_DEFINITE_AGREEMENT",
+    "max_definite_disagreements_per_included_chemistry": 0,
+    "all_three_chemistries_minimum_mandatory_agreements": 6,
+    "missing_unresolved_or_abstained_mandatory_case": "EXCLUDE_CHEMISTRY_FROM_PASSED_SCOPE; dependent EFC path cannot proceed on this gate",
+    "optional_unavailable_states": "UNTESTED_OR_UNRESOLVED; no general validation claim"
+  },
+  "throughput_only_flow_states": [
+    "BIDIRECTIONAL_FLOW",
+    "CHARGE_DIRECTION_ONLY",
+    "NO_FLOW",
+    "FLOW_STATE_UNRESOLVED"
+  ],
+  "flow_state_does_not_assign_scientific_row_role": true
 }
