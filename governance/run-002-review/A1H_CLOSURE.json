@@ -1,0 +1,32 @@
+{
+  "record_type": "SANITIZED_OPERATOR_ADMINISTRATIVE_CLOSURE",
+  "decision_date": "2026-09-09",
+  "A1_H_INSTANCE_STATUS": "ADMINISTRATIVELY_CLOSED",
+  "ADMINISTRATIVE_DISPOSITION": "IMPLEMENTATION NONCONFORMANCE",
+  "CONTROLLED_SECTION_7_VERDICT": null,
+  "CONTROLLED_VERDICT_STATUS": "NO_CONTROLLED_VERDICT_ISSUED",
+  "section_7_basis": "No frozen criterion covers estimator implementation nonconformance; missing-channel Not Demonstrated is not applicable to this execution.",
+  "SCIENTIFIC_RESULT_ACCEPTANCE": "REJECTED",
+  "emitted_engine_label": "ZERO_0_OF_12",
+  "preserved_private_execution_commit": "de1cfe854c3b7f6830ba907187b6f583a4d3c026",
+  "preserved_private_preexecution_commit": "b74e0890667ff891f28f73f2dd24b1e82321cab2",
+  "binding_sha256": "43fab6515d4af8e36090549a4b72aa18407bb70867e8f91a79a3da3f414cc589",
+  "private_review_subject_sha256": "45fc2c93f410fdbc157a53466b1e80551f68d367f3b14e6d1e5fffbefd70df53",
+  "original_GO_operator_confirmation": "CONFIRMED_IN_CLOSURE_ACT",
+  "authorization_assurance": "DOCUMENTARY; NO CRYPTOGRAPHIC ATTESTATION CLAIMED",
+  "failures": [
+    "004_N80B_IMPLEMENTATION_NONCONFORMANCE",
+    "005_N80A_OBSERVATION_ELIGIBILITY_UNDERSPECIFIED"
+  ],
+  "N80B_records_affirmatively_nonconformant": 72,
+  "N80A_records_underdetermined": 72,
+  "records_established_conformant_and_determinate": 0,
+  "A2_TARGET_STATUS": "UNRESOLVED",
+  "future_baseline": "SANDIA_86_CELL_REFERENCE_BASELINE_v1",
+  "EXPOSURE_CLASS": "POST_CORPUS_VIEW_EXPLORATORY",
+  "baseline_activation_condition": "Public sanitized closure successfully pinned and pushed",
+  "RB1_RB5_EXECUTION_AUTHORIZED": false,
+  "original_run_modified": false,
+  "frozen_preregistration_amended": false,
+  "public_record_is_literal_operator_capture": false
+}

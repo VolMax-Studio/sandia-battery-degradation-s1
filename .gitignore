@@ -31,3 +31,13 @@ __pycache__/
 .venv/
 env/
 venv/
+
+# Private custody stays outside the public repository
+*.eml
+**/host_response/
+**/batteryarchive_host_shares/
+**/execution/authorization.json
+**/execution_custody/operator_authorization.json
+**/ORIGINAL_GO_*
+**/*CLOSURE*PRIVATE*.zip
+**/*SUPPLEMENT_PRIVATE*.zip

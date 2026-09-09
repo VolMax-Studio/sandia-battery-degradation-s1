@@ -23,3 +23,22 @@
 - **Impact:** Invalidated premature reference freeze artifacts (`figure2a_reference.csv`, `figure2a_digitized_measurements.json`, `reference_partition_analysis.json`).
 - **Classification:** Methodological Defect / Hardcoded Synthetic Measurement Presented as Digitized Data.
 - **Remediation:** Declared all synthetic reference outputs invalid and purged them via an append-only commit; strictly banned `git commit --amend` on logged states; decoupled Target A1 multiset cardinality from Target A2 partition resolution; reverted §6 estimators to OPEN status; reverted observation cutoff to `HALT_OBSERVATION_HORIZON_UNDETERMINED`; and established a human-assisted raw pixel coordinate digitization architecture ($x_{\text{px}}, y_{\text{px}}$) with deterministic axis calibration.
+
+
+## #004 — N80B Implementation Nonconformance
+- **Date:** 2026-09-09
+- **Status:** Recorded under operator-ratified A1-H administrative closure.
+- **Defect:** Adjacent source rows were substituted for preregistered bounding check cycles.
+- **Scope:** Six N80B specifications across twelve target cells, 72 records.
+- **Consequence:** The emitted ZERO_0_OF_12 cannot support a scientific controlled verdict.
+- **Evidence:** [Implementation record](governance/run-002-review/FAILURE_004_IMPLEMENTATION.md), [closure identities](governance/run-002-review/A1H_CLOSURE.json).
+- **Disposition:** Preserve the original engine and run; no repair or rerun.
+
+## #005 — N80A Preregistration Observation-Eligibility Defect
+- **Date:** 2026-09-09
+- **Status:** Recorded separately from implementation failure #004.
+- **Defect:** The frozen threshold formula did not define an operational source-record eligibility predicate for Q_k in a heterogeneous cycle-summary stream.
+- **Scope:** All 72 N80A records remain underdetermined; no predicate is imposed retrospectively.
+- **Prospective requirement:** Every derived quantity in the new exploratory baseline must have a versioned observation-eligibility contract before calculation.
+- **Evidence:** [Preregistration defect record](governance/run-002-review/FAILURE_005_PREREGISTRATION.md).
+- **Boundary:** Frozen §7 contains no estimator-nonconformance verdict criterion; this is recorded without amending it or assigning a reserved verdict outside its definition.

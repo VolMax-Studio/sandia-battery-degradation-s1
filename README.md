@@ -6,18 +6,13 @@ An independent, pre-registered computational verification instance under the P10
 
 ---
 
-### Current Status — 6 September 2026
+### Current status — 9 September 2026
 
-> **Current State:** Target A1-H methodology, reference partition, specification envelope, required-input population, and acquisition cutoff are **frozen and ratified** (tree `f2b50e2`).
->
-> * **Required telemetry received:** 0 bytes
-> * **Historical direct-download acquisition attempts:** 86 requests, 86 × HTTP 404
-> * **BatteryArchive inquiry sent:** 5 September 2026
-> * **Acquisition cutoff:** 21 September 2026, 20:00 CEST (12:00 MDT)
-> * **Disposition:** No battery-degradation verdict has yet been produced.
+**A1-H is administratively closed: IMPLEMENTATION NONCONFORMANCE.** No controlled §7 scientific verdict is issued. The preserved run's ZERO_0_OF_12 output is not accepted as a scientific result. A2 remains UNRESOLVED.
 
-> [!IMPORTANT]
-> If the required inputs are not acquired by the preregistered cutoff, Target A1-H will close as **Not Demonstrated under the declared evidence boundary**. This disposition applies to the acquisition boundary and does not demonstrate that the underlying Sandia/BatteryArchive telemetry does not exist or could not become accessible later.
+See [STATUS.md](STATUS.md), [operator-ratified closure](governance/run-002-review/A1H_CLOSURE.md), and the two separate [failure records](FAILURES.md). Frozen preregistration and engine bytes remain unchanged. Private source/custody artifacts are not distributed by this repository.
+
+The next authorized phase is an explicitly POST_CORPUS_VIEW_EXPLORATORY 86-cell baseline, starting only with RB0 observation-eligibility contract preparation after the public closure is pushed. Scientific RB1–RB5 calculation is not yet authorized.
 
 ---
 
